@@ -1,0 +1,19 @@
+{
+  "model_name_or_path": "bigcode/starcoder2-3b",
+  "train_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_train.jsonl",
+  "val_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_val.jsonl",
+  "train_examples": 2408,
+  "val_examples": 304,
+  "max_length": 384,
+  "learning_rate": 0.0001,
+  "num_train_epochs": 3,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+  ],
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05
+}
