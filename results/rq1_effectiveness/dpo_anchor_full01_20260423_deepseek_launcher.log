@@ -1,0 +1,3 @@
+[Thu Apr 23 11:15:43 CST 2026] Starting DPO LoRA: model=deepseek_coder_6_7b_instruct gpu=2 output=/workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_20260423/deepseek_coder_6_7b_instruct dpo_scope=full api_anchor_weight=0.1
+3298046
+Log: /workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_20260423/logs/deepseek_coder_6_7b_instruct_gpu2.log

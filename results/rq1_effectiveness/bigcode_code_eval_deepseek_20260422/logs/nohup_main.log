@@ -1,0 +1,9 @@
+BigCode code eval root: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_20260422
+Models: deepseek_coder_6_7b_instruct
+Benchmarks: humaneval mbpp
+Variants: base lora
+GPU: 2
+BigCode root: /workspace/bigcode-evaluation-harness
+BigCode deepseek_coder_6_7b_instruct base humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_20260422/deepseek_coder_6_7b_instruct/base/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_20260422/logs/deepseek_coder_6_7b_instruct_base_humaneval.log

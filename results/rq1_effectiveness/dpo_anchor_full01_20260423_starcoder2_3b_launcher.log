@@ -1,0 +1,3 @@
+[Thu Apr 23 11:15:43 CST 2026] Starting DPO LoRA: model=starcoder2_3b gpu=1 output=/workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_20260423/starcoder2_3b dpo_scope=full api_anchor_weight=0.1
+3298055
+Log: /workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_20260423/logs/starcoder2_3b_gpu1.log

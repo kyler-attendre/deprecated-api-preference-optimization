@@ -1,0 +1,15 @@
+[run_topk_trajectory] loaded 376 correct examples from /workspace/version-control-study/07_correct_emergence/output/starcoder2_7b
+[run_topk_trajectory] loading model: /data/models/StarCoder/starcoder2-7b
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 27.82it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 27.70it/s]
+[run_topk_trajectory] loaded tuned lens: /workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/starcoder2_7b/tuned_lens/starcoder2_7b_official_base.pt
+[run_topk_trajectory] processed 50/376 examples, elapsed=13.4s
+[run_topk_trajectory] processed 100/376 examples, elapsed=26.3s
+[run_topk_trajectory] processed 150/376 examples, elapsed=39.5s
+[run_topk_trajectory] processed 200/376 examples, elapsed=52.3s
+[run_topk_trajectory] processed 250/376 examples, elapsed=65.1s
+[run_topk_trajectory] processed 300/376 examples, elapsed=77.7s
+[run_topk_trajectory] processed 350/376 examples, elapsed=90.2s
+[run_topk_trajectory] processed 376/376 examples, elapsed=96.8s
+[run_topk_trajectory] wrote 752 trajectory records to /workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/topk_trajectory.jsonl
+[run_topk_trajectory] wrote summary to /workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/emergence_summary.json

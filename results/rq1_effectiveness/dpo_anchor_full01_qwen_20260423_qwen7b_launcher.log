@@ -1,0 +1,3 @@
+[Thu Apr 23 14:45:46 CST 2026] Starting DPO LoRA: model=qwen2_5_coder_7b_instruct gpu=2 output=/workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_qwen_20260423/qwen2_5_coder_7b_instruct dpo_scope=full api_anchor_weight=0.1
+2690629
+Log: /workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_qwen_20260423/logs/qwen2_5_coder_7b_instruct_gpu2.log

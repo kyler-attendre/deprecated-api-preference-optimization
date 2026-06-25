@@ -1,0 +1,43 @@
+BigCode code eval root: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422
+Models: starcoder2_3b,starcoder2_7b,starcoder2_15b
+Benchmarks: humaneval mbpp
+Variants: base lora
+GPU: 2
+BigCode root: /workspace/bigcode-evaluation-harness
+BigCode starcoder2_3b base humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_3b/base/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_3b_base_humaneval.log
+BigCode starcoder2_3b base mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_3b/base/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_3b_base_mbpp.log
+BigCode starcoder2_3b lora humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_3b/lora/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_3b_lora_humaneval.log
+BigCode starcoder2_3b lora mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_3b/lora/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_3b_lora_mbpp.log
+BigCode starcoder2_7b base humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_7b/base/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_7b_base_humaneval.log
+BigCode starcoder2_7b base mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_7b/base/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_7b_base_mbpp.log
+BigCode starcoder2_7b lora humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_7b/lora/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_7b_lora_humaneval.log
+BigCode starcoder2_7b lora mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_7b/lora/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_7b_lora_mbpp.log
+BigCode starcoder2_15b base humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_15b/base/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_15b_base_humaneval.log
+BigCode starcoder2_15b base mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_15b/base/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_15b_base_mbpp.log
+BigCode starcoder2_15b lora humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_15b/lora/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_15b_lora_humaneval.log
+BigCode starcoder2_15b lora mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/starcoder2_15b/lora/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_starcoder2_20260422/logs/starcoder2_15b_lora_mbpp.log
+BigCode code eval finished: 2026-04-22 14:17:08
