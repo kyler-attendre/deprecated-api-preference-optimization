@@ -1,0 +1,39 @@
+{
+  "epsilon": 1e-06,
+  "variants": {
+    "dpo": {
+      "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo_lora_mixed_sft_v1_20260422/starcoder2_7b",
+      "base_model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+      "lora_alpha": 16,
+      "lora_r": 8,
+      "target_modules": [
+        "q_proj",
+        "o_proj",
+        "k_proj",
+        "v_proj"
+      ],
+      "epsilon": 1e-06,
+      "num_modules": 128,
+      "mean_fro_norm": 0.22499494047951885,
+      "mean_mean_abs": 5.3305240470535864e-05,
+      "mean_sparsity_below_epsilon": 0.016635636475257343
+    },
+    "anchored_dpo": {
+      "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo7b_screen_full_anchor01_20260423/starcoder2_7b",
+      "base_model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+      "lora_alpha": 16,
+      "lora_r": 8,
+      "target_modules": [
+        "o_proj",
+        "k_proj",
+        "q_proj",
+        "v_proj"
+      ],
+      "epsilon": 1e-06,
+      "num_modules": 128,
+      "mean_fro_norm": 0.2280041289050132,
+      "mean_mean_abs": 5.3989274519494757e-05,
+      "mean_sparsity_below_epsilon": 0.01644314775330713
+    }
+  }
+}

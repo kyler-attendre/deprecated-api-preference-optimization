@@ -1,0 +1,34 @@
+{
+  "method": "version_aware_dpo_lora_restricted",
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+  "train_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_train.jsonl",
+  "val_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_val.jsonl",
+  "layers_to_transform": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    26,
+    29,
+    30,
+    31
+  ],
+  "target_modules": [
+    "q_proj",
+    "o_proj"
+  ],
+  "raw_train_rows": 2408,
+  "raw_val_rows": 304,
+  "train_dpo_pairs": 1970,
+  "val_dpo_pairs": 260,
+  "dpo_scope": "full",
+  "api_anchor_weight": 0.0,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "disabled_dropout_modules": 24
+}

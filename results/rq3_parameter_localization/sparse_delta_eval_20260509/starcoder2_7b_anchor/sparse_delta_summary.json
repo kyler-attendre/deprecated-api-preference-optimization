@@ -1,0 +1,44 @@
+{
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo7b_screen_full_anchor01_20260423/starcoder2_7b",
+  "test_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_test.jsonl",
+  "num_rows": 285,
+  "variants": {
+    "keep_10": {
+      "keep_fraction": 0.1,
+      "summary": {
+        "label": "keep_10",
+        "samples": 285,
+        "deprecated_usage_rate": 0.014035087719298246,
+        "replacement_hit_rate": 0.5052631578947369,
+        "exact_match_target_rate": 0.0,
+        "nonempty_prediction_rate": 1.0,
+        "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/sparse_delta_eval_20260509/starcoder2_7b_anchor/keep_10_predictions.jsonl"
+      }
+    },
+    "keep_20": {
+      "keep_fraction": 0.2,
+      "summary": {
+        "label": "keep_20",
+        "samples": 285,
+        "deprecated_usage_rate": 0.014035087719298246,
+        "replacement_hit_rate": 0.6210526315789474,
+        "exact_match_target_rate": 0.0,
+        "nonempty_prediction_rate": 1.0,
+        "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/sparse_delta_eval_20260509/starcoder2_7b_anchor/keep_20_predictions.jsonl"
+      }
+    },
+    "keep_50": {
+      "keep_fraction": 0.5,
+      "summary": {
+        "label": "keep_50",
+        "samples": 285,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.6421052631578947,
+        "exact_match_target_rate": 0.0,
+        "nonempty_prediction_rate": 1.0,
+        "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/sparse_delta_eval_20260509/starcoder2_7b_anchor/keep_50_predictions.jsonl"
+      }
+    }
+  }
+}
