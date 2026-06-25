@@ -1,0 +1,2378 @@
+{
+  "lens": "logit_lens",
+  "selection_method": "sharpest one-layer rank improvement at the emergence layer, capped per library for diversity",
+  "candidates_by_bucket": {
+    "mid": [
+      {
+        "row_id": "qwencoder-3b-1389",
+        "source": "edapibench",
+        "library": "tensorflow",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "tensorflow.random.categorical",
+        "ground_truth_form": "tf.random.categorical",
+        "ground_truth_token_text": "tf",
+        "api_in_context": null,
+        "emergence_layer_top5": 19,
+        "emergence_layer_top10": 18,
+        "saturation_layer": 25,
+        "rank_jump_at_emergence": 1509.0,
+        "transition_snapshot": [
+          {
+            "layer": 16,
+            "ground_truth_rank": 1744.0,
+            "ground_truth_prob": 8.617324056103826e-05,
+            "jsd_to_final": 0.6736071109771729,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "random",
+                "prob": 0.05469264090061188
+              },
+              {
+                "rank": 2,
+                "token_text": " random",
+                "prob": 0.0375896655023098
+              },
+              {
+                "rank": 3,
+                "token_text": "Random",
+                "prob": 0.0101171238347888
+              }
+            ]
+          },
+          {
+            "layer": 17,
+            "ground_truth_rank": 1516.0,
+            "ground_truth_prob": 0.00010358564759371802,
+            "jsd_to_final": 0.6752638220787048,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " arg",
+                "prob": 0.017150338739156723
+              },
+              {
+                "rank": 2,
+                "token_text": "argmax",
+                "prob": 0.014669464901089668
+              },
+              {
+                "rank": 3,
+                "token_text": "ables",
+                "prob": 0.008358408696949482
+              }
+            ]
+          },
+          {
+            "layer": 18,
+            "ground_truth_rank": 7.0,
+            "ground_truth_prob": 0.004564443603157997,
+            "jsd_to_final": 0.6607359647750854,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "slim",
+                "prob": 0.016437193378806114
+              },
+              {
+                "rank": 2,
+                "token_text": "jax",
+                "prob": 0.007293960079550743
+              },
+              {
+                "rank": 3,
+                "token_text": "oso",
+                "prob": 0.0068520414642989635
+              }
+            ]
+          },
+          {
+            "layer": 19,
+            "ground_truth_rank": 3.0,
+            "ground_truth_prob": 0.012643486261367798,
+            "jsd_to_final": 0.6394057273864746,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.017830172553658485
+              },
+              {
+                "rank": 2,
+                "token_text": "slim",
+                "prob": 0.01728159561753273
+              },
+              {
+                "rank": 3,
+                "token_text": "tf",
+                "prob": 0.012643486261367798
+              }
+            ]
+          },
+          {
+            "layer": 20,
+            "ground_truth_rank": 2.0,
+            "ground_truth_prob": 0.15326571464538574,
+            "jsd_to_final": 0.4565774202346802,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.28633803129196167
+              },
+              {
+                "rank": 2,
+                "token_text": "tf",
+                "prob": 0.15326571464538574
+              },
+              {
+                "rank": 3,
+                "token_text": "slim",
+                "prob": 0.11213158816099167
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 9,
+            "best_rank": 1
+          },
+          {
+            "token_id": 6981,
+            "token_text": "ables",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 1681,
+            "token_text": "pert",
+            "token_class": "identifier_fragment",
+            "appearances": 4,
+            "best_rank": 3
+          },
+          {
+            "token_id": 1638,
+            "token_text": "older",
+            "token_class": "identifier_fragment",
+            "appearances": 3,
+            "best_rank": 1
+          },
+          {
+            "token_id": 49104,
+            "token_text": " Diese",
+            "token_class": "identifier_fragment",
+            "appearances": 3,
+            "best_rank": 1
+          }
+        ]
+      },
+      {
+        "row_id": "starcoder2-7b::tensorflow::083117fcb4df",
+        "source": "consistency",
+        "library": "tensorflow",
+        "category": "up-to-dated",
+        "task_family": "consistency",
+        "ground_truth_api": "tensorflow.print",
+        "ground_truth_form": "tf.print",
+        "ground_truth_token_text": " tf",
+        "api_in_context": null,
+        "emergence_layer_top5": 20,
+        "emergence_layer_top10": 20,
+        "saturation_layer": 31,
+        "rank_jump_at_emergence": 1446.0,
+        "transition_snapshot": [
+          {
+            "layer": 18,
+            "ground_truth_rank": 9102.0,
+            "ground_truth_prob": 1.8630245904205367e-05,
+            "jsd_to_final": 0.6129629611968994,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " print",
+                "prob": 0.057298850268125534
+              },
+              {
+                "rank": 2,
+                "token_text": " printing",
+                "prob": 0.02706606313586235
+              },
+              {
+                "rank": 3,
+                "token_text": "print",
+                "prob": 0.01802988536655903
+              }
+            ]
+          },
+          {
+            "layer": 19,
+            "ground_truth_rank": 1449.0,
+            "ground_truth_prob": 9.100779425352812e-05,
+            "jsd_to_final": 0.5921226739883423,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " print",
+                "prob": 0.0998021811246872
+              },
+              {
+                "rank": 2,
+                "token_text": " console",
+                "prob": 0.03240102529525757
+              },
+              {
+                "rank": 3,
+                "token_text": "print",
+                "prob": 0.02859380654990673
+              }
+            ]
+          },
+          {
+            "layer": 20,
+            "ground_truth_rank": 3.0,
+            "ground_truth_prob": 0.012553016655147076,
+            "jsd_to_final": 0.5904852151870728,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " print",
+                "prob": 0.02005966380238533
+              },
+              {
+                "rank": 2,
+                "token_text": " console",
+                "prob": 0.01514182798564434
+              },
+              {
+                "rank": 3,
+                "token_text": " tf",
+                "prob": 0.012553016655147076
+              }
+            ]
+          },
+          {
+            "layer": 21,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.04531770199537277,
+            "jsd_to_final": 0.5447487831115723,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.04531770199537277
+              },
+              {
+                "rank": 2,
+                "token_text": " print",
+                "prob": 0.022787172347307205
+              },
+              {
+                "rank": 3,
+                "token_text": " printing",
+                "prob": 0.011821828782558441
+              }
+            ]
+          },
+          {
+            "layer": 22,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.35172751545906067,
+            "jsd_to_final": 0.4034302234649658,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.35172751545906067
+              },
+              {
+                "rank": 2,
+                "token_text": "tf",
+                "prob": 0.04471713677048683
+              },
+              {
+                "rank": 3,
+                "token_text": " print",
+                "prob": 0.02547905407845974
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 10590,
+            "token_text": "Ready",
+            "token_class": "identifier_fragment",
+            "appearances": 9,
+            "best_rank": 1
+          },
+          {
+            "token_id": 1489,
+            "token_text": " print",
+            "token_class": "identifier_fragment",
+            "appearances": 9,
+            "best_rank": 1
+          },
+          {
+            "token_id": 7209,
+            "token_text": "部",
+            "token_class": "other",
+            "appearances": 8,
+            "best_rank": 1
+          },
+          {
+            "token_id": 26548,
+            "token_text": " rotateZ",
+            "token_class": "identifier_fragment",
+            "appearances": 7,
+            "best_rank": 1
+          },
+          {
+            "token_id": 14356,
+            "token_text": "pology",
+            "token_class": "identifier_fragment",
+            "appearances": 7,
+            "best_rank": 1
+          }
+        ]
+      },
+      {
+        "row_id": "codegemma-2b-80",
+        "source": "edapibench",
+        "library": "pytorch",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "torch.linalg.cholesky",
+        "ground_truth_form": "torch.linalg.cholesky",
+        "ground_truth_token_text": " torch",
+        "api_in_context": "torch.linalg.cholesky",
+        "emergence_layer_top5": 18,
+        "emergence_layer_top10": 18,
+        "saturation_layer": 20,
+        "rank_jump_at_emergence": 593.0,
+        "transition_snapshot": [
+          {
+            "layer": 16,
+            "ground_truth_rank": 1715.0,
+            "ground_truth_prob": 9.141863120021299e-05,
+            "jsd_to_final": 0.6272303462028503,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " self",
+                "prob": 0.023812100291252136
+              },
+              {
+                "rank": 2,
+                "token_text": "elf",
+                "prob": 0.014901234768331051
+              },
+              {
+                "rank": 3,
+                "token_text": " copy",
+                "prob": 0.010901975445449352
+              }
+            ]
+          },
+          {
+            "layer": 17,
+            "ground_truth_rank": 597.0,
+            "ground_truth_prob": 0.00019152146705891937,
+            "jsd_to_final": 0.6245076060295105,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " (",
+                "prob": 0.00967088807374239
+              },
+              {
+                "rank": 2,
+                "token_text": "El",
+                "prob": 0.00827194843441248
+              },
+              {
+                "rank": 3,
+                "token_text": " self",
+                "prob": 0.007299968972802162
+              }
+            ]
+          },
+          {
+            "layer": 18,
+            "ground_truth_rank": 4.0,
+            "ground_truth_prob": 0.009924591518938541,
+            "jsd_to_final": 0.5944555401802063,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " self",
+                "prob": 0.016362886875867844
+              },
+              {
+                "rank": 2,
+                "token_text": "self",
+                "prob": 0.014898577705025673
+              },
+              {
+                "rank": 3,
+                "token_text": "tout",
+                "prob": 0.010564673691987991
+              }
+            ]
+          },
+          {
+            "layer": 19,
+            "ground_truth_rank": 2.0,
+            "ground_truth_prob": 0.007072073873132467,
+            "jsd_to_final": 0.6068109273910522,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " self",
+                "prob": 0.013631779700517654
+              },
+              {
+                "rank": 2,
+                "token_text": " torch",
+                "prob": 0.007072073873132467
+              },
+              {
+                "rank": 3,
+                "token_text": "self",
+                "prob": 0.006643598433583975
+              }
+            ]
+          },
+          {
+            "layer": 20,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.0939033254981041,
+            "jsd_to_final": 0.49089527130126953,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " torch",
+                "prob": 0.0939033254981041
+              },
+              {
+                "rank": 2,
+                "token_text": " copy",
+                "prob": 0.06453874707221985
+              },
+              {
+                "rank": 3,
+                "token_text": " self",
+                "prob": 0.02374247834086418
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 13,
+            "best_rank": 1
+          },
+          {
+            "token_id": 15928,
+            "token_text": "案",
+            "token_class": "other",
+            "appearances": 6,
+            "best_rank": 5
+          },
+          {
+            "token_id": 45264,
+            "token_text": "IU",
+            "token_class": "identifier_fragment",
+            "appearances": 5,
+            "best_rank": 1
+          },
+          {
+            "token_id": 327,
+            "token_text": " (",
+            "token_class": "punctuation",
+            "appearances": 4,
+            "best_rank": 1
+          },
+          {
+            "token_id": 6387,
+            "token_text": "sch",
+            "token_class": "identifier_fragment",
+            "appearances": 4,
+            "best_rank": 1
+          }
+        ]
+      },
+      {
+        "row_id": "codegemma-2b-84",
+        "source": "edapibench",
+        "library": "pytorch",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "torch.linalg.qr",
+        "ground_truth_form": "torch.linalg.qr",
+        "ground_truth_token_text": "\n           ",
+        "api_in_context": null,
+        "emergence_layer_top5": 19,
+        "emergence_layer_top10": 19,
+        "saturation_layer": 19,
+        "rank_jump_at_emergence": 536.0,
+        "transition_snapshot": [
+          {
+            "layer": 17,
+            "ground_truth_rank": 736.0,
+            "ground_truth_prob": 0.00018342224939260632,
+            "jsd_to_final": 0.690623939037323,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "rtx",
+                "prob": 0.005706095602363348
+              },
+              {
+                "rank": 2,
+                "token_text": "iche",
+                "prob": 0.005530537571758032
+              },
+              {
+                "rank": 3,
+                "token_text": "aka",
+                "prob": 0.005195459816604853
+              }
+            ]
+          },
+          {
+            "layer": 18,
+            "ground_truth_rank": 537.0,
+            "ground_truth_prob": 0.0002257158630527556,
+            "jsd_to_final": 0.6906591653823853,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "nek",
+                "prob": 0.005300343967974186
+              },
+              {
+                "rank": 2,
+                "token_text": "ONU",
+                "prob": 0.005137269385159016
+              },
+              {
+                "rank": 3,
+                "token_text": "ermin",
+                "prob": 0.004979212302714586
+              }
+            ]
+          },
+          {
+            "layer": 19,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.010793620720505714,
+            "jsd_to_final": 0.6611958742141724,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "\n           ",
+                "prob": 0.010793620720505714
+              },
+              {
+                "rank": 2,
+                "token_text": "论",
+                "prob": 0.0059608034789562225
+              },
+              {
+                "rank": 3,
+                "token_text": "\r\n           ",
+                "prob": 0.005599656607955694
+              }
+            ]
+          },
+          {
+            "layer": 20,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.021260295063257217,
+            "jsd_to_final": 0.638677179813385,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "\n           ",
+                "prob": 0.021260295063257217
+              },
+              {
+                "rank": 2,
+                "token_text": "论",
+                "prob": 0.010361439548432827
+              },
+              {
+                "rank": 3,
+                "token_text": "abab",
+                "prob": 0.006484024226665497
+              }
+            ]
+          },
+          {
+            "layer": 21,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.011668655090034008,
+            "jsd_to_final": 0.6586101055145264,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "ford",
+                "prob": 0.011668655090034008
+              },
+              {
+                "rank": 2,
+                "token_text": "\n           ",
+                "prob": 0.011668655090034008
+              },
+              {
+                "rank": 3,
+                "token_text": "论",
+                "prob": 0.010624432004988194
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 44671,
+            "token_text": "XGs",
+            "token_class": "identifier_fragment",
+            "appearances": 12,
+            "best_rank": 1
+          },
+          {
+            "token_id": 26928,
+            "token_text": "kSi",
+            "token_class": "identifier_fragment",
+            "appearances": 10,
+            "best_rank": 2
+          },
+          {
+            "token_id": 26134,
+            "token_text": " rotateX",
+            "token_class": "identifier_fragment",
+            "appearances": 9,
+            "best_rank": 1
+          },
+          {
+            "token_id": 26433,
+            "token_text": " rotateY",
+            "token_class": "identifier_fragment",
+            "appearances": 8,
+            "best_rank": 2
+          },
+          {
+            "token_id": 44670,
+            "token_text": "NuD",
+            "token_class": "identifier_fragment",
+            "appearances": 8,
+            "best_rank": 2
+          }
+        ]
+      },
+      {
+        "row_id": "deepseek-1.3b-904",
+        "source": "edapibench",
+        "library": "sklearn",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "sklearn.mixture.GaussianMixture",
+        "ground_truth_form": "mixture.GaussianMixture",
+        "ground_truth_token_text": " mixture",
+        "api_in_context": null,
+        "emergence_layer_top5": 19,
+        "emergence_layer_top10": 19,
+        "saturation_layer": 19,
+        "rank_jump_at_emergence": 406.0,
+        "transition_snapshot": [
+          {
+            "layer": 17,
+            "ground_truth_rank": 1298.0,
+            "ground_truth_prob": 0.00011995615932391956,
+            "jsd_to_final": 0.6573529243469238,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " fit",
+                "prob": 0.01105417963117361
+              },
+              {
+                "rank": 2,
+                "token_text": " ",
+                "prob": 0.006498416885733604
+              },
+              {
+                "rank": 3,
+                "token_text": " lambda",
+                "prob": 0.004066605120897293
+              }
+            ]
+          },
+          {
+            "layer": 18,
+            "ground_truth_rank": 407.0,
+            "ground_truth_prob": 0.00026503033586777747,
+            "jsd_to_final": 0.6556817889213562,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " fit",
+                "prob": 0.00963920820504427
+              },
+              {
+                "rank": 2,
+                "token_text": " None",
+                "prob": 0.006223540753126144
+              },
+              {
+                "rank": 3,
+                "token_text": " lambda",
+                "prob": 0.006032062228769064
+              }
+            ]
+          },
+          {
+            "layer": 19,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.028807613998651505,
+            "jsd_to_final": 0.5964881181716919,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " mixture",
+                "prob": 0.028807613998651505
+              },
+              {
+                "rank": 2,
+                "token_text": "mix",
+                "prob": 0.023147568106651306
+              },
+              {
+                "rank": 3,
+                "token_text": "sk",
+                "prob": 0.007514916826039553
+              }
+            ]
+          },
+          {
+            "layer": 20,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.058613117784261703,
+            "jsd_to_final": 0.5597031116485596,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "mix",
+                "prob": 0.058613117784261703
+              },
+              {
+                "rank": 2,
+                "token_text": " mixture",
+                "prob": 0.058613117784261703
+              },
+              {
+                "rank": 3,
+                "token_text": "ellipse",
+                "prob": 0.01050875335931778
+              }
+            ]
+          },
+          {
+            "layer": 21,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.3513917624950409,
+            "jsd_to_final": 0.3568459153175354,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " mixture",
+                "prob": 0.3513917624950409
+              },
+              {
+                "rank": 2,
+                "token_text": "mix",
+                "prob": 0.07840609550476074
+              },
+              {
+                "rank": 3,
+                "token_text": "sk",
+                "prob": 0.009364272467792034
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 19,
+            "best_rank": 1
+          },
+          {
+            "token_id": 2177,
+            "token_text": " open",
+            "token_class": "identifier_fragment",
+            "appearances": 7,
+            "best_rank": 2
+          },
+          {
+            "token_id": 299,
+            "token_text": " =",
+            "token_class": "punctuation",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 2172,
+            "token_text": " {}",
+            "token_class": "punctuation",
+            "appearances": 6,
+            "best_rank": 2
+          },
+          {
+            "token_id": 8240,
+            "token_text": " fit",
+            "token_class": "identifier_fragment",
+            "appearances": 5,
+            "best_rank": 1
+          }
+        ]
+      }
+    ],
+    "deep": [
+      {
+        "row_id": "qwencoder-3b-417",
+        "source": "edapibench",
+        "library": "pytorch",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "torch.nn.functional.interpolate",
+        "ground_truth_form": "F.interpolate",
+        "ground_truth_token_text": " F",
+        "api_in_context": null,
+        "emergence_layer_top5": 23,
+        "emergence_layer_top10": 21,
+        "saturation_layer": 28,
+        "rank_jump_at_emergence": 146.0,
+        "transition_snapshot": [
+          {
+            "layer": 19,
+            "ground_truth_rank": 443.0,
+            "ground_truth_prob": 0.0002649984962772578,
+            "jsd_to_final": 0.6787205934524536,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " resize",
+                "prob": 0.005322637036442757
+              },
+              {
+                "rank": 2,
+                "token_text": "npx",
+                "prob": 0.004697210621088743
+              },
+              {
+                "rank": 3,
+                "token_text": "ittr",
+                "prob": 0.0041452739387750626
+              }
+            ]
+          },
+          {
+            "layer": 20,
+            "ground_truth_rank": 156.0,
+            "ground_truth_prob": 0.0004424970247782767,
+            "jsd_to_final": 0.6743255853652954,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "torch",
+                "prob": 0.07921601831912994
+              },
+              {
+                "rank": 2,
+                "token_text": " torch",
+                "prob": 0.04513592645525932
+              },
+              {
+                "rank": 3,
+                "token_text": "Variable",
+                "prob": 0.029141942039132118
+              }
+            ]
+          },
+          {
+            "layer": 21,
+            "ground_truth_rank": 10.0,
+            "ground_truth_prob": 0.003916694782674313,
+            "jsd_to_final": 0.6543804407119751,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "torch",
+                "prob": 0.11809605360031128
+              },
+              {
+                "rank": 2,
+                "token_text": "Variable",
+                "prob": 0.046247079968452454
+              },
+              {
+                "rank": 3,
+                "token_text": " torch",
+                "prob": 0.03834017738699913
+              }
+            ]
+          },
+          {
+            "layer": 22,
+            "ground_truth_rank": 6.0,
+            "ground_truth_prob": 0.008595352061092854,
+            "jsd_to_final": 0.6392563581466675,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "torch",
+                "prob": 0.16218236088752747
+              },
+              {
+                "rank": 2,
+                "token_text": " torch",
+                "prob": 0.0983685776591301
+              },
+              {
+                "rank": 3,
+                "token_text": "Variable",
+                "prob": 0.03193560242652893
+              }
+            ]
+          },
+          {
+            "layer": 23,
+            "ground_truth_rank": 4.0,
+            "ground_truth_prob": 0.04831339418888092,
+            "jsd_to_final": 0.5731412172317505,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "torch",
+                "prob": 0.3353614807128906
+              },
+              {
+                "rank": 2,
+                "token_text": " torch",
+                "prob": 0.1795060634613037
+              },
+              {
+                "rank": 3,
+                "token_text": "Variable",
+                "prob": 0.054746247828006744
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 44628,
+            "token_text": "ittr",
+            "token_class": "identifier_fragment",
+            "appearances": 12,
+            "best_rank": 1
+          },
+          {
+            "token_id": 14042,
+            "token_text": "ola",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 37968,
+            "token_text": "ampening",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 2
+          },
+          {
+            "token_id": 7632,
+            "token_text": "KEN",
+            "token_class": "identifier_fragment",
+            "appearances": 5,
+            "best_rank": 2
+          },
+          {
+            "token_id": 33994,
+            "token_text": "demos",
+            "token_class": "identifier_fragment",
+            "appearances": 5,
+            "best_rank": 5
+          }
+        ]
+      },
+      {
+        "row_id": "codegemma-2b-764",
+        "source": "edapibench",
+        "library": "sklearn",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "sklearn.mixture.GaussianMixture",
+        "ground_truth_form": "GaussianMixture",
+        "ground_truth_token_text": " Gaussian",
+        "api_in_context": null,
+        "emergence_layer_top5": 23,
+        "emergence_layer_top10": 21,
+        "saturation_layer": 31,
+        "rank_jump_at_emergence": 125.0,
+        "transition_snapshot": [
+          {
+            "layer": 19,
+            "ground_truth_rank": 761.0,
+            "ground_truth_prob": 0.00016744036111049354,
+            "jsd_to_final": 0.6245087385177612,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " make",
+                "prob": 0.013095209375023842
+              },
+              {
+                "rank": 2,
+                "token_text": " mixture",
+                "prob": 0.00794264581054449
+              },
+              {
+                "rank": 3,
+                "token_text": "sk",
+                "prob": 0.007698276545852423
+              }
+            ]
+          },
+          {
+            "layer": 20,
+            "ground_truth_rank": 131.0,
+            "ground_truth_prob": 0.0005055913934484124,
+            "jsd_to_final": 0.6098055243492126,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " np",
+                "prob": 0.02513405680656433
+              },
+              {
+                "rank": 2,
+                "token_text": "sk",
+                "prob": 0.02083686552941799
+              },
+              {
+                "rank": 3,
+                "token_text": " mixture",
+                "prob": 0.017822710797190666
+              }
+            ]
+          },
+          {
+            "layer": 21,
+            "ground_truth_rank": 6.0,
+            "ground_truth_prob": 0.008531863801181316,
+            "jsd_to_final": 0.5562036037445068,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " mixture",
+                "prob": 0.08094806224107742
+              },
+              {
+                "rank": 2,
+                "token_text": "sk",
+                "prob": 0.023192010819911957
+              },
+              {
+                "rank": 3,
+                "token_text": " Mix",
+                "prob": 0.01203185599297285
+              }
+            ]
+          },
+          {
+            "layer": 22,
+            "ground_truth_rank": 6.0,
+            "ground_truth_prob": 0.018571948632597923,
+            "jsd_to_final": 0.5087811946868896,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " mixture",
+                "prob": 0.27291277050971985
+              },
+              {
+                "rank": 2,
+                "token_text": "mix",
+                "prob": 0.11376696825027466
+              },
+              {
+                "rank": 3,
+                "token_text": "gm",
+                "prob": 0.028764795511960983
+              }
+            ]
+          },
+          {
+            "layer": 23,
+            "ground_truth_rank": 3.0,
+            "ground_truth_prob": 0.02878844365477562,
+            "jsd_to_final": 0.4633772373199463,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " mixture",
+                "prob": 0.4230431020259857
+              },
+              {
+                "rank": 2,
+                "token_text": "mix",
+                "prob": 0.10696204006671906
+              },
+              {
+                "rank": 3,
+                "token_text": " Gaussian",
+                "prob": 0.02878844365477562
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 15,
+            "best_rank": 1
+          },
+          {
+            "token_id": 299,
+            "token_text": " =",
+            "token_class": "punctuation",
+            "appearances": 7,
+            "best_rank": 1
+          },
+          {
+            "token_id": 1949,
+            "token_text": " make",
+            "token_class": "identifier_fragment",
+            "appearances": 7,
+            "best_rank": 1
+          },
+          {
+            "token_id": 8240,
+            "token_text": " fit",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 2696,
+            "token_text": "make",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 4
+          }
+        ]
+      },
+      {
+        "row_id": "deepseek-1.3b-903",
+        "source": "edapibench",
+        "library": "sklearn",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "sklearn.mixture.GaussianMixture",
+        "ground_truth_form": "GaussianMixture",
+        "ground_truth_token_text": " Gaussian",
+        "api_in_context": null,
+        "emergence_layer_top5": 22,
+        "emergence_layer_top10": 21,
+        "saturation_layer": null,
+        "rank_jump_at_emergence": 103.0,
+        "transition_snapshot": [
+          {
+            "layer": 19,
+            "ground_truth_rank": 407.0,
+            "ground_truth_prob": 0.00027853375650011003,
+            "jsd_to_final": 0.6226007342338562,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "icl",
+                "prob": 0.009369025006890297
+              },
+              {
+                "rank": 2,
+                "token_text": "mix",
+                "prob": 0.009369025006890297
+              },
+              {
+                "rank": 3,
+                "token_text": " mixture",
+                "prob": 0.009080769494175911
+              }
+            ]
+          },
+          {
+            "layer": 20,
+            "ground_truth_rank": 109.0,
+            "ground_truth_prob": 0.0006905064219608903,
+            "jsd_to_final": 0.6085671782493591,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " mixture",
+                "prob": 0.016214728355407715
+              },
+              {
+                "rank": 2,
+                "token_text": "mix",
+                "prob": 0.01571585424244404
+              },
+              {
+                "rank": 3,
+                "token_text": " np",
+                "prob": 0.011144209653139114
+              }
+            ]
+          },
+          {
+            "layer": 21,
+            "ground_truth_rank": 6.0,
+            "ground_truth_prob": 0.006615211721509695,
+            "jsd_to_final": 0.5541555285453796,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " mixture",
+                "prob": 0.11015315353870392
+              },
+              {
+                "rank": 2,
+                "token_text": "icl",
+                "prob": 0.05896073952317238
+              },
+              {
+                "rank": 3,
+                "token_text": "mix",
+                "prob": 0.01586906798183918
+              }
+            ]
+          },
+          {
+            "layer": 22,
+            "ground_truth_rank": 5.0,
+            "ground_truth_prob": 0.011434814892709255,
+            "jsd_to_final": 0.5098279714584351,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " mixture",
+                "prob": 0.27704015374183655
+              },
+              {
+                "rank": 2,
+                "token_text": "mix",
+                "prob": 0.10191738605499268
+              },
+              {
+                "rank": 3,
+                "token_text": "icl",
+                "prob": 0.013793018646538258
+              }
+            ]
+          },
+          {
+            "layer": 23,
+            "ground_truth_rank": 3.0,
+            "ground_truth_prob": 0.014566170983016491,
+            "jsd_to_final": 0.4605979919433594,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " mixture",
+                "prob": 0.5818437337875366
+              },
+              {
+                "rank": 2,
+                "token_text": "mix",
+                "prob": 0.10110929608345032
+              },
+              {
+                "rank": 3,
+                "token_text": " Gaussian",
+                "prob": 0.014566170983016491
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 7,
+            "best_rank": 1
+          },
+          {
+            "token_id": 299,
+            "token_text": " =",
+            "token_class": "punctuation",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 25297,
+            "token_text": "eya",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 21783,
+            "token_text": "�",
+            "token_class": "punctuation",
+            "appearances": 5,
+            "best_rank": 1
+          },
+          {
+            "token_id": 22143,
+            "token_text": " tear",
+            "token_class": "identifier_fragment",
+            "appearances": 4,
+            "best_rank": 1
+          }
+        ]
+      },
+      {
+        "row_id": "qwencoder-3b-514",
+        "source": "edapibench",
+        "library": "pytorch",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "torch.nn.functional.interpolate",
+        "ground_truth_form": "F.interpolate",
+        "ground_truth_token_text": " F",
+        "api_in_context": null,
+        "emergence_layer_top5": 23,
+        "emergence_layer_top10": 21,
+        "saturation_layer": 29,
+        "rank_jump_at_emergence": 70.0,
+        "transition_snapshot": [
+          {
+            "layer": 19,
+            "ground_truth_rank": 257.0,
+            "ground_truth_prob": 0.0003856519761029631,
+            "jsd_to_final": 0.6758037805557251,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " resize",
+                "prob": 0.011270403861999512
+              },
+              {
+                "rank": 2,
+                "token_text": " scales",
+                "prob": 0.006032611709088087
+              },
+              {
+                "rank": 3,
+                "token_text": " torch",
+                "prob": 0.00566711463034153
+              }
+            ]
+          },
+          {
+            "layer": 20,
+            "ground_truth_rank": 77.0,
+            "ground_truth_prob": 0.0007237829850055277,
+            "jsd_to_final": 0.6607282161712646,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " torch",
+                "prob": 0.06722105294466019
+              },
+              {
+                "rank": 2,
+                "token_text": "torch",
+                "prob": 0.05932237207889557
+              },
+              {
+                "rank": 3,
+                "token_text": "Variable",
+                "prob": 0.015966396778821945
+              }
+            ]
+          },
+          {
+            "layer": 21,
+            "ground_truth_rank": 7.0,
+            "ground_truth_prob": 0.004688273649662733,
+            "jsd_to_final": 0.6483274698257446,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "torch",
+                "prob": 0.10023970901966095
+              },
+              {
+                "rank": 2,
+                "token_text": " torch",
+                "prob": 0.04734988138079643
+              },
+              {
+                "rank": 3,
+                "token_text": "Variable",
+                "prob": 0.02380901761353016
+              }
+            ]
+          },
+          {
+            "layer": 22,
+            "ground_truth_rank": 8.0,
+            "ground_truth_prob": 0.0072701843455433846,
+            "jsd_to_final": 0.6347041130065918,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "torch",
+                "prob": 0.12105944752693176
+              },
+              {
+                "rank": 2,
+                "token_text": " torch",
+                "prob": 0.09428118914365768
+              },
+              {
+                "rank": 3,
+                "token_text": " Normalize",
+                "prob": 0.034684114158153534
+              }
+            ]
+          },
+          {
+            "layer": 23,
+            "ground_truth_rank": 3.0,
+            "ground_truth_prob": 0.020655522122979164,
+            "jsd_to_final": 0.6023086309432983,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "torch",
+                "prob": 0.2363899201154709
+              },
+              {
+                "rank": 2,
+                "token_text": " torch",
+                "prob": 0.19597412645816803
+              },
+              {
+                "rank": 3,
+                "token_text": " F",
+                "prob": 0.020655522122979164
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 44628,
+            "token_text": "ittr",
+            "token_class": "identifier_fragment",
+            "appearances": 12,
+            "best_rank": 1
+          },
+          {
+            "token_id": 37968,
+            "token_text": "ampening",
+            "token_class": "identifier_fragment",
+            "appearances": 7,
+            "best_rank": 1
+          },
+          {
+            "token_id": 5867,
+            "token_text": "�",
+            "token_class": "punctuation",
+            "appearances": 7,
+            "best_rank": 1
+          },
+          {
+            "token_id": 14042,
+            "token_text": "ola",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 25036,
+            "token_text": "법",
+            "token_class": "other",
+            "appearances": 6,
+            "best_rank": 4
+          }
+        ]
+      },
+      {
+        "row_id": "codegemma-2b-821",
+        "source": "edapibench",
+        "library": "tensorflow",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "tensorflow.random.categorical",
+        "ground_truth_form": "tensorflow.random.categorical",
+        "ground_truth_token_text": " tensorflow",
+        "api_in_context": null,
+        "emergence_layer_top5": 23,
+        "emergence_layer_top10": 22,
+        "saturation_layer": 29,
+        "rank_jump_at_emergence": 26.0,
+        "transition_snapshot": [
+          {
+            "layer": 20,
+            "ground_truth_rank": 59.0,
+            "ground_truth_prob": 0.0009352638735435903,
+            "jsd_to_final": 0.6305086612701416,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "tf",
+                "prob": 0.05268462374806404
+              },
+              {
+                "rank": 2,
+                "token_text": " tf",
+                "prob": 0.038544896990060806
+              },
+              {
+                "rank": 3,
+                "token_text": "argmax",
+                "prob": 0.03401574864983559
+              }
+            ]
+          },
+          {
+            "layer": 21,
+            "ground_truth_rank": 35.0,
+            "ground_truth_prob": 0.0014683558838441968,
+            "jsd_to_final": 0.6122350692749023,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.08804900199174881
+              },
+              {
+                "rank": 2,
+                "token_text": "tf",
+                "prob": 0.06857263296842575
+              },
+              {
+                "rank": 3,
+                "token_text": "argmax",
+                "prob": 0.03448048606514931
+              }
+            ]
+          },
+          {
+            "layer": 22,
+            "ground_truth_rank": 9.0,
+            "ground_truth_prob": 0.002431250410154462,
+            "jsd_to_final": 0.5811729431152344,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.3962937593460083
+              },
+              {
+                "rank": 2,
+                "token_text": "tf",
+                "prob": 0.24036431312561035
+              },
+              {
+                "rank": 3,
+                "token_text": "argmax",
+                "prob": 0.018534904345870018
+              }
+            ]
+          },
+          {
+            "layer": 23,
+            "ground_truth_rank": 4.0,
+            "ground_truth_prob": 0.006759353447705507,
+            "jsd_to_final": 0.5550040006637573,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.5715930461883545
+              },
+              {
+                "rank": 2,
+                "token_text": "tf",
+                "prob": 0.15384216606616974
+              },
+              {
+                "rank": 3,
+                "token_text": "tensorflow",
+                "prob": 0.011144289746880531
+              }
+            ]
+          },
+          {
+            "layer": 24,
+            "ground_truth_rank": 3.0,
+            "ground_truth_prob": 0.009331501089036465,
+            "jsd_to_final": 0.5469597578048706,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.6145533919334412
+              },
+              {
+                "rank": 2,
+                "token_text": "tf",
+                "prob": 0.13712537288665771
+              },
+              {
+                "rank": 3,
+                "token_text": " tensorflow",
+                "prob": 0.009331501089036465
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 10,
+            "best_rank": 1
+          },
+          {
+            "token_id": 12845,
+            "token_text": "tro",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 24320,
+            "token_text": "概",
+            "token_class": "other",
+            "appearances": 5,
+            "best_rank": 1
+          },
+          {
+            "token_id": 30934,
+            "token_text": "argmax",
+            "token_class": "identifier_fragment",
+            "appearances": 5,
+            "best_rank": 1
+          },
+          {
+            "token_id": 1657,
+            "token_text": " arg",
+            "token_class": "identifier_fragment",
+            "appearances": 5,
+            "best_rank": 2
+          }
+        ]
+      }
+    ],
+    "shallow": [
+      {
+        "row_id": "codegemma-2b-898",
+        "source": "edapibench",
+        "library": "tensorflow",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "tensorflow.global_variables_initializer",
+        "ground_truth_form": "tf.global_variables_initializer",
+        "ground_truth_token_text": " tf",
+        "api_in_context": null,
+        "emergence_layer_top5": 18,
+        "emergence_layer_top10": 17,
+        "saturation_layer": 18,
+        "rank_jump_at_emergence": 504.0,
+        "transition_snapshot": [
+          {
+            "layer": 15,
+            "ground_truth_rank": 528.0,
+            "ground_truth_prob": 0.0002282517816638574,
+            "jsd_to_final": 0.6909986734390259,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " (",
+                "prob": 0.007441470865160227
+              },
+              {
+                "rank": 2,
+                "token_text": "slim",
+                "prob": 0.007212520577013493
+              },
+              {
+                "rank": 3,
+                "token_text": " ",
+                "prob": 0.007212520577013493
+              }
+            ]
+          },
+          {
+            "layer": 16,
+            "ground_truth_rank": 513.0,
+            "ground_truth_prob": 0.0002432792680338025,
+            "jsd_to_final": 0.6910370588302612,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "slim",
+                "prob": 0.013704233802855015
+              },
+              {
+                "rank": 2,
+                "token_text": " (",
+                "prob": 0.012873935513198376
+              },
+              {
+                "rank": 3,
+                "token_text": "ultiple",
+                "prob": 0.005041505675762892
+              }
+            ]
+          },
+          {
+            "layer": 17,
+            "ground_truth_rank": 9.0,
+            "ground_truth_prob": 0.00228624208830297,
+            "jsd_to_final": 0.684270977973938,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "slim",
+                "prob": 0.021023886278271675
+              },
+              {
+                "rank": 2,
+                "token_text": " (",
+                "prob": 0.007265661843121052
+              },
+              {
+                "rank": 3,
+                "token_text": "�",
+                "prob": 0.004839974455535412
+              }
+            ]
+          },
+          {
+            "layer": 18,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.03776898235082626,
+            "jsd_to_final": 0.6111440658569336,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.03776898235082626
+              },
+              {
+                "rank": 2,
+                "token_text": "tf",
+                "prob": 0.02941451594233513
+              },
+              {
+                "rank": 3,
+                "token_text": "slim",
+                "prob": 0.027632378041744232
+              }
+            ]
+          },
+          {
+            "layer": 19,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.08175850659608841,
+            "jsd_to_final": 0.5473854541778564,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.08175850659608841
+              },
+              {
+                "rank": 2,
+                "token_text": "tf",
+                "prob": 0.052787259221076965
+              },
+              {
+                "rank": 3,
+                "token_text": " initialize",
+                "prob": 0.010074625723063946
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 17,
+            "best_rank": 1
+          },
+          {
+            "token_id": 2561,
+            "token_text": "{}",
+            "token_class": "punctuation",
+            "appearances": 7,
+            "best_rank": 2
+          },
+          {
+            "token_id": 2501,
+            "token_text": "etch",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 327,
+            "token_text": " (",
+            "token_class": "punctuation",
+            "appearances": 5,
+            "best_rank": 1
+          },
+          {
+            "token_id": 27875,
+            "token_text": "conds",
+            "token_class": "identifier_fragment",
+            "appearances": 4,
+            "best_rank": 2
+          }
+        ]
+      },
+      {
+        "row_id": "codegemma-2b-357",
+        "source": "edapibench",
+        "library": "pytorch",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "torch.linalg.lstsq",
+        "ground_truth_form": "torch.linalg.lstsq",
+        "ground_truth_token_text": "torch",
+        "api_in_context": null,
+        "emergence_layer_top5": 17,
+        "emergence_layer_top10": 17,
+        "saturation_layer": 21,
+        "rank_jump_at_emergence": 502.0,
+        "transition_snapshot": [
+          {
+            "layer": 15,
+            "ground_truth_rank": 1306.0,
+            "ground_truth_prob": 0.00012215258902870119,
+            "jsd_to_final": 0.6448943614959717,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "ody",
+                "prob": 0.006565907038748264
+              },
+              {
+                "rank": 2,
+                "token_text": "Exact",
+                "prob": 0.00410883966833353
+              },
+              {
+                "rank": 3,
+                "token_text": "Handlers",
+                "prob": 0.003859897842630744
+              }
+            ]
+          },
+          {
+            "layer": 16,
+            "ground_truth_rank": 505.0,
+            "ground_truth_prob": 0.00022683345014229417,
+            "jsd_to_final": 0.6414121389389038,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "�",
+                "prob": 0.011276381090283394
+              },
+              {
+                "rank": 2,
+                "token_text": "orb",
+                "prob": 0.008249976672232151
+              },
+              {
+                "rank": 3,
+                "token_text": "ody",
+                "prob": 0.006425087805837393
+              }
+            ]
+          },
+          {
+            "layer": 17,
+            "ground_truth_rank": 3.0,
+            "ground_truth_prob": 0.01142764650285244,
+            "jsd_to_final": 0.6149393916130066,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " torch",
+                "prob": 0.06373829394578934
+              },
+              {
+                "rank": 2,
+                "token_text": "�",
+                "prob": 0.015139171853661537
+              },
+              {
+                "rank": 3,
+                "token_text": "torch",
+                "prob": 0.01142764650285244
+              }
+            ]
+          },
+          {
+            "layer": 18,
+            "ground_truth_rank": 2.0,
+            "ground_truth_prob": 0.043688613921403885,
+            "jsd_to_final": 0.5638445615768433,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " torch",
+                "prob": 0.20842669904232025
+              },
+              {
+                "rank": 2,
+                "token_text": "torch",
+                "prob": 0.043688613921403885
+              },
+              {
+                "rank": 3,
+                "token_text": "ody",
+                "prob": 0.00591261126101017
+              }
+            ]
+          },
+          {
+            "layer": 19,
+            "ground_truth_rank": 2.0,
+            "ground_truth_prob": 0.06134304776787758,
+            "jsd_to_final": 0.5396504402160645,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " torch",
+                "prob": 0.12986324727535248
+              },
+              {
+                "rank": 2,
+                "token_text": "torch",
+                "prob": 0.06134304776787758
+              },
+              {
+                "rank": 3,
+                "token_text": "�",
+                "prob": 0.00856541097164154
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 2189,
+            "token_text": " range",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 12447,
+            "token_text": " Sl",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 2
+          },
+          {
+            "token_id": 35958,
+            "token_text": " tal",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 3
+          },
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 6,
+            "best_rank": 4
+          },
+          {
+            "token_id": 18999,
+            "token_text": "Adv",
+            "token_class": "identifier_fragment",
+            "appearances": 5,
+            "best_rank": 2
+          }
+        ]
+      },
+      {
+        "row_id": "codegemma-2b-625",
+        "source": "edapibench",
+        "library": "pytorch",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "torch.linalg.lstsq",
+        "ground_truth_form": "torch.linalg.lstsq",
+        "ground_truth_token_text": "torch",
+        "api_in_context": null,
+        "emergence_layer_top5": 17,
+        "emergence_layer_top10": 17,
+        "saturation_layer": 21,
+        "rank_jump_at_emergence": 502.0,
+        "transition_snapshot": [
+          {
+            "layer": 15,
+            "ground_truth_rank": 1306.0,
+            "ground_truth_prob": 0.00012215258902870119,
+            "jsd_to_final": 0.6448943614959717,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "ody",
+                "prob": 0.006565907038748264
+              },
+              {
+                "rank": 2,
+                "token_text": "Exact",
+                "prob": 0.00410883966833353
+              },
+              {
+                "rank": 3,
+                "token_text": "Handlers",
+                "prob": 0.003859897842630744
+              }
+            ]
+          },
+          {
+            "layer": 16,
+            "ground_truth_rank": 505.0,
+            "ground_truth_prob": 0.00022683345014229417,
+            "jsd_to_final": 0.6414121389389038,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "�",
+                "prob": 0.011276381090283394
+              },
+              {
+                "rank": 2,
+                "token_text": "orb",
+                "prob": 0.008249976672232151
+              },
+              {
+                "rank": 3,
+                "token_text": "ody",
+                "prob": 0.006425087805837393
+              }
+            ]
+          },
+          {
+            "layer": 17,
+            "ground_truth_rank": 3.0,
+            "ground_truth_prob": 0.01142764650285244,
+            "jsd_to_final": 0.6149393916130066,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " torch",
+                "prob": 0.06373829394578934
+              },
+              {
+                "rank": 2,
+                "token_text": "�",
+                "prob": 0.015139171853661537
+              },
+              {
+                "rank": 3,
+                "token_text": "torch",
+                "prob": 0.01142764650285244
+              }
+            ]
+          },
+          {
+            "layer": 18,
+            "ground_truth_rank": 2.0,
+            "ground_truth_prob": 0.043688613921403885,
+            "jsd_to_final": 0.5638445615768433,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " torch",
+                "prob": 0.20842669904232025
+              },
+              {
+                "rank": 2,
+                "token_text": "torch",
+                "prob": 0.043688613921403885
+              },
+              {
+                "rank": 3,
+                "token_text": "ody",
+                "prob": 0.00591261126101017
+              }
+            ]
+          },
+          {
+            "layer": 19,
+            "ground_truth_rank": 2.0,
+            "ground_truth_prob": 0.06134304776787758,
+            "jsd_to_final": 0.5396504402160645,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " torch",
+                "prob": 0.12986324727535248
+              },
+              {
+                "rank": 2,
+                "token_text": "torch",
+                "prob": 0.06134304776787758
+              },
+              {
+                "rank": 3,
+                "token_text": "�",
+                "prob": 0.00856541097164154
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 2189,
+            "token_text": " range",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 1
+          },
+          {
+            "token_id": 12447,
+            "token_text": " Sl",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 2
+          },
+          {
+            "token_id": 35958,
+            "token_text": " tal",
+            "token_class": "identifier_fragment",
+            "appearances": 6,
+            "best_rank": 3
+          },
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 6,
+            "best_rank": 4
+          },
+          {
+            "token_id": 18999,
+            "token_text": "Adv",
+            "token_class": "identifier_fragment",
+            "appearances": 5,
+            "best_rank": 2
+          }
+        ]
+      },
+      {
+        "row_id": "codegemma-2b-859",
+        "source": "edapibench",
+        "library": "tensorflow",
+        "category": "up-to-dated",
+        "task_family": "edapibench",
+        "ground_truth_api": "tensorflow.global_variables_initializer",
+        "ground_truth_form": "tf.global_variables_initializer",
+        "ground_truth_token_text": " tf",
+        "api_in_context": null,
+        "emergence_layer_top5": 18,
+        "emergence_layer_top10": 17,
+        "saturation_layer": 18,
+        "rank_jump_at_emergence": 309.0,
+        "transition_snapshot": [
+          {
+            "layer": 15,
+            "ground_truth_rank": 289.0,
+            "ground_truth_prob": 0.0003344831638969481,
+            "jsd_to_final": 0.6855185031890869,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "slim",
+                "prob": 0.011076566763222218
+              },
+              {
+                "rank": 2,
+                "token_text": " train",
+                "prob": 0.005398287437856197
+              },
+              {
+                "rank": 3,
+                "token_text": " (",
+                "prob": 0.005398287437856197
+              }
+            ]
+          },
+          {
+            "layer": 16,
+            "ground_truth_rank": 316.0,
+            "ground_truth_prob": 0.00032376707531511784,
+            "jsd_to_final": 0.684946596622467,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "slim",
+                "prob": 0.023787109181284904
+              },
+              {
+                "rank": 2,
+                "token_text": " (",
+                "prob": 0.009028570726513863
+              },
+              {
+                "rank": 3,
+                "token_text": "oshi",
+                "prob": 0.004006403964012861
+              }
+            ]
+          },
+          {
+            "layer": 17,
+            "ground_truth_rank": 7.0,
+            "ground_truth_prob": 0.0027793690096586943,
+            "jsd_to_final": 0.6769245862960815,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "slim",
+                "prob": 0.04628065600991249
+              },
+              {
+                "rank": 2,
+                "token_text": " (",
+                "prob": 0.009700951166450977
+              },
+              {
+                "rank": 3,
+                "token_text": "WebRequest",
+                "prob": 0.004582404159009457
+              }
+            ]
+          },
+          {
+            "layer": 18,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.04833073168992996,
+            "jsd_to_final": 0.5893670320510864,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": "slim",
+                "prob": 0.04833073168992996
+              },
+              {
+                "rank": 2,
+                "token_text": " tf",
+                "prob": 0.04833073168992996
+              },
+              {
+                "rank": 3,
+                "token_text": "tf",
+                "prob": 0.025869576260447502
+              }
+            ]
+          },
+          {
+            "layer": 19,
+            "ground_truth_rank": 1.0,
+            "ground_truth_prob": 0.1096171885728836,
+            "jsd_to_final": 0.5083060264587402,
+            "top3_candidates": [
+              {
+                "rank": 1,
+                "token_text": " tf",
+                "prob": 0.1096171885728836
+              },
+              {
+                "rank": 2,
+                "token_text": "tf",
+                "prob": 0.05511898174881935
+              },
+              {
+                "rank": 3,
+                "token_text": "slim",
+                "prob": 0.00957824382930994
+              }
+            ]
+          }
+        ],
+        "pre_emergence_competitors": [
+          {
+            "token_id": 244,
+            "token_text": " ",
+            "token_class": "whitespace",
+            "appearances": 17,
+            "best_rank": 1
+          },
+          {
+            "token_id": 327,
+            "token_text": " (",
+            "token_class": "punctuation",
+            "appearances": 5,
+            "best_rank": 2
+          },
+          {
+            "token_id": 16727,
+            "token_text": "én",
+            "token_class": "other",
+            "appearances": 5,
+            "best_rank": 4
+          },
+          {
+            "token_id": 2501,
+            "token_text": "etch",
+            "token_class": "identifier_fragment",
+            "appearances": 4,
+            "best_rank": 2
+          },
+          {
+            "token_id": 10212,
+            "token_text": "ô",
+            "token_class": "other",
+            "appearances": 4,
+            "best_rank": 2
+          }
+        ]
+      }
+    ]
+  }
+}

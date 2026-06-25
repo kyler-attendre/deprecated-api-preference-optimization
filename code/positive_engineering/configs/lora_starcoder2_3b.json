@@ -1,0 +1,11 @@
+{
+  "model_name_or_path": "starcoder2-3b",
+  "train_file": "data/processed_clean/repair_sft_train.jsonl",
+  "val_file": "data/processed_clean/repair_sft_val.jsonl",
+  "max_length": 1024,
+  "learning_rate": 0.0002,
+  "num_train_epochs": 3,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05
+}

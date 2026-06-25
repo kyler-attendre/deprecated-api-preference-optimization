@@ -1,0 +1,67 @@
+{
+  "input_dir": "/workspace/version-control-study/05_positive_engineering/data/processed_clean",
+  "output_dir": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1",
+  "seed": 42,
+  "reference_caps": {
+    "train": 2000,
+    "val": 250,
+    "test": 250
+  },
+  "source_file_counts": {
+    "repair_sft_train": 207,
+    "repair_sft_val": 35,
+    "repair_sft_test": 18,
+    "consistency_sft_train": 204,
+    "consistency_sft_val": 24,
+    "consistency_sft_test": 25,
+    "reference_sft_train": 58060,
+    "reference_sft_val": 7154,
+    "reference_sft_test": 7230
+  },
+  "semantic_group_count": 18290,
+  "split_collisions_resolved": 10555,
+  "selection_summary": {
+    "train": {
+      "repair_sft": 204,
+      "consistency_sft": 204,
+      "reference_sft": 2000
+    },
+    "val": {
+      "repair_sft": 30,
+      "consistency_sft": 24,
+      "reference_sft": 250
+    },
+    "test": {
+      "repair_sft": 14,
+      "consistency_sft": 21,
+      "reference_sft": 250
+    }
+  },
+  "written_counts": {
+    "train": 2408,
+    "val": 304,
+    "test": 285
+  },
+  "leakage_report": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0
+  },
+  "label_distribution": {
+    "train": {
+      "consistency_sft": 204,
+      "reference_sft": 2000,
+      "repair_sft": 204
+    },
+    "val": {
+      "consistency_sft": 24,
+      "reference_sft": 250,
+      "repair_sft": 30
+    },
+    "test": {
+      "consistency_sft": 21,
+      "reference_sft": 250,
+      "repair_sft": 14
+    }
+  }
+}

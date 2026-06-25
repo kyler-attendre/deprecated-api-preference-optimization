@@ -1,0 +1,448 @@
+{
+  "model_key": "starcoder2_7b",
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+  "max_length": 384,
+  "num_decoder_layers": 32,
+  "top_k_persisted": 10,
+  "emergence_k_values": [
+    5,
+    10
+  ],
+  "tuned_lens_path": "/workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/starcoder2_7b/tuned_lens/starcoder2_7b_official_base.pt",
+  "tuned_lens_metadata": {
+    "model_key": "starcoder2_7b",
+    "model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+    "adapter_dir": null,
+    "prompt_field": "version_prompt",
+    "train_files": [
+      "/workspace/version-control-study/05_positive_engineering/data/processed_clean/repair_sft_train.jsonl",
+      "/workspace/version-control-study/05_positive_engineering/data/processed_clean/consistency_sft_train.jsonl"
+    ],
+    "val_files": [
+      "/workspace/version-control-study/05_positive_engineering/data/processed_clean/repair_sft_val.jsonl",
+      "/workspace/version-control-study/05_positive_engineering/data/processed_clean/consistency_sft_val.jsonl"
+    ],
+    "rank": 16,
+    "epochs": 3,
+    "batch_size": 2,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "max_length": 384,
+    "seed": 42,
+    "train_examples": 403,
+    "val_examples": 58,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 1.459936095567623,
+        "val_loss": 0.6925306777501928
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.9371405000623205,
+        "val_loss": 0.9176849144799956
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.8411674700529859,
+        "val_loss": 1.0615686058741192
+      }
+    ]
+  },
+  "sources": [
+    "repair",
+    "consistency",
+    "edapibench"
+  ],
+  "max_samples": 0,
+  "run": {
+    "examples": 376,
+    "skipped_examples": 0,
+    "lens_variants": [
+      "logit_lens",
+      "tuned_lens"
+    ],
+    "trajectory_records": 752,
+    "elapsed_seconds": 97.9,
+    "output_file": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/topk_trajectory.jsonl"
+  },
+  "emergence_summary": {
+    "by_lens": {
+      "logit_lens": {
+        "decision_token_examples": 376,
+        "emergence_layer_top5": {
+          "count": 376,
+          "mean": 19.824468085106382,
+          "min": 15,
+          "p25": 18,
+          "median": 19,
+          "p75": 20,
+          "max": 31
+        },
+        "emergence_layer_top10": {
+          "count": 376,
+          "mean": 19.11436170212766,
+          "min": 2,
+          "p25": 18,
+          "median": 18,
+          "p75": 20,
+          "max": 29
+        },
+        "saturation_layer": {
+          "count": 344,
+          "mean": 24.813953488372093,
+          "min": 16,
+          "p25": 21,
+          "median": 24,
+          "p75": 29,
+          "max": 31
+        },
+        "never_entered_top10_count": 0,
+        "never_saturated_count": 32,
+        "competitor_token_class_distribution": {
+          "identifier_fragment": 2527,
+          "punctuation": 605,
+          "other": 380,
+          "whitespace": 248
+        },
+        "top_competitor_tokens": [
+          {
+            "token_text": "�",
+            "appearances_across_examples": 281
+          },
+          {
+            "token_text": " ",
+            "appearances_across_examples": 230
+          },
+          {
+            "token_text": " (",
+            "appearances_across_examples": 106
+          },
+          {
+            "token_text": " =",
+            "appearances_across_examples": 104
+          },
+          {
+            "token_text": "ول",
+            "appearances_across_examples": 65
+          },
+          {
+            "token_text": "WebAPI",
+            "appearances_across_examples": 56
+          },
+          {
+            "token_text": "Properties",
+            "appearances_across_examples": 54
+          },
+          {
+            "token_text": "Hl",
+            "appearances_across_examples": 47
+          },
+          {
+            "token_text": " initialize",
+            "appearances_across_examples": 45
+          },
+          {
+            "token_text": "avid",
+            "appearances_across_examples": 41
+          },
+          {
+            "token_text": "Initialized",
+            "appearances_across_examples": 39
+          },
+          {
+            "token_text": " init",
+            "appearances_across_examples": 35
+          },
+          {
+            "token_text": "initialize",
+            "appearances_across_examples": 34
+          },
+          {
+            "token_text": " new",
+            "appearances_across_examples": 33
+          },
+          {
+            "token_text": "oth",
+            "appearances_across_examples": 32
+          },
+          {
+            "token_text": "ジ",
+            "appearances_across_examples": 32
+          },
+          {
+            "token_text": " None",
+            "appearances_across_examples": 29
+          },
+          {
+            "token_text": "{}",
+            "appearances_across_examples": 29
+          },
+          {
+            "token_text": "None",
+            "appearances_across_examples": 25
+          },
+          {
+            "token_text": "slim",
+            "appearances_across_examples": 24
+          }
+        ],
+        "emergence_layer_top10_by_source": {
+          "consistency": {
+            "count": 9,
+            "mean": 19.0,
+            "min": 16,
+            "p25": 18,
+            "median": 20,
+            "p75": 20,
+            "max": 21
+          },
+          "edapibench": {
+            "count": 363,
+            "mean": 19.085399449035812,
+            "min": 2,
+            "p25": 18,
+            "median": 18,
+            "p75": 20,
+            "max": 29
+          },
+          "repair": {
+            "count": 4,
+            "mean": 22.0,
+            "min": 19,
+            "p25": 20,
+            "median": 20,
+            "p75": 29,
+            "max": 29
+          }
+        },
+        "emergence_layer_top10_by_library": {
+          "tensorflow": {
+            "count": 237,
+            "mean": 18.270042194092827,
+            "min": 15,
+            "p25": 18,
+            "median": 18,
+            "p75": 19,
+            "max": 23
+          },
+          "pytorch": {
+            "count": 95,
+            "mean": 20.073684210526316,
+            "min": 2,
+            "p25": 18,
+            "median": 19,
+            "p75": 20,
+            "max": 29
+          },
+          "sklearn": {
+            "count": 43,
+            "mean": 21.674418604651162,
+            "min": 18,
+            "p25": 21,
+            "median": 22,
+            "p75": 23,
+            "max": 29
+          },
+          "seaborn": {
+            "count": 1,
+            "mean": 18.0,
+            "min": 18,
+            "p25": 18,
+            "median": 18,
+            "p75": 18,
+            "max": 18
+          }
+        }
+      },
+      "tuned_lens": {
+        "decision_token_examples": 376,
+        "emergence_layer_top5": {
+          "count": 376,
+          "mean": 20.84840425531915,
+          "min": 2,
+          "p25": 19,
+          "median": 20,
+          "p75": 23,
+          "max": 30
+        },
+        "emergence_layer_top10": {
+          "count": 376,
+          "mean": 20.06648936170213,
+          "min": 0,
+          "p25": 18,
+          "median": 19,
+          "p75": 21,
+          "max": 29
+        },
+        "saturation_layer": {
+          "count": 343,
+          "mean": 28.279883381924197,
+          "min": 16,
+          "p25": 26,
+          "median": 29,
+          "p75": 31,
+          "max": 31
+        },
+        "never_entered_top10_count": 0,
+        "never_saturated_count": 33,
+        "competitor_token_class_distribution": {
+          "identifier_fragment": 3385,
+          "whitespace": 175,
+          "punctuation": 166,
+          "numeric": 11,
+          "other": 3
+        },
+        "top_competitor_tokens": [
+          {
+            "token_text": "initializer",
+            "appearances_across_examples": 320
+          },
+          {
+            "token_text": "variables",
+            "appearances_across_examples": 278
+          },
+          {
+            "token_text": "solve",
+            "appearances_across_examples": 252
+          },
+          {
+            "token_text": "_",
+            "appearances_across_examples": 217
+          },
+          {
+            "token_text": "dense",
+            "appearances_across_examples": 185
+          },
+          {
+            "token_text": " ",
+            "appearances_across_examples": 171
+          },
+          {
+            "token_text": "categorical",
+            "appearances_across_examples": 157
+          },
+          {
+            "token_text": "sparse",
+            "appearances_across_examples": 154
+          },
+          {
+            "token_text": "initialize",
+            "appearances_across_examples": 150
+          },
+          {
+            "token_text": "loader",
+            "appearances_across_examples": 121
+          },
+          {
+            "token_text": "G",
+            "appearances_across_examples": 120
+          },
+          {
+            "token_text": "global",
+            "appearances_across_examples": 106
+          },
+          {
+            "token_text": "init",
+            "appearances_across_examples": 78
+          },
+          {
+            "token_text": "to",
+            "appearances_across_examples": 68
+          },
+          {
+            "token_text": "close",
+            "appearances_across_examples": 58
+          },
+          {
+            "token_text": "assert",
+            "appearances_across_examples": 57
+          },
+          {
+            "token_text": "norm",
+            "appearances_across_examples": 55
+          },
+          {
+            "token_text": "cast",
+            "appearances_across_examples": 46
+          },
+          {
+            "token_text": "up",
+            "appearances_across_examples": 41
+          },
+          {
+            "token_text": " =",
+            "appearances_across_examples": 40
+          }
+        ],
+        "emergence_layer_top10_by_source": {
+          "consistency": {
+            "count": 9,
+            "mean": 21.11111111111111,
+            "min": 16,
+            "p25": 19,
+            "median": 21,
+            "p75": 21,
+            "max": 29
+          },
+          "edapibench": {
+            "count": 363,
+            "mean": 20.011019283746556,
+            "min": 0,
+            "p25": 18,
+            "median": 19,
+            "p75": 21,
+            "max": 29
+          },
+          "repair": {
+            "count": 4,
+            "mean": 22.75,
+            "min": 20,
+            "p25": 20,
+            "median": 22,
+            "p75": 29,
+            "max": 29
+          }
+        },
+        "emergence_layer_top10_by_library": {
+          "tensorflow": {
+            "count": 237,
+            "mean": 19.29535864978903,
+            "min": 17,
+            "p25": 18,
+            "median": 19,
+            "p75": 20,
+            "max": 24
+          },
+          "pytorch": {
+            "count": 95,
+            "mean": 21.51578947368421,
+            "min": 0,
+            "p25": 18,
+            "median": 20,
+            "p75": 26,
+            "max": 29
+          },
+          "sklearn": {
+            "count": 43,
+            "mean": 21.162790697674417,
+            "min": 0,
+            "p25": 21,
+            "median": 24,
+            "p75": 24,
+            "max": 25
+          },
+          "seaborn": {
+            "count": 1,
+            "mean": 18.0,
+            "min": 18,
+            "p25": 18,
+            "median": 18,
+            "p75": 18,
+            "max": 18
+          }
+        }
+      }
+    }
+  }
+}

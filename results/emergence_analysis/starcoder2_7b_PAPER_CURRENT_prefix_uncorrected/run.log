@@ -1,0 +1,10 @@
+[select_correct_examples] loading model: /data/models/StarCoder/starcoder2-7b
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 41.83it/s]
+[select_correct_examples] running source=repair ...
+[select_correct_examples] source=repair evaluated=18 first_token_correct=16 (88.9%) full_span_correct=4 (22.2%) elapsed=1.0s
+[select_correct_examples] running source=consistency ...
+[select_correct_examples] source=consistency evaluated=25 first_token_correct=24 (96.0%) full_span_correct=9 (36.0%) elapsed=0.6s
+[select_correct_examples] running source=edapibench ...
+[select_correct_examples] source=edapibench evaluated=2594 first_token_correct=2129 (82.1%) full_span_correct=363 (14.0%) elapsed=70.3s
+[select_correct_examples] wrote summary to /workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/selection_summary.json

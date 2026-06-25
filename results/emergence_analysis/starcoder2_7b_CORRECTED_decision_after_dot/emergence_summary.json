@@ -1,0 +1,448 @@
+{
+  "model_key": "starcoder2_7b",
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+  "max_length": 384,
+  "num_decoder_layers": 32,
+  "top_k_persisted": 10,
+  "emergence_k_values": [
+    5,
+    10
+  ],
+  "tuned_lens_path": "/workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/starcoder2_7b/tuned_lens/starcoder2_7b_official_base.pt",
+  "tuned_lens_metadata": {
+    "model_key": "starcoder2_7b",
+    "model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+    "adapter_dir": null,
+    "prompt_field": "version_prompt",
+    "train_files": [
+      "/workspace/version-control-study/05_positive_engineering/data/processed_clean/repair_sft_train.jsonl",
+      "/workspace/version-control-study/05_positive_engineering/data/processed_clean/consistency_sft_train.jsonl"
+    ],
+    "val_files": [
+      "/workspace/version-control-study/05_positive_engineering/data/processed_clean/repair_sft_val.jsonl",
+      "/workspace/version-control-study/05_positive_engineering/data/processed_clean/consistency_sft_val.jsonl"
+    ],
+    "rank": 16,
+    "epochs": 3,
+    "batch_size": 2,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "max_length": 384,
+    "seed": 42,
+    "train_examples": 403,
+    "val_examples": 58,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 1.459936095567623,
+        "val_loss": 0.6925306777501928
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.9371405000623205,
+        "val_loss": 0.9176849144799956
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.8411674700529859,
+        "val_loss": 1.0615686058741192
+      }
+    ]
+  },
+  "sources": [
+    "repair",
+    "consistency",
+    "edapibench"
+  ],
+  "max_samples": 0,
+  "run": {
+    "examples": 376,
+    "skipped_examples": 0,
+    "lens_variants": [
+      "logit_lens",
+      "tuned_lens"
+    ],
+    "trajectory_records": 752,
+    "elapsed_seconds": 93.8,
+    "output_file": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b_decision_after_dot/topk_trajectory.jsonl"
+  },
+  "emergence_summary": {
+    "by_lens": {
+      "logit_lens": {
+        "decision_token_examples": 376,
+        "emergence_layer_top5": {
+          "count": 376,
+          "mean": 20.61968085106383,
+          "min": 5,
+          "p25": 19,
+          "median": 20,
+          "p75": 23,
+          "max": 31
+        },
+        "emergence_layer_top10": {
+          "count": 376,
+          "mean": 19.16223404255319,
+          "min": 5,
+          "p25": 18,
+          "median": 20,
+          "p75": 21,
+          "max": 31
+        },
+        "saturation_layer": {
+          "count": 359,
+          "mean": 27.92757660167131,
+          "min": 14,
+          "p25": 27,
+          "median": 28,
+          "p75": 31,
+          "max": 31
+        },
+        "never_entered_top10_count": 0,
+        "never_saturated_count": 17,
+        "competitor_token_class_distribution": {
+          "identifier_fragment": 3187,
+          "other": 277,
+          "punctuation": 204,
+          "whitespace": 92
+        },
+        "top_competitor_tokens": [
+          {
+            "token_text": "constant",
+            "appearances_across_examples": 265
+          },
+          {
+            "token_text": "contrib",
+            "appearances_across_examples": 237
+          },
+          {
+            "token_text": "enia",
+            "appearances_across_examples": 135
+          },
+          {
+            "token_text": "ethere",
+            "appearances_across_examples": 106
+          },
+          {
+            "token_text": "Variable",
+            "appearances_across_examples": 105
+          },
+          {
+            "token_text": "ول",
+            "appearances_across_examples": 98
+          },
+          {
+            "token_text": "�",
+            "appearances_across_examples": 95
+          },
+          {
+            "token_text": " constant",
+            "appearances_across_examples": 93
+          },
+          {
+            "token_text": " ",
+            "appearances_across_examples": 92
+          },
+          {
+            "token_text": "nea",
+            "appearances_across_examples": 74
+          },
+          {
+            "token_text": "ling",
+            "appearances_across_examples": 57
+          },
+          {
+            "token_text": "IRL",
+            "appearances_across_examples": 54
+          },
+          {
+            "token_text": "core",
+            "appearances_across_examples": 54
+          },
+          {
+            "token_text": "requirejs",
+            "appearances_across_examples": 54
+          },
+          {
+            "token_text": "ril",
+            "appearances_across_examples": 39
+          },
+          {
+            "token_text": "<fim_middle>",
+            "appearances_across_examples": 33
+          },
+          {
+            "token_text": "usic",
+            "appearances_across_examples": 29
+          },
+          {
+            "token_text": " =",
+            "appearances_across_examples": 28
+          },
+          {
+            "token_text": "atory",
+            "appearances_across_examples": 28
+          },
+          {
+            "token_text": "JPEG",
+            "appearances_across_examples": 27
+          }
+        ],
+        "emergence_layer_top10_by_source": {
+          "consistency": {
+            "count": 9,
+            "mean": 20.11111111111111,
+            "min": 10,
+            "p25": 16,
+            "median": 21,
+            "p75": 23,
+            "max": 30
+          },
+          "edapibench": {
+            "count": 363,
+            "mean": 19.18457300275482,
+            "min": 5,
+            "p25": 18,
+            "median": 20,
+            "p75": 21,
+            "max": 31
+          },
+          "repair": {
+            "count": 4,
+            "mean": 15.0,
+            "min": 5,
+            "p25": 16,
+            "median": 18,
+            "p75": 21,
+            "max": 21
+          }
+        },
+        "emergence_layer_top10_by_library": {
+          "tensorflow": {
+            "count": 237,
+            "mean": 18.219409282700422,
+            "min": 8,
+            "p25": 17,
+            "median": 19,
+            "p75": 20,
+            "max": 30
+          },
+          "pytorch": {
+            "count": 95,
+            "mean": 20.652631578947368,
+            "min": 5,
+            "p25": 21,
+            "median": 21,
+            "p75": 23,
+            "max": 31
+          },
+          "sklearn": {
+            "count": 43,
+            "mean": 20.976744186046513,
+            "min": 8,
+            "p25": 18,
+            "median": 22,
+            "p75": 23,
+            "max": 29
+          },
+          "seaborn": {
+            "count": 1,
+            "mean": 23.0,
+            "min": 23,
+            "p25": 23,
+            "median": 23,
+            "p75": 23,
+            "max": 23
+          }
+        }
+      },
+      "tuned_lens": {
+        "decision_token_examples": 376,
+        "emergence_layer_top5": {
+          "count": 376,
+          "mean": 4.529255319148936,
+          "min": 0,
+          "p25": 0,
+          "median": 1,
+          "p75": 2,
+          "max": 30
+        },
+        "emergence_layer_top10": {
+          "count": 376,
+          "mean": 3.422872340425532,
+          "min": 0,
+          "p25": 0,
+          "median": 0,
+          "p75": 1,
+          "max": 25
+        },
+        "saturation_layer": {
+          "count": 322,
+          "mean": 24.819875776397517,
+          "min": 0,
+          "p25": 23,
+          "median": 30,
+          "p75": 31,
+          "max": 31
+        },
+        "never_entered_top10_count": 0,
+        "never_saturated_count": 54,
+        "competitor_token_class_distribution": {
+          "identifier_fragment": 1123,
+          "punctuation": 39,
+          "whitespace": 34,
+          "numeric": 2,
+          "other": 2
+        },
+        "top_competitor_tokens": [
+          {
+            "token_text": "sparse",
+            "appearances_across_examples": 84
+          },
+          {
+            "token_text": "to",
+            "appearances_across_examples": 80
+          },
+          {
+            "token_text": "categorical",
+            "appearances_across_examples": 74
+          },
+          {
+            "token_text": "cast",
+            "appearances_across_examples": 74
+          },
+          {
+            "token_text": "math",
+            "appearances_across_examples": 74
+          },
+          {
+            "token_text": "div",
+            "appearances_across_examples": 72
+          },
+          {
+            "token_text": "divide",
+            "appearances_across_examples": 71
+          },
+          {
+            "token_text": "constant",
+            "appearances_across_examples": 56
+          },
+          {
+            "token_text": "cho",
+            "appearances_across_examples": 55
+          },
+          {
+            "token_text": "solve",
+            "appearances_across_examples": 42
+          },
+          {
+            "token_text": "random",
+            "appearances_across_examples": 37
+          },
+          {
+            "token_text": "initializer",
+            "appearances_across_examples": 35
+          },
+          {
+            "token_text": "Mix",
+            "appearances_across_examples": 35
+          },
+          {
+            "token_text": " ",
+            "appearances_across_examples": 34
+          },
+          {
+            "token_text": "G",
+            "appearances_across_examples": 32
+          },
+          {
+            "token_text": "variables",
+            "appearances_across_examples": 28
+          },
+          {
+            "token_text": "mix",
+            "appearances_across_examples": 28
+          },
+          {
+            "token_text": " =",
+            "appearances_across_examples": 20
+          },
+          {
+            "token_text": "loader",
+            "appearances_across_examples": 19
+          },
+          {
+            "token_text": "multiply",
+            "appearances_across_examples": 19
+          }
+        ],
+        "emergence_layer_top10_by_source": {
+          "consistency": {
+            "count": 9,
+            "mean": 2.0,
+            "min": 0,
+            "p25": 0,
+            "median": 0,
+            "p75": 0,
+            "max": 17
+          },
+          "edapibench": {
+            "count": 363,
+            "mean": 3.446280991735537,
+            "min": 0,
+            "p25": 0,
+            "median": 0,
+            "p75": 1,
+            "max": 25
+          },
+          "repair": {
+            "count": 4,
+            "mean": 4.5,
+            "min": 0,
+            "p25": 0,
+            "median": 1,
+            "p75": 17,
+            "max": 17
+          }
+        },
+        "emergence_layer_top10_by_library": {
+          "tensorflow": {
+            "count": 237,
+            "mean": 1.4135021097046414,
+            "min": 0,
+            "p25": 0,
+            "median": 0,
+            "p75": 1,
+            "max": 22
+          },
+          "pytorch": {
+            "count": 95,
+            "mean": 0.8736842105263158,
+            "min": 0,
+            "p25": 0,
+            "median": 0,
+            "p75": 0,
+            "max": 24
+          },
+          "sklearn": {
+            "count": 43,
+            "mean": 20.209302325581394,
+            "min": 0,
+            "p25": 18,
+            "median": 24,
+            "p75": 24,
+            "max": 25
+          },
+          "seaborn": {
+            "count": 1,
+            "mean": 0.0,
+            "min": 0,
+            "p25": 0,
+            "median": 0,
+            "p75": 0,
+            "max": 0
+          }
+        }
+      }
+    }
+  }
+}

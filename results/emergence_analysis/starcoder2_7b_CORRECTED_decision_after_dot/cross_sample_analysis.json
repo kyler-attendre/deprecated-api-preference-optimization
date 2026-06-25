@@ -1,0 +1,414 @@
+{
+  "n_examples": 376,
+  "canonical_bucket_lens": "logit_lens",
+  "bucket_thresholds_emergence_layer_top10": {
+    "low": 18,
+    "high": 21
+  },
+  "bucket_counts": {
+    "shallow": 82,
+    "mid": 220,
+    "deep": 74
+  },
+  "api_in_context": {
+    "hit_count": 27,
+    "hit_rate": 0.07180851063829788,
+    "note": "API textual form (or known alias, e.g. F.x / tf.x / np.x / pd.x) already present in the prompt context -- proxy for 'copy'-type vs 'recall'-type emergence (cf. induction-head literature)."
+  },
+  "by_lens": {
+    "logit_lens": {
+      "by_library": {
+        "tensorflow": {
+          "count": 237,
+          "emergence_layer_top10": {
+            "count": 237,
+            "mean": 18.219409282700422,
+            "median": 19,
+            "min": 8,
+            "max": 30
+          },
+          "saturation_layer": {
+            "count": 236,
+            "mean": 27.046610169491526,
+            "median": 27,
+            "min": 14,
+            "max": 31
+          }
+        },
+        "pytorch": {
+          "count": 95,
+          "emergence_layer_top10": {
+            "count": 95,
+            "mean": 20.652631578947368,
+            "median": 21,
+            "min": 5,
+            "max": 31
+          },
+          "saturation_layer": {
+            "count": 92,
+            "mean": 30.043478260869566,
+            "median": 31,
+            "min": 19,
+            "max": 31
+          }
+        },
+        "sklearn": {
+          "count": 43,
+          "emergence_layer_top10": {
+            "count": 43,
+            "mean": 20.976744186046513,
+            "median": 22,
+            "min": 8,
+            "max": 29
+          },
+          "saturation_layer": {
+            "count": 30,
+            "mean": 28.266666666666666,
+            "median": 31,
+            "min": 17,
+            "max": 31
+          }
+        },
+        "seaborn": {
+          "count": 1,
+          "emergence_layer_top10": {
+            "count": 1,
+            "mean": 23.0,
+            "median": 23,
+            "min": 23,
+            "max": 23
+          },
+          "saturation_layer": {
+            "count": 1,
+            "mean": 31.0,
+            "median": 31,
+            "min": 31,
+            "max": 31
+          }
+        }
+      },
+      "by_category": {
+        "up-to-dated": {
+          "count": 372,
+          "emergence_layer_top10": {
+            "count": 372,
+            "mean": 19.206989247311828,
+            "median": 20,
+            "min": 5,
+            "max": 31
+          },
+          "saturation_layer": {
+            "count": 355,
+            "mean": 27.95774647887324,
+            "median": 29,
+            "min": 14,
+            "max": 31
+          }
+        },
+        "outdated": {
+          "count": 4,
+          "emergence_layer_top10": {
+            "count": 4,
+            "mean": 15.0,
+            "median": 18,
+            "min": 5,
+            "max": 21
+          },
+          "saturation_layer": {
+            "count": 4,
+            "mean": 25.25,
+            "median": 28,
+            "min": 19,
+            "max": 31
+          }
+        }
+      },
+      "by_task_family": {
+        "edapibench": {
+          "count": 363,
+          "emergence_layer_top10": {
+            "count": 363,
+            "mean": 19.18457300275482,
+            "median": 20,
+            "min": 5,
+            "max": 31
+          },
+          "saturation_layer": {
+            "count": 346,
+            "mean": 27.965317919075144,
+            "median": 29,
+            "min": 14,
+            "max": 31
+          }
+        },
+        "consistency": {
+          "count": 9,
+          "emergence_layer_top10": {
+            "count": 9,
+            "mean": 20.11111111111111,
+            "median": 21,
+            "min": 10,
+            "max": 30
+          },
+          "saturation_layer": {
+            "count": 9,
+            "mean": 27.666666666666668,
+            "median": 29,
+            "min": 17,
+            "max": 31
+          }
+        },
+        "repair": {
+          "count": 4,
+          "emergence_layer_top10": {
+            "count": 4,
+            "mean": 15.0,
+            "median": 18,
+            "min": 5,
+            "max": 21
+          },
+          "saturation_layer": {
+            "count": 4,
+            "mean": 25.25,
+            "median": 28,
+            "min": 19,
+            "max": 31
+          }
+        }
+      },
+      "by_api_in_context": {
+        "in_context": {
+          "count": 27,
+          "emergence_layer_top10": {
+            "count": 27,
+            "mean": 20.185185185185187,
+            "median": 21,
+            "min": 13,
+            "max": 29
+          },
+          "saturation_layer": {
+            "count": 23,
+            "mean": 26.652173913043477,
+            "median": 29,
+            "min": 16,
+            "max": 31
+          }
+        },
+        "not_in_context": {
+          "count": 349,
+          "emergence_layer_top10": {
+            "count": 349,
+            "mean": 19.083094555873924,
+            "median": 20,
+            "min": 5,
+            "max": 31
+          },
+          "saturation_layer": {
+            "count": 336,
+            "mean": 28.014880952380953,
+            "median": 28,
+            "min": 14,
+            "max": 31
+          }
+        }
+      }
+    },
+    "tuned_lens": {
+      "by_library": {
+        "tensorflow": {
+          "count": 237,
+          "emergence_layer_top10": {
+            "count": 237,
+            "mean": 1.4135021097046414,
+            "median": 0,
+            "min": 0,
+            "max": 22
+          },
+          "saturation_layer": {
+            "count": 198,
+            "mean": 25.181818181818183,
+            "median": 30,
+            "min": 9,
+            "max": 31
+          }
+        },
+        "pytorch": {
+          "count": 95,
+          "emergence_layer_top10": {
+            "count": 95,
+            "mean": 0.8736842105263158,
+            "median": 0,
+            "min": 0,
+            "max": 24
+          },
+          "saturation_layer": {
+            "count": 93,
+            "mean": 23.161290322580644,
+            "median": 31,
+            "min": 0,
+            "max": 31
+          }
+        },
+        "sklearn": {
+          "count": 43,
+          "emergence_layer_top10": {
+            "count": 43,
+            "mean": 20.209302325581394,
+            "median": 24,
+            "min": 0,
+            "max": 25
+          },
+          "saturation_layer": {
+            "count": 30,
+            "mean": 27.366666666666667,
+            "median": 30,
+            "min": 16,
+            "max": 31
+          }
+        },
+        "seaborn": {
+          "count": 1,
+          "emergence_layer_top10": {
+            "count": 1,
+            "mean": 0.0,
+            "median": 0,
+            "min": 0,
+            "max": 0
+          },
+          "saturation_layer": {
+            "count": 1,
+            "mean": 31.0,
+            "median": 31,
+            "min": 31,
+            "max": 31
+          }
+        }
+      },
+      "by_category": {
+        "up-to-dated": {
+          "count": 372,
+          "emergence_layer_top10": {
+            "count": 372,
+            "mean": 3.411290322580645,
+            "median": 0,
+            "min": 0,
+            "max": 25
+          },
+          "saturation_layer": {
+            "count": 318,
+            "mean": 24.867924528301888,
+            "median": 30,
+            "min": 0,
+            "max": 31
+          }
+        },
+        "outdated": {
+          "count": 4,
+          "emergence_layer_top10": {
+            "count": 4,
+            "mean": 4.5,
+            "median": 1,
+            "min": 0,
+            "max": 17
+          },
+          "saturation_layer": {
+            "count": 4,
+            "mean": 21.0,
+            "median": 30,
+            "min": 0,
+            "max": 31
+          }
+        }
+      },
+      "by_task_family": {
+        "edapibench": {
+          "count": 363,
+          "emergence_layer_top10": {
+            "count": 363,
+            "mean": 3.446280991735537,
+            "median": 0,
+            "min": 0,
+            "max": 25
+          },
+          "saturation_layer": {
+            "count": 311,
+            "mean": 24.942122186495176,
+            "median": 30,
+            "min": 0,
+            "max": 31
+          }
+        },
+        "consistency": {
+          "count": 9,
+          "emergence_layer_top10": {
+            "count": 9,
+            "mean": 2.0,
+            "median": 0,
+            "min": 0,
+            "max": 17
+          },
+          "saturation_layer": {
+            "count": 7,
+            "mean": 21.571428571428573,
+            "median": 25,
+            "min": 0,
+            "max": 31
+          }
+        },
+        "repair": {
+          "count": 4,
+          "emergence_layer_top10": {
+            "count": 4,
+            "mean": 4.5,
+            "median": 1,
+            "min": 0,
+            "max": 17
+          },
+          "saturation_layer": {
+            "count": 4,
+            "mean": 21.0,
+            "median": 30,
+            "min": 0,
+            "max": 31
+          }
+        }
+      },
+      "by_api_in_context": {
+        "in_context": {
+          "count": 27,
+          "emergence_layer_top10": {
+            "count": 27,
+            "mean": 9.777777777777779,
+            "median": 10,
+            "min": 0,
+            "max": 25
+          },
+          "saturation_layer": {
+            "count": 21,
+            "mean": 23.666666666666668,
+            "median": 28,
+            "min": 0,
+            "max": 31
+          }
+        },
+        "not_in_context": {
+          "count": 349,
+          "emergence_layer_top10": {
+            "count": 349,
+            "mean": 2.9312320916905446,
+            "median": 0,
+            "min": 0,
+            "max": 24
+          },
+          "saturation_layer": {
+            "count": 301,
+            "mean": 24.900332225913623,
+            "median": 30,
+            "min": 0,
+            "max": 31
+          }
+        }
+      }
+    }
+  }
+}

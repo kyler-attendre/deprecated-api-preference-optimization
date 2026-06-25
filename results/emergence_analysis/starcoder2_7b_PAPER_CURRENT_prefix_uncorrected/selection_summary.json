@@ -1,0 +1,208 @@
+{
+  "model_key": "starcoder2_7b",
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+  "prompt_field": "version_prompt",
+  "max_length": 384,
+  "max_samples_per_source": 0,
+  "sources": {
+    "repair": {
+      "source": "repair",
+      "candidate_examples": 18,
+      "evaluated_examples": 18,
+      "skipped_examples": 0,
+      "first_token_correct": 16,
+      "first_token_correct_rate": 0.8888888888888888,
+      "full_span_correct": 4,
+      "full_span_correct_rate": 0.2222222222222222,
+      "by_library": {
+        "pytorch": {
+          "evaluated": 12,
+          "first_token_correct": 11,
+          "first_token_correct_rate": 0.9166666666666666,
+          "full_span_correct": 2,
+          "full_span_correct_rate": 0.16666666666666666
+        },
+        "tensorflow": {
+          "evaluated": 6,
+          "first_token_correct": 5,
+          "first_token_correct_rate": 0.8333333333333334,
+          "full_span_correct": 2,
+          "full_span_correct_rate": 0.3333333333333333
+        }
+      },
+      "by_category": {
+        "outdated": {
+          "evaluated": 18,
+          "first_token_correct": 16,
+          "first_token_correct_rate": 0.8888888888888888,
+          "full_span_correct": 4,
+          "full_span_correct_rate": 0.2222222222222222
+        }
+      },
+      "by_task_family": {
+        "repair": {
+          "evaluated": 18,
+          "first_token_correct": 16,
+          "first_token_correct_rate": 0.8888888888888888,
+          "full_span_correct": 4,
+          "full_span_correct_rate": 0.2222222222222222
+        }
+      },
+      "elapsed_seconds": 1.0,
+      "output_files": {
+        "evaluated": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/repair_evaluated_examples.jsonl",
+        "correct": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/repair_correct_examples.jsonl",
+        "first_token_only": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/repair_first_token_only_examples.jsonl"
+      }
+    },
+    "consistency": {
+      "source": "consistency",
+      "candidate_examples": 25,
+      "evaluated_examples": 25,
+      "skipped_examples": 0,
+      "first_token_correct": 24,
+      "first_token_correct_rate": 0.96,
+      "full_span_correct": 9,
+      "full_span_correct_rate": 0.36,
+      "by_library": {
+        "pytorch": {
+          "evaluated": 18,
+          "first_token_correct": 18,
+          "first_token_correct_rate": 1.0,
+          "full_span_correct": 3,
+          "full_span_correct_rate": 0.16666666666666666
+        },
+        "sklearn": {
+          "evaluated": 1,
+          "first_token_correct": 1,
+          "first_token_correct_rate": 1.0,
+          "full_span_correct": 1,
+          "full_span_correct_rate": 1.0
+        },
+        "tensorflow": {
+          "evaluated": 6,
+          "first_token_correct": 5,
+          "first_token_correct_rate": 0.8333333333333334,
+          "full_span_correct": 5,
+          "full_span_correct_rate": 0.8333333333333334
+        }
+      },
+      "by_category": {
+        "up-to-dated": {
+          "evaluated": 25,
+          "first_token_correct": 24,
+          "first_token_correct_rate": 0.96,
+          "full_span_correct": 9,
+          "full_span_correct_rate": 0.36
+        }
+      },
+      "by_task_family": {
+        "consistency": {
+          "evaluated": 25,
+          "first_token_correct": 24,
+          "first_token_correct_rate": 0.96,
+          "full_span_correct": 9,
+          "full_span_correct_rate": 0.36
+        }
+      },
+      "elapsed_seconds": 0.6,
+      "output_files": {
+        "evaluated": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/consistency_evaluated_examples.jsonl",
+        "correct": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/consistency_correct_examples.jsonl",
+        "first_token_only": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/consistency_first_token_only_examples.jsonl"
+      }
+    },
+    "edapibench": {
+      "source": "edapibench",
+      "candidate_examples": 2597,
+      "evaluated_examples": 2594,
+      "skipped_examples": 3,
+      "first_token_correct": 2129,
+      "first_token_correct_rate": 0.8207401696222051,
+      "full_span_correct": 363,
+      "full_span_correct_rate": 0.13993831919814959,
+      "by_library": {
+        "numpy": {
+          "evaluated": 1,
+          "first_token_correct": 0,
+          "first_token_correct_rate": 0.0,
+          "full_span_correct": 0,
+          "full_span_correct_rate": 0.0
+        },
+        "pandas": {
+          "evaluated": 17,
+          "first_token_correct": 16,
+          "first_token_correct_rate": 0.9411764705882353,
+          "full_span_correct": 0,
+          "full_span_correct_rate": 0.0
+        },
+        "pytorch": {
+          "evaluated": 1897,
+          "first_token_correct": 1563,
+          "first_token_correct_rate": 0.8239325250395361,
+          "full_span_correct": 90,
+          "full_span_correct_rate": 0.047443331576172906
+        },
+        "scipy": {
+          "evaluated": 51,
+          "first_token_correct": 18,
+          "first_token_correct_rate": 0.35294117647058826,
+          "full_span_correct": 0,
+          "full_span_correct_rate": 0.0
+        },
+        "seaborn": {
+          "evaluated": 18,
+          "first_token_correct": 13,
+          "first_token_correct_rate": 0.7222222222222222,
+          "full_span_correct": 1,
+          "full_span_correct_rate": 0.05555555555555555
+        },
+        "sklearn": {
+          "evaluated": 89,
+          "first_token_correct": 48,
+          "first_token_correct_rate": 0.5393258426966292,
+          "full_span_correct": 42,
+          "full_span_correct_rate": 0.47191011235955055
+        },
+        "tensorflow": {
+          "evaluated": 516,
+          "first_token_correct": 468,
+          "first_token_correct_rate": 0.9069767441860465,
+          "full_span_correct": 230,
+          "full_span_correct_rate": 0.44573643410852715
+        },
+        "transformers": {
+          "evaluated": 5,
+          "first_token_correct": 3,
+          "first_token_correct_rate": 0.6,
+          "full_span_correct": 0,
+          "full_span_correct_rate": 0.0
+        }
+      },
+      "by_category": {
+        "up-to-dated": {
+          "evaluated": 2594,
+          "first_token_correct": 2129,
+          "first_token_correct_rate": 0.8207401696222051,
+          "full_span_correct": 363,
+          "full_span_correct_rate": 0.13993831919814959
+        }
+      },
+      "by_task_family": {
+        "edapibench": {
+          "evaluated": 2594,
+          "first_token_correct": 2129,
+          "first_token_correct_rate": 0.8207401696222051,
+          "full_span_correct": 363,
+          "full_span_correct_rate": 0.13993831919814959
+        }
+      },
+      "elapsed_seconds": 70.3,
+      "output_files": {
+        "evaluated": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/edapibench_evaluated_examples.jsonl",
+        "correct": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/edapibench_correct_examples.jsonl",
+        "first_token_only": "/workspace/version-control-study/07_correct_emergence/output/starcoder2_7b/edapibench_first_token_only_examples.jsonl"
+      }
+    }
+  }
+}
