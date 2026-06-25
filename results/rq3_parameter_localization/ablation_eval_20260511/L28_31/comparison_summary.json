@@ -1,0 +1,32 @@
+{
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/cerdpo_restricted_L28_31_20260511/starcoder2_7b",
+  "test_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_test.jsonl",
+  "prompt_field": "version_prompt",
+  "max_length": 384,
+  "max_new_tokens": 64,
+  "base": {
+    "label": "base",
+    "samples": 285,
+    "deprecated_usage_rate": 0.11228070175438597,
+    "replacement_hit_rate": 0.12631578947368421,
+    "exact_match_target_rate": 0.0,
+    "nonempty_prediction_rate": 1.0,
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/ablation_eval_20260511/L28_31/base_predictions.jsonl"
+  },
+  "lora": {
+    "label": "lora",
+    "samples": 285,
+    "deprecated_usage_rate": 0.0035087719298245615,
+    "replacement_hit_rate": 0.2912280701754386,
+    "exact_match_target_rate": 0.0,
+    "nonempty_prediction_rate": 1.0,
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/ablation_eval_20260511/L28_31/lora_predictions.jsonl"
+  },
+  "delta": {
+    "deprecated_usage_rate": -0.10877192982456141,
+    "replacement_hit_rate": 0.1649122807017544,
+    "exact_match_target_rate": 0.0,
+    "nonempty_prediction_rate": 0.0
+  }
+}
