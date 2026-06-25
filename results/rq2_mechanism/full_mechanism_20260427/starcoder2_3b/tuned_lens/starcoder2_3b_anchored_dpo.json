@@ -1,0 +1,40 @@
+{
+  "model_key": "starcoder2_3b",
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-3b",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_20260423/starcoder2_3b",
+  "prompt_field": "version_prompt",
+  "train_files": [
+    "/workspace/version-control-study/05_positive_engineering/data/processed_clean/repair_sft_train.jsonl",
+    "/workspace/version-control-study/05_positive_engineering/data/processed_clean/consistency_sft_train.jsonl"
+  ],
+  "val_files": [
+    "/workspace/version-control-study/05_positive_engineering/data/processed_clean/repair_sft_val.jsonl",
+    "/workspace/version-control-study/05_positive_engineering/data/processed_clean/consistency_sft_val.jsonl"
+  ],
+  "rank": 16,
+  "epochs": 3,
+  "batch_size": 4,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "max_length": 384,
+  "seed": 42,
+  "train_examples": 403,
+  "val_examples": 58,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.5461204875223706,
+      "val_loss": 0.8114504377047221
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6974345134331448,
+      "val_loss": 0.4345499724149704
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.44697799489344703,
+      "val_loss": 0.2613996997475624
+    }
+  ]
+}
