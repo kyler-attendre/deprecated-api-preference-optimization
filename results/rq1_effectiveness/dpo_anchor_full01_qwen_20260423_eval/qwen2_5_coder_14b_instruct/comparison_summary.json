@@ -1,0 +1,32 @@
+{
+  "model_name_or_path": "/data/models/Qwen/Qwen2.5-Coder-14B-Instruct",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_qwen_20260423/qwen2_5_coder_14b_instruct",
+  "test_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_test.jsonl",
+  "prompt_field": "version_prompt",
+  "max_length": 256,
+  "max_new_tokens": 64,
+  "base": {
+    "label": "base",
+    "samples": 285,
+    "deprecated_usage_rate": 0.05964912280701754,
+    "replacement_hit_rate": 0.2736842105263158,
+    "exact_match_target_rate": 0.0,
+    "nonempty_prediction_rate": 1.0,
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_qwen_20260423_eval/qwen2_5_coder_14b_instruct/base_predictions.jsonl"
+  },
+  "lora": {
+    "label": "lora",
+    "samples": 285,
+    "deprecated_usage_rate": 0.007017543859649123,
+    "replacement_hit_rate": 0.543859649122807,
+    "exact_match_target_rate": 0.0,
+    "nonempty_prediction_rate": 1.0,
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_qwen_20260423_eval/qwen2_5_coder_14b_instruct/lora_predictions.jsonl"
+  },
+  "delta": {
+    "deprecated_usage_rate": -0.05263157894736842,
+    "replacement_hit_rate": 0.27017543859649124,
+    "exact_match_target_rate": 0.0,
+    "nonempty_prediction_rate": 0.0
+  }
+}
