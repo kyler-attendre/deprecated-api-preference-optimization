@@ -1,0 +1,130 @@
+{
+  "model_label": "starcoder2_7b",
+  "libraries": [
+    "numpy",
+    "pandas",
+    "pytorch",
+    "scipy",
+    "seaborn",
+    "sklearn",
+    "tensorflow"
+  ],
+  "prediction_files": {
+    "base": "/workspace/version-control-study/05_positive_engineering/output/dpo_lora_mixed_sft_v1_20260422_eval/starcoder2_7b/base_predictions.jsonl",
+    "dpo": "/workspace/version-control-study/05_positive_engineering/output/dpo_lora_mixed_sft_v1_20260422_eval/starcoder2_7b/lora_predictions.jsonl",
+    "anchored_dpo": "/workspace/version-control-study/05_positive_engineering/output/dpo7b_screen_eval_20260423/full_anchor01/lora_predictions.jsonl"
+  },
+  "metrics": {
+    "base": {
+      "numpy": {
+        "samples": 38,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.02631578947368421
+      },
+      "pandas": {
+        "samples": 2,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.0
+      },
+      "pytorch": {
+        "samples": 120,
+        "deprecated_usage_rate": 0.25,
+        "replacement_hit_rate": 0.075
+      },
+      "scipy": {
+        "samples": 20,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.1
+      },
+      "seaborn": {
+        "samples": 14,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.07142857142857142
+      },
+      "sklearn": {
+        "samples": 15,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.06666666666666667
+      },
+      "tensorflow": {
+        "samples": 76,
+        "deprecated_usage_rate": 0.02631578947368421,
+        "replacement_hit_rate": 0.2894736842105263
+      }
+    },
+    "dpo": {
+      "numpy": {
+        "samples": 38,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.07894736842105263
+      },
+      "pandas": {
+        "samples": 2,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.0
+      },
+      "pytorch": {
+        "samples": 120,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.06666666666666667
+      },
+      "scipy": {
+        "samples": 20,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.15
+      },
+      "seaborn": {
+        "samples": 14,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.07142857142857142
+      },
+      "sklearn": {
+        "samples": 15,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.13333333333333333
+      },
+      "tensorflow": {
+        "samples": 76,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.09210526315789473
+      }
+    },
+    "anchored_dpo": {
+      "numpy": {
+        "samples": 38,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.23684210526315788
+      },
+      "pandas": {
+        "samples": 2,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.0
+      },
+      "pytorch": {
+        "samples": 120,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.825
+      },
+      "scipy": {
+        "samples": 20,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.4
+      },
+      "seaborn": {
+        "samples": 14,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.07142857142857142
+      },
+      "sklearn": {
+        "samples": 15,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.13333333333333333
+      },
+      "tensorflow": {
+        "samples": 76,
+        "deprecated_usage_rate": 0.0,
+        "replacement_hit_rate": 0.8157894736842105
+      }
+    }
+  }
+}

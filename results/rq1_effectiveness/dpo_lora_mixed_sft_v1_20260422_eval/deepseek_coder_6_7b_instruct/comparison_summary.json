@@ -1,0 +1,32 @@
+{
+  "model_name_or_path": "/data/models/deepseek-ai/deepseek-coder-6.7b-instruct",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo_lora_mixed_sft_v1_20260422/deepseek_coder_6_7b_instruct",
+  "test_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_test.jsonl",
+  "prompt_field": "version_prompt",
+  "max_length": 384,
+  "max_new_tokens": 64,
+  "base": {
+    "label": "base",
+    "samples": 285,
+    "deprecated_usage_rate": 0.06666666666666667,
+    "replacement_hit_rate": 0.24912280701754386,
+    "exact_match_target_rate": 0.0,
+    "nonempty_prediction_rate": 1.0,
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/dpo_lora_mixed_sft_v1_20260422_eval/deepseek_coder_6_7b_instruct/base_predictions.jsonl"
+  },
+  "lora": {
+    "label": "lora",
+    "samples": 285,
+    "deprecated_usage_rate": 0.010526315789473684,
+    "replacement_hit_rate": 0.28421052631578947,
+    "exact_match_target_rate": 0.0,
+    "nonempty_prediction_rate": 1.0,
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/dpo_lora_mixed_sft_v1_20260422_eval/deepseek_coder_6_7b_instruct/lora_predictions.jsonl"
+  },
+  "delta": {
+    "deprecated_usage_rate": -0.056140350877192984,
+    "replacement_hit_rate": 0.03508771929824561,
+    "exact_match_target_rate": 0.0,
+    "nonempty_prediction_rate": 0.0
+  }
+}
