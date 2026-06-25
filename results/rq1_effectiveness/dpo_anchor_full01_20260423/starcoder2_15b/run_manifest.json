@@ -1,0 +1,33 @@
+{
+  "method": "version_aware_dpo_lora",
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-15b",
+  "train_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_train.jsonl",
+  "val_file": "/workspace/version-control-study/05_positive_engineering/data/mixed_sft_v1/mixed_sft_val.jsonl",
+  "raw_train_rows": 2408,
+  "raw_val_rows": 304,
+  "train_dpo_pairs": 1970,
+  "val_dpo_pairs": 260,
+  "max_train_samples": 0,
+  "max_val_samples": 0,
+  "max_length": 256,
+  "learning_rate": 5e-05,
+  "num_train_epochs": 1.0,
+  "max_steps": -1,
+  "beta": 0.1,
+  "logprob_reduction": "sum",
+  "dpo_scope": "full",
+  "api_anchor_weight": 0.1,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+  ],
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "keep_dropout": false,
+  "disabled_dropout_modules": 160,
+  "gradient_checkpointing": true,
+  "reference_policy": "same base model with LoRA adapter disabled"
+}
