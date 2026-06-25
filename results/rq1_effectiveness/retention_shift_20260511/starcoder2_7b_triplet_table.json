@@ -1,0 +1,348 @@
+{
+  "candidate_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/starcoder2_7b_retention_set.jsonl",
+  "base_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/starcoder2_7b_base/base_predictions.jsonl",
+  "libraries": [
+    "numpy",
+    "pandas",
+    "pytorch",
+    "sklearn"
+  ],
+  "variants": {
+    "dpo": {
+      "prediction_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260509/starcoder2_7b_dpo/adapter_predictions.jsonl",
+      "summary": {
+        "overall": {
+          "samples": 540,
+          "base_exact_match_rate": 1.0,
+          "variant_exact_match_rate": 0.512962962962963,
+          "prediction_changed_rate": 0.48703703703703705,
+          "recovered_from_base_error_rate": 0.0,
+          "degraded_from_base_correct_rate": 0.48703703703703705
+        },
+        "by_library": {
+          "numpy": {
+            "samples": 280,
+            "base_exact_match_rate": 1.0,
+            "variant_exact_match_rate": 0.45,
+            "prediction_changed_rate": 0.55,
+            "recovered_from_base_error_rate": 0.0,
+            "degraded_from_base_correct_rate": 0.55
+          },
+          "pandas": {
+            "samples": 40,
+            "base_exact_match_rate": 1.0,
+            "variant_exact_match_rate": 0.95,
+            "prediction_changed_rate": 0.05,
+            "recovered_from_base_error_rate": 0.0,
+            "degraded_from_base_correct_rate": 0.05
+          },
+          "pytorch": {
+            "samples": 200,
+            "base_exact_match_rate": 1.0,
+            "variant_exact_match_rate": 0.55,
+            "prediction_changed_rate": 0.45,
+            "recovered_from_base_error_rate": 0.0,
+            "degraded_from_base_correct_rate": 0.45
+          },
+          "sklearn": {
+            "samples": 20,
+            "base_exact_match_rate": 1.0,
+            "variant_exact_match_rate": 0.15,
+            "prediction_changed_rate": 0.85,
+            "recovered_from_base_error_rate": 0.0,
+            "degraded_from_base_correct_rate": 0.85
+          }
+        },
+        "top_changed_predictions": [
+          {
+            "base_prediction": "cat",
+            "variant_prediction": "linalg",
+            "count": 19
+          },
+          {
+            "base_prediction": "dot",
+            "variant_prediction": "linalg",
+            "count": 18
+          },
+          {
+            "base_prediction": "abs",
+            "variant_prediction": "linalg",
+            "count": 17
+          },
+          {
+            "base_prediction": "set_config",
+            "variant_prediction": "utils",
+            "count": 16
+          },
+          {
+            "base_prediction": "randn",
+            "variant_prediction": "linalg",
+            "count": 16
+          },
+          {
+            "base_prediction": "sqrt",
+            "variant_prediction": "linalg",
+            "count": 15
+          },
+          {
+            "base_prediction": "ones",
+            "variant_prediction": "linalg",
+            "count": 13
+          },
+          {
+            "base_prediction": "sum",
+            "variant_prediction": "linalg",
+            "count": 13
+          },
+          {
+            "base_prediction": "stack",
+            "variant_prediction": "linalg",
+            "count": 13
+          },
+          {
+            "base_prediction": "unique",
+            "variant_prediction": "linalg",
+            "count": 12
+          },
+          {
+            "base_prediction": "tensor",
+            "variant_prediction": "linalg",
+            "count": 11
+          },
+          {
+            "base_prediction": "array",
+            "variant_prediction": "linalg",
+            "count": 11
+          },
+          {
+            "base_prediction": "arange",
+            "variant_prediction": "linalg",
+            "count": 10
+          },
+          {
+            "base_prediction": "RandomState",
+            "variant_prediction": "default_rng",
+            "count": 10
+          },
+          {
+            "base_prediction": "asarray",
+            "variant_prediction": "linalg",
+            "count": 10
+          },
+          {
+            "base_prediction": "device",
+            "variant_prediction": "linalg",
+            "count": 9
+          },
+          {
+            "base_prediction": "zeros",
+            "variant_prediction": "linalg",
+            "count": 8
+          },
+          {
+            "base_prediction": "empty",
+            "variant_prediction": "linalg",
+            "count": 6
+          },
+          {
+            "base_prediction": "no_grad",
+            "variant_prediction": "linalg",
+            "count": 5
+          },
+          {
+            "base_prediction": "dtype",
+            "variant_prediction": "linalg",
+            "count": 5
+          }
+        ]
+      }
+    },
+    "anchored_dpo": {
+      "prediction_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/starcoder2_7b_anchor/adapter_predictions.jsonl",
+      "summary": {
+        "overall": {
+          "samples": 540,
+          "base_exact_match_rate": 1.0,
+          "variant_exact_match_rate": 0.7222222222222222,
+          "prediction_changed_rate": 0.2777777777777778,
+          "recovered_from_base_error_rate": 0.0,
+          "degraded_from_base_correct_rate": 0.2777777777777778
+        },
+        "by_library": {
+          "numpy": {
+            "samples": 280,
+            "base_exact_match_rate": 1.0,
+            "variant_exact_match_rate": 0.6678571428571428,
+            "prediction_changed_rate": 0.33214285714285713,
+            "recovered_from_base_error_rate": 0.0,
+            "degraded_from_base_correct_rate": 0.33214285714285713
+          },
+          "pandas": {
+            "samples": 40,
+            "base_exact_match_rate": 1.0,
+            "variant_exact_match_rate": 0.975,
+            "prediction_changed_rate": 0.025,
+            "recovered_from_base_error_rate": 0.0,
+            "degraded_from_base_correct_rate": 0.025
+          },
+          "pytorch": {
+            "samples": 200,
+            "base_exact_match_rate": 1.0,
+            "variant_exact_match_rate": 0.8,
+            "prediction_changed_rate": 0.2,
+            "recovered_from_base_error_rate": 0.0,
+            "degraded_from_base_correct_rate": 0.2
+          },
+          "sklearn": {
+            "samples": 20,
+            "base_exact_match_rate": 1.0,
+            "variant_exact_match_rate": 0.2,
+            "prediction_changed_rate": 0.8,
+            "recovered_from_base_error_rate": 0.0,
+            "degraded_from_base_correct_rate": 0.8
+          }
+        },
+        "top_changed_predictions": [
+          {
+            "base_prediction": "set_config",
+            "variant_prediction": "utils",
+            "count": 14
+          },
+          {
+            "base_prediction": "cat",
+            "variant_prediction": "linalg",
+            "count": 13
+          },
+          {
+            "base_prediction": "abs",
+            "variant_prediction": "linalg",
+            "count": 12
+          },
+          {
+            "base_prediction": "RandomState",
+            "variant_prediction": "default_rng",
+            "count": 9
+          },
+          {
+            "base_prediction": "dot",
+            "variant_prediction": "linalg",
+            "count": 8
+          },
+          {
+            "base_prediction": "arange",
+            "variant_prediction": "random",
+            "count": 5
+          },
+          {
+            "base_prediction": "asarray",
+            "variant_prediction": "array",
+            "count": 5
+          },
+          {
+            "base_prediction": "array",
+            "variant_prediction": "random",
+            "count": 4
+          },
+          {
+            "base_prediction": "array",
+            "variant_prediction": "testing",
+            "count": 4
+          },
+          {
+            "base_prediction": "randn",
+            "variant_prediction": "rand",
+            "count": 4
+          },
+          {
+            "base_prediction": "zeros",
+            "variant_prediction": "zeros_like",
+            "count": 3
+          },
+          {
+            "base_prediction": "randn",
+            "variant_prediction": "linalg",
+            "count": 3
+          },
+          {
+            "base_prediction": "stack",
+            "variant_prediction": "linalg",
+            "count": 3
+          },
+          {
+            "base_prediction": "cat",
+            "variant_prediction": "sum",
+            "count": 2
+          },
+          {
+            "base_prediction": "sqrt",
+            "variant_prediction": "log",
+            "count": 2
+          },
+          {
+            "base_prediction": "sqrt",
+            "variant_prediction": "testing",
+            "count": 2
+          },
+          {
+            "base_prediction": "ones",
+            "variant_prediction": "linalg",
+            "count": 2
+          },
+          {
+            "base_prediction": "ones",
+            "variant_prediction": "prod",
+            "count": 2
+          },
+          {
+            "base_prediction": "device",
+            "variant_prediction": "cuda",
+            "count": 2
+          },
+          {
+            "base_prediction": "dot",
+            "variant_prediction": "all",
+            "count": 2
+          }
+        ]
+      }
+    }
+  },
+  "triplet_library_table": [
+    {
+      "library": "numpy",
+      "samples": 280,
+      "base_exact_match_rate": 1.0,
+      "dpo_exact_match_rate": 0.45,
+      "dpo_prediction_changed_rate": 0.55,
+      "anchored_dpo_exact_match_rate": 0.6678571428571428,
+      "anchored_dpo_prediction_changed_rate": 0.33214285714285713
+    },
+    {
+      "library": "pandas",
+      "samples": 40,
+      "base_exact_match_rate": 1.0,
+      "dpo_exact_match_rate": 0.95,
+      "dpo_prediction_changed_rate": 0.05,
+      "anchored_dpo_exact_match_rate": 0.975,
+      "anchored_dpo_prediction_changed_rate": 0.025
+    },
+    {
+      "library": "pytorch",
+      "samples": 200,
+      "base_exact_match_rate": 1.0,
+      "dpo_exact_match_rate": 0.55,
+      "dpo_prediction_changed_rate": 0.45,
+      "anchored_dpo_exact_match_rate": 0.8,
+      "anchored_dpo_prediction_changed_rate": 0.2
+    },
+    {
+      "library": "sklearn",
+      "samples": 20,
+      "base_exact_match_rate": 1.0,
+      "dpo_exact_match_rate": 0.15,
+      "dpo_prediction_changed_rate": 0.85,
+      "anchored_dpo_exact_match_rate": 0.2,
+      "anchored_dpo_prediction_changed_rate": 0.8
+    }
+  ]
+}

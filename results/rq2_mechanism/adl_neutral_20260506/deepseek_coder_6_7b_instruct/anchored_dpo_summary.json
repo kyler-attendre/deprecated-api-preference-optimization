@@ -1,0 +1,790 @@
+{
+  "random_neutral_text": {
+    "count": 12,
+    "layer_summary": [
+      {
+        "layer": 0,
+        "mean_diff_norm": 1.6451533151169617
+      },
+      {
+        "layer": 1,
+        "mean_diff_norm": 2.2088814874490104
+      },
+      {
+        "layer": 2,
+        "mean_diff_norm": 4.984351277351379
+      },
+      {
+        "layer": 3,
+        "mean_diff_norm": 5.246351182460785
+      },
+      {
+        "layer": 4,
+        "mean_diff_norm": 5.3484490513801575
+      },
+      {
+        "layer": 5,
+        "mean_diff_norm": 5.418577353159587
+      },
+      {
+        "layer": 6,
+        "mean_diff_norm": 5.463628272215526
+      },
+      {
+        "layer": 7,
+        "mean_diff_norm": 5.505283415317535
+      },
+      {
+        "layer": 8,
+        "mean_diff_norm": 5.56337829430898
+      },
+      {
+        "layer": 9,
+        "mean_diff_norm": 5.650873998800914
+      },
+      {
+        "layer": 10,
+        "mean_diff_norm": 5.749650359153748
+      },
+      {
+        "layer": 11,
+        "mean_diff_norm": 6.069524943828583
+      },
+      {
+        "layer": 12,
+        "mean_diff_norm": 9.25203537940979
+      },
+      {
+        "layer": 13,
+        "mean_diff_norm": 9.357478737831116
+      },
+      {
+        "layer": 14,
+        "mean_diff_norm": 9.50262608130773
+      },
+      {
+        "layer": 15,
+        "mean_diff_norm": 9.823734323183695
+      },
+      {
+        "layer": 16,
+        "mean_diff_norm": 10.242320895195007
+      },
+      {
+        "layer": 17,
+        "mean_diff_norm": 10.490400830904642
+      },
+      {
+        "layer": 18,
+        "mean_diff_norm": 10.979418595631918
+      },
+      {
+        "layer": 19,
+        "mean_diff_norm": 11.529768029848734
+      },
+      {
+        "layer": 20,
+        "mean_diff_norm": 12.063474456469217
+      },
+      {
+        "layer": 21,
+        "mean_diff_norm": 12.591050187746683
+      },
+      {
+        "layer": 22,
+        "mean_diff_norm": 13.227211157480875
+      },
+      {
+        "layer": 23,
+        "mean_diff_norm": 14.681545734405518
+      },
+      {
+        "layer": 24,
+        "mean_diff_norm": 15.407805522282919
+      },
+      {
+        "layer": 25,
+        "mean_diff_norm": 16.704196135203045
+      },
+      {
+        "layer": 26,
+        "mean_diff_norm": 18.296579599380493
+      },
+      {
+        "layer": 27,
+        "mean_diff_norm": 19.583674987157185
+      },
+      {
+        "layer": 28,
+        "mean_diff_norm": 21.324171861012776
+      },
+      {
+        "layer": 29,
+        "mean_diff_norm": 33.02110973993937
+      },
+      {
+        "layer": 30,
+        "mean_diff_norm": 42.35661919911703
+      },
+      {
+        "layer": 31,
+        "mean_diff_norm": 0.9103826036055883
+      }
+    ],
+    "final_layer_mean_diff_norm": 0.9103826036055883,
+    "mean_family_scores": {
+      "replacement": 0.03310460224747658,
+      "deprecated": -0.30179913171256584,
+      "library_version": -1.4400955090920131
+    },
+    "replacement_minus_deprecated_score": 0.3349037339600424,
+    "top_amplified_tokens": [
+      {
+        "token_id": 32013,
+        "token_text": "<｜begin▁of▁sentence｜>",
+        "logit_diff": 32.04426956176758
+      },
+      {
+        "token_id": 11529,
+        "token_text": "Morts",
+        "logit_diff": 11.953125
+      },
+      {
+        "token_id": 25135,
+        "token_text": "colFirst",
+        "logit_diff": 11.526041984558105
+      },
+      {
+        "token_id": 15695,
+        "token_text": "Persones",
+        "logit_diff": 10.765625
+      },
+      {
+        "token_id": 21300,
+        "token_text": "scriptors",
+        "logit_diff": 10.2890625
+      },
+      {
+        "token_id": 26445,
+        "token_text": "EEEEFF",
+        "logit_diff": 10.177083015441895
+      },
+      {
+        "token_id": 30346,
+        "token_text": "Habitants",
+        "logit_diff": 10.033854484558105
+      },
+      {
+        "token_id": 9207,
+        "token_text": "persones",
+        "logit_diff": 9.955729484558105
+      },
+      {
+        "token_id": 14739,
+        "token_text": "亿亿",
+        "logit_diff": 9.861979484558105
+      },
+      {
+        "token_id": 15551,
+        "token_text": "Alumnes",
+        "logit_diff": 9.8359375
+      },
+      {
+        "token_id": 7943,
+        "token_text": "rael",
+        "logit_diff": 9.78125
+      },
+      {
+        "token_id": 10981,
+        "token_text": "brer",
+        "logit_diff": 9.6875
+      },
+      {
+        "token_id": 24255,
+        "token_text": "artheta",
+        "logit_diff": 9.671875
+      },
+      {
+        "token_id": 24799,
+        "token_text": "colLast",
+        "logit_diff": 9.651041984558105
+      },
+      {
+        "token_id": 10070,
+        "token_text": "fraid",
+        "logit_diff": 9.630208015441895
+      },
+      {
+        "token_id": 26647,
+        "token_text": "Premis",
+        "logit_diff": 9.5
+      },
+      {
+        "token_id": 31400,
+        "token_text": "赁",
+        "logit_diff": 9.4609375
+      },
+      {
+        "token_id": 22540,
+        "token_text": "teriors",
+        "logit_diff": 9.40625
+      },
+      {
+        "token_id": 21494,
+        "token_text": "рт",
+        "logit_diff": 9.3984375
+      },
+      {
+        "token_id": 20942,
+        "token_text": "riel",
+        "logit_diff": 9.390625
+      },
+      {
+        "token_id": 30826,
+        "token_text": "StyleID",
+        "logit_diff": 9.3359375
+      },
+      {
+        "token_id": 24290,
+        "token_text": "allclasses",
+        "logit_diff": 9.3046875
+      },
+      {
+        "token_id": 20585,
+        "token_text": "edifici",
+        "logit_diff": 9.270833015441895
+      },
+      {
+        "token_id": 30774,
+        "token_text": "xffffff",
+        "logit_diff": 9.244791984558105
+      },
+      {
+        "token_id": 28472,
+        "token_text": "boldmath",
+        "logit_diff": 9.2421875
+      }
+    ],
+    "top_suppressed_tokens": [
+      {
+        "token_id": 185,
+        "token_text": "\n",
+        "logit_diff": -9.328125
+      },
+      {
+        "token_id": 16,
+        "token_text": "1",
+        "logit_diff": -7.7421875
+      },
+      {
+        "token_id": 207,
+        "token_text": " ",
+        "logit_diff": -7.453125
+      },
+      {
+        "token_id": 17,
+        "token_text": "2",
+        "logit_diff": -7.364583492279053
+      },
+      {
+        "token_id": 27,
+        "token_text": "<",
+        "logit_diff": -7.0625
+      },
+      {
+        "token_id": 9,
+        "token_text": "*",
+        "logit_diff": -6.888020992279053
+      },
+      {
+        "token_id": 251,
+        "token_text": "    ",
+        "logit_diff": -6.848958492279053
+      },
+      {
+        "token_id": 1559,
+        "token_text": "This",
+        "logit_diff": -6.5859375
+      },
+      {
+        "token_id": 315,
+        "token_text": "   ",
+        "logit_diff": -6.552083492279053
+      },
+      {
+        "token_id": 31095,
+        "token_text": "\t\t\t\t\t\t\t\t\t\t<",
+        "logit_diff": -6.522135257720947
+      },
+      {
+        "token_id": 18,
+        "token_text": "3",
+        "logit_diff": -6.505208492279053
+      },
+      {
+        "token_id": 374,
+        "token_text": "--",
+        "logit_diff": -6.466145992279053
+      },
+      {
+        "token_id": 19,
+        "token_text": "4",
+        "logit_diff": -6.346354007720947
+      },
+      {
+        "token_id": 40,
+        "token_text": "I",
+        "logit_diff": -6.338541507720947
+      },
+      {
+        "token_id": 546,
+        "token_text": "The",
+        "logit_diff": -6.322916507720947
+      },
+      {
+        "token_id": 1978,
+        "token_text": "For",
+        "logit_diff": -6.244791507720947
+      },
+      {
+        "token_id": 769,
+        "token_text": "In",
+        "logit_diff": -6.231770992279053
+      },
+      {
+        "token_id": 12,
+        "token_text": "-",
+        "logit_diff": -6.229166507720947
+      },
+      {
+        "token_id": 243,
+        "token_text": "  ",
+        "logit_diff": -6.190104007720947
+      },
+      {
+        "token_id": 2,
+        "token_text": "#",
+        "logit_diff": -6.145833492279053
+      },
+      {
+        "token_id": 32,
+        "token_text": "A",
+        "logit_diff": -6.080729007720947
+      },
+      {
+        "token_id": 184,
+        "token_text": "\t",
+        "logit_diff": -6.033854007720947
+      },
+      {
+        "token_id": 553,
+        "token_text": "//",
+        "logit_diff": -5.984375
+      },
+      {
+        "token_id": 20,
+        "token_text": "5",
+        "logit_diff": -5.901041507720947
+      },
+      {
+        "token_id": 2628,
+        "token_text": "What",
+        "logit_diff": -5.880208492279053
+      }
+    ]
+  },
+  "library_neutral_code": {
+    "count": 24,
+    "layer_summary": [
+      {
+        "layer": 0,
+        "mean_diff_norm": 0.1398089900612831
+      },
+      {
+        "layer": 1,
+        "mean_diff_norm": 0.28376264745990437
+      },
+      {
+        "layer": 2,
+        "mean_diff_norm": 0.4682437740266323
+      },
+      {
+        "layer": 3,
+        "mean_diff_norm": 0.6372694671154022
+      },
+      {
+        "layer": 4,
+        "mean_diff_norm": 0.8884894301493963
+      },
+      {
+        "layer": 5,
+        "mean_diff_norm": 1.1861816172798474
+      },
+      {
+        "layer": 6,
+        "mean_diff_norm": 1.5355545083681743
+      },
+      {
+        "layer": 7,
+        "mean_diff_norm": 1.9515937715768814
+      },
+      {
+        "layer": 8,
+        "mean_diff_norm": 2.4289539754390717
+      },
+      {
+        "layer": 9,
+        "mean_diff_norm": 3.053675283988317
+      },
+      {
+        "layer": 10,
+        "mean_diff_norm": 3.8827074666817984
+      },
+      {
+        "layer": 11,
+        "mean_diff_norm": 5.442741473515828
+      },
+      {
+        "layer": 12,
+        "mean_diff_norm": 7.049443920453389
+      },
+      {
+        "layer": 13,
+        "mean_diff_norm": 8.983033736546835
+      },
+      {
+        "layer": 14,
+        "mean_diff_norm": 11.54055631160736
+      },
+      {
+        "layer": 15,
+        "mean_diff_norm": 14.367815454800924
+      },
+      {
+        "layer": 16,
+        "mean_diff_norm": 19.513517300287884
+      },
+      {
+        "layer": 17,
+        "mean_diff_norm": 24.498461922009785
+      },
+      {
+        "layer": 18,
+        "mean_diff_norm": 30.372213284174602
+      },
+      {
+        "layer": 19,
+        "mean_diff_norm": 37.31418124834696
+      },
+      {
+        "layer": 20,
+        "mean_diff_norm": 41.186190684636436
+      },
+      {
+        "layer": 21,
+        "mean_diff_norm": 47.47991410891215
+      },
+      {
+        "layer": 22,
+        "mean_diff_norm": 53.916339000066124
+      },
+      {
+        "layer": 23,
+        "mean_diff_norm": 64.1317588488261
+      },
+      {
+        "layer": 24,
+        "mean_diff_norm": 72.64535395304362
+      },
+      {
+        "layer": 25,
+        "mean_diff_norm": 81.85196050008138
+      },
+      {
+        "layer": 26,
+        "mean_diff_norm": 94.81890821456909
+      },
+      {
+        "layer": 27,
+        "mean_diff_norm": 105.90222072601318
+      },
+      {
+        "layer": 28,
+        "mean_diff_norm": 119.40347703297932
+      },
+      {
+        "layer": 29,
+        "mean_diff_norm": 146.3469149271647
+      },
+      {
+        "layer": 30,
+        "mean_diff_norm": 191.95142364501953
+      },
+      {
+        "layer": 31,
+        "mean_diff_norm": 7.722318053245544
+      }
+    ],
+    "final_layer_mean_diff_norm": 7.722318053245544,
+    "mean_family_scores": {
+      "replacement": -7.689120332400004,
+      "deprecated": -7.753632595141728,
+      "library_version": -6.132448345422745
+    },
+    "replacement_minus_deprecated_score": 0.06451226274172406,
+    "top_amplified_tokens": [
+      {
+        "token_id": 337,
+        "token_text": "的",
+        "logit_diff": 1.1949869394302368
+      },
+      {
+        "token_id": 881,
+        "token_text": "和",
+        "logit_diff": 1.0029296875
+      },
+      {
+        "token_id": 1071,
+        "token_text": "对",
+        "logit_diff": 0.942138671875
+      },
+      {
+        "token_id": 2343,
+        "token_text": "特",
+        "logit_diff": 0.8557942509651184
+      },
+      {
+        "token_id": 1610,
+        "token_text": "与",
+        "logit_diff": 0.8319498896598816
+      },
+      {
+        "token_id": 503,
+        "token_text": "一",
+        "logit_diff": 0.79241943359375
+      },
+      {
+        "token_id": 1386,
+        "token_text": "开",
+        "logit_diff": 0.71405029296875
+      },
+      {
+        "token_id": 608,
+        "token_text": "在",
+        "logit_diff": 0.5906575322151184
+      },
+      {
+        "token_id": 1101,
+        "token_text": "后",
+        "logit_diff": 0.583984375
+      },
+      {
+        "token_id": 3598,
+        "token_text": "转",
+        "logit_diff": 0.5752766728401184
+      },
+      {
+        "token_id": 570,
+        "token_text": "不",
+        "logit_diff": 0.49609375
+      },
+      {
+        "token_id": 1081,
+        "token_text": "用",
+        "logit_diff": 0.4737955629825592
+      },
+      {
+        "token_id": 888,
+        "token_text": "要",
+        "logit_diff": 0.3474934995174408
+      },
+      {
+        "token_id": 1125,
+        "token_text": "行",
+        "logit_diff": 0.3431803286075592
+      },
+      {
+        "token_id": 502,
+        "token_text": "是",
+        "logit_diff": 0.3062337338924408
+      },
+      {
+        "token_id": 772,
+        "token_text": "为",
+        "logit_diff": 0.2989908754825592
+      },
+      {
+        "token_id": 3324,
+        "token_text": "指",
+        "logit_diff": 0.2667439877986908
+      },
+      {
+        "token_id": 1841,
+        "token_text": "将",
+        "logit_diff": 0.2547607421875
+      },
+      {
+        "token_id": 1604,
+        "token_text": "一个",
+        "logit_diff": 0.2510172426700592
+      },
+      {
+        "token_id": 1529,
+        "token_text": "等",
+        "logit_diff": 0.1847127228975296
+      },
+      {
+        "token_id": 1025,
+        "token_text": "出",
+        "logit_diff": 0.1754557341337204
+      },
+      {
+        "token_id": 1919,
+        "token_text": "文",
+        "logit_diff": 0.1678466796875
+      },
+      {
+        "token_id": 847,
+        "token_text": "以",
+        "logit_diff": 0.0856526717543602
+      },
+      {
+        "token_id": 605,
+        "token_text": "有",
+        "logit_diff": 0.0716552734375
+      },
+      {
+        "token_id": 1000,
+        "token_text": "可",
+        "logit_diff": 0.013509114272892475
+      }
+    ],
+    "top_suppressed_tokens": [
+      {
+        "token_id": 17864,
+        "token_text": "compat",
+        "logit_diff": -14.13330078125
+      },
+      {
+        "token_id": 26872,
+        "token_text": "\t&&",
+        "logit_diff": -13.707926750183105
+      },
+      {
+        "token_id": 30436,
+        "token_text": "__)",
+        "logit_diff": -13.655720710754395
+      },
+      {
+        "token_id": 31322,
+        "token_text": "\t&\\",
+        "logit_diff": -13.242512702941895
+      },
+      {
+        "token_id": 19258,
+        "token_text": "\t});",
+        "logit_diff": -13.231120109558105
+      },
+      {
+        "token_id": 6368,
+        "token_text": "%,",
+        "logit_diff": -13.214436531066895
+      },
+      {
+        "token_id": 29381,
+        "token_text": "\tfunction",
+        "logit_diff": -13.190673828125
+      },
+      {
+        "token_id": 23278,
+        "token_text": "complex",
+        "logit_diff": -13.098795890808105
+      },
+      {
+        "token_id": 27847,
+        "token_text": "                                            <",
+        "logit_diff": -13.05322265625
+      },
+      {
+        "token_id": 18052,
+        "token_text": "\telse",
+        "logit_diff": -12.967448234558105
+      },
+      {
+        "token_id": 32013,
+        "token_text": "<｜begin▁of▁sentence｜>",
+        "logit_diff": -12.957194328308105
+      },
+      {
+        "token_id": 22068,
+        "token_text": "\t*",
+        "logit_diff": -12.950358390808105
+      },
+      {
+        "token_id": 14601,
+        "token_text": "%)",
+        "logit_diff": -12.945149421691895
+      },
+      {
+        "token_id": 11511,
+        "token_text": "CHAPTER",
+        "logit_diff": -12.923583984375
+      },
+      {
+        "token_id": 26736,
+        "token_text": "          |",
+        "logit_diff": -12.920654296875
+      },
+      {
+        "token_id": 29693,
+        "token_text": "continued",
+        "logit_diff": -12.91650390625
+      },
+      {
+        "token_id": 19927,
+        "token_text": "Compat",
+        "logit_diff": -12.7535400390625
+      },
+      {
+        "token_id": 201,
+        "token_text": "\u001a",
+        "logit_diff": -12.734944343566895
+      },
+      {
+        "token_id": 12339,
+        "token_text": "subfigure",
+        "logit_diff": -12.729655265808105
+      },
+      {
+        "token_id": 14800,
+        "token_text": "\t///",
+        "logit_diff": -12.695149421691895
+      },
+      {
+        "token_id": 31923,
+        "token_text": "producto",
+        "logit_diff": -12.687541007995605
+      },
+      {
+        "token_id": 23582,
+        "token_text": "\t[",
+        "logit_diff": -12.681620597839355
+      },
+      {
+        "token_id": 15038,
+        "token_text": "\t'",
+        "logit_diff": -12.679524421691895
+      },
+      {
+        "token_id": 187,
+        "token_text": "\f",
+        "logit_diff": -12.671875
+      },
+      {
+        "token_id": 21925,
+        "token_text": "\t};",
+        "logit_diff": -12.666829109191895
+      }
+    ]
+  }
+}

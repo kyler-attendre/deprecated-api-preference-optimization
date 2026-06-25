@@ -1,0 +1,790 @@
+{
+  "random_neutral_text": {
+    "count": 12,
+    "layer_summary": [
+      {
+        "layer": 0,
+        "mean_diff_norm": 0.14279361255466938
+      },
+      {
+        "layer": 1,
+        "mean_diff_norm": 0.41043469806512195
+      },
+      {
+        "layer": 2,
+        "mean_diff_norm": 0.6165494720141093
+      },
+      {
+        "layer": 3,
+        "mean_diff_norm": 0.8085808505614599
+      },
+      {
+        "layer": 4,
+        "mean_diff_norm": 1.048112432161967
+      },
+      {
+        "layer": 5,
+        "mean_diff_norm": 1.3309076130390167
+      },
+      {
+        "layer": 6,
+        "mean_diff_norm": 1.628795822461446
+      },
+      {
+        "layer": 7,
+        "mean_diff_norm": 2.295603175957998
+      },
+      {
+        "layer": 8,
+        "mean_diff_norm": 2.5751763184865317
+      },
+      {
+        "layer": 9,
+        "mean_diff_norm": 2.6137399872144065
+      },
+      {
+        "layer": 10,
+        "mean_diff_norm": 2.8760390082995095
+      },
+      {
+        "layer": 11,
+        "mean_diff_norm": 2.7792998552322388
+      },
+      {
+        "layer": 12,
+        "mean_diff_norm": 2.8963011304537454
+      },
+      {
+        "layer": 13,
+        "mean_diff_norm": 2.9931110739707947
+      },
+      {
+        "layer": 14,
+        "mean_diff_norm": 2.97187868754069
+      },
+      {
+        "layer": 15,
+        "mean_diff_norm": 2.946874717871348
+      },
+      {
+        "layer": 16,
+        "mean_diff_norm": 2.8600579500198364
+      },
+      {
+        "layer": 17,
+        "mean_diff_norm": 2.9623025258382163
+      },
+      {
+        "layer": 18,
+        "mean_diff_norm": 3.0470027128855386
+      },
+      {
+        "layer": 19,
+        "mean_diff_norm": 3.1815568010012307
+      },
+      {
+        "layer": 20,
+        "mean_diff_norm": 3.301850736141205
+      },
+      {
+        "layer": 21,
+        "mean_diff_norm": 3.6132603089014688
+      },
+      {
+        "layer": 22,
+        "mean_diff_norm": 3.6785402496655784
+      },
+      {
+        "layer": 23,
+        "mean_diff_norm": 3.919598480065664
+      },
+      {
+        "layer": 24,
+        "mean_diff_norm": 4.008005976676941
+      },
+      {
+        "layer": 25,
+        "mean_diff_norm": 3.984828472137451
+      },
+      {
+        "layer": 26,
+        "mean_diff_norm": 4.323439836502075
+      },
+      {
+        "layer": 27,
+        "mean_diff_norm": 4.536133448282878
+      },
+      {
+        "layer": 28,
+        "mean_diff_norm": 5.451085050900777
+      },
+      {
+        "layer": 29,
+        "mean_diff_norm": 6.455129782358806
+      },
+      {
+        "layer": 30,
+        "mean_diff_norm": 9.015617569287619
+      },
+      {
+        "layer": 31,
+        "mean_diff_norm": 27.188521067301433
+      }
+    ],
+    "final_layer_mean_diff_norm": 27.188521067301433,
+    "mean_family_scores": {
+      "replacement": 0.24823895655572414,
+      "deprecated": 0.09725460316985846,
+      "library_version": 0.7468738978107771
+    },
+    "replacement_minus_deprecated_score": 0.1509843533858657,
+    "top_amplified_tokens": [
+      {
+        "token_id": 21254,
+        "token_text": "linalg",
+        "logit_diff": 4.126871585845947
+      },
+      {
+        "token_id": 20979,
+        "token_text": "{{--",
+        "logit_diff": 3.19140625
+      },
+      {
+        "token_id": 37779,
+        "token_text": " deser",
+        "logit_diff": 3.109375
+      },
+      {
+        "token_id": 19057,
+        "token_text": " ens",
+        "logit_diff": 2.8932292461395264
+      },
+      {
+        "token_id": 28433,
+        "token_text": " beh",
+        "logit_diff": 2.8541667461395264
+      },
+      {
+        "token_id": 47956,
+        "token_text": " adm",
+        "logit_diff": 2.8515625
+      },
+      {
+        "token_id": 48462,
+        "token_text": " bol",
+        "logit_diff": 2.77734375
+      },
+      {
+        "token_id": 4248,
+        "token_text": " close",
+        "logit_diff": 2.767578125
+      },
+      {
+        "token_id": 38899,
+        "token_text": " freezed",
+        "logit_diff": 2.7526042461395264
+      },
+      {
+        "token_id": 21166,
+        "token_text": " accompany",
+        "logit_diff": 2.7408854961395264
+      },
+      {
+        "token_id": 32228,
+        "token_text": " evey",
+        "logit_diff": 2.7239582538604736
+      },
+      {
+        "token_id": 47517,
+        "token_text": " stan",
+        "logit_diff": 2.6770832538604736
+      },
+      {
+        "token_id": 45165,
+        "token_text": " stabil",
+        "logit_diff": 2.6770832538604736
+      },
+      {
+        "token_id": 37276,
+        "token_text": " surf",
+        "logit_diff": 2.6549479961395264
+      },
+      {
+        "token_id": 33630,
+        "token_text": "HeadingColor",
+        "logit_diff": 2.6380207538604736
+      },
+      {
+        "token_id": 10616,
+        "token_text": " jupy",
+        "logit_diff": 2.6302082538604736
+      },
+      {
+        "token_id": 26433,
+        "token_text": " rotateY",
+        "logit_diff": 2.6276042461395264
+      },
+      {
+        "token_id": 26134,
+        "token_text": " rotateX",
+        "logit_diff": 2.5885417461395264
+      },
+      {
+        "token_id": 38425,
+        "token_text": "PERIM",
+        "logit_diff": 2.5546875
+      },
+      {
+        "token_id": 28034,
+        "token_text": " sov",
+        "logit_diff": 2.5442707538604736
+      },
+      {
+        "token_id": 44121,
+        "token_text": " ame",
+        "logit_diff": 2.5390625
+      },
+      {
+        "token_id": 39367,
+        "token_text": "┊",
+        "logit_diff": 2.5364582538604736
+      },
+      {
+        "token_id": 9361,
+        "token_text": "EVL",
+        "logit_diff": 2.53125
+      },
+      {
+        "token_id": 32075,
+        "token_text": " prost",
+        "logit_diff": 2.5234375
+      },
+      {
+        "token_id": 12838,
+        "token_text": "cosX",
+        "logit_diff": 2.5182292461395264
+      }
+    ],
+    "top_suppressed_tokens": [
+      {
+        "token_id": 1527,
+        "token_text": "true",
+        "logit_diff": -2.818359375
+      },
+      {
+        "token_id": 8540,
+        "token_text": "compat",
+        "logit_diff": -2.4947917461395264
+      },
+      {
+        "token_id": 2463,
+        "token_text": "product",
+        "logit_diff": -2.1162109375
+      },
+      {
+        "token_id": 6382,
+        "token_text": "TRUE",
+        "logit_diff": -2.1121418476104736
+      },
+      {
+        "token_id": 1886,
+        "token_text": "false",
+        "logit_diff": -2.1064453125
+      },
+      {
+        "token_id": 1844,
+        "token_text": "True",
+        "logit_diff": -1.8573812246322632
+      },
+      {
+        "token_id": 29119,
+        "token_text": "compatibility",
+        "logit_diff": -1.8020833730697632
+      },
+      {
+        "token_id": 12269,
+        "token_text": "Complex",
+        "logit_diff": -1.5887451171875
+      },
+      {
+        "token_id": 3420,
+        "token_text": "Product",
+        "logit_diff": -1.5445963144302368
+      },
+      {
+        "token_id": 4718,
+        "token_text": "Boolean",
+        "logit_diff": -1.5091959238052368
+      },
+      {
+        "token_id": 878,
+        "token_text": " true",
+        "logit_diff": -1.4361978769302368
+      },
+      {
+        "token_id": 7358,
+        "token_text": "FALSE",
+        "logit_diff": -1.4118551015853882
+      },
+      {
+        "token_id": 14600,
+        "token_text": "compatible",
+        "logit_diff": -1.3606771230697632
+      },
+      {
+        "token_id": 2737,
+        "token_text": "False",
+        "logit_diff": -1.3006998300552368
+      },
+      {
+        "token_id": 21475,
+        "token_text": "Modes",
+        "logit_diff": -1.2630208730697632
+      },
+      {
+        "token_id": 24360,
+        "token_text": "modes",
+        "logit_diff": -1.2447916269302368
+      },
+      {
+        "token_id": 436,
+        "token_text": "up",
+        "logit_diff": -1.222412109375
+      },
+      {
+        "token_id": 1710,
+        "token_text": "null",
+        "logit_diff": -1.2172445058822632
+      },
+      {
+        "token_id": 14495,
+        "token_text": "misc",
+        "logit_diff": -1.2024739980697632
+      },
+      {
+        "token_id": 19355,
+        "token_text": "%);",
+        "logit_diff": -1.109375
+      },
+      {
+        "token_id": 11493,
+        "token_text": "complex",
+        "logit_diff": -1.1009521484375
+      },
+      {
+        "token_id": 36253,
+        "token_text": "testcase",
+        "logit_diff": -1.0859375
+      },
+      {
+        "token_id": 7038,
+        "token_text": "binary",
+        "logit_diff": -1.078857421875
+      },
+      {
+        "token_id": 2403,
+        "token_text": "instance",
+        "logit_diff": -1.0697225332260132
+      },
+      {
+        "token_id": 597,
+        "token_text": "this",
+        "logit_diff": -1.05859375
+      }
+    ]
+  },
+  "library_neutral_code": {
+    "count": 24,
+    "layer_summary": [
+      {
+        "layer": 0,
+        "mean_diff_norm": 0.15461759641766548
+      },
+      {
+        "layer": 1,
+        "mean_diff_norm": 0.5035060221950213
+      },
+      {
+        "layer": 2,
+        "mean_diff_norm": 0.8728694419066111
+      },
+      {
+        "layer": 3,
+        "mean_diff_norm": 1.4220888912677765
+      },
+      {
+        "layer": 4,
+        "mean_diff_norm": 2.1990605890750885
+      },
+      {
+        "layer": 5,
+        "mean_diff_norm": 3.207716335852941
+      },
+      {
+        "layer": 6,
+        "mean_diff_norm": 4.294374893109004
+      },
+      {
+        "layer": 7,
+        "mean_diff_norm": 5.421951621770859
+      },
+      {
+        "layer": 8,
+        "mean_diff_norm": 6.21076903740565
+      },
+      {
+        "layer": 9,
+        "mean_diff_norm": 6.992079973220825
+      },
+      {
+        "layer": 10,
+        "mean_diff_norm": 8.181767245133718
+      },
+      {
+        "layer": 11,
+        "mean_diff_norm": 9.298722366491953
+      },
+      {
+        "layer": 12,
+        "mean_diff_norm": 10.334106167157492
+      },
+      {
+        "layer": 13,
+        "mean_diff_norm": 10.929370721181234
+      },
+      {
+        "layer": 14,
+        "mean_diff_norm": 12.176715970039368
+      },
+      {
+        "layer": 15,
+        "mean_diff_norm": 13.62066654364268
+      },
+      {
+        "layer": 16,
+        "mean_diff_norm": 15.308960914611816
+      },
+      {
+        "layer": 17,
+        "mean_diff_norm": 17.79059632619222
+      },
+      {
+        "layer": 18,
+        "mean_diff_norm": 19.48033583164215
+      },
+      {
+        "layer": 19,
+        "mean_diff_norm": 21.467443982760113
+      },
+      {
+        "layer": 20,
+        "mean_diff_norm": 24.48648162682851
+      },
+      {
+        "layer": 21,
+        "mean_diff_norm": 27.936266938845318
+      },
+      {
+        "layer": 22,
+        "mean_diff_norm": 31.54493506749471
+      },
+      {
+        "layer": 23,
+        "mean_diff_norm": 33.842973709106445
+      },
+      {
+        "layer": 24,
+        "mean_diff_norm": 37.05579058329264
+      },
+      {
+        "layer": 25,
+        "mean_diff_norm": 39.87361979484558
+      },
+      {
+        "layer": 26,
+        "mean_diff_norm": 42.06302316983541
+      },
+      {
+        "layer": 27,
+        "mean_diff_norm": 44.16478474934896
+      },
+      {
+        "layer": 28,
+        "mean_diff_norm": 46.693828185399376
+      },
+      {
+        "layer": 29,
+        "mean_diff_norm": 50.42599678039551
+      },
+      {
+        "layer": 30,
+        "mean_diff_norm": 54.9663356145223
+      },
+      {
+        "layer": 31,
+        "mean_diff_norm": 69.94829400380452
+      }
+    ],
+    "final_layer_mean_diff_norm": 69.94829400380452,
+    "mean_family_scores": {
+      "replacement": 1.080509333871305,
+      "deprecated": 0.8350836802273989,
+      "library_version": 1.2168884004155796
+    },
+    "replacement_minus_deprecated_score": 0.24542565364390612,
+    "top_amplified_tokens": [
+      {
+        "token_id": 21254,
+        "token_text": "linalg",
+        "logit_diff": 9.08563232421875
+      },
+      {
+        "token_id": 38454,
+        "token_text": "tshop",
+        "logit_diff": 6.305989742279053
+      },
+      {
+        "token_id": 36594,
+        "token_text": "nimiq",
+        "logit_diff": 5.928385257720947
+      },
+      {
+        "token_id": 27750,
+        "token_text": " diagonal",
+        "logit_diff": 5.5997772216796875
+      },
+      {
+        "token_id": 43178,
+        "token_text": "instale",
+        "logit_diff": 5.599609375
+      },
+      {
+        "token_id": 29604,
+        "token_text": "msgTypes",
+        "logit_diff": 5.584635257720947
+      },
+      {
+        "token_id": 41986,
+        "token_text": "bnN",
+        "logit_diff": 5.555989742279053
+      },
+      {
+        "token_id": 44671,
+        "token_text": "XGs",
+        "logit_diff": 5.4453125
+      },
+      {
+        "token_id": 29002,
+        "token_text": " promp",
+        "logit_diff": 5.442626953125
+      },
+      {
+        "token_id": 46189,
+        "token_text": " interpolated",
+        "logit_diff": 5.434366703033447
+      },
+      {
+        "token_id": 19516,
+        "token_text": " embod",
+        "logit_diff": 5.433756351470947
+      },
+      {
+        "token_id": 42471,
+        "token_text": "quela",
+        "logit_diff": 5.425140380859375
+      },
+      {
+        "token_id": 44312,
+        "token_text": "moond",
+        "logit_diff": 5.348958492279053
+      },
+      {
+        "token_id": 21418,
+        "token_text": "nativeplace",
+        "logit_diff": 5.348958492279053
+      },
+      {
+        "token_id": 24875,
+        "token_text": "OiJ",
+        "logit_diff": 5.346354007720947
+      },
+      {
+        "token_id": 46759,
+        "token_text": "ARFoundation",
+        "logit_diff": 5.303385257720947
+      },
+      {
+        "token_id": 20979,
+        "token_text": "{{--",
+        "logit_diff": 5.302022457122803
+      },
+      {
+        "token_id": 34854,
+        "token_text": "yypt",
+        "logit_diff": 5.274739742279053
+      },
+      {
+        "token_id": 45265,
+        "token_text": "kuali",
+        "logit_diff": 5.263671875
+      },
+      {
+        "token_id": 46855,
+        "token_text": " radial",
+        "logit_diff": 5.24664831161499
+      },
+      {
+        "token_id": 19470,
+        "token_text": "inalg",
+        "logit_diff": 5.246500492095947
+      },
+      {
+        "token_id": 4445,
+        "token_text": "cimal",
+        "logit_diff": 5.2089314460754395
+      },
+      {
+        "token_id": 49065,
+        "token_text": "HLJ",
+        "logit_diff": 5.200520992279053
+      },
+      {
+        "token_id": 16224,
+        "token_text": "jshop",
+        "logit_diff": 5.193359375
+      },
+      {
+        "token_id": 26928,
+        "token_text": "kSi",
+        "logit_diff": 5.192708492279053
+      }
+    ],
+    "top_suppressed_tokens": [
+      {
+        "token_id": 1527,
+        "token_text": "true",
+        "logit_diff": -2.9122722148895264
+      },
+      {
+        "token_id": 8540,
+        "token_text": "compat",
+        "logit_diff": -2.6263020038604736
+      },
+      {
+        "token_id": 2463,
+        "token_text": "product",
+        "logit_diff": -2.2181396484375
+      },
+      {
+        "token_id": 1886,
+        "token_text": "false",
+        "logit_diff": -2.1099853515625
+      },
+      {
+        "token_id": 436,
+        "token_text": "up",
+        "logit_diff": -1.6636962890625
+      },
+      {
+        "token_id": 1844,
+        "token_text": "True",
+        "logit_diff": -1.6382192373275757
+      },
+      {
+        "token_id": 435,
+        "token_text": "end",
+        "logit_diff": -1.5318603515625
+      },
+      {
+        "token_id": 1184,
+        "token_text": "model",
+        "logit_diff": -1.4496256113052368
+      },
+      {
+        "token_id": 997,
+        "token_text": "py",
+        "logit_diff": -1.2711995840072632
+      },
+      {
+        "token_id": 13110,
+        "token_text": "distribution",
+        "logit_diff": -1.248687744140625
+      },
+      {
+        "token_id": 999,
+        "token_text": "for",
+        "logit_diff": -1.1168619394302368
+      },
+      {
+        "token_id": 471,
+        "token_text": "to",
+        "logit_diff": -1.1002603769302368
+      },
+      {
+        "token_id": 4167,
+        "token_text": "cv",
+        "logit_diff": -1.0459085702896118
+      },
+      {
+        "token_id": 8437,
+        "token_text": "products",
+        "logit_diff": -1.001953125
+      },
+      {
+        "token_id": 4521,
+        "token_text": "variable",
+        "logit_diff": -0.9705810546875
+      },
+      {
+        "token_id": 4844,
+        "token_text": "classes",
+        "logit_diff": -0.9599049687385559
+      },
+      {
+        "token_id": 6404,
+        "token_text": "basic",
+        "logit_diff": -0.9585113525390625
+      },
+      {
+        "token_id": 5824,
+        "token_text": "sy",
+        "logit_diff": -0.9247538447380066
+      },
+      {
+        "token_id": 29119,
+        "token_text": "compatibility",
+        "logit_diff": -0.9192708134651184
+      },
+      {
+        "token_id": 2260,
+        "token_text": "unit",
+        "logit_diff": -0.8978474736213684
+      },
+      {
+        "token_id": 728,
+        "token_text": "else",
+        "logit_diff": -0.8899943232536316
+      },
+      {
+        "token_id": 842,
+        "token_text": "class",
+        "logit_diff": -0.8728840947151184
+      },
+      {
+        "token_id": 6302,
+        "token_text": "cpu",
+        "logit_diff": -0.86639404296875
+      },
+      {
+        "token_id": 3564,
+        "token_text": "actions",
+        "logit_diff": -0.8246256709098816
+      },
+      {
+        "token_id": 1090,
+        "token_text": "view",
+        "logit_diff": -0.8199589848518372
+      }
+    ]
+  }
+}

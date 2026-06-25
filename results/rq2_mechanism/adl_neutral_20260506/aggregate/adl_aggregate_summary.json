@@ -1,0 +1,171 @@
+{
+  "rows_file": "/workspace/version-control-study/06_mechanism/output/adl_neutral_20260506/aggregate/adl_summary_rows.csv",
+  "groups": {
+    "starcoder_scale": {
+      "library_neutral_code": {
+        "anchored_dpo": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 124.60840945773653,
+          "replacement_family_score": 3.709531194349337,
+          "deprecated_family_score": 3.166762422750859,
+          "library_version_family_score": 3.175983028279411,
+          "replacement_minus_deprecated_score": 0.5427687715984779
+        },
+        "base": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 0.0,
+          "replacement_family_score": 0.0,
+          "deprecated_family_score": 0.0,
+          "library_version_family_score": 0.0,
+          "replacement_minus_deprecated_score": 0.0
+        },
+        "dpo": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 123.35800647735596,
+          "replacement_family_score": 3.2256818026718164,
+          "deprecated_family_score": 2.707766439429381,
+          "library_version_family_score": 2.7320847128931844,
+          "replacement_minus_deprecated_score": 0.5179153632424357
+        }
+      },
+      "random_neutral_text": {
+        "anchored_dpo": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 27.903947644763523,
+          "replacement_family_score": 1.1303787922693622,
+          "deprecated_family_score": 0.7144519670012718,
+          "library_version_family_score": 0.6566686736316317,
+          "replacement_minus_deprecated_score": 0.41592682526809055
+        },
+        "base": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 0.0,
+          "replacement_family_score": 0.0,
+          "deprecated_family_score": 0.0,
+          "library_version_family_score": 0.0,
+          "replacement_minus_deprecated_score": 0.0
+        },
+        "dpo": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 28.693057907952205,
+          "replacement_family_score": 1.0418841277973518,
+          "deprecated_family_score": 0.6335512627330091,
+          "library_version_family_score": 0.5566431892414888,
+          "replacement_minus_deprecated_score": 0.40833286506434274
+        }
+      }
+    },
+    "cross_family_same_scale": {
+      "library_neutral_code": {
+        "anchored_dpo": {
+          "models": 3,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct",
+            "Qwen2.5-Coder-7B-Instruct",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 62.39666950702667,
+          "replacement_family_score": -2.3029565075412393,
+          "deprecated_family_score": -2.5043884631854274,
+          "library_version_family_score": -1.5536740150871793,
+          "replacement_minus_deprecated_score": 0.20143195564418803
+        },
+        "base": {
+          "models": 3,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct",
+            "Qwen2.5-Coder-7B-Instruct",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 0.0,
+          "replacement_family_score": 0.0,
+          "deprecated_family_score": 0.0,
+          "library_version_family_score": 0.0,
+          "replacement_minus_deprecated_score": 0.0
+        },
+        "dpo": {
+          "models": 2,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 38.75346740086873,
+          "replacement_family_score": -4.492357458143185,
+          "deprecated_family_score": -4.661704750421147,
+          "library_version_family_score": -3.5666360395650067,
+          "replacement_minus_deprecated_score": 0.16934729227796197
+        }
+      },
+      "random_neutral_text": {
+        "anchored_dpo": {
+          "models": 3,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct",
+            "Qwen2.5-Coder-7B-Instruct",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 15.391531207495268,
+          "replacement_family_score": -0.0737948514644005,
+          "deprecated_family_score": -0.2642182152744176,
+          "library_version_family_score": -0.5496703603615364,
+          "replacement_minus_deprecated_score": 0.1904233638100171
+        },
+        "base": {
+          "models": 3,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct",
+            "Qwen2.5-Coder-7B-Instruct",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 0.0,
+          "replacement_family_score": 0.0,
+          "deprecated_family_score": 0.0,
+          "library_version_family_score": 0.0,
+          "replacement_minus_deprecated_score": 0.0
+        },
+        "dpo": {
+          "models": 2,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 14.040110766887665,
+          "replacement_family_score": -0.010477997285003454,
+          "deprecated_family_score": -0.25706138446306187,
+          "library_version_family_score": -0.4913587309420108,
+          "replacement_minus_deprecated_score": 0.24658338717805842
+        }
+      }
+    }
+  }
+}

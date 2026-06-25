@@ -1,0 +1,1619 @@
+{
+  "torch.svd → torch.linalg.svd": {
+    "case": {
+      "name": "torch.svd → torch.linalg.svd",
+      "prompt": "import torch\nA = torch.randn(4, 4)\nU, S, V = torch.",
+      "dep_tok": "svd",
+      "rep_tok": "linalg"
+    },
+    "base_logit_diff": -2.0625,
+    "cerdpo_logit_diff": 35.03125,
+    "top_flipped": [
+      {
+        "layer": 31,
+        "head": 2,
+        "base_dla": 0.1245652288198471,
+        "cerdpo_dla": 1.9570951461791992,
+        "flip_delta": 1.8325299173593521,
+        "base_dep_logit": -0.044446010142564774,
+        "base_rep_logit": 0.08011921495199203,
+        "cerdpo_dep_logit": -0.30945509672164917,
+        "cerdpo_rep_logit": 1.6476402282714844,
+        "base_top3": [
+          " truth",
+          "Thunk",
+          "ella"
+        ],
+        "cerdpo_top3": [
+          " л",
+          "兰",
+          " literals"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 1,
+        "base_dla": 0.3047371208667755,
+        "cerdpo_dla": 1.8146977424621582,
+        "flip_delta": 1.5099606215953827,
+        "base_dep_logit": 0.006015824154019356,
+        "base_rep_logit": 0.3107529878616333,
+        "cerdpo_dep_logit": -0.6267842054367065,
+        "cerdpo_rep_logit": 1.187913417816162,
+        "base_top3": [
+          "seq",
+          "chron",
+          " l"
+        ],
+        "cerdpo_top3": [
+          "ll",
+          " l",
+          "l"
+        ]
+      },
+      {
+        "layer": 25,
+        "head": 33,
+        "base_dla": -0.11145354062318802,
+        "cerdpo_dla": 0.22576682269573212,
+        "flip_delta": 0.33722036331892014,
+        "base_dep_logit": 0.5330124497413635,
+        "base_rep_logit": 0.42155885696411133,
+        "cerdpo_dep_logit": 0.3270188868045807,
+        "cerdpo_rep_logit": 0.5527857542037964,
+        "base_top3": [
+          " decomposition",
+          " Split",
+          "Split"
+        ],
+        "cerdpo_top3": [
+          " decomposition",
+          " Split",
+          "Split"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 11,
+        "base_dla": -0.03707294538617134,
+        "cerdpo_dla": 0.28021353483200073,
+        "flip_delta": 0.3172864802181721,
+        "base_dep_logit": 0.03619707375764847,
+        "base_rep_logit": -0.0008758667390793562,
+        "cerdpo_dep_logit": -0.13456913828849792,
+        "cerdpo_rep_logit": 0.1456443816423416,
+        "base_top3": [
+          "XGs",
+          " {",
+          "zHj"
+        ],
+        "cerdpo_top3": [
+          ".",
+          "getElementsBy",
+          "Regexp"
+        ]
+      },
+      {
+        "layer": 20,
+        "head": 19,
+        "base_dla": -0.009948091581463814,
+        "cerdpo_dla": 0.24770444631576538,
+        "flip_delta": 0.2576525378972292,
+        "base_dep_logit": 0.013808708637952805,
+        "base_rep_logit": 0.0038606165908277035,
+        "cerdpo_dep_logit": -0.013610303401947021,
+        "cerdpo_rep_logit": 0.23409414291381836,
+        "base_top3": [
+          "RESSED",
+          "ADED",
+          "�"
+        ],
+        "cerdpo_top3": [
+          "tools",
+          "util",
+          "::"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 9,
+        "base_dla": -0.038275863975286484,
+        "cerdpo_dla": 0.19763962924480438,
+        "flip_delta": 0.23591549322009087,
+        "base_dep_logit": 0.03165276348590851,
+        "base_rep_logit": -0.006623097695410252,
+        "cerdpo_dep_logit": -0.15484878420829773,
+        "cerdpo_rep_logit": 0.04279083386063576,
+        "base_top3": [
+          " Doe",
+          " TAHUN",
+          ";!--"
+        ],
+        "cerdpo_top3": [
+          "pography",
+          "mce",
+          "StringDesc"
+        ]
+      },
+      {
+        "layer": 21,
+        "head": 1,
+        "base_dla": 0.08377088606357574,
+        "cerdpo_dla": 0.314605712890625,
+        "flip_delta": 0.23083482682704926,
+        "base_dep_logit": 0.07782118022441864,
+        "base_rep_logit": 0.16159206628799438,
+        "cerdpo_dep_logit": 0.11318318545818329,
+        "cerdpo_rep_logit": 0.4277888536453247,
+        "base_top3": [
+          "matrix",
+          " matrix",
+          "矩阵"
+        ],
+        "cerdpo_top3": [
+          " columns",
+          "matrix",
+          " matrix"
+        ]
+      },
+      {
+        "layer": 21,
+        "head": 3,
+        "base_dla": -0.2677235007286072,
+        "cerdpo_dla": -0.05605987831950188,
+        "flip_delta": 0.2116636224091053,
+        "base_dep_logit": 0.807744562625885,
+        "base_rep_logit": 0.5400211215019226,
+        "cerdpo_dep_logit": 0.8817198276519775,
+        "cerdpo_rep_logit": 0.8256599307060242,
+        "base_top3": [
+          " eig",
+          " eigen",
+          " matrix"
+        ],
+        "cerdpo_top3": [
+          " matrix",
+          " Gram",
+          "svd"
+        ]
+      },
+      {
+        "layer": 22,
+        "head": 13,
+        "base_dla": -0.2441360354423523,
+        "cerdpo_dla": -0.03380326181650162,
+        "flip_delta": 0.21033277362585068,
+        "base_dep_logit": 0.16812051832675934,
+        "base_rep_logit": -0.07601551711559296,
+        "cerdpo_dep_logit": 0.01782844215631485,
+        "cerdpo_rep_logit": -0.01597481220960617,
+        "base_top3": [
+          "Both",
+          " latter",
+          "both"
+        ],
+        "cerdpo_top3": [
+          " her",
+          "HER",
+          "她"
+        ]
+      },
+      {
+        "layer": 17,
+        "head": 26,
+        "base_dla": -0.20361904799938202,
+        "cerdpo_dla": 0.002559091430157423,
+        "flip_delta": 0.20617813942953944,
+        "base_dep_logit": 0.22584782540798187,
+        "base_rep_logit": 0.022228766232728958,
+        "cerdpo_dep_logit": 0.03526591509580612,
+        "cerdpo_rep_logit": 0.037825003266334534,
+        "base_top3": [
+          "三个",
+          " three",
+          "三"
+        ],
+        "cerdpo_top3": [
+          "三个",
+          "triple",
+          " triple"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 13,
+        "base_dla": -0.022160343825817108,
+        "cerdpo_dla": 0.17836427688598633,
+        "flip_delta": 0.20052462071180344,
+        "base_dep_logit": 0.05863601341843605,
+        "base_rep_logit": 0.036475665867328644,
+        "cerdpo_dep_logit": 0.22654393315315247,
+        "cerdpo_rep_logit": 0.4049081802368164,
+        "base_top3": [
+          "3",
+          " three",
+          "three"
+        ],
+        "cerdpo_top3": [
+          "BF",
+          "BA",
+          " tensorflow"
+        ]
+      },
+      {
+        "layer": 22,
+        "head": 14,
+        "base_dla": -0.17198944091796875,
+        "cerdpo_dla": 0.02179800346493721,
+        "flip_delta": 0.19378744438290596,
+        "base_dep_logit": 0.07118487358093262,
+        "base_rep_logit": -0.10080453753471375,
+        "cerdpo_dep_logit": -0.019509127363562584,
+        "cerdpo_rep_logit": 0.0022888798266649246,
+        "base_top3": [
+          "三",
+          " three",
+          "three"
+        ],
+        "cerdpo_top3": [
+          "_",
+          "三",
+          "three"
+        ]
+      },
+      {
+        "layer": 19,
+        "head": 35,
+        "base_dla": 0.044036492705345154,
+        "cerdpo_dla": 0.23258209228515625,
+        "flip_delta": 0.1885455995798111,
+        "base_dep_logit": -0.01893245056271553,
+        "base_rep_logit": 0.02510404959321022,
+        "cerdpo_dep_logit": -0.08634285628795624,
+        "cerdpo_rep_logit": 0.1462392359972,
+        "base_top3": [
+          "vv",
+          "rose",
+          "BEST"
+        ],
+        "cerdpo_top3": [
+          "perfect",
+          " seguida",
+          "Same"
+        ]
+      },
+      {
+        "layer": 26,
+        "head": 22,
+        "base_dla": -0.017984814941883087,
+        "cerdpo_dla": 0.157544806599617,
+        "flip_delta": 0.1755296215415001,
+        "base_dep_logit": 0.0076347896829247475,
+        "base_rep_logit": -0.010350024327635765,
+        "cerdpo_dep_logit": 0.008988266810774803,
+        "cerdpo_rep_logit": 0.16653306782245636,
+        "base_top3": [
+          "py",
+          ".",
+          " Py"
+        ],
+        "cerdpo_top3": [
+          " Py",
+          "Py",
+          "pytorch"
+        ]
+      },
+      {
+        "layer": 20,
+        "head": 16,
+        "base_dla": 0.05663256347179413,
+        "cerdpo_dla": 0.22307829558849335,
+        "flip_delta": 0.16644573211669922,
+        "base_dep_logit": -0.06921547651290894,
+        "base_rep_logit": -0.012582911178469658,
+        "cerdpo_dep_logit": -0.22611072659492493,
+        "cerdpo_rep_logit": -0.0030324009712785482,
+        "base_top3": [
+          "kin",
+          "ilar",
+          "ynt"
+        ],
+        "cerdpo_top3": [
+          "kin",
+          "��",
+          "fabric"
+        ]
+      }
+    ],
+    "bottom_flipped": [
+      {
+        "layer": 18,
+        "head": 14,
+        "base_dla": -0.021560141816735268,
+        "cerdpo_dla": -0.10869937390089035,
+        "flip_delta": -0.08713923208415508,
+        "base_dep_logit": 0.004650052636861801,
+        "base_rep_logit": -0.016910089179873466,
+        "cerdpo_dep_logit": 0.05600893497467041,
+        "cerdpo_rep_logit": -0.05269043147563934,
+        "base_top3": [
+          "\n",
+          "tern",
+          "_"
+        ],
+        "cerdpo_top3": [
+          ".",
+          "_",
+          "\n"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 10,
+        "base_dla": -0.03807314857840538,
+        "cerdpo_dla": -0.12985539436340332,
+        "flip_delta": -0.09178224578499794,
+        "base_dep_logit": 0.03571531921625137,
+        "base_rep_logit": -0.002357830759137869,
+        "cerdpo_dep_logit": 0.1402515172958374,
+        "cerdpo_rep_logit": 0.010396115481853485,
+        "base_top3": [
+          " PyTorch",
+          "CppCodeGenWriteBarrier",
+          " pytorch"
+        ],
+        "cerdpo_top3": [
+          " PyTorch",
+          " TensorFlow",
+          " disposed"
+        ]
+      },
+      {
+        "layer": 16,
+        "head": 9,
+        "base_dla": -0.13784876465797424,
+        "cerdpo_dla": -0.2451009899377823,
+        "flip_delta": -0.10725222527980804,
+        "base_dep_logit": 0.11791303008794785,
+        "base_rep_logit": -0.0199357271194458,
+        "cerdpo_dep_logit": 0.12385070323944092,
+        "cerdpo_rep_logit": -0.12125026434659958,
+        "base_top3": [
+          ".",
+          "cock",
+          "figcaption"
+        ],
+        "cerdpo_top3": [
+          "tak",
+          "toa",
+          "ild"
+        ]
+      },
+      {
+        "layer": 15,
+        "head": 30,
+        "base_dla": -0.04229235649108887,
+        "cerdpo_dla": -0.16150450706481934,
+        "flip_delta": -0.11921215057373047,
+        "base_dep_logit": 0.01836542971432209,
+        "base_rep_logit": -0.02392691932618618,
+        "cerdpo_dep_logit": 0.1164577454328537,
+        "cerdpo_rep_logit": -0.04504677280783653,
+        "base_top3": [
+          "盘",
+          "aph",
+          "cst"
+        ],
+        "cerdpo_top3": [
+          " Grad",
+          " human",
+          "ached"
+        ]
+      },
+      {
+        "layer": 20,
+        "head": 1,
+        "base_dla": 0.016796158626675606,
+        "cerdpo_dla": -0.11574935913085938,
+        "flip_delta": -0.13254551775753498,
+        "base_dep_logit": -0.019419191405177116,
+        "base_rep_logit": -0.0026230337098240852,
+        "cerdpo_dep_logit": 0.015979599207639694,
+        "cerdpo_rep_logit": -0.09976977854967117,
+        "base_top3": [
+          "agn",
+          " afu",
+          "ideo"
+        ],
+        "cerdpo_top3": [
+          "일",
+          " spécifi",
+          "Timed"
+        ]
+      },
+      {
+        "layer": 24,
+        "head": 7,
+        "base_dla": 0.01673770695924759,
+        "cerdpo_dla": -0.12210191786289215,
+        "flip_delta": -0.13883962482213974,
+        "base_dep_logit": 0.01358877681195736,
+        "base_rep_logit": 0.030326487496495247,
+        "cerdpo_dep_logit": 0.09835151582956314,
+        "cerdpo_rep_logit": -0.023750394582748413,
+        "base_top3": [
+          "far",
+          " must",
+          "must"
+        ],
+        "cerdpo_top3": [
+          "_",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 25,
+        "base_dla": 0.014671036042273045,
+        "cerdpo_dla": -0.14831121265888214,
+        "flip_delta": -0.16298224870115519,
+        "base_dep_logit": -0.013646616600453854,
+        "base_rep_logit": 0.0010244159493595362,
+        "cerdpo_dep_logit": 0.11935010552406311,
+        "cerdpo_rep_logit": -0.028961103409528732,
+        "base_top3": [
+          "yo",
+          "beee",
+          "ytvo"
+        ],
+        "cerdpo_top3": [
+          "枚",
+          " hely",
+          " helper"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 15,
+        "base_dla": 0.0529019832611084,
+        "cerdpo_dla": -0.16508617997169495,
+        "flip_delta": -0.21798816323280334,
+        "base_dep_logit": -0.04713858664035797,
+        "base_rep_logit": 0.005763405933976173,
+        "cerdpo_dep_logit": 0.0007351860404014587,
+        "cerdpo_rep_logit": -0.16435100138187408,
+        "base_top3": [
+          "ither",
+          " front",
+          "front"
+        ],
+        "cerdpo_top3": [
+          " into",
+          " by",
+          "import"
+        ]
+      },
+      {
+        "layer": 21,
+        "head": 22,
+        "base_dla": 0.3428025245666504,
+        "cerdpo_dla": 0.11885993927717209,
+        "flip_delta": -0.2239425852894783,
+        "base_dep_logit": -0.22570452094078064,
+        "base_rep_logit": 0.11709796637296677,
+        "cerdpo_dep_logit": -0.08262479305267334,
+        "cerdpo_rep_logit": 0.03623514622449875,
+        "base_top3": [
+          " consulte",
+          "POSITORY",
+          "WNS"
+        ],
+        "cerdpo_top3": [
+          "WNS",
+          "Mgmt",
+          "pud"
+        ]
+      },
+      {
+        "layer": 29,
+        "head": 18,
+        "base_dla": -0.033497076481580734,
+        "cerdpo_dla": -0.3063322901725769,
+        "flip_delta": -0.27283521369099617,
+        "base_dep_logit": 0.011030137538909912,
+        "base_rep_logit": -0.022466938942670822,
+        "cerdpo_dep_logit": -0.01306222379207611,
+        "cerdpo_rep_logit": -0.3193944990634918,
+        "base_top3": [
+          " P",
+          "walt",
+          "P"
+        ],
+        "cerdpo_top3": [
+          " Sh",
+          "ch",
+          "Sh"
+        ]
+      }
+    ]
+  },
+  "torch.qr → torch.linalg.qr": {
+    "case": {
+      "name": "torch.qr → torch.linalg.qr",
+      "prompt": "import torch\nA = torch.randn(4, 4)\nQ, R = torch.",
+      "dep_tok": "qr",
+      "rep_tok": "linalg"
+    },
+    "base_logit_diff": -3.1640625,
+    "cerdpo_logit_diff": 32.75,
+    "top_flipped": [
+      {
+        "layer": 31,
+        "head": 2,
+        "base_dla": 0.058774251490831375,
+        "cerdpo_dla": 1.7468481063842773,
+        "flip_delta": 1.688073854893446,
+        "base_dep_logit": 0.032742686569690704,
+        "base_rep_logit": 0.09151694178581238,
+        "cerdpo_dep_logit": -0.028744041919708252,
+        "cerdpo_rep_logit": 1.7181040048599243,
+        "base_top3": [
+          "া",
+          "LTR",
+          " а"
+        ],
+        "cerdpo_top3": [
+          " л",
+          "ell",
+          "ラ"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 1,
+        "base_dla": -0.16263635456562042,
+        "cerdpo_dla": 1.3555161952972412,
+        "flip_delta": 1.5181525498628616,
+        "base_dep_logit": 0.521929919719696,
+        "base_rep_logit": 0.35929355025291443,
+        "cerdpo_dep_logit": 0.016102194786071777,
+        "cerdpo_rep_logit": 1.3716185092926025,
+        "base_top3": [
+          "ltr",
+          "quad",
+          " quad"
+        ],
+        "cerdpo_top3": [
+          "ll",
+          " l",
+          " ll"
+        ]
+      },
+      {
+        "layer": 18,
+        "head": 26,
+        "base_dla": -0.7312840223312378,
+        "cerdpo_dla": -0.06776414811611176,
+        "flip_delta": 0.663519874215126,
+        "base_dep_logit": 0.6121225357055664,
+        "base_rep_logit": -0.1191614419221878,
+        "cerdpo_dep_logit": 0.05884999781847,
+        "cerdpo_rep_logit": -0.008914150297641754,
+        "base_top3": [
+          "SR",
+          "MR",
+          " SR"
+        ],
+        "cerdpo_top3": [
+          "XR",
+          " NR",
+          "NR"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 11,
+        "base_dla": 0.0782245323061943,
+        "cerdpo_dla": 0.5049448609352112,
+        "flip_delta": 0.4267203286290169,
+        "base_dep_logit": 0.050555452704429626,
+        "base_rep_logit": 0.12877996265888214,
+        "cerdpo_dep_logit": -0.031020136550068855,
+        "cerdpo_rep_logit": 0.4739247262477875,
+        "base_top3": [
+          "rnn",
+          "embeddings",
+          "Z"
+        ],
+        "cerdpo_top3": [
+          "haus",
+          "tensor",
+          "LEASE"
+        ]
+      },
+      {
+        "layer": 25,
+        "head": 33,
+        "base_dla": -0.08423285186290741,
+        "cerdpo_dla": 0.305133581161499,
+        "flip_delta": 0.38936643302440643,
+        "base_dep_logit": 0.5074357986450195,
+        "base_rep_logit": 0.4232029616832733,
+        "cerdpo_dep_logit": 0.23810094594955444,
+        "cerdpo_rep_logit": 0.5432345271110535,
+        "base_top3": [
+          " decomposition",
+          " Queue",
+          " queue"
+        ],
+        "cerdpo_top3": [
+          " decomposition",
+          "分",
+          "Split"
+        ]
+      },
+      {
+        "layer": 29,
+        "head": 19,
+        "base_dla": -0.4318915605545044,
+        "cerdpo_dla": -0.05205351114273071,
+        "flip_delta": 0.3798380494117737,
+        "base_dep_logit": 0.4044185280799866,
+        "base_rep_logit": -0.027473000809550285,
+        "cerdpo_dep_logit": 0.05490255728363991,
+        "cerdpo_rep_logit": 0.002849043346941471,
+        "base_top3": [
+          "QS",
+          "QT",
+          " qf"
+        ],
+        "cerdpo_top3": [
+          "QL",
+          "Qf",
+          " IL"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 4,
+        "base_dla": -0.12539085745811462,
+        "cerdpo_dla": 0.10242370516061783,
+        "flip_delta": 0.22781456261873245,
+        "base_dep_logit": 0.13693149387836456,
+        "base_rep_logit": 0.011540643870830536,
+        "cerdpo_dep_logit": -0.09684159606695175,
+        "cerdpo_rep_logit": 0.005582094192504883,
+        "base_top3": [
+          " file",
+          "�",
+          " File"
+        ],
+        "cerdpo_top3": [
+          "�",
+          "�",
+          "lus"
+        ]
+      },
+      {
+        "layer": 27,
+        "head": 35,
+        "base_dla": 0.03767234459519386,
+        "cerdpo_dla": 0.2629268169403076,
+        "flip_delta": 0.22525447234511375,
+        "base_dep_logit": 0.024582108482718468,
+        "base_rep_logit": 0.06225445866584778,
+        "cerdpo_dep_logit": -0.05316843464970589,
+        "cerdpo_rep_logit": 0.20975840091705322,
+        "base_top3": [
+          "matrix",
+          " matrix",
+          "Matrix"
+        ],
+        "cerdpo_top3": [
+          "linear",
+          " linear",
+          "ROUTE"
+        ]
+      },
+      {
+        "layer": 25,
+        "head": 27,
+        "base_dla": -0.4358123540878296,
+        "cerdpo_dla": -0.22243869304656982,
+        "flip_delta": 0.21337366104125977,
+        "base_dep_logit": -0.2953948974609375,
+        "base_rep_logit": -0.7312072515487671,
+        "cerdpo_dep_logit": -0.1236870214343071,
+        "cerdpo_rep_logit": -0.34612569212913513,
+        "base_top3": [
+          "fill",
+          " neg",
+          "loading"
+        ],
+        "cerdpo_top3": [
+          "fill",
+          "期",
+          "填"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 17,
+        "base_dla": 0.30692756175994873,
+        "cerdpo_dla": 0.5026147365570068,
+        "flip_delta": 0.1956871747970581,
+        "base_dep_logit": -0.3278149664402008,
+        "base_rep_logit": -0.020887434482574463,
+        "cerdpo_dep_logit": -0.6104794144630432,
+        "cerdpo_rep_logit": -0.10786467790603638,
+        "base_top3": [
+          "DB",
+          "OrWhiteSpace",
+          " DB"
+        ],
+        "cerdpo_top3": [
+          "xDC",
+          " DC",
+          "DC"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 11,
+        "base_dla": -0.02462930604815483,
+        "cerdpo_dla": 0.15770339965820312,
+        "flip_delta": 0.18233270570635796,
+        "base_dep_logit": 0.027140263468027115,
+        "base_rep_logit": 0.002510953461751342,
+        "cerdpo_dep_logit": 0.04831764101982117,
+        "cerdpo_rep_logit": 0.2060210406780243,
+        "base_top3": [
+          "XGs",
+          "UIe",
+          "NsV"
+        ],
+        "cerdpo_top3": [
+          " tmpvar",
+          " namemap",
+          " testInstances"
+        ]
+      },
+      {
+        "layer": 19,
+        "head": 2,
+        "base_dla": 0.02464803121984005,
+        "cerdpo_dla": 0.2055300772190094,
+        "flip_delta": 0.18088204599916935,
+        "base_dep_logit": -0.005732113495469093,
+        "base_rep_logit": 0.018915915861725807,
+        "cerdpo_dep_logit": -0.049605466425418854,
+        "cerdpo_rep_logit": 0.15592458844184875,
+        "base_top3": [
+          "radix",
+          " Simp",
+          "reeze"
+        ],
+        "cerdpo_top3": [
+          "VersionNumber",
+          "арам",
+          "已"
+        ]
+      },
+      {
+        "layer": 21,
+        "head": 1,
+        "base_dla": 0.1639920324087143,
+        "cerdpo_dla": 0.3396240472793579,
+        "flip_delta": 0.17563201487064362,
+        "base_dep_logit": 0.05829719454050064,
+        "base_rep_logit": 0.22228921949863434,
+        "cerdpo_dep_logit": 0.11963197588920593,
+        "cerdpo_rep_logit": 0.45925602316856384,
+        "base_top3": [
+          "matrix",
+          " matrix",
+          "矩阵"
+        ],
+        "cerdpo_top3": [
+          " roots",
+          "matrix",
+          " columns"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 9,
+        "base_dla": -0.028330577537417412,
+        "cerdpo_dla": 0.13874584436416626,
+        "flip_delta": 0.16707642190158367,
+        "base_dep_logit": 0.02192550338804722,
+        "base_rep_logit": -0.006405062973499298,
+        "cerdpo_dep_logit": -0.09620463848114014,
+        "cerdpo_rep_logit": 0.04254118353128433,
+        "base_top3": [
+          ";!--",
+          " Doe",
+          "/>["
+        ],
+        "cerdpo_top3": [
+          "nih",
+          "pography",
+          "packageStatus"
+        ]
+      },
+      {
+        "layer": 26,
+        "head": 23,
+        "base_dla": 0.006288029253482819,
+        "cerdpo_dla": 0.16930465400218964,
+        "flip_delta": 0.16301662474870682,
+        "base_dep_logit": 0.011988029815256596,
+        "base_rep_logit": 0.01827605813741684,
+        "cerdpo_dep_logit": 0.02649645507335663,
+        "cerdpo_rep_logit": 0.19580113887786865,
+        "base_top3": [
+          "torch",
+          " torch",
+          " PyTorch"
+        ],
+        "cerdpo_top3": [
+          " torch",
+          "torch",
+          " PyTorch"
+        ]
+      }
+    ],
+    "bottom_flipped": [
+      {
+        "layer": 21,
+        "head": 4,
+        "base_dla": -0.0919179692864418,
+        "cerdpo_dla": -0.19128787517547607,
+        "flip_delta": -0.09936990588903427,
+        "base_dep_logit": -0.08713718503713608,
+        "base_rep_logit": -0.1790551245212555,
+        "cerdpo_dep_logit": -0.12009435147047043,
+        "cerdpo_rep_logit": -0.3113822042942047,
+        "base_top3": [
+          "EML",
+          "<code_to_intermediate>",
+          " Transitional"
+        ],
+        "cerdpo_top3": [
+          "<code_to_intermediate>",
+          "EditorBrowsable",
+          "offsetof"
+        ]
+      },
+      {
+        "layer": 14,
+        "head": 18,
+        "base_dla": -0.07591956853866577,
+        "cerdpo_dla": -0.17749442160129547,
+        "flip_delta": -0.1015748530626297,
+        "base_dep_logit": 0.06957495212554932,
+        "base_rep_logit": -0.006344616413116455,
+        "cerdpo_dep_logit": 0.16956937313079834,
+        "cerdpo_rep_logit": -0.007925048470497131,
+        "base_top3": [
+          "SUN",
+          " visual",
+          "lucene"
+        ],
+        "cerdpo_top3": [
+          "ubernet",
+          "SUN",
+          "MR"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 13,
+        "base_dla": 0.13006429374217987,
+        "cerdpo_dla": 0.02066843956708908,
+        "flip_delta": -0.10939585417509079,
+        "base_dep_logit": -0.06818170845508575,
+        "base_rep_logit": 0.06188257783651352,
+        "cerdpo_dep_logit": -0.00862358883023262,
+        "cerdpo_rep_logit": 0.012044865638017654,
+        "base_top3": [
+          "solute",
+          "nek",
+          "ек"
+        ],
+        "cerdpo_top3": [
+          "alib",
+          "升",
+          "�"
+        ]
+      },
+      {
+        "layer": 16,
+        "head": 9,
+        "base_dla": -0.030573315918445587,
+        "cerdpo_dla": -0.14101941883563995,
+        "flip_delta": -0.11044610291719437,
+        "base_dep_logit": 0.03362727537751198,
+        "base_rep_logit": 0.0030539706349372864,
+        "cerdpo_dep_logit": 0.03758314624428749,
+        "cerdpo_rep_logit": -0.10343629866838455,
+        "base_top3": [
+          ".",
+          "figcaption",
+          "internet"
+        ],
+        "cerdpo_top3": [
+          "tak",
+          "toa",
+          "eled"
+        ]
+      },
+      {
+        "layer": 27,
+        "head": 33,
+        "base_dla": 0.15344347059726715,
+        "cerdpo_dla": 0.042133878916502,
+        "flip_delta": -0.11130959168076515,
+        "base_dep_logit": -0.13596351444721222,
+        "base_rep_logit": 0.01747995615005493,
+        "cerdpo_dep_logit": -0.04805884510278702,
+        "cerdpo_rep_logit": -0.005924959667026997,
+        "base_top3": [
+          "getByte",
+          "opent",
+          "UND"
+        ],
+        "cerdpo_top3": [
+          "ToAction",
+          "Flatten",
+          "�"
+        ]
+      },
+      {
+        "layer": 25,
+        "head": 10,
+        "base_dla": 0.13535083830356598,
+        "cerdpo_dla": 0.022684352472424507,
+        "flip_delta": -0.11266648583114147,
+        "base_dep_logit": -0.11727924644947052,
+        "base_rep_logit": 0.018071601167321205,
+        "cerdpo_dep_logit": -0.013989419676363468,
+        "cerdpo_rep_logit": 0.008694930002093315,
+        "base_top3": [
+          "zos",
+          "bine",
+          "inary"
+        ],
+        "cerdpo_top3": [
+          "adora",
+          "GattCharacteristic",
+          "QNAME"
+        ]
+      },
+      {
+        "layer": 29,
+        "head": 33,
+        "base_dla": 0.03867357224225998,
+        "cerdpo_dla": -0.07860690355300903,
+        "flip_delta": -0.11728047579526901,
+        "base_dep_logit": -0.02794683538377285,
+        "base_rep_logit": 0.010726740583777428,
+        "cerdpo_dep_logit": 0.038214974105358124,
+        "cerdpo_rep_logit": -0.04039193317294121,
+        "base_top3": [
+          " event",
+          "data",
+          "event"
+        ],
+        "cerdpo_top3": [
+          " model",
+          " screen",
+          "model"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 15,
+        "base_dla": 0.11652585864067078,
+        "cerdpo_dla": -0.022682897746562958,
+        "flip_delta": -0.13920875638723373,
+        "base_dep_logit": -0.08014314621686935,
+        "base_rep_logit": 0.03638271614909172,
+        "cerdpo_dep_logit": -0.15458640456199646,
+        "cerdpo_rep_logit": -0.17726930975914001,
+        "base_top3": [
+          "hoz",
+          " into",
+          "®"
+        ],
+        "cerdpo_top3": [
+          "UND",
+          " into",
+          "into"
+        ]
+      },
+      {
+        "layer": 21,
+        "head": 2,
+        "base_dla": -0.03246549889445305,
+        "cerdpo_dla": -0.20880946516990662,
+        "flip_delta": -0.17634396627545357,
+        "base_dep_logit": 0.002059703227132559,
+        "base_rep_logit": -0.030405791476368904,
+        "cerdpo_dep_logit": 0.034545980393886566,
+        "cerdpo_rep_logit": -0.17426349222660065,
+        "base_top3": [
+          "ira",
+          " smooth",
+          "smooth"
+        ],
+        "cerdpo_top3": [
+          " Teal",
+          "oop",
+          "目"
+        ]
+      },
+      {
+        "layer": 29,
+        "head": 18,
+        "base_dla": 0.03435268625617027,
+        "cerdpo_dla": -0.19046619534492493,
+        "flip_delta": -0.2248188816010952,
+        "base_dep_logit": -0.0705316960811615,
+        "base_rep_logit": -0.03617902472615242,
+        "cerdpo_dep_logit": -0.0624515563249588,
+        "cerdpo_rep_logit": -0.2529177665710449,
+        "base_top3": [
+          " O",
+          "ми",
+          "walt"
+        ],
+        "cerdpo_top3": [
+          " ch",
+          "ch",
+          " m"
+        ]
+      }
+    ]
+  },
+  "F.upsample → F.interpolate": {
+    "case": {
+      "name": "F.upsample → F.interpolate",
+      "prompt": "import torch.nn.functional as F\nout = F.",
+      "dep_tok": "up",
+      "rep_tok": "interpolate"
+    },
+    "base_logit_diff": 0.46875,
+    "cerdpo_logit_diff": 13.140625,
+    "top_flipped": [
+      {
+        "layer": 31,
+        "head": 18,
+        "base_dla": 0.0752483680844307,
+        "cerdpo_dla": 0.3753372132778168,
+        "flip_delta": 0.3000888451933861,
+        "base_dep_logit": -0.05762080103158951,
+        "base_rep_logit": 0.017627574503421783,
+        "cerdpo_dep_logit": -0.09906302392482758,
+        "cerdpo_rep_logit": 0.2762741446495056,
+        "base_top3": [
+          " randomly",
+          "some",
+          " implicit"
+        ],
+        "cerdpo_top3": [
+          "align",
+          "Align",
+          " Align"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 11,
+        "base_dla": -0.011336229741573334,
+        "cerdpo_dla": 0.19330894947052002,
+        "flip_delta": 0.20464517921209335,
+        "base_dep_logit": 0.05242820084095001,
+        "base_rep_logit": 0.041091952472925186,
+        "cerdpo_dep_logit": -0.046501580625772476,
+        "cerdpo_rep_logit": 0.14680738747119904,
+        "base_top3": [
+          "labilir",
+          "ADIE",
+          "UIKit"
+        ],
+        "cerdpo_top3": [
+          "gyp",
+          "zuf",
+          "mbg"
+        ]
+      },
+      {
+        "layer": 24,
+        "head": 27,
+        "base_dla": -0.7504423260688782,
+        "cerdpo_dla": -0.5667592883110046,
+        "flip_delta": 0.18368303775787354,
+        "base_dep_logit": 0.48872438073158264,
+        "base_rep_logit": -0.26171794533729553,
+        "cerdpo_dep_logit": 0.36860257387161255,
+        "cerdpo_rep_logit": -0.19815677404403687,
+        "base_top3": [
+          "share",
+          "try",
+          "SION"
+        ],
+        "cerdpo_top3": [
+          "try",
+          " try",
+          "SION"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 1,
+        "base_dla": -0.10896995663642883,
+        "cerdpo_dla": 0.07232078909873962,
+        "flip_delta": 0.18129074573516846,
+        "base_dep_logit": 0.36809197068214417,
+        "base_rep_logit": 0.25912195444107056,
+        "cerdpo_dep_logit": 0.17810696363449097,
+        "cerdpo_rep_logit": 0.25042781233787537,
+        "base_top3": [
+          "sel",
+          "local",
+          "privilege"
+        ],
+        "cerdpo_top3": [
+          " a",
+          "a",
+          "global"
+        ]
+      },
+      {
+        "layer": 23,
+        "head": 4,
+        "base_dla": 0.5520398020744324,
+        "cerdpo_dla": 0.725806713104248,
+        "flip_delta": 0.17376691102981567,
+        "base_dep_logit": -0.3270220160484314,
+        "base_rep_logit": 0.22501781582832336,
+        "cerdpo_dep_logit": -0.3433140814304352,
+        "cerdpo_rep_logit": 0.38249263167381287,
+        "base_top3": [
+          "花",
+          "lux",
+          "Indexed"
+        ],
+        "cerdpo_top3": [
+          "언",
+          "amper",
+          "yargs"
+        ]
+      },
+      {
+        "layer": 29,
+        "head": 6,
+        "base_dla": 0.1291666328907013,
+        "cerdpo_dla": 0.2979075610637665,
+        "flip_delta": 0.16874092817306519,
+        "base_dep_logit": -0.04079645872116089,
+        "base_rep_logit": 0.0883701741695404,
+        "cerdpo_dep_logit": -0.09228987991809845,
+        "cerdpo_rep_logit": 0.20561766624450684,
+        "base_top3": [
+          "ffee",
+          "机",
+          "secrets"
+        ],
+        "cerdpo_top3": [
+          "De",
+          "de",
+          "oca"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 4,
+        "base_dla": -0.00941515527665615,
+        "cerdpo_dla": 0.14336229860782623,
+        "flip_delta": 0.15277745388448238,
+        "base_dep_logit": 0.015790512785315514,
+        "base_rep_logit": 0.006375360302627087,
+        "cerdpo_dep_logit": -0.04034385830163956,
+        "cerdpo_rep_logit": 0.10301843285560608,
+        "base_top3": [
+          "_",
+          "\n",
+          "-"
+        ],
+        "cerdpo_top3": [
+          " JVS",
+          "��",
+          "�"
+        ]
+      },
+      {
+        "layer": 17,
+        "head": 1,
+        "base_dla": -0.16456083953380585,
+        "cerdpo_dla": -0.020904842764139175,
+        "flip_delta": 0.14365599676966667,
+        "base_dep_logit": 0.018485207110643387,
+        "base_rep_logit": -0.14607563614845276,
+        "cerdpo_dep_logit": -0.0061742388643324375,
+        "cerdpo_rep_logit": -0.027079075574874878,
+        "base_top3": [
+          "uster",
+          "ogen",
+          "GR"
+        ],
+        "cerdpo_top3": [
+          "gts",
+          "adoc",
+          "uster"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 17,
+        "base_dla": 0.051993560045957565,
+        "cerdpo_dla": 0.18588389456272125,
+        "flip_delta": 0.1338903345167637,
+        "base_dep_logit": -0.03219013288617134,
+        "base_rep_logit": 0.019803423434495926,
+        "cerdpo_dep_logit": -0.20653271675109863,
+        "cerdpo_rep_logit": -0.020648855715990067,
+        "base_top3": [
+          "BA",
+          "ba",
+          "Ba"
+        ],
+        "cerdpo_top3": [
+          "ba",
+          "aba",
+          "Br"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 21,
+        "base_dla": 0.010232128202915192,
+        "cerdpo_dla": 0.1430053412914276,
+        "flip_delta": 0.13277321308851242,
+        "base_dep_logit": 0.005619008094072342,
+        "base_rep_logit": 0.01585112325847149,
+        "cerdpo_dep_logit": -0.11600863188505173,
+        "cerdpo_rep_logit": 0.026996728032827377,
+        "base_top3": [
+          "_",
+          "HikariConfig",
+          "."
+        ],
+        "cerdpo_top3": [
+          "**",
+          "[",
+          "**("
+        ]
+      },
+      {
+        "layer": 22,
+        "head": 6,
+        "base_dla": -0.00046272948384284973,
+        "cerdpo_dla": 0.12032467871904373,
+        "flip_delta": 0.12078740820288658,
+        "base_dep_logit": 0.0007067061960697174,
+        "base_rep_logit": 0.0002439836971461773,
+        "cerdpo_dep_logit": -0.06319300085306168,
+        "cerdpo_rep_logit": 0.05713164806365967,
+        "base_top3": [
+          " HEX",
+          " ‘",
+          "크"
+        ],
+        "cerdpo_top3": [
+          "了",
+          "gcm",
+          "baz"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 13,
+        "base_dla": 0.0325801745057106,
+        "cerdpo_dla": 0.1290229856967926,
+        "flip_delta": 0.096442811191082,
+        "base_dep_logit": -0.023277603089809418,
+        "base_rep_logit": 0.009302574209868908,
+        "cerdpo_dep_logit": -0.06383596360683441,
+        "cerdpo_rep_logit": 0.06518702208995819,
+        "base_top3": [
+          "_",
+          ",",
+          ")"
+        ],
+        "cerdpo_top3": [
+          "석",
+          "gency",
+          "落"
+        ]
+      },
+      {
+        "layer": 16,
+        "head": 28,
+        "base_dla": 0.015011460520327091,
+        "cerdpo_dla": 0.10662227869033813,
+        "flip_delta": 0.09161081817001104,
+        "base_dep_logit": 0.006848678924143314,
+        "base_rep_logit": 0.021860137581825256,
+        "cerdpo_dep_logit": -0.024656087160110474,
+        "cerdpo_rep_logit": 0.08196619153022766,
+        "base_top3": [
+          "kind",
+          "pip",
+          "Kind"
+        ],
+        "cerdpo_top3": [
+          ".",
+          "pip",
+          "("
+        ]
+      },
+      {
+        "layer": 21,
+        "head": 3,
+        "base_dla": 0.09818881005048752,
+        "cerdpo_dla": 0.18529200553894043,
+        "flip_delta": 0.08710319548845291,
+        "base_dep_logit": -0.12585432827472687,
+        "base_rep_logit": -0.027665507048368454,
+        "cerdpo_dep_logit": -0.1473013162612915,
+        "cerdpo_rep_logit": 0.03799071162939072,
+        "base_top3": [
+          " sig",
+          "softmax",
+          "Sig"
+        ],
+        "cerdpo_top3": [
+          " sig",
+          "Sig",
+          "范"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 13,
+        "base_dla": 0.0030026398599147797,
+        "cerdpo_dla": 0.08485746383666992,
+        "flip_delta": 0.08185482397675514,
+        "base_dep_logit": 0.008595786988735199,
+        "base_rep_logit": 0.01159842312335968,
+        "cerdpo_dep_logit": -0.015945913270115852,
+        "cerdpo_rep_logit": 0.06891156733036041,
+        "base_top3": [
+          " CNN",
+          "CNN",
+          " PyTorch"
+        ],
+        "cerdpo_top3": [
+          "CB",
+          "CE",
+          "cb"
+        ]
+      }
+    ],
+    "bottom_flipped": [
+      {
+        "layer": 21,
+        "head": 22,
+        "base_dla": 0.22026696801185608,
+        "cerdpo_dla": 0.1083938330411911,
+        "flip_delta": -0.11187313497066498,
+        "base_dep_logit": -0.19844675064086914,
+        "base_rep_logit": 0.021820254623889923,
+        "cerdpo_dep_logit": -0.06723417341709137,
+        "cerdpo_rep_logit": 0.04115965589880943,
+        "base_top3": [
+          " onto",
+          "aku",
+          " EventEmitter"
+        ],
+        "cerdpo_top3": [
+          " onto",
+          " padr",
+          "atile"
+        ]
+      },
+      {
+        "layer": 23,
+        "head": 5,
+        "base_dla": 0.1386357992887497,
+        "cerdpo_dla": 0.017041534185409546,
+        "flip_delta": -0.12159426510334015,
+        "base_dep_logit": -0.07857432961463928,
+        "base_rep_logit": 0.06006145104765892,
+        "cerdpo_dep_logit": -0.012433738447725773,
+        "cerdpo_rep_logit": 0.004607797600328922,
+        "base_top3": [
+          "ORTE",
+          "LTA",
+          " CLA"
+        ],
+        "cerdpo_top3": [
+          "ORTE",
+          "LTA",
+          " CLA"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 3,
+        "base_dla": -0.07762320339679718,
+        "cerdpo_dla": -0.20145465433597565,
+        "flip_delta": -0.12383145093917847,
+        "base_dep_logit": 0.007506375201046467,
+        "base_rep_logit": -0.07011681795120239,
+        "cerdpo_dep_logit": 0.06969396770000458,
+        "cerdpo_rep_logit": -0.13176065683364868,
+        "base_top3": [
+          "ート",
+          "WT",
+          "sof"
+        ],
+        "cerdpo_top3": [
+          "cej",
+          "核",
+          "定"
+        ]
+      },
+      {
+        "layer": 23,
+        "head": 9,
+        "base_dla": 0.21383342146873474,
+        "cerdpo_dla": 0.08842956274747849,
+        "flip_delta": -0.12540385872125626,
+        "base_dep_logit": -0.16954351961612701,
+        "base_rep_logit": 0.04428991302847862,
+        "cerdpo_dep_logit": -0.05640220642089844,
+        "cerdpo_rep_logit": 0.03202734887599945,
+        "base_top3": [
+          " getActivity",
+          "getActivity",
+          " activity"
+        ],
+        "cerdpo_top3": [
+          " getActivity",
+          "getActivity",
+          " activity"
+        ]
+      },
+      {
+        "layer": 22,
+        "head": 0,
+        "base_dla": -0.021563317626714706,
+        "cerdpo_dla": -0.15300177037715912,
+        "flip_delta": -0.1314384527504444,
+        "base_dep_logit": 0.01112531591206789,
+        "base_rep_logit": -0.010438002645969391,
+        "cerdpo_dep_logit": 0.08860056847333908,
+        "cerdpo_rep_logit": -0.06440121680498123,
+        "base_top3": [
+          "<pr_review>",
+          "npx",
+          "️"
+        ],
+        "cerdpo_top3": [
+          "<pr_review>",
+          "covid",
+          "npx"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 2,
+        "base_dla": -0.06604963541030884,
+        "cerdpo_dla": -0.2100316435098648,
+        "flip_delta": -0.14398200809955597,
+        "base_dep_logit": 0.041927237063646317,
+        "base_rep_logit": -0.024122390896081924,
+        "cerdpo_dep_logit": 0.17027902603149414,
+        "cerdpo_rep_logit": -0.0397525317966938,
+        "base_top3": [
+          "��",
+          "abilir",
+          " l"
+        ],
+        "cerdpo_top3": [
+          "ก",
+          " г",
+          "Г"
+        ]
+      },
+      {
+        "layer": 30,
+        "head": 29,
+        "base_dla": -0.051645029336214066,
+        "cerdpo_dla": -0.20215855538845062,
+        "flip_delta": -0.15051352605223656,
+        "base_dep_logit": 0.03745229169726372,
+        "base_rep_logit": -0.014192739501595497,
+        "cerdpo_dep_logit": 0.12817932665348053,
+        "cerdpo_rep_logit": -0.07397922873497009,
+        "base_top3": [
+          "of",
+          " of",
+          "OF"
+        ],
+        "cerdpo_top3": [
+          "geme",
+          "party",
+          " term"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 7,
+        "base_dla": 0.07857418060302734,
+        "cerdpo_dla": -0.0837591290473938,
+        "flip_delta": -0.16233330965042114,
+        "base_dep_logit": -0.1404733508825302,
+        "base_rep_logit": -0.06189918890595436,
+        "cerdpo_dep_logit": -0.0807640329003334,
+        "cerdpo_rep_logit": -0.164523184299469,
+        "base_top3": [
+          "foot",
+          "ใ",
+          "�"
+        ],
+        "cerdpo_top3": [
+          "エ",
+          "文",
+          "methe"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 16,
+        "base_dla": 0.043563395738601685,
+        "cerdpo_dla": -0.12212453782558441,
+        "flip_delta": -0.1656879335641861,
+        "base_dep_logit": -0.02952900342643261,
+        "base_rep_logit": 0.014034401625394821,
+        "cerdpo_dep_logit": 0.10275115072727203,
+        "cerdpo_rep_logit": -0.019373364746570587,
+        "base_top3": [
+          "}->{",
+          "protect",
+          "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        ],
+        "cerdpo_top3": [
+          "aster",
+          "protect",
+          "utr"
+        ]
+      },
+      {
+        "layer": 31,
+        "head": 10,
+        "base_dla": -0.008085926063358784,
+        "cerdpo_dla": -0.17568853497505188,
+        "flip_delta": -0.1676026089116931,
+        "base_dep_logit": 0.005689568817615509,
+        "base_rep_logit": -0.0023963567800819874,
+        "cerdpo_dep_logit": 0.1353341042995453,
+        "cerdpo_rep_logit": -0.040354423224925995,
+        "base_top3": [
+          " TensorFlow",
+          " PyTorch",
+          " pytorch"
+        ],
+        "cerdpo_top3": [
+          "照",
+          "ook",
+          "licht"
+        ]
+      }
+    ]
+  }
+}

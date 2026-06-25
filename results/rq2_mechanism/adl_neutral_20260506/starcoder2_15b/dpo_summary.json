@@ -1,0 +1,854 @@
+{
+  "random_neutral_text": {
+    "count": 12,
+    "layer_summary": [
+      {
+        "layer": 0,
+        "mean_diff_norm": 0.08147088252007961
+      },
+      {
+        "layer": 1,
+        "mean_diff_norm": 9.730110088984171
+      },
+      {
+        "layer": 2,
+        "mean_diff_norm": 9.730777859687805
+      },
+      {
+        "layer": 3,
+        "mean_diff_norm": 9.786261359850565
+      },
+      {
+        "layer": 4,
+        "mean_diff_norm": 9.796152313550314
+      },
+      {
+        "layer": 5,
+        "mean_diff_norm": 9.821336030960083
+      },
+      {
+        "layer": 6,
+        "mean_diff_norm": 9.853450298309326
+      },
+      {
+        "layer": 7,
+        "mean_diff_norm": 9.876543362935385
+      },
+      {
+        "layer": 8,
+        "mean_diff_norm": 9.90525229771932
+      },
+      {
+        "layer": 9,
+        "mean_diff_norm": 9.906859676043192
+      },
+      {
+        "layer": 10,
+        "mean_diff_norm": 9.974905331929525
+      },
+      {
+        "layer": 11,
+        "mean_diff_norm": 9.99408475557963
+      },
+      {
+        "layer": 12,
+        "mean_diff_norm": 10.035808006922403
+      },
+      {
+        "layer": 13,
+        "mean_diff_norm": 10.03402054309845
+      },
+      {
+        "layer": 14,
+        "mean_diff_norm": 10.322093486785889
+      },
+      {
+        "layer": 15,
+        "mean_diff_norm": 10.201798041661581
+      },
+      {
+        "layer": 16,
+        "mean_diff_norm": 9.338188727696737
+      },
+      {
+        "layer": 17,
+        "mean_diff_norm": 8.12844693660736
+      },
+      {
+        "layer": 18,
+        "mean_diff_norm": 6.632670481999715
+      },
+      {
+        "layer": 19,
+        "mean_diff_norm": 6.4056382576624555
+      },
+      {
+        "layer": 20,
+        "mean_diff_norm": 6.305325388908386
+      },
+      {
+        "layer": 21,
+        "mean_diff_norm": 7.20490829149882
+      },
+      {
+        "layer": 22,
+        "mean_diff_norm": 7.496289650599162
+      },
+      {
+        "layer": 23,
+        "mean_diff_norm": 8.086798588434855
+      },
+      {
+        "layer": 24,
+        "mean_diff_norm": 8.881259202957153
+      },
+      {
+        "layer": 25,
+        "mean_diff_norm": 9.599239508310953
+      },
+      {
+        "layer": 26,
+        "mean_diff_norm": 10.17730180422465
+      },
+      {
+        "layer": 27,
+        "mean_diff_norm": 11.255535364151001
+      },
+      {
+        "layer": 28,
+        "mean_diff_norm": 12.319253126780191
+      },
+      {
+        "layer": 29,
+        "mean_diff_norm": 13.233362913131714
+      },
+      {
+        "layer": 30,
+        "mean_diff_norm": 14.543939669926962
+      },
+      {
+        "layer": 31,
+        "mean_diff_norm": 15.635061264038086
+      },
+      {
+        "layer": 32,
+        "mean_diff_norm": 16.572540044784546
+      },
+      {
+        "layer": 33,
+        "mean_diff_norm": 17.660550594329834
+      },
+      {
+        "layer": 34,
+        "mean_diff_norm": 18.65373730659485
+      },
+      {
+        "layer": 35,
+        "mean_diff_norm": 19.848050514856975
+      },
+      {
+        "layer": 36,
+        "mean_diff_norm": 21.65600824356079
+      },
+      {
+        "layer": 37,
+        "mean_diff_norm": 26.59610366821289
+      },
+      {
+        "layer": 38,
+        "mean_diff_norm": 34.92164850234985
+      },
+      {
+        "layer": 39,
+        "mean_diff_norm": 20.17347288131714
+      }
+    ],
+    "final_layer_mean_diff_norm": 20.17347288131714,
+    "mean_family_scores": {
+      "replacement": 0.3464607248703639,
+      "deprecated": 0.20545921692003807,
+      "library_version": 0.41889477769533795
+    },
+    "replacement_minus_deprecated_score": 0.14100150795032582,
+    "top_amplified_tokens": [
+      {
+        "token_id": 31716,
+        "token_text": "🔅",
+        "logit_diff": 6.96875
+      },
+      {
+        "token_id": 15223,
+        "token_text": "|-:",
+        "logit_diff": 6.725260257720947
+      },
+      {
+        "token_id": 44211,
+        "token_text": "💾",
+        "logit_diff": 6.243489742279053
+      },
+      {
+        "token_id": 46256,
+        "token_text": "/.*,",
+        "logit_diff": 5.875
+      },
+      {
+        "token_id": 18477,
+        "token_text": "`*^",
+        "logit_diff": 5.645833492279053
+      },
+      {
+        "token_id": 39020,
+        "token_text": "-<-",
+        "logit_diff": 5.3828125
+      },
+      {
+        "token_id": 44550,
+        "token_text": "◌",
+        "logit_diff": 5.1953125
+      },
+      {
+        "token_id": 39367,
+        "token_text": "┊",
+        "logit_diff": 5.091145992279053
+      },
+      {
+        "token_id": 212,
+        "token_text": "\u0000",
+        "logit_diff": 5.049479007720947
+      },
+      {
+        "token_id": 36137,
+        "token_text": "Indenting",
+        "logit_diff": 4.868489742279053
+      },
+      {
+        "token_id": 11431,
+        "token_text": "微博热度",
+        "logit_diff": 4.80859375
+      },
+      {
+        "token_id": 41783,
+        "token_text": "APIProtocol",
+        "logit_diff": 4.786458492279053
+      },
+      {
+        "token_id": 28239,
+        "token_text": "=\"#[",
+        "logit_diff": 4.7734375
+      },
+      {
+        "token_id": 48359,
+        "token_text": "ComputeV",
+        "logit_diff": 4.760416507720947
+      },
+      {
+        "token_id": 4403,
+        "token_text": "lluminate",
+        "logit_diff": 4.6953125
+      },
+      {
+        "token_id": 40315,
+        "token_text": "''@",
+        "logit_diff": 4.627604007720947
+      },
+      {
+        "token_id": 43120,
+        "token_text": "SyntaxParser",
+        "logit_diff": 4.611979007720947
+      },
+      {
+        "token_id": 38555,
+        "token_text": "Mngmt",
+        "logit_diff": 4.609375
+      },
+      {
+        "token_id": 43971,
+        "token_text": "𝑺",
+        "logit_diff": 4.513020992279053
+      },
+      {
+        "token_id": 43719,
+        "token_text": "Loremip",
+        "logit_diff": 4.484375
+      },
+      {
+        "token_id": 38975,
+        "token_text": "FindConfig",
+        "logit_diff": 4.463541507720947
+      },
+      {
+        "token_id": 21254,
+        "token_text": "linalg",
+        "logit_diff": 4.454732418060303
+      },
+      {
+        "token_id": 45737,
+        "token_text": "GNULIB",
+        "logit_diff": 4.408854007720947
+      },
+      {
+        "token_id": 41130,
+        "token_text": "BOEH",
+        "logit_diff": 4.40625
+      },
+      {
+        "token_id": 22492,
+        "token_text": "pberry",
+        "logit_diff": 4.401041507720947
+      }
+    ],
+    "top_suppressed_tokens": [
+      {
+        "token_id": 8540,
+        "token_text": "compat",
+        "logit_diff": -1.8893228769302368
+      },
+      {
+        "token_id": 53,
+        "token_text": "0",
+        "logit_diff": -1.626953125
+      },
+      {
+        "token_id": 33265,
+        "token_text": "COMPAT",
+        "logit_diff": -1.4375
+      },
+      {
+        "token_id": 1527,
+        "token_text": "true",
+        "logit_diff": -1.4372457265853882
+      },
+      {
+        "token_id": 48035,
+        "token_text": " Compatibility",
+        "logit_diff": -1.41796875
+      },
+      {
+        "token_id": 4,
+        "token_text": "<fim_pad>",
+        "logit_diff": -1.4153646230697632
+      },
+      {
+        "token_id": 75,
+        "token_text": "F",
+        "logit_diff": -1.3854166269302368
+      },
+      {
+        "token_id": 3,
+        "token_text": "<fim_suffix>",
+        "logit_diff": -1.3828939199447632
+      },
+      {
+        "token_id": 54,
+        "token_text": "1",
+        "logit_diff": -1.3203125
+      },
+      {
+        "token_id": 2,
+        "token_text": "<fim_middle>",
+        "logit_diff": -1.31976318359375
+      },
+      {
+        "token_id": 72,
+        "token_text": "C",
+        "logit_diff": -1.2981771230697632
+      },
+      {
+        "token_id": 55,
+        "token_text": "2",
+        "logit_diff": -1.234375
+      },
+      {
+        "token_id": 82,
+        "token_text": "M",
+        "logit_diff": -1.203125
+      },
+      {
+        "token_id": 33227,
+        "token_text": "ifeq",
+        "logit_diff": -1.2022298574447632
+      },
+      {
+        "token_id": 48477,
+        "token_text": "ARGV",
+        "logit_diff": -1.1223958730697632
+      },
+      {
+        "token_id": 436,
+        "token_text": "up",
+        "logit_diff": -1.11883544921875
+      },
+      {
+        "token_id": 34822,
+        "token_text": " Compat",
+        "logit_diff": -1.1158853769302368
+      },
+      {
+        "token_id": 56,
+        "token_text": "3",
+        "logit_diff": -1.1119791269302368
+      },
+      {
+        "token_id": 71,
+        "token_text": "B",
+        "logit_diff": -1.0826822519302368
+      },
+      {
+        "token_id": 107,
+        "token_text": "f",
+        "logit_diff": -1.0130208730697632
+      },
+      {
+        "token_id": 92,
+        "token_text": "W",
+        "logit_diff": -1.0065103769302368
+      },
+      {
+        "token_id": 3420,
+        "token_text": "Product",
+        "logit_diff": -1.0024369955062866
+      },
+      {
+        "token_id": 103,
+        "token_text": "b",
+        "logit_diff": -0.998046875
+      },
+      {
+        "token_id": 85,
+        "token_text": "P",
+        "logit_diff": -0.9967448115348816
+      },
+      {
+        "token_id": 89,
+        "token_text": "T",
+        "logit_diff": -0.9791666865348816
+      }
+    ]
+  },
+  "library_neutral_code": {
+    "count": 24,
+    "layer_summary": [
+      {
+        "layer": 0,
+        "mean_diff_norm": 0.08169105214377244
+      },
+      {
+        "layer": 1,
+        "mean_diff_norm": 0.1695116013288498
+      },
+      {
+        "layer": 2,
+        "mean_diff_norm": 0.3615606178840001
+      },
+      {
+        "layer": 3,
+        "mean_diff_norm": 0.5158773213624954
+      },
+      {
+        "layer": 4,
+        "mean_diff_norm": 0.670427014430364
+      },
+      {
+        "layer": 5,
+        "mean_diff_norm": 0.8635171949863434
+      },
+      {
+        "layer": 6,
+        "mean_diff_norm": 1.092874174316724
+      },
+      {
+        "layer": 7,
+        "mean_diff_norm": 1.3074744219581287
+      },
+      {
+        "layer": 8,
+        "mean_diff_norm": 1.5722177376349766
+      },
+      {
+        "layer": 9,
+        "mean_diff_norm": 1.798841193318367
+      },
+      {
+        "layer": 10,
+        "mean_diff_norm": 2.391937385002772
+      },
+      {
+        "layer": 11,
+        "mean_diff_norm": 2.6468442479769387
+      },
+      {
+        "layer": 12,
+        "mean_diff_norm": 3.1488690276940665
+      },
+      {
+        "layer": 13,
+        "mean_diff_norm": 3.833422601222992
+      },
+      {
+        "layer": 14,
+        "mean_diff_norm": 5.0367538134257
+      },
+      {
+        "layer": 15,
+        "mean_diff_norm": 5.793865253527959
+      },
+      {
+        "layer": 16,
+        "mean_diff_norm": 6.539474735657374
+      },
+      {
+        "layer": 17,
+        "mean_diff_norm": 7.3825423419475555
+      },
+      {
+        "layer": 18,
+        "mean_diff_norm": 9.165445327758789
+      },
+      {
+        "layer": 19,
+        "mean_diff_norm": 11.026373167832693
+      },
+      {
+        "layer": 20,
+        "mean_diff_norm": 13.562158008416494
+      },
+      {
+        "layer": 21,
+        "mean_diff_norm": 18.711626410484314
+      },
+      {
+        "layer": 22,
+        "mean_diff_norm": 21.157502730687458
+      },
+      {
+        "layer": 23,
+        "mean_diff_norm": 23.623865207036335
+      },
+      {
+        "layer": 24,
+        "mean_diff_norm": 27.504632115364075
+      },
+      {
+        "layer": 25,
+        "mean_diff_norm": 30.453357021013897
+      },
+      {
+        "layer": 26,
+        "mean_diff_norm": 33.299756368001304
+      },
+      {
+        "layer": 27,
+        "mean_diff_norm": 38.35517636934916
+      },
+      {
+        "layer": 28,
+        "mean_diff_norm": 42.465154568354286
+      },
+      {
+        "layer": 29,
+        "mean_diff_norm": 46.68305889765421
+      },
+      {
+        "layer": 30,
+        "mean_diff_norm": 52.26630743344625
+      },
+      {
+        "layer": 31,
+        "mean_diff_norm": 56.763624827067055
+      },
+      {
+        "layer": 32,
+        "mean_diff_norm": 59.89406704902649
+      },
+      {
+        "layer": 33,
+        "mean_diff_norm": 64.05095505714417
+      },
+      {
+        "layer": 34,
+        "mean_diff_norm": 66.9941171805064
+      },
+      {
+        "layer": 35,
+        "mean_diff_norm": 70.33834727605183
+      },
+      {
+        "layer": 36,
+        "mean_diff_norm": 75.42938979466756
+      },
+      {
+        "layer": 37,
+        "mean_diff_norm": 84.15880457560222
+      },
+      {
+        "layer": 38,
+        "mean_diff_norm": 92.9998008410136
+      },
+      {
+        "layer": 39,
+        "mean_diff_norm": 68.43488470713298
+      }
+    ],
+    "final_layer_mean_diff_norm": 68.43488470713298,
+    "mean_family_scores": {
+      "replacement": 0.3481109083319704,
+      "deprecated": -0.025655184329176944,
+      "library_version": 0.28461895588164526
+    },
+    "replacement_minus_deprecated_score": 0.37376609266114735,
+    "top_amplified_tokens": [
+      {
+        "token_id": 21254,
+        "token_text": "linalg",
+        "logit_diff": 12.2413330078125
+      },
+      {
+        "token_id": 18477,
+        "token_text": "`*^",
+        "logit_diff": 11.169270515441895
+      },
+      {
+        "token_id": 46256,
+        "token_text": "/.*,",
+        "logit_diff": 9.938801765441895
+      },
+      {
+        "token_id": 38454,
+        "token_text": "tshop",
+        "logit_diff": 9.830729484558105
+      },
+      {
+        "token_id": 15223,
+        "token_text": "|-:",
+        "logit_diff": 9.72119140625
+      },
+      {
+        "token_id": 29126,
+        "token_text": "jeky",
+        "logit_diff": 9.361979484558105
+      },
+      {
+        "token_id": 22492,
+        "token_text": "pberry",
+        "logit_diff": 9.291666984558105
+      },
+      {
+        "token_id": 4403,
+        "token_text": "lluminate",
+        "logit_diff": 9.2734375
+      },
+      {
+        "token_id": 39020,
+        "token_text": "-<-",
+        "logit_diff": 9.125
+      },
+      {
+        "token_id": 32779,
+        "token_text": "mtlk",
+        "logit_diff": 9.03125
+      },
+      {
+        "token_id": 212,
+        "token_text": "\u0000",
+        "logit_diff": 8.90234375
+      },
+      {
+        "token_id": 44925,
+        "token_text": "lfid",
+        "logit_diff": 8.802083015441895
+      },
+      {
+        "token_id": 34854,
+        "token_text": "yypt",
+        "logit_diff": 8.756510734558105
+      },
+      {
+        "token_id": 31716,
+        "token_text": "🔅",
+        "logit_diff": 8.69140625
+      },
+      {
+        "token_id": 18696,
+        "token_text": "scriptors",
+        "logit_diff": 8.459635734558105
+      },
+      {
+        "token_id": 14172,
+        "token_text": ":%.*",
+        "logit_diff": 8.341145515441895
+      },
+      {
+        "token_id": 38555,
+        "token_text": "Mngmt",
+        "logit_diff": 8.178385734558105
+      },
+      {
+        "token_id": 43719,
+        "token_text": "Loremip",
+        "logit_diff": 8.131510734558105
+      },
+      {
+        "token_id": 36594,
+        "token_text": "nimiq",
+        "logit_diff": 8.12890625
+      },
+      {
+        "token_id": 20081,
+        "token_text": "xabab",
+        "logit_diff": 8.10546875
+      },
+      {
+        "token_id": 48080,
+        "token_text": "shkar",
+        "logit_diff": 8.033854484558105
+      },
+      {
+        "token_id": 37320,
+        "token_text": "%;\"\">",
+        "logit_diff": 7.971354007720947
+      },
+      {
+        "token_id": 43941,
+        "token_text": "òÉ",
+        "logit_diff": 7.930989742279053
+      },
+      {
+        "token_id": 37661,
+        "token_text": "uiton",
+        "logit_diff": 7.87066650390625
+      },
+      {
+        "token_id": 27907,
+        "token_text": "pfcp",
+        "logit_diff": 7.809895992279053
+      }
+    ],
+    "top_suppressed_tokens": [
+      {
+        "token_id": 8540,
+        "token_text": "compat",
+        "logit_diff": -6.861734867095947
+      },
+      {
+        "token_id": 1527,
+        "token_text": "true",
+        "logit_diff": -5.409311771392822
+      },
+      {
+        "token_id": 2463,
+        "token_text": "product",
+        "logit_diff": -4.134962558746338
+      },
+      {
+        "token_id": 1886,
+        "token_text": "false",
+        "logit_diff": -3.2659921646118164
+      },
+      {
+        "token_id": 8262,
+        "token_text": " compat",
+        "logit_diff": -3.0895183086395264
+      },
+      {
+        "token_id": 55,
+        "token_text": "2",
+        "logit_diff": -2.8231608867645264
+      },
+      {
+        "token_id": 3420,
+        "token_text": "Product",
+        "logit_diff": -2.65789532661438
+      },
+      {
+        "token_id": 29119,
+        "token_text": "compatibility",
+        "logit_diff": -2.5823566913604736
+      },
+      {
+        "token_id": 54,
+        "token_text": "1",
+        "logit_diff": -2.5276691913604736
+      },
+      {
+        "token_id": 56,
+        "token_text": "3",
+        "logit_diff": -2.5170085430145264
+      },
+      {
+        "token_id": 5824,
+        "token_text": "sy",
+        "logit_diff": -2.4891254901885986
+      },
+      {
+        "token_id": 102,
+        "token_text": "a",
+        "logit_diff": -2.4430339336395264
+      },
+      {
+        "token_id": 53,
+        "token_text": "0",
+        "logit_diff": -2.4163410663604736
+      },
+      {
+        "token_id": 471,
+        "token_text": "to",
+        "logit_diff": -2.4121437072753906
+      },
+      {
+        "token_id": 1844,
+        "token_text": "True",
+        "logit_diff": -2.4073944091796875
+      },
+      {
+        "token_id": 57,
+        "token_text": "4",
+        "logit_diff": -2.3743488788604736
+      },
+      {
+        "token_id": 33265,
+        "token_text": "COMPAT",
+        "logit_diff": -2.3723957538604736
+      },
+      {
+        "token_id": 436,
+        "token_text": "up",
+        "logit_diff": -2.3513996601104736
+      },
+      {
+        "token_id": 122,
+        "token_text": "u",
+        "logit_diff": -2.3089191913604736
+      },
+      {
+        "token_id": 11493,
+        "token_text": "complex",
+        "logit_diff": -2.2937824726104736
+      },
+      {
+        "token_id": 878,
+        "token_text": " true",
+        "logit_diff": -2.2639973163604736
+      },
+      {
+        "token_id": 59,
+        "token_text": "6",
+        "logit_diff": -2.240234375
+      },
+      {
+        "token_id": 117,
+        "token_text": "p",
+        "logit_diff": -2.2209675312042236
+      },
+      {
+        "token_id": 105,
+        "token_text": "d",
+        "logit_diff": -2.1966145038604736
+      },
+      {
+        "token_id": 115,
+        "token_text": "n",
+        "logit_diff": -2.18115234375
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "samples_jsonl": "/workspace/version-control-study/05_positive_engineering/output/official_code_eval_20260421_full_g3_qwen7b/qwen2_5_coder_7b_instruct/lora/mbpp/samples.jsonl",
+  "tasks": 257,
+  "pass@1": 0.0,
+  "timeout": 3.0
+}

@@ -1,0 +1,200 @@
+{
+  "model_key": "deepseek_coder_6_7b_instruct",
+  "model_name_or_path": "/data/models/deepseek-ai/deepseek-coder-6.7b-instruct",
+  "adapter_dir": null,
+  "candidate_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/shortlist_2400.jsonl",
+  "summary": {
+    "label": "base",
+    "samples": 1596,
+    "exact_api_match_rate": 0.6384711779448622,
+    "nonempty_api_prediction_rate": 0.981829573934837,
+    "per_api": [
+      {
+        "api": "Categorical",
+        "samples": 18,
+        "exact_api_match_rate": 0.7222222222222222
+      },
+      {
+        "api": "DataFrame",
+        "samples": 60,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "FloatTensor",
+        "samples": 60,
+        "exact_api_match_rate": 0.48333333333333334
+      },
+      {
+        "api": "Linear",
+        "samples": 29,
+        "exact_api_match_rate": 0.7931034482758621
+      },
+      {
+        "api": "RandomState",
+        "samples": 60,
+        "exact_api_match_rate": 0.75
+      },
+      {
+        "api": "Series",
+        "samples": 60,
+        "exact_api_match_rate": 0.9333333333333333
+      },
+      {
+        "api": "abs",
+        "samples": 60,
+        "exact_api_match_rate": 0.5
+      },
+      {
+        "api": "arange",
+        "samples": 60,
+        "exact_api_match_rate": 0.5833333333333334
+      },
+      {
+        "api": "array",
+        "samples": 60,
+        "exact_api_match_rate": 0.8166666666666667
+      },
+      {
+        "api": "asarray",
+        "samples": 60,
+        "exact_api_match_rate": 0.55
+      },
+      {
+        "api": "axes_style",
+        "samples": 11,
+        "exact_api_match_rate": 0.9090909090909091
+      },
+      {
+        "api": "cat",
+        "samples": 60,
+        "exact_api_match_rate": 0.8833333333333333
+      },
+      {
+        "api": "color_palette",
+        "samples": 7,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "config_context",
+        "samples": 15,
+        "exact_api_match_rate": 0.2
+      },
+      {
+        "api": "device",
+        "samples": 34,
+        "exact_api_match_rate": 0.9117647058823529
+      },
+      {
+        "api": "dot",
+        "samples": 60,
+        "exact_api_match_rate": 0.4166666666666667
+      },
+      {
+        "api": "dtype",
+        "samples": 60,
+        "exact_api_match_rate": 0.75
+      },
+      {
+        "api": "empty",
+        "samples": 60,
+        "exact_api_match_rate": 0.3333333333333333
+      },
+      {
+        "api": "fit",
+        "samples": 7,
+        "exact_api_match_rate": 0.7142857142857143
+      },
+      {
+        "api": "get_config",
+        "samples": 6,
+        "exact_api_match_rate": 0.3333333333333333
+      },
+      {
+        "api": "isscalarlike",
+        "samples": 6,
+        "exact_api_match_rate": 0.3333333333333333
+      },
+      {
+        "api": "linspace",
+        "samples": 60,
+        "exact_api_match_rate": 0.48333333333333334
+      },
+      {
+        "api": "load_dataset",
+        "samples": 9,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "minimize",
+        "samples": 5,
+        "exact_api_match_rate": 0.2
+      },
+      {
+        "api": "no_grad",
+        "samples": 60,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "ones",
+        "samples": 60,
+        "exact_api_match_rate": 0.5166666666666667
+      },
+      {
+        "api": "predict",
+        "samples": 6,
+        "exact_api_match_rate": 0.8333333333333334
+      },
+      {
+        "api": "randn",
+        "samples": 60,
+        "exact_api_match_rate": 0.7
+      },
+      {
+        "api": "save",
+        "samples": 32,
+        "exact_api_match_rate": 0.90625
+      },
+      {
+        "api": "set_config",
+        "samples": 55,
+        "exact_api_match_rate": 0.03636363636363636
+      },
+      {
+        "api": "sqrt",
+        "samples": 60,
+        "exact_api_match_rate": 0.6
+      },
+      {
+        "api": "stack",
+        "samples": 25,
+        "exact_api_match_rate": 0.76
+      },
+      {
+        "api": "sum",
+        "samples": 60,
+        "exact_api_match_rate": 0.36666666666666664
+      },
+      {
+        "api": "tensor",
+        "samples": 60,
+        "exact_api_match_rate": 0.8333333333333334
+      },
+      {
+        "api": "transform",
+        "samples": 11,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "unique",
+        "samples": 60,
+        "exact_api_match_rate": 0.4666666666666667
+      },
+      {
+        "api": "zeros",
+        "samples": 120,
+        "exact_api_match_rate": 0.625
+      }
+    ],
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/deepseek_coder_6_7b_instruct_base/base_predictions.jsonl"
+  }
+}

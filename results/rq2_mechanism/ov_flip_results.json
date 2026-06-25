@@ -1,0 +1,2042 @@
+{
+  "torch.svd → torch.linalg.svd": {
+    "pair": {
+      "name": "torch.svd → torch.linalg.svd",
+      "deprecated": "torch.svd",
+      "replacement": "torch.linalg.svd",
+      "dep_token": "svd",
+      "rep_token": "linalg",
+      "dep_token_id": 33607,
+      "rep_token_id": 21254
+    },
+    "top_flipped_heads": [
+      {
+        "layer": 21,
+        "head": 8,
+        "flip_score": 4510,
+        "rep_gain": 3965,
+        "dep_drop": 545,
+        "base": {
+          "dep_rank": 44464,
+          "rep_rank": 34487,
+          "top5": [
+            "Concrete",
+            "erl",
+            "tra",
+            "ר",
+            "trans"
+          ],
+          "dep_logit": -0.006426205858588219,
+          "rep_logit": -0.003632697742432356
+        },
+        "cerdpo": {
+          "dep_rank": 45009,
+          "rep_rank": 30522,
+          "top5": [
+            "Concrete",
+            "erl",
+            "tra",
+            "ר",
+            "trans"
+          ],
+          "dep_logit": -0.006647024769335985,
+          "rep_logit": -0.00284277880564332
+        }
+      },
+      {
+        "layer": 21,
+        "head": 10,
+        "flip_score": 4157,
+        "rep_gain": 3207,
+        "dep_drop": 950,
+        "base": {
+          "dep_rank": 37130,
+          "rep_rank": 35630,
+          "top5": [
+            "<NAME>",
+            "yang",
+            "errit",
+            "Occ",
+            " Typed"
+          ],
+          "dep_logit": -0.002461774740368128,
+          "rep_logit": -0.002170528518036008
+        },
+        "cerdpo": {
+          "dep_rank": 38080,
+          "rep_rank": 32423,
+          "top5": [
+            "<NAME>",
+            "yang",
+            "errit",
+            "Occ",
+            " Typed"
+          ],
+          "dep_logit": -0.0026253294199705124,
+          "rep_logit": -0.0015718196518719196
+        }
+      },
+      {
+        "layer": 23,
+        "head": 3,
+        "flip_score": 3790,
+        "rep_gain": 2920,
+        "dep_drop": 870,
+        "base": {
+          "dep_rank": 14811,
+          "rep_rank": 24944,
+          "top5": [
+            " pg",
+            " Per",
+            "pg",
+            " principal",
+            " per"
+          ],
+          "dep_logit": 0.0005058078095316887,
+          "rep_logit": -0.0009716685162857175
+        },
+        "cerdpo": {
+          "dep_rank": 15681,
+          "rep_rank": 22024,
+          "top5": [
+            " pg",
+            " Per",
+            "pg",
+            " per",
+            " principal"
+          ],
+          "dep_logit": 0.0003658414352685213,
+          "rep_logit": -0.0005760668427683413
+        }
+      },
+      {
+        "layer": 21,
+        "head": 7,
+        "flip_score": 3556,
+        "rep_gain": 3297,
+        "dep_drop": 259,
+        "base": {
+          "dep_rank": 46240,
+          "rep_rank": 14758,
+          "top5": [
+            "ALIGN",
+            " (^)(",
+            "wiz",
+            "olas",
+            "TESTS"
+          ],
+          "dep_logit": -0.005317261908203363,
+          "rep_logit": 0.0025441923644393682
+        },
+        "cerdpo": {
+          "dep_rank": 46499,
+          "rep_rank": 11461,
+          "top5": [
+            "ALIGN",
+            " (^)(",
+            "wiz",
+            "olas",
+            "TESTS"
+          ],
+          "dep_logit": -0.005496160127222538,
+          "rep_logit": 0.0033386144787073135
+        }
+      },
+      {
+        "layer": 31,
+        "head": 15,
+        "flip_score": 3462,
+        "rep_gain": 3462,
+        "dep_drop": 0,
+        "base": {
+          "dep_rank": 49151,
+          "rep_rank": 12478,
+          "top5": [
+            "\n",
+            "%",
+            "\n       ",
+            "\n   ",
+            "\n           "
+          ],
+          "dep_logit": -0.020815804600715637,
+          "rep_logit": 0.0018958798609673977
+        },
+        "cerdpo": {
+          "dep_rank": 49151,
+          "rep_rank": 9016,
+          "top5": [
+            "\n",
+            "%",
+            "\n       ",
+            "\n   ",
+            "\n           "
+          ],
+          "dep_logit": -0.02105981670320034,
+          "rep_logit": 0.0026547331362962723
+        }
+      },
+      {
+        "layer": 29,
+        "head": 30,
+        "flip_score": 3401,
+        "rep_gain": 2115,
+        "dep_drop": 1286,
+        "base": {
+          "dep_rank": 12620,
+          "rep_rank": 9051,
+          "top5": [
+            " NE",
+            "GO",
+            "TO",
+            "BE",
+            " TO"
+          ],
+          "dep_logit": 0.00325391604565084,
+          "rep_logit": 0.004101087339222431
+        },
+        "cerdpo": {
+          "dep_rank": 13906,
+          "rep_rank": 6936,
+          "top5": [
+            " NE",
+            "GO",
+            "TO",
+            "BE",
+            " TO"
+          ],
+          "dep_logit": 0.0029777041636407375,
+          "rep_logit": 0.0047197951935231686
+        }
+      },
+      {
+        "layer": 22,
+        "head": 17,
+        "flip_score": 3376,
+        "rep_gain": 2981,
+        "dep_drop": 395,
+        "base": {
+          "dep_rank": 44127,
+          "rep_rank": 35770,
+          "top5": [
+            " third",
+            "第二",
+            " second",
+            " Third",
+            "second"
+          ],
+          "dep_logit": -0.005006738938391209,
+          "rep_logit": -0.002610840369015932
+        },
+        "cerdpo": {
+          "dep_rank": 44522,
+          "rep_rank": 32789,
+          "top5": [
+            " third",
+            "第二",
+            " second",
+            " Third",
+            "second"
+          ],
+          "dep_logit": -0.0051811737939715385,
+          "rep_logit": -0.001974592451006174
+        }
+      },
+      {
+        "layer": 25,
+        "head": 19,
+        "flip_score": 3240,
+        "rep_gain": 3232,
+        "dep_drop": 8,
+        "base": {
+          "dep_rank": 49075,
+          "rep_rank": 27489,
+          "top5": [
+            "VLD",
+            " PEP",
+            "iorn",
+            "展",
+            "ã"
+          ],
+          "dep_logit": -0.012679969891905785,
+          "rep_logit": -0.0007687550969421864
+        },
+        "cerdpo": {
+          "dep_rank": 49083,
+          "rep_rank": 24257,
+          "top5": [
+            "VLD",
+            "iorn",
+            " PEP",
+            "ã",
+            "展"
+          ],
+          "dep_logit": -0.012925045564770699,
+          "rep_logit": -9.824172593653202e-05
+        }
+      },
+      {
+        "layer": 17,
+        "head": 2,
+        "flip_score": 2990,
+        "rep_gain": 2979,
+        "dep_drop": 11,
+        "base": {
+          "dep_rank": 44,
+          "rep_rank": 34401,
+          "top5": [
+            "�",
+            "alk",
+            "单元",
+            "INTEL",
+            " LUT"
+          ],
+          "dep_logit": 0.010496404021978378,
+          "rep_logit": -0.0008753989823162556
+        },
+        "cerdpo": {
+          "dep_rank": 55,
+          "rep_rank": 31422,
+          "top5": [
+            "�",
+            "alk",
+            "单元",
+            "INTEL",
+            " LUT"
+          ],
+          "dep_logit": 0.010415117256343365,
+          "rep_logit": -0.00035757257137447596
+        }
+      },
+      {
+        "layer": 23,
+        "head": 33,
+        "flip_score": 2987,
+        "rep_gain": 2893,
+        "dep_drop": 94,
+        "base": {
+          "dep_rank": 1372,
+          "rep_rank": 18116,
+          "top5": [
+            "qual",
+            " qual",
+            " Qual",
+            "Qual",
+            "QUAL"
+          ],
+          "dep_logit": 0.00549905002117157,
+          "rep_logit": 0.0005262807244434953
+        },
+        "cerdpo": {
+          "dep_rank": 1466,
+          "rep_rank": 15223,
+          "top5": [
+            "qual",
+            " qual",
+            " Qual",
+            "Qual",
+            "QUAL"
+          ],
+          "dep_logit": 0.005385428201407194,
+          "rep_logit": 0.000968466920312494
+        }
+      }
+    ],
+    "bottom_flipped_heads": [
+      {
+        "layer": 28,
+        "head": 11,
+        "flip_score": -3971,
+        "rep_gain": -3128,
+        "dep_drop": -843,
+        "base": {
+          "dep_rank": 10990,
+          "rep_rank": 10441,
+          "top5": [
+            " catch",
+            ")::",
+            "catch",
+            "')->",
+            ")->"
+          ],
+          "dep_logit": 0.0022988449782133102,
+          "rep_logit": 0.0024050173815339804
+        },
+        "cerdpo": {
+          "dep_rank": 10147,
+          "rep_rank": 13569,
+          "top5": [
+            " catch",
+            ")::",
+            "catch",
+            "')->",
+            ")->"
+          ],
+          "dep_logit": 0.0024616813752800226,
+          "rep_logit": 0.0018258707132190466
+        }
+      },
+      {
+        "layer": 24,
+        "head": 10,
+        "flip_score": -3983,
+        "rep_gain": -3435,
+        "dep_drop": -548,
+        "base": {
+          "dep_rank": 44469,
+          "rep_rank": 20560,
+          "top5": [
+            "our",
+            "你的",
+            " your",
+            " yours",
+            "your"
+          ],
+          "dep_logit": -0.0035635619424283504,
+          "rep_logit": 0.0004953164607286453
+        },
+        "cerdpo": {
+          "dep_rank": 43921,
+          "rep_rank": 23995,
+          "top5": [
+            "our",
+            "你的",
+            " your",
+            " yours",
+            "your"
+          ],
+          "dep_logit": -0.0034053728450089693,
+          "rep_logit": 2.901698462665081e-05
+        }
+      },
+      {
+        "layer": 29,
+        "head": 11,
+        "flip_score": -4497,
+        "rep_gain": -3201,
+        "dep_drop": -1296,
+        "base": {
+          "dep_rank": 37696,
+          "rep_rank": 33598,
+          "top5": [
+            " Path",
+            " Time",
+            " Input",
+            " Case",
+            " Loop"
+          ],
+          "dep_logit": -0.0029809768311679363,
+          "rep_logit": -0.001938209286890924
+        },
+        "cerdpo": {
+          "dep_rank": 36400,
+          "rep_rank": 36799,
+          "top5": [
+            " Path",
+            " Input",
+            " Time",
+            " Case",
+            " Loop"
+          ],
+          "dep_logit": -0.002607011003419757,
+          "rep_logit": -0.002714566420763731
+        }
+      },
+      {
+        "layer": 22,
+        "head": 5,
+        "flip_score": -5254,
+        "rep_gain": -4068,
+        "dep_drop": -1186,
+        "base": {
+          "dep_rank": 18974,
+          "rep_rank": 30732,
+          "top5": [
+            "GOH",
+            " tButton",
+            "ð",
+            "alchemy",
+            "emq"
+          ],
+          "dep_logit": 0.001120039727538824,
+          "rep_logit": -0.0009058703435584903
+        },
+        "cerdpo": {
+          "dep_rank": 17788,
+          "rep_rank": 34800,
+          "top5": [
+            "GOH",
+            " tButton",
+            "ð",
+            "alchemy",
+            "emq"
+          ],
+          "dep_logit": 0.0013134279288351536,
+          "rep_logit": -0.0016613460611552
+        }
+      },
+      {
+        "layer": 25,
+        "head": 12,
+        "flip_score": -5433,
+        "rep_gain": -4025,
+        "dep_drop": -1408,
+        "base": {
+          "dep_rank": 25797,
+          "rep_rank": 24539,
+          "top5": [
+            " tail",
+            "tail",
+            "Tail",
+            " Tail",
+            " count"
+          ],
+          "dep_logit": -0.0006946385838091373,
+          "rep_logit": -0.0004112926544621587
+        },
+        "cerdpo": {
+          "dep_rank": 24389,
+          "rep_rank": 28564,
+          "top5": [
+            " tail",
+            "tail",
+            "Tail",
+            " Tail",
+            " count"
+          ],
+          "dep_logit": -0.0003893985413014889,
+          "rep_logit": -0.001322711817920208
+        }
+      }
+    ]
+  },
+  "torch.qr → torch.linalg.qr": {
+    "pair": {
+      "name": "torch.qr → torch.linalg.qr",
+      "deprecated": "torch.qr",
+      "replacement": "torch.linalg.qr",
+      "dep_token": "qr",
+      "rep_token": "linalg",
+      "dep_token_id": 13652,
+      "rep_token_id": 21254
+    },
+    "top_flipped_heads": [
+      {
+        "layer": 18,
+        "head": 10,
+        "flip_score": 4548,
+        "rep_gain": 4296,
+        "dep_drop": 252,
+        "base": {
+          "dep_rank": 41138,
+          "rep_rank": 31724,
+          "top5": [
+            "handoff",
+            "rown",
+            "�",
+            "ihan",
+            "tro"
+          ],
+          "dep_logit": -0.0028014439158141613,
+          "rep_logit": -0.001319396891631186
+        },
+        "cerdpo": {
+          "dep_rank": 41390,
+          "rep_rank": 27428,
+          "top5": [
+            "handoff",
+            "rown",
+            "�",
+            "ihan",
+            "tro"
+          ],
+          "dep_logit": -0.00284012733027339,
+          "rep_logit": -0.0007563440594822168
+        }
+      },
+      {
+        "layer": 19,
+        "head": 21,
+        "flip_score": 4228,
+        "rep_gain": 3444,
+        "dep_drop": 784,
+        "base": {
+          "dep_rank": 20849,
+          "rep_rank": 25567,
+          "top5": [
+            "apigateway",
+            "recycle",
+            "omg",
+            "apon",
+            "Apis"
+          ],
+          "dep_logit": 0.000876573845744133,
+          "rep_logit": 0.0001483457745052874
+        },
+        "cerdpo": {
+          "dep_rank": 21633,
+          "rep_rank": 22123,
+          "top5": [
+            "apigateway",
+            "recycle",
+            "omg",
+            "apon",
+            "Apis"
+          ],
+          "dep_logit": 0.0007699513807892799,
+          "rep_logit": 0.0006933689001016319
+        }
+      },
+      {
+        "layer": 31,
+        "head": 33,
+        "flip_score": 3783,
+        "rep_gain": 3741,
+        "dep_drop": 42,
+        "base": {
+          "dep_rank": 46729,
+          "rep_rank": 28331,
+          "top5": [
+            "<fim_middle>",
+            "\n\t\t",
+            " �",
+            "\n\t\t\t\t",
+            "�"
+          ],
+          "dep_logit": -0.0032258685678243637,
+          "rep_logit": -0.0001941800001077354
+        },
+        "cerdpo": {
+          "dep_rank": 46771,
+          "rep_rank": 24590,
+          "top5": [
+            "<fim_middle>",
+            "\n\t\t",
+            " �",
+            "\n\t\t\t\t",
+            "�"
+          ],
+          "dep_logit": -0.003230878384783864,
+          "rep_logit": 0.00017044658306986094
+        }
+      },
+      {
+        "layer": 21,
+        "head": 12,
+        "flip_score": 3762,
+        "rep_gain": 3136,
+        "dep_drop": 626,
+        "base": {
+          "dep_rank": 7993,
+          "rep_rank": 40274,
+          "top5": [
+            "ilda",
+            "COMPILER",
+            "�",
+            "COVERAGE",
+            "ansparent"
+          ],
+          "dep_logit": 0.0030126317869871855,
+          "rep_logit": -0.0021682907827198505
+        },
+        "cerdpo": {
+          "dep_rank": 8619,
+          "rep_rank": 37138,
+          "top5": [
+            "ilda",
+            "COMPILER",
+            "�",
+            "COVERAGE",
+            "ansparent"
+          ],
+          "dep_logit": 0.002896255115047097,
+          "rep_logit": -0.0015482422895729542
+        }
+      },
+      {
+        "layer": 22,
+        "head": 5,
+        "flip_score": 3744,
+        "rep_gain": 3571,
+        "dep_drop": 173,
+        "base": {
+          "dep_rank": 46983,
+          "rep_rank": 36498,
+          "top5": [
+            "lay",
+            "itk",
+            " itemtype",
+            "far",
+            "emsp"
+          ],
+          "dep_logit": -0.005662193521857262,
+          "rep_logit": -0.002435513772070408
+        },
+        "cerdpo": {
+          "dep_rank": 47156,
+          "rep_rank": 32927,
+          "top5": [
+            "lay",
+            "itk",
+            "far",
+            " itemtype",
+            "emsp"
+          ],
+          "dep_logit": -0.0057777417823672295,
+          "rep_logit": -0.001800667610950768
+        }
+      },
+      {
+        "layer": 21,
+        "head": 34,
+        "flip_score": 3670,
+        "rep_gain": 3395,
+        "dep_drop": 275,
+        "base": {
+          "dep_rank": 44589,
+          "rep_rank": 18521,
+          "top5": [
+            "Share",
+            "friend",
+            " share",
+            "share",
+            " Friend"
+          ],
+          "dep_logit": -0.004141487181186676,
+          "rep_logit": 0.0005572924856096506
+        },
+        "cerdpo": {
+          "dep_rank": 44864,
+          "rep_rank": 15126,
+          "top5": [
+            "Share",
+            "friend",
+            " share",
+            "share",
+            " Friend"
+          ],
+          "dep_logit": -0.004231042694300413,
+          "rep_logit": 0.0010896911844611168
+        }
+      },
+      {
+        "layer": 29,
+        "head": 30,
+        "flip_score": 3665,
+        "rep_gain": 2923,
+        "dep_drop": 742,
+        "base": {
+          "dep_rank": 37357,
+          "rep_rank": 39741,
+          "top5": [
+            " AN",
+            "AN",
+            " IN",
+            " IL",
+            "IN"
+          ],
+          "dep_logit": -0.00207062647677958,
+          "rep_logit": -0.0026351010892540216
+        },
+        "cerdpo": {
+          "dep_rank": 38099,
+          "rep_rank": 36818,
+          "top5": [
+            " AN",
+            "AN",
+            " IN",
+            " IL",
+            "IN"
+          ],
+          "dep_logit": -0.0022388496436178684,
+          "rep_logit": -0.0019709523767232895
+        }
+      },
+      {
+        "layer": 21,
+        "head": 7,
+        "flip_score": 3410,
+        "rep_gain": 3272,
+        "dep_drop": 138,
+        "base": {
+          "dep_rank": 2405,
+          "rep_rank": 17473,
+          "top5": [
+            "piv",
+            "ye",
+            "ipay",
+            "labs",
+            "apods"
+          ],
+          "dep_logit": 0.005117124877870083,
+          "rep_logit": 0.0010997424833476543
+        },
+        "cerdpo": {
+          "dep_rank": 2543,
+          "rep_rank": 14201,
+          "top5": [
+            "piv",
+            "ye",
+            "labs",
+            "ipay",
+            "apods"
+          ],
+          "dep_logit": 0.005042059347033501,
+          "rep_logit": 0.0016685174778103828
+        }
+      },
+      {
+        "layer": 30,
+        "head": 14,
+        "flip_score": 3406,
+        "rep_gain": 3380,
+        "dep_drop": 26,
+        "base": {
+          "dep_rank": 442,
+          "rep_rank": 26446,
+          "top5": [
+            " under",
+            "under",
+            "Under",
+            " through",
+            "through"
+          ],
+          "dep_logit": 0.0069281067699193954,
+          "rep_logit": -0.00037895096465945244
+        },
+        "cerdpo": {
+          "dep_rank": 468,
+          "rep_rank": 23066,
+          "top5": [
+            " under",
+            "under",
+            "Under",
+            " through",
+            "through"
+          ],
+          "dep_logit": 0.006833738647401333,
+          "rep_logit": 8.584349416196346e-05
+        }
+      },
+      {
+        "layer": 22,
+        "head": 21,
+        "flip_score": 3339,
+        "rep_gain": 3064,
+        "dep_drop": 275,
+        "base": {
+          "dep_rank": 44460,
+          "rep_rank": 31258,
+          "top5": [
+            "commits",
+            "HAL",
+            "GP",
+            "IDI",
+            "FS"
+          ],
+          "dep_logit": -0.004017463885247707,
+          "rep_logit": -0.0016281153075397015
+        },
+        "cerdpo": {
+          "dep_rank": 44735,
+          "rep_rank": 28194,
+          "top5": [
+            "commits",
+            "HAL",
+            "GP",
+            "IDI",
+            "FS"
+          ],
+          "dep_logit": -0.004094402305781841,
+          "rep_logit": -0.001222105580382049
+        }
+      }
+    ],
+    "bottom_flipped_heads": [
+      {
+        "layer": 25,
+        "head": 8,
+        "flip_score": -3018,
+        "rep_gain": -2952,
+        "dep_drop": -66,
+        "base": {
+          "dep_rank": 30786,
+          "rep_rank": 13876,
+          "top5": [
+            " ro",
+            "ro",
+            " staff",
+            " Ro",
+            " Rod"
+          ],
+          "dep_logit": -0.001536490162834525,
+          "rep_logit": 0.0019384364131838083
+        },
+        "cerdpo": {
+          "dep_rank": 30720,
+          "rep_rank": 16828,
+          "top5": [
+            " ro",
+            "ro",
+            " staff",
+            " Ro",
+            " Rod"
+          ],
+          "dep_logit": -0.0015248953131958842,
+          "rep_logit": 0.0012673989403992891
+        }
+      },
+      {
+        "layer": 28,
+        "head": 27,
+        "flip_score": -3299,
+        "rep_gain": -3148,
+        "dep_drop": -151,
+        "base": {
+          "dep_rank": 3130,
+          "rep_rank": 12236,
+          "top5": [
+            "\r\n               ",
+            "\r\n",
+            " \r\n               ",
+            " \r\n",
+            "\r\n\t"
+          ],
+          "dep_logit": 0.00384067022241652,
+          "rep_logit": 0.0018125652568414807
+        },
+        "cerdpo": {
+          "dep_rank": 2979,
+          "rep_rank": 15384,
+          "top5": [
+            "\r\n               ",
+            "\r\n",
+            " \r\n               ",
+            " \r\n",
+            "\r\n\t"
+          ],
+          "dep_logit": 0.00390153331682086,
+          "rep_logit": 0.0013865649234503508
+        }
+      },
+      {
+        "layer": 19,
+        "head": 15,
+        "flip_score": -3346,
+        "rep_gain": -2887,
+        "dep_drop": -459,
+        "base": {
+          "dep_rank": 40504,
+          "rep_rank": 26126,
+          "top5": [
+            "外",
+            "external",
+            "EXTERNAL",
+            " continuous",
+            "Specified"
+          ],
+          "dep_logit": -0.0028247591108083725,
+          "rep_logit": 0.0001153761986643076
+        },
+        "cerdpo": {
+          "dep_rank": 40045,
+          "rep_rank": 29013,
+          "top5": [
+            "外",
+            "external",
+            "EXTERNAL",
+            " continuous",
+            "Specified"
+          ],
+          "dep_logit": -0.0027199878823012114,
+          "rep_logit": -0.00039137364365160465
+        }
+      },
+      {
+        "layer": 21,
+        "head": 26,
+        "flip_score": -3379,
+        "rep_gain": -2799,
+        "dep_drop": -580,
+        "base": {
+          "dep_rank": 12296,
+          "rep_rank": 7592,
+          "top5": [
+            "igens",
+            "stration",
+            "pta",
+            "EXTERN",
+            "metas"
+          ],
+          "dep_logit": 0.0031852556858211756,
+          "rep_logit": 0.0042013670317828655
+        },
+        "cerdpo": {
+          "dep_rank": 11716,
+          "rep_rank": 10391,
+          "top5": [
+            "igens",
+            "stration",
+            "pta",
+            "EXTERN",
+            "metas"
+          ],
+          "dep_logit": 0.003289120038971305,
+          "rep_logit": 0.0035415857564657927
+        }
+      },
+      {
+        "layer": 29,
+        "head": 2,
+        "flip_score": -3412,
+        "rep_gain": -3385,
+        "dep_drop": -27,
+        "base": {
+          "dep_rank": 48555,
+          "rep_rank": 29398,
+          "top5": [
+            "�",
+            "�",
+            "fit",
+            "Sql",
+            "fo"
+          ],
+          "dep_logit": -0.010817553848028183,
+          "rep_logit": -0.002998597454279661
+        },
+        "cerdpo": {
+          "dep_rank": 48528,
+          "rep_rank": 32783,
+          "top5": [
+            "�",
+            "�",
+            "fit",
+            "öl",
+            "fo"
+          ],
+          "dep_logit": -0.010709952563047409,
+          "rep_logit": -0.0036387192085385323
+        }
+      }
+    ]
+  },
+  "torch.symeig → torch.linalg.eigh": {
+    "pair": {
+      "name": "torch.symeig → torch.linalg.eigh",
+      "deprecated": "torch.symeig",
+      "replacement": "torch.linalg.eigh",
+      "dep_token": "sy",
+      "rep_token": "linalg",
+      "dep_token_id": 5824,
+      "rep_token_id": 21254
+    },
+    "top_flipped_heads": [
+      {
+        "layer": 17,
+        "head": 24,
+        "flip_score": 4684,
+        "rep_gain": 4152,
+        "dep_drop": 532,
+        "base": {
+          "dep_rank": 11346,
+          "rep_rank": 31667,
+          "top5": [
+            "统",
+            "/#/",
+            "原",
+            "Inherited",
+            "信"
+          ],
+          "dep_logit": 0.0009749899618327618,
+          "rep_logit": -0.0015575932338833809
+        },
+        "cerdpo": {
+          "dep_rank": 11878,
+          "rep_rank": 27515,
+          "top5": [
+            "统",
+            "/#/",
+            "原",
+            "Inherited",
+            "信"
+          ],
+          "dep_logit": 0.0009131594561040401,
+          "rep_logit": -0.0010401641484349966
+        }
+      },
+      {
+        "layer": 18,
+        "head": 7,
+        "flip_score": 4359,
+        "rep_gain": 3774,
+        "dep_drop": 585,
+        "base": {
+          "dep_rank": 39946,
+          "rep_rank": 37849,
+          "top5": [
+            "<fim_pad>",
+            "eres",
+            "颜",
+            " Ener",
+            "�다"
+          ],
+          "dep_logit": -0.002520990092307329,
+          "rep_logit": -0.0021013503428548574
+        },
+        "cerdpo": {
+          "dep_rank": 40531,
+          "rep_rank": 34075,
+          "top5": [
+            "<fim_pad>",
+            "eres",
+            "颜",
+            " Ener",
+            "�다"
+          ],
+          "dep_logit": -0.0026418764609843493,
+          "rep_logit": -0.0014623036840930581
+        }
+      },
+      {
+        "layer": 22,
+        "head": 3,
+        "flip_score": 4297,
+        "rep_gain": 4297,
+        "dep_drop": 0,
+        "base": {
+          "dep_rank": 2,
+          "rep_rank": 25443,
+          "top5": [
+            "tu",
+            " sy",
+            "sy",
+            "ys",
+            "ción"
+          ],
+          "dep_logit": 0.017785264179110527,
+          "rep_logit": 0.0001297956332564354
+        },
+        "cerdpo": {
+          "dep_rank": 2,
+          "rep_rank": 21146,
+          "top5": [
+            "tu",
+            " sy",
+            "sy",
+            "ys",
+            "ción"
+          ],
+          "dep_logit": 0.01759789139032364,
+          "rep_logit": 0.0009152459679171443
+        }
+      },
+      {
+        "layer": 21,
+        "head": 2,
+        "flip_score": 4219,
+        "rep_gain": 4215,
+        "dep_drop": 4,
+        "base": {
+          "dep_rank": 49112,
+          "rep_rank": 34322,
+          "top5": [
+            "User",
+            "leto",
+            "ング",
+            " daemon",
+            "user"
+          ],
+          "dep_logit": -0.012962141074240208,
+          "rep_logit": -0.002294106874614954
+        },
+        "cerdpo": {
+          "dep_rank": 49116,
+          "rep_rank": 30107,
+          "top5": [
+            "User",
+            "leto",
+            "ング",
+            " daemon",
+            "DEN"
+          ],
+          "dep_logit": -0.013119413517415524,
+          "rep_logit": -0.0014112142380326986
+        }
+      },
+      {
+        "layer": 17,
+        "head": 25,
+        "flip_score": 4140,
+        "rep_gain": 4019,
+        "dep_drop": 121,
+        "base": {
+          "dep_rank": 47757,
+          "rep_rank": 22682,
+          "top5": [
+            " obie",
+            "Automatic",
+            " Automatic",
+            "Deleg",
+            "味"
+          ],
+          "dep_logit": -0.004334302619099617,
+          "rep_logit": 0.0006067078211344779
+        },
+        "cerdpo": {
+          "dep_rank": 47878,
+          "rep_rank": 18663,
+          "top5": [
+            " obie",
+            "Automatic",
+            " Automatic",
+            "Deleg",
+            "味"
+          ],
+          "dep_logit": -0.004402727819979191,
+          "rep_logit": 0.0011199300643056631
+        }
+      },
+      {
+        "layer": 22,
+        "head": 1,
+        "flip_score": 4110,
+        "rep_gain": 4104,
+        "dep_drop": 6,
+        "base": {
+          "dep_rank": 19,
+          "rep_rank": 22821,
+          "top5": [
+            "moj",
+            "folio",
+            "<pr_review>",
+            "vit",
+            " sy"
+          ],
+          "dep_logit": 0.015671733766794205,
+          "rep_logit": 0.00011040479876101017
+        },
+        "cerdpo": {
+          "dep_rank": 25,
+          "rep_rank": 18717,
+          "top5": [
+            "moj",
+            "folio",
+            "<pr_review>",
+            "vit",
+            " era"
+          ],
+          "dep_logit": 0.01541327964514494,
+          "rep_logit": 0.0010268432088196278
+        }
+      },
+      {
+        "layer": 22,
+        "head": 7,
+        "flip_score": 3942,
+        "rep_gain": 3482,
+        "dep_drop": 460,
+        "base": {
+          "dep_rank": 4980,
+          "rep_rank": 31718,
+          "top5": [
+            "Util",
+            " utilise",
+            "utility",
+            "util",
+            " Util"
+          ],
+          "dep_logit": 0.006415779702365398,
+          "rep_logit": -0.00038401997881010175
+        },
+        "cerdpo": {
+          "dep_rank": 5440,
+          "rep_rank": 28236,
+          "top5": [
+            "Util",
+            " utilise",
+            "util",
+            "utility",
+            " Util"
+          ],
+          "dep_logit": 0.006224878132343292,
+          "rep_logit": 0.00037463445914909244
+        }
+      },
+      {
+        "layer": 18,
+        "head": 27,
+        "flip_score": 3941,
+        "rep_gain": 3234,
+        "dep_drop": 707,
+        "base": {
+          "dep_rank": 26636,
+          "rep_rank": 27743,
+          "top5": [
+            "ugin",
+            "accessibility",
+            "nist",
+            "继承",
+            "NumberFormat"
+          ],
+          "dep_logit": 0.00021862774156033993,
+          "rep_logit": 6.78476644679904e-05
+        },
+        "cerdpo": {
+          "dep_rank": 27343,
+          "rep_rank": 24509,
+          "top5": [
+            "ugin",
+            "accessibility",
+            "nist",
+            "继承",
+            "NumberFormat"
+          ],
+          "dep_logit": 0.00011882820399478078,
+          "rep_logit": 0.0005134316743351519
+        }
+      },
+      {
+        "layer": 23,
+        "head": 31,
+        "flip_score": 3733,
+        "rep_gain": 3312,
+        "dep_drop": 421,
+        "base": {
+          "dep_rank": 38327,
+          "rep_rank": 25314,
+          "top5": [
+            "mptr",
+            "fortunately",
+            "Tense",
+            "INCLUDING",
+            "ignite"
+          ],
+          "dep_logit": -0.0015326224965974689,
+          "rep_logit": 0.001269449363462627
+        },
+        "cerdpo": {
+          "dep_rank": 38748,
+          "rep_rank": 22002,
+          "top5": [
+            "mptr",
+            "fortunately",
+            "Tense",
+            "INCLUDING",
+            "ignite"
+          ],
+          "dep_logit": -0.0016290222993120551,
+          "rep_logit": 0.001892279484309256
+        }
+      },
+      {
+        "layer": 28,
+        "head": 24,
+        "flip_score": 3704,
+        "rep_gain": 3704,
+        "dep_drop": 0,
+        "base": {
+          "dep_rank": 49151,
+          "rep_rank": 35369,
+          "top5": [
+            "teor",
+            "heim",
+            " date",
+            "stone",
+            " main"
+          ],
+          "dep_logit": -0.028170904144644737,
+          "rep_logit": -0.002352009294554591
+        },
+        "cerdpo": {
+          "dep_rank": 49151,
+          "rep_rank": 31665,
+          "top5": [
+            "teor",
+            "heim",
+            " date",
+            " main",
+            "stone"
+          ],
+          "dep_logit": -0.028356757014989853,
+          "rep_logit": -0.0016782638849690557
+        }
+      }
+    ],
+    "bottom_flipped_heads": [
+      {
+        "layer": 20,
+        "head": 8,
+        "flip_score": -3298,
+        "rep_gain": -3114,
+        "dep_drop": -184,
+        "base": {
+          "dep_rank": 47058,
+          "rep_rank": 31770,
+          "top5": [
+            "ida",
+            " DeepCopy",
+            "Ul",
+            "timeline",
+            "answers"
+          ],
+          "dep_logit": -0.005590288899838924,
+          "rep_logit": -0.001072693383321166
+        },
+        "cerdpo": {
+          "dep_rank": 46874,
+          "rep_rank": 34884,
+          "top5": [
+            "ida",
+            " DeepCopy",
+            "Ul",
+            "timeline",
+            "answers"
+          ],
+          "dep_logit": -0.0054628318175673485,
+          "rep_logit": -0.001648732926696539
+        }
+      },
+      {
+        "layer": 23,
+        "head": 30,
+        "flip_score": -3417,
+        "rep_gain": -2774,
+        "dep_drop": -643,
+        "base": {
+          "dep_rank": 17587,
+          "rep_rank": 12884,
+          "top5": [
+            " form",
+            " forms",
+            "form",
+            "custom",
+            " Form"
+          ],
+          "dep_logit": 0.0005664584459736943,
+          "rep_logit": 0.0015227441908791661
+        },
+        "cerdpo": {
+          "dep_rank": 16944,
+          "rep_rank": 15658,
+          "top5": [
+            " form",
+            " forms",
+            "form",
+            "custom",
+            " Form"
+          ],
+          "dep_logit": 0.0006863324670121074,
+          "rep_logit": 0.0009281401289626956
+        }
+      },
+      {
+        "layer": 24,
+        "head": 6,
+        "flip_score": -3657,
+        "rep_gain": -2810,
+        "dep_drop": -847,
+        "base": {
+          "dep_rank": 36995,
+          "rep_rank": 30532,
+          "top5": [
+            "chinese",
+            "Chinese",
+            " afu",
+            "libaba",
+            "gregate"
+          ],
+          "dep_logit": -0.0015994417481124401,
+          "rep_logit": -0.0004611089825630188
+        },
+        "cerdpo": {
+          "dep_rank": 36148,
+          "rep_rank": 33342,
+          "top5": [
+            "chinese",
+            "Chinese",
+            " afu",
+            "libaba",
+            "gregate"
+          ],
+          "dep_logit": -0.0014537873212248087,
+          "rep_logit": -0.0009521711617708206
+        }
+      },
+      {
+        "layer": 20,
+        "head": 30,
+        "flip_score": -3997,
+        "rep_gain": -3136,
+        "dep_drop": -861,
+        "base": {
+          "dep_rank": 32919,
+          "rep_rank": 26942,
+          "top5": [
+            "ocation",
+            "Vals",
+            " location",
+            "手",
+            "CPU"
+          ],
+          "dep_logit": -0.0019395030103623867,
+          "rep_logit": -0.0010646800510585308
+        },
+        "cerdpo": {
+          "dep_rank": 32058,
+          "rep_rank": 30078,
+          "top5": [
+            "ocation",
+            "Vals",
+            " location",
+            "CPU",
+            "手"
+          ],
+          "dep_logit": -0.0018333642510697246,
+          "rep_logit": -0.0015420218696817756
+        }
+      },
+      {
+        "layer": 22,
+        "head": 11,
+        "flip_score": -4002,
+        "rep_gain": -3773,
+        "dep_drop": -229,
+        "base": {
+          "dep_rank": 47026,
+          "rep_rank": 22421,
+          "top5": [
+            " Web",
+            " web",
+            "Web",
+            "WEB",
+            "web"
+          ],
+          "dep_logit": -0.005670580081641674,
+          "rep_logit": 0.0011143379379063845
+        },
+        "cerdpo": {
+          "dep_rank": 46797,
+          "rep_rank": 26194,
+          "top5": [
+            " Web",
+            " web",
+            "Web",
+            "WEB",
+            "web"
+          ],
+          "dep_logit": -0.0054887523874640465,
+          "rep_logit": 0.00043730472680181265
+        }
+      }
+    ]
+  },
+  "torch.nn.functional.upsample → ...interpolate": {
+    "pair": {
+      "name": "torch.nn.functional.upsample → ...interpolate",
+      "deprecated": "torch.nn.functional.upsample",
+      "replacement": "torch.nn.functional.interpolate",
+      "dep_token": "up",
+      "rep_token": "interpolate",
+      "dep_token_id": 436,
+      "rep_token_id": 33546
+    },
+    "top_flipped_heads": [
+      {
+        "layer": 29,
+        "head": 30,
+        "flip_score": 1897,
+        "rep_gain": 1076,
+        "dep_drop": 821,
+        "base": {
+          "dep_rank": 8248,
+          "rep_rank": 10991,
+          "top5": [
+            " FL",
+            "FL",
+            " LI",
+            "SL",
+            " SL"
+          ],
+          "dep_logit": 0.0031979954801499844,
+          "rep_logit": 0.0025057937018573284
+        },
+        "cerdpo": {
+          "dep_rank": 9069,
+          "rep_rank": 9915,
+          "top5": [
+            " FL",
+            "FL",
+            " LI",
+            "SL",
+            " SL"
+          ],
+          "dep_logit": 0.0029833693988621235,
+          "rep_logit": 0.0027713796589523554
+        }
+      },
+      {
+        "layer": 29,
+        "head": 27,
+        "flip_score": 1650,
+        "rep_gain": 908,
+        "dep_drop": 742,
+        "base": {
+          "dep_rank": 14331,
+          "rep_rank": 20838,
+          "top5": [
+            "nd",
+            "aje",
+            "ion",
+            "squ",
+            " leave"
+          ],
+          "dep_logit": 0.0013690309133380651,
+          "rep_logit": 0.00030347472056746483
+        },
+        "cerdpo": {
+          "dep_rank": 15073,
+          "rep_rank": 19930,
+          "top5": [
+            "nd",
+            "aje",
+            "ion",
+            "squ",
+            " leave"
+          ],
+          "dep_logit": 0.0012353799538686872,
+          "rep_logit": 0.000439490657299757
+        }
+      },
+      {
+        "layer": 31,
+        "head": 25,
+        "flip_score": 1613,
+        "rep_gain": 916,
+        "dep_drop": 697,
+        "base": {
+          "dep_rank": 38035,
+          "rep_rank": 12322,
+          "top5": [
+            "enta",
+            "ObjType",
+            "ise",
+            "Perm",
+            "kad"
+          ],
+          "dep_logit": -0.005362537689507008,
+          "rep_logit": 0.0035751068498939276
+        },
+        "cerdpo": {
+          "dep_rank": 38732,
+          "rep_rank": 11406,
+          "top5": [
+            "enta",
+            "ObjType",
+            "ise",
+            "Perm",
+            "kad"
+          ],
+          "dep_logit": -0.005748513154685497,
+          "rep_logit": 0.003889054525643587
+        }
+      },
+      {
+        "layer": 29,
+        "head": 31,
+        "flip_score": 1528,
+        "rep_gain": 1485,
+        "dep_drop": 43,
+        "base": {
+          "dep_rank": 48922,
+          "rep_rank": 40959,
+          "top5": [
+            "iod",
+            "gpl",
+            "ssel",
+            " ============================================================================",
+            "udu"
+          ],
+          "dep_logit": -0.007748238742351532,
+          "rep_logit": -0.0023868936114013195
+        },
+        "cerdpo": {
+          "dep_rank": 48965,
+          "rep_rank": 39474,
+          "top5": [
+            "iod",
+            "gpl",
+            "ssel",
+            " ============================================================================",
+            "udu"
+          ],
+          "dep_logit": -0.00802095141261816,
+          "rep_logit": -0.0020590838976204395
+        }
+      },
+      {
+        "layer": 30,
+        "head": 20,
+        "flip_score": 1508,
+        "rep_gain": 867,
+        "dep_drop": 641,
+        "base": {
+          "dep_rank": 41472,
+          "rep_rank": 15902,
+          "top5": [
+            ",",
+            "<NAME>",
+            "--}}",
+            "sia",
+            "erved"
+          ],
+          "dep_logit": -0.001868505496531725,
+          "rep_logit": 0.0019393227994441986
+        },
+        "cerdpo": {
+          "dep_rank": 42113,
+          "rep_rank": 15035,
+          "top5": [
+            ",",
+            "<NAME>",
+            "--}}",
+            "sia",
+            "erved"
+          ],
+          "dep_logit": -0.002021146472543478,
+          "rep_logit": 0.002076270990073681
+        }
+      },
+      {
+        "layer": 29,
+        "head": 5,
+        "flip_score": 1429,
+        "rep_gain": 1120,
+        "dep_drop": 309,
+        "base": {
+          "dep_rank": 45154,
+          "rep_rank": 20649,
+          "top5": [
+            " ast",
+            "ovan",
+            "alchemy",
+            " Lesser",
+            "し�"
+          ],
+          "dep_logit": -0.006973307579755783,
+          "rep_logit": -0.00025400356389582157
+        },
+        "cerdpo": {
+          "dep_rank": 45463,
+          "rep_rank": 19529,
+          "top5": [
+            " ast",
+            "ovan",
+            "alchemy",
+            "し�",
+            " Lesser"
+          ],
+          "dep_logit": -0.0071748667396605015,
+          "rep_logit": -3.2634707167744637e-05
+        }
+      },
+      {
+        "layer": 22,
+        "head": 29,
+        "flip_score": 1179,
+        "rep_gain": 501,
+        "dep_drop": 678,
+        "base": {
+          "dep_rank": 32767,
+          "rep_rank": 15216,
+          "top5": [
+            " semi",
+            "rub",
+            " kn",
+            " Gu",
+            " fa"
+          ],
+          "dep_logit": -0.0012260867515578866,
+          "rep_logit": 0.0011581219732761383
+        },
+        "cerdpo": {
+          "dep_rank": 33445,
+          "rep_rank": 14715,
+          "top5": [
+            " semi",
+            "rub",
+            " kn",
+            " Gu",
+            " fa"
+          ],
+          "dep_logit": -0.0013276691315695643,
+          "rep_logit": 0.0012314210180193186
+        }
+      },
+      {
+        "layer": 13,
+        "head": 29,
+        "flip_score": 1139,
+        "rep_gain": 654,
+        "dep_drop": 485,
+        "base": {
+          "dep_rank": 25226,
+          "rep_rank": 25281,
+          "top5": [
+            "penas",
+            "kernel",
+            "ken",
+            "HO",
+            "_"
+          ],
+          "dep_logit": -0.0002890141913667321,
+          "rep_logit": -0.0002946319291368127
+        },
+        "cerdpo": {
+          "dep_rank": 25711,
+          "rep_rank": 24627,
+          "top5": [
+            "penas",
+            "kernel",
+            "ken",
+            "HO",
+            "gear"
+          ],
+          "dep_logit": -0.00034796528052538633,
+          "rep_logit": -0.00020396150648593903
+        }
+      },
+      {
+        "layer": 22,
+        "head": 3,
+        "flip_score": 1088,
+        "rep_gain": 420,
+        "dep_drop": 668,
+        "base": {
+          "dep_rank": 10458,
+          "rep_rank": 7442,
+          "top5": [
+            "Amz",
+            "弱",
+            "普",
+            "�",
+            "trimData"
+          ],
+          "dep_logit": 0.003723851405084133,
+          "rep_logit": 0.004418608266860247
+        },
+        "cerdpo": {
+          "dep_rank": 11126,
+          "rep_rank": 7022,
+          "top5": [
+            "Amz",
+            "弱",
+            "普",
+            "�",
+            "trimData"
+          ],
+          "dep_logit": 0.00359559734351933,
+          "rep_logit": 0.004544232506304979
+        }
+      },
+      {
+        "layer": 23,
+        "head": 30,
+        "flip_score": 1076,
+        "rep_gain": 219,
+        "dep_drop": 857,
+        "base": {
+          "dep_rank": 35148,
+          "rep_rank": 39348,
+          "top5": [
+            " figure",
+            "figure",
+            "Figure",
+            " Figure",
+            "figures"
+          ],
+          "dep_logit": -0.001726130023598671,
+          "rep_logit": -0.0026513165794312954
+        },
+        "cerdpo": {
+          "dep_rank": 36005,
+          "rep_rank": 39129,
+          "top5": [
+            " figure",
+            "figure",
+            "Figure",
+            " Figure",
+            "figures"
+          ],
+          "dep_logit": -0.0018963601905852556,
+          "rep_logit": -0.0025908746756613255
+        }
+      }
+    ],
+    "bottom_flipped_heads": [
+      {
+        "layer": 29,
+        "head": 13,
+        "flip_score": -1672,
+        "rep_gain": -1408,
+        "dep_drop": -264,
+        "base": {
+          "dep_rank": 46664,
+          "rep_rank": 23634,
+          "top5": [
+            "itialized",
+            "omorphic",
+            "ロ",
+            " semp",
+            "INC"
+          ],
+          "dep_logit": -0.007293245289474726,
+          "rep_logit": 0.000751101179048419
+        },
+        "cerdpo": {
+          "dep_rank": 46400,
+          "rep_rank": 25042,
+          "top5": [
+            "itialized",
+            "omorphic",
+            "ロ",
+            " semp",
+            "INC"
+          ],
+          "dep_logit": -0.007046746090054512,
+          "rep_logit": 0.0004316437989473343
+        }
+      },
+      {
+        "layer": 29,
+        "head": 24,
+        "flip_score": -1897,
+        "rep_gain": -1011,
+        "dep_drop": -886,
+        "base": {
+          "dep_rank": 36288,
+          "rep_rank": 34915,
+          "top5": [
+            "obacz",
+            "pector",
+            "اف",
+            " WindowsError",
+            "recommends"
+          ],
+          "dep_logit": -0.0009748756419867277,
+          "rep_logit": -0.0006019172724336386
+        },
+        "cerdpo": {
+          "dep_rank": 35402,
+          "rep_rank": 35926,
+          "top5": [
+            "obacz",
+            "pector",
+            "اف",
+            " WindowsError",
+            "recommends"
+          ],
+          "dep_logit": -0.0007129079895094037,
+          "rep_logit": -0.0008535194210708141
+        }
+      },
+      {
+        "layer": 26,
+        "head": 18,
+        "flip_score": -2047,
+        "rep_gain": -285,
+        "dep_drop": -1762,
+        "base": {
+          "dep_rank": 28443,
+          "rep_rank": 46020,
+          "top5": [
+            " \\",
+            " </",
+            "ssystem",
+            "remap",
+            "#__"
+          ],
+          "dep_logit": -0.000841987959574908,
+          "rep_logit": -0.005625572986900806
+        },
+        "cerdpo": {
+          "dep_rank": 26681,
+          "rep_rank": 46305,
+          "top5": [
+            " \\",
+            " </",
+            "remap",
+            "ssystem",
+            "#__"
+          ],
+          "dep_logit": -0.0005102007417008281,
+          "rep_logit": -0.005775018595159054
+        }
+      },
+      {
+        "layer": 29,
+        "head": 15,
+        "flip_score": -2052,
+        "rep_gain": -1377,
+        "dep_drop": -675,
+        "base": {
+          "dep_rank": 44533,
+          "rep_rank": 9208,
+          "top5": [
+            "�",
+            "oom",
+            "caching",
+            "sday",
+            ";!--"
+          ],
+          "dep_logit": -0.0063285985961556435,
+          "rep_logit": 0.004065984394401312
+        },
+        "cerdpo": {
+          "dep_rank": 43858,
+          "rep_rank": 10585,
+          "top5": [
+            "�",
+            "oom",
+            "caching",
+            "sday",
+            ";!--"
+          ],
+          "dep_logit": -0.0059265075251460075,
+          "rep_logit": 0.0036204124335199594
+        }
+      },
+      {
+        "layer": 29,
+        "head": 20,
+        "flip_score": -2768,
+        "rep_gain": -1429,
+        "dep_drop": -1339,
+        "base": {
+          "dep_rank": 22114,
+          "rep_rank": 12320,
+          "top5": [
+            "U",
+            " U",
+            "D",
+            " D",
+            "UX"
+          ],
+          "dep_logit": -0.000112852081656456,
+          "rep_logit": 0.002146559301763773
+        },
+        "cerdpo": {
+          "dep_rank": 20775,
+          "rep_rank": 13749,
+          "top5": [
+            "U",
+            " U",
+            "D",
+            " D",
+            "UX"
+          ],
+          "dep_logit": 0.00018737511709332466,
+          "rep_logit": 0.001795765827409923
+        }
+      }
+    ]
+  }
+}

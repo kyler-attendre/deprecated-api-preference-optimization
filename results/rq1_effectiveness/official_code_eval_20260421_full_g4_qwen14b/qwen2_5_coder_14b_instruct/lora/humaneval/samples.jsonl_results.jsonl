@@ -1,0 +1,164 @@
+{"task_id": "HumanEval/0", "completion": "returnany(abs(a-b)<thresholdfora,bincombinations(numbers,2))", "result": "failed: name 'returnany' is not defined", "passed": false}
+{"task_id": "HumanEval/1", "completion": "parentheses = [c for c in paren_string if c in \"()\"]", "result": "failed: name 'paren_string' is not defined", "passed": false}
+{"task_id": "HumanEval/10", "completion": "ifis_palindrome(string):", "result": "failed: invalid syntax (<string>, line 20)", "passed": false}
+{"task_id": "HumanEval/100", "completion": "returnlist(range(n,n*2,2))", "result": "failed: name 'returnlist' is not defined", "passed": false}
+{"task_id": "HumanEval/101", "completion": "return[s.split(\",\")if\",\"inels.split()forelins.split(\",\")]", "result": "failed: expected 'else' after 'if' expression (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/102", "completion": "ifx>y:", "result": "failed: invalid syntax (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/103", "completion": "ifn>m:retur", "result": "failed: illegal target for annotation (<string>, line 13)", "passed": false}
+{"task_id": "HumanEval/104", "completion": "return[elforelinxifnotany(dinstr(el)ifint(d)%2==0)]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 14)", "passed": false}
+{"task_id": "HumanEval/105", "completion": "d={1:\"One\",2:\"Two\",3:\"Three\",4:\"Four\",5:\"Five\",6:\"Six\",7:\"Seven\",8:\"Eight\",9:\"Nine\"}", "result": "failed: Error", "passed": false}
+{"task_id": "HumanEval/106", "completion": "return[math.factorial(i)ifi%2==0elsei*(i+1)//2foriinrange(1,n+1)]", "result": "failed: invalid decimal literal (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/107", "completion": "    even_count = 0\n    odd_count = 0\n\n    for i in range(1, n + 1):\n        if str(i) == str(i)[::-1]:\n            if i % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n\nreturn(even_count,odd_count)", "result": "failed: 'return' outside function (<string>, line 35)", "passed": false}
+{"task_id": "HumanEval/108", "completion": "returnsum([1forxinsum([list(map(int,str(x)))ifx>=0else[-int(str(x)[0])]+list(map(int,str(x)[1:])]forxinarr)ifsum(x)>0])", "result": "failed: invalid decimal literal (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/109", "completion": "ifnotarr:", "result": "failed: invalid syntax (<string>, line 29)", "passed": false}
+{"task_id": "HumanEval/11", "completion": "return\"\".join(str(int(x)^int(y))forx,yinzip(a,b))", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 10)", "passed": false}
+{"task_id": "HumanEval/110", "completion": "ifall(i%2==0foriinlst1):return\"YES\"", "result": "failed: invalid decimal literal (<string>, line 15)", "passed": false}
+{"task_id": "HumanEval/111", "completion": "    if not test:\n        return {}\ntest=test.split()", "result": "failed: name 'test' is not defined", "passed": false}
+{"task_id": "HumanEval/112", "completion": "s=''.join([iforiinsifnotiinc])", "result": "failed: name 'iforiinsifnotiinc' is not defined", "passed": false}
+{"task_id": "HumanEval/113", "completion": "return[\"the number of odd elements {}n the str{}ng {} of the {}nput.\".format(s.count(d)fordineven_digits)forstinlst]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 14)", "passed": false}
+{"task_id": "HumanEval/114", "completion": "min_sum=nums[0]", "result": "failed: name 'nums' is not defined", "passed": false}
+{"task_id": "HumanEval/115", "completion": "buckets=math.ceil(sum(map(sum,grid))/capacity)", "result": "failed: name 'math' is not defined", "passed": false}
+{"task_id": "HumanEval/116", "completion": "returnsorted(arr,key=lambdax:(bin(x).count('1'),x))", "result": "failed: invalid syntax (<string>, line 13)", "passed": false}
+{"task_id": "HumanEval/117", "completion": "    return [word for word in s.split() if sum(1 for c in word if c.lower() not in 'aeiou' and c.isalpha()) == n]", "result": "passed", "passed": true}
+{"task_id": "HumanEval/118", "completion": "vowels=\"aeiouAEIOU\"", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/119", "completion": "    if len(lst) != 2:\n        return 'No'\n    if lst[0] == '(' and lst[1] == ')':\n        return 'Yes'\n    if lst[0] == ')' and lst[1] == '(':\n        return 'Yes'\n    return 'No'", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/12", "completion": "ifnotstrings:retur", "result": "failed: name 'retur' is not defined", "passed": false}
+{"task_id": "HumanEval/120", "completion": "returnsorted(arr)[-k:]", "result": "failed: name 'returnsorted' is not defined", "passed": false}
+{"task_id": "HumanEval/121", "completion": "returnsum(xfori,xinenumerate(lst)ifx%2==1andi%2==0)", "result": "failed: invalid decimal literal (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/122", "completion": "returnsum(xforxinarr[:k]ifx<100andx>-100)", "result": "failed: invalid decimal literal (<string>, line 16)", "passed": false}
+{"task_id": "HumanEval/123", "completion": "collatz_sequence=[n]", "result": "failed: name 'n' is not defined", "passed": false}
+{"task_id": "HumanEval/124", "completion": "    import datetime\n    try:\n        datetime.datetime.strptime(date, '%m-%d-%Y')\n        return True\n    except ValueError:\n        return False", "result": "passed", "passed": true}
+{"task_id": "HumanEval/125", "completion": "returnre.findall(r'\\b\\w+\\b|,',txt)ifre.findall(r'\\b\\w+\\b|,',txt)else[ord(c)-ord('a')forcintxtifc.islower()and(ord(c)-ord('a'))%2==1]", "result": "failed: invalid syntax (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/126", "completion": "returnall(lst[i]<=lst[i+1]foriinrange(len(lst)-1))andlen(lst)==len(set(lst))", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 18)", "passed": false}
+{"task_id": "HumanEval/127", "completion": "start=max(interval1[0],interval2[0])", "result": "failed: name 'interval1' is not defined", "passed": false}
+{"task_id": "HumanEval/128", "completion": "ifnotarr:retur", "result": "failed: name 'retur' is not defined", "passed": false}
+{"task_id": "HumanEval/129", "completion": "n=len(grid)", "result": "failed: name 'grid' is not defined", "passed": false}
+{"task_id": "HumanEval/13", "completion": "    while b:\n        a, b = b, a % b\n    return a", "result": "passed", "passed": true}
+{"task_id": "HumanEval/130", "completion": "ifn==0:returndict({0:1})", "result": "failed: illegal target for annotation (<string>, line 19)", "passed": false}
+{"task_id": "HumanEval/131", "completion": "    product = 1\n    has_odd = False\n    while n > 0:\n        digit = n % 10\n        if digit % 2 == 1:\n            product *= digit\n            has_odd = True\n        n //= 10\n    return product if has_odd else 0", "result": "passed", "passed": true}
+{"task_id": "HumanEval/132", "completion": "    stack = []\n    for char in string:\n        if char == '[':\n            stack.append(char)\n        elif char == ']':\n            if not stack:\n                return False\n            stack.pop()\n    return len(stack) > 0", "result": "failed: This prints if this assert fails 1 (good for debugging!)", "passed": false}
+{"task_id": "HumanEval/133", "completion": "returnsum([math.ceil(x)**2forxinlst])", "result": "failed: invalid decimal literal (<string>, line 16)", "passed": false}
+{"task_id": "HumanEval/134", "completion": "return txt.isalpha()andtxt[-1].isalpha()andtxt[-2]==\" \"", "result": "failed: invalid syntax (<string>, line 15)", "passed": false}
+{"task_id": "HumanEval/135", "completion": "returnmax([iifarr[i]<arr[i-1]else-1foriinrange(1,len(arr))])", "result": "failed: invalid decimal literal (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/136", "completion": "negatives=[i foriinlstifi<0]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 14)", "passed": false}
+{"task_id": "HumanEval/137", "completion": "a,b=(float(a.replace(\",\",\".\"))ifisinstance(a,str)elsea,(float(b.replace(\",\",\".\"))ifisinstance(b,str)elseb)", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 14)", "passed": false}
+{"task_id": "HumanEval/138", "completion": "returnn%2==0andn>=8", "result": "failed: invalid decimal literal (<string>, line 9)", "passed": false}
+{"task_id": "HumanEval/139", "completion": "    result = 1\nforiinrange(1,n+1):", "result": "failed: invalid syntax (<string>, line 15)", "passed": false}
+{"task_id": "HumanEval/14", "completion": "return[string[:i]foriinrange(1,len(string)+1)]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 9)", "passed": false}
+{"task_id": "HumanEval/140", "completion": "return re.sub(r' {3,}', '-', re.sub(r' ', '_', text))", "result": "failed: 'return' outside function (<string>, line 13)", "passed": false}
+{"task_id": "HumanEval/141", "completion": "    if len([i for i in file_name if i.isdigit()]) > 3:\n        return \"No\"\n    if file_name.count('.') != 1:\n        return \"No\"\n    before_dot, after_dot = file_name.split('.')\n    if not before_dot or not before_dot[0].isalpha():\n        return \"No\"\n    if after_dot not in ['txt', 'exe', 'dll']:\n        return \"No\"\n    return \"Yes\"", "result": "passed", "passed": true}
+{"task_id": "HumanEval/142", "completion": "returnsum([x**2ifnoti%3elsex**3ifnoti%4elsexfori,xinenumerate(lst)])", "result": "failed: invalid decimal literal (<string>, line 15)", "passed": false}
+{"task_id": "HumanEval/143", "completion": "words=sentence.split()", "result": "failed: name 'sentence' is not defined", "passed": false}
+{"task_id": "HumanEval/144", "completion": "returnint(x.split('/')[0])*int(n.split('/')[0])==int(x.split('/')[1])*int(n.split('/')[1])", "result": "failed: name 'returnint' is not defined", "passed": false}
+{"task_id": "HumanEval/145", "completion": "returnsorted(nums,key=lambdax:(sum(int(d)fordinch(str(x).replace('-',''))),nums.index(x)))", "result": "failed: invalid syntax (<string>, line 13)", "passed": false}
+{"task_id": "HumanEval/146", "completion": "returnlen(list(filter(lambdael:el>10andint(str(el)[0])%2==1andint(str(el)[-1])%2==1,nums)))", "result": "failed: invalid decimal literal (<string>, line 10)", "passed": false}
+{"task_id": "HumanEval/147", "completion": "a=[i*i-i+1foriinrange(1,n+1)]", "result": "failed: invalid decimal literal (<string>, line 16)", "passed": false}
+{"task_id": "HumanEval/148", "completion": "planets=(\"Mercury\",\"Venus\",\"Earth\",\"Mars\",\"Jupiter\",\"Saturn\",\"Uranus\",\"Neptune\")", "result": "failed: object of type 'NoneType' has no len()", "passed": false}
+{"task_id": "HumanEval/149", "completion": "returnsorted([wordforwordinlstiflen(word)%2==0])", "result": "failed: name 'returnsorted' is not defined", "passed": false}
+{"task_id": "HumanEval/15", "completion": "return\" \".join(str(i)foriinrange(n+1))", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 10)", "passed": false}
+{"task_id": "HumanEval/150", "completion": "ifn==1:", "result": "failed: invalid syntax (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/151", "completion": "returnsum(x**2ifisinstance(x,int)andx>0andx%2==1else0forxinlst)", "result": "failed: invalid decimal literal (<string>, line 14)", "passed": false}
+{"task_id": "HumanEval/152", "completion": "return[abs(a-b)fora,binzip(game,guess)]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 17)", "passed": false}
+{"task_id": "HumanEval/153", "completion": "max_strength=-float('inf')", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/154", "completion": "returnbinaorbin(b*2)", "result": "failed: name 'returnbinaorbin' is not defined", "passed": false}
+{"task_id": "HumanEval/155", "completion": "    even = 0\n    odd = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n    return (even, odd)", "result": "passed", "passed": true}
+{"task_id": "HumanEval/156", "completion": "    val = [1000, 500, 100, 50, 10, 5, 1]\n    syms = [\"m\", \"d\", \"c\", \"l\", \"x\", \"v\", \"i\"]\n    roman_numeral = \"\"\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_numeral += syms[i]\n            number -= val[i]\n        i += 1\n    return roman_numeral", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/157", "completion": "returna**2+b**2==c**2oristriangle(a,b,c)andisclose(a**2+b**2,c**2)", "result": "failed: invalid decimal literal (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/158", "completion": "returnmax(words,key=lambdaword:(len(set(word)),word))", "result": "failed: invalid syntax (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/159", "completion": "return[min(number+need,remaining+number),max(0,remaining-need)]", "result": "failed: 'return' outside function (<string>, line 31)", "passed": false}
+{"task_id": "HumanEval/16", "completion": "returnlen(set(string.lower()))", "result": "failed: name 'returnlen' is not defined", "passed": false}
+{"task_id": "HumanEval/160", "completion": "result=operand[0]", "result": "failed: name 'operand' is not defined", "passed": false}
+{"task_id": "HumanEval/161", "completion": "    if not any(c.isalpha() for c in s):\n        return s[::-1]\n    else:\n        return ''.join(c.swapcase() if c.isalpha() else c for c in s)", "result": "passed", "passed": true}
+{"task_id": "HumanEval/162", "completion": "ifnottext:retur", "result": "failed: name 'retur' is not defined", "passed": false}
+{"task_id": "HumanEval/163", "completion": "return[iforiinrange(min(a,b)+1,max(a,b))ifnoti%2]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/17", "completion": "result=[]", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/18", "completion": "return0ifnotstringornotsubstringelse1+how_many_times(string[1:],substring)", "result": "failed: name 'return0ifnotstringornotsubstringelse1' is not defined", "passed": false}
+{"task_id": "HumanEval/19", "completion": "number_map={'zero':0,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9}", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/2", "completion": "returnnumber-int(number)", "result": "failed: name 'returnnumber' is not defined", "passed": false}
+{"task_id": "HumanEval/20", "completion": "min_diff=float('inf')", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/21", "completion": "    min_n = min(numbers)\nreturn[(n-min_n)/(max(numbers)-min_n)forninanumbers]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/22", "completion": "return[xforxinvaluesifisinstance(x,int)]", "result": "failed: 'return' outside function (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/23", "completion": "length=0\nforcharinstring:", "result": "failed: invalid syntax (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/24", "completion": "foriinrange(n-1,0,-1):", "result": "failed: invalid syntax (<string>, line 8)", "passed": false}
+{"task_id": "HumanEval/25", "completion": "    factors = []\n    divisor = 2\n    while n >= 2:\n        while n % divisor == 0:\n            factors.append(divisor)\n            n //= divisor\n        divisor += 1\n    return factors", "result": "passed", "passed": true}
+{"task_id": "HumanEval/26", "completion": "    return [num for num in numbers if numbers.count(num) == 1]", "result": "passed", "passed": true}
+{"task_id": "HumanEval/27", "completion": "return''.join(c.lower()ifc.isupper()elsec.upper()forcinstring)", "result": "failed: invalid syntax (<string>, line 8)", "passed": false}
+{"task_id": "HumanEval/28", "completion": "return\"\".join(strings)", "result": "failed: 'return' outside function (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/29", "completion": "    return [s for s in strings if s.startswith(prefix)]", "result": "passed", "passed": true}
+{"task_id": "HumanEval/3", "completion": "balance=0foroperationinoperations:balance+=operationifbalance<0:returnTruereturnFalse", "result": "failed: invalid decimal literal (<string>, line 13)", "passed": false}
+{"task_id": "HumanEval/30", "completion": "return[xforxinlifx>0]", "result": "failed: 'return' outside function (<string>, line 10)", "passed": false}
+{"task_id": "HumanEval/31", "completion": "ifn==1orn==2:", "result": "failed: invalid decimal literal (<string>, line 20)", "passed": false}
+{"task_id": "HumanEval/32", "completion": "    assert len(xs) % 2 == 0\nassertxs[-1]!=0", "result": "failed: name 'assertxs' is not defined", "passed": false}
+{"task_id": "HumanEval/33", "completion": "return[sorted(l)[i//3ifnoti%3elsei]foriinrange(len(l))]", "result": "failed: invalid decimal literal (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/34", "completion": "returnsorted(set(l))", "result": "failed: name 'returnsorted' is not defined", "passed": false}
+{"task_id": "HumanEval/35", "completion": "returnmax(l)", "result": "failed: name 'returnmax' is not defined", "passed": false}
+{"task_id": "HumanEval/36", "completion": "returnsum(str(i).count('7')foriinrange(n)ifi%11==0ori%13==0)", "result": "failed: invalid octal literal (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/37", "completion": "return[sorted(l)[i//2]ifnoti%2elsel[i]foriinrange(len(l))]", "result": "failed: invalid decimal literal (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/38", "completion": "groups=[s[(3*i):min((3*i+3),len(s))]foriinrange((len(s)+2)//3)]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 18)", "passed": false}
+{"task_id": "HumanEval/39", "completion": "fib_nums=[0,1]", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/4", "completion": "    mean = sum(numbers) / len(numbers)\n    return sum(abs(x - mean) for x in numbers) / len(numbers)", "result": "passed", "passed": true}
+{"task_id": "HumanEval/40", "completion": "foriinrange(len(l)):", "result": "failed: invalid syntax (<string>, line 20)", "passed": false}
+{"task_id": "HumanEval/41", "completion": "returnn**2", "result": "failed: name 'returnn' is not defined", "passed": false}
+{"task_id": "HumanEval/42", "completion": "return[l[i]+1foriinrange(len(l))]", "result": "failed: invalid decimal literal (<string>, line 10)", "passed": false}
+{"task_id": "HumanEval/43", "completion": "returnany(x+y==0forxiny)", "result": "failed: invalid decimal literal (<string>, line 19)", "passed": false}
+{"task_id": "HumanEval/44", "completion": "res=\"\"", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/45", "completion": "returna*h/2", "result": "failed: name 'returna' is not defined", "passed": false}
+{"task_id": "HumanEval/46", "completion": "    if n < 2:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/47", "completion": "l.sort()", "result": "failed: name 'l' is not defined", "passed": false}
+{"task_id": "HumanEval/48", "completion": "returntext==text[::-1]", "result": "failed: name 'returntext' is not defined", "passed": false}
+{"task_id": "HumanEval/49", "completion": "returnpow(2,n,p)", "result": "failed: name 'returnpow' is not defined", "passed": false}
+{"task_id": "HumanEval/5", "completion": "ifnotnumbers:retur[]", "result": "failed: invalid syntax (<string>, line 11)", "passed": false}
+{"task_id": "HumanEval/50", "completion": "return\"\".join([chr(((ord(ch)-5-ord(\"a\"))%26)+ord(\"a\"))forchinS])", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 14)", "passed": false}
+{"task_id": "HumanEval/51", "completion": "return\"\".join([cforcinifnotc.lower()in\"aeiou\"])", "result": "failed: 'return' outside function (<string>, line 19)", "passed": false}
+{"task_id": "HumanEval/52", "completion": "returnall(x<tforxinl)", "result": "failed: name 'returnall' is not defined", "passed": false}
+{"task_id": "HumanEval/53", "completion": "returnx+y", "result": "failed: name 'returnx' is not defined", "passed": false}
+{"task_id": "HumanEval/54", "completion": "returnset(s0)==set(s1)", "result": "failed: name 'returnset' is not defined", "passed": false}
+{"task_id": "HumanEval/55", "completion": "a,b=0,1foriinrange(n):a,b=b,a+breturna", "result": "failed: invalid decimal literal (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/56", "completion": "balance=0forbinkbrackets:", "result": "failed: invalid decimal literal (<string>, line 16)", "passed": false}
+{"task_id": "HumanEval/57", "completion": "returnall(x<=yforx,yinzip(l,l[1:]))orall(x>=yforx,yinzip(l,l[1:]))", "result": "failed: invalid syntax (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/58", "completion": "returnsorted(set(l1)&set(l2))", "result": "failed: name 'returnsorted' is not defined", "passed": false}
+{"task_id": "HumanEval/59", "completion": "i=2whilei*i<=nifn%i==0n//=ielsei+=1returnn", "result": "failed: invalid decimal literal (<string>, line 10)", "passed": false}
+{"task_id": "HumanEval/6", "completion": "    paren_groups = paren_string.split(' ')\n    max_depths = []\n    for group in paren_groups:\n        depth = 0\n        max_depth = 0\n        for char in group:\n            if char == '(':\n                depth += 1\n                max_depth = max(max_depth, depth)\n            elif char == ')':\n                depth -= 1\n        max_depths.append(max_depth)\n    return max_depths", "result": "passed", "passed": true}
+{"task_id": "HumanEval/60", "completion": "return(n*(n+1))//2", "result": "failed: 'return' outside function (<string>, line 16)", "passed": false}
+{"task_id": "HumanEval/61", "completion": "    count = 0\n    for bracket in brackets:\n        if bracket == \"(\":\n            count += 1\n        elif bracket == \")\":\n            count -= 1\n        if count < 0:\n            return False\n    return count == 0", "result": "passed", "passed": true}
+{"task_id": "HumanEval/62", "completion": "return[coeff*ifori,coeffinenumerate(xs)][1:]", "result": "failed: 'return' outside function (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/63", "completion": "a,b,c=0,0,1", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/64", "completion": "returnsum([1forlins.lower()iflinalphabetvowels])", "result": "failed: invalid decimal literal (<string>, line 18)", "passed": false}
+{"task_id": "HumanEval/65", "completion": "shift=shift%len(str(x))", "result": "failed: name 'shift' is not defined", "passed": false}
+{"task_id": "HumanEval/66", "completion": "returnsum(ord(c)forcinifc.isupper())", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 15)", "passed": false}
+{"task_id": "HumanEval/67", "completion": "returnn-int(s.split(' ')[0])-int(s.split(' ')[3])", "result": "failed: name 'returnn' is not defined", "passed": false}
+{"task_id": "HumanEval/68", "completion": "min_even=float('inf')", "result": "failed: Error", "passed": false}
+{"task_id": "HumanEval/69", "completion": "    from collections import Counter\n    c = Counter(lst)\n    for i in range(max(c.keys()), 0, -1):", "result": "failed: expected an indented block after 'for' statement on line 15 (<string>, line 16)", "passed": false}
+{"task_id": "HumanEval/7", "completion": "    return [s for s in strings if substring in s]", "result": "passed", "passed": true}
+{"task_id": "HumanEval/70", "completion": "return[]ifnotlstelse[functools.reduce(lambdaa,b:aifa<belseb,lst),functools.reduce(lambdaa,b:bifa<belsea,lst[1:])]iflen(lst)>1else[lst[0]]+strange_sort_list(lst[1:])", "result": "failed: invalid syntax (<string>, line 13)", "passed": false}
+{"task_id": "HumanEval/71", "completion": "s=(a+b+c)/2", "result": "failed: name 'a' is not defined", "passed": false}
+{"task_id": "HumanEval/72", "completion": "returnq==q[::-1]andsum(q)<=w", "result": "failed: invalid syntax (<string>, line 20)", "passed": false}
+{"task_id": "HumanEval/73", "completion": "returnsum(arr[i]!=arr[-i-1]foriinrange(len(arr)//2))", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 13)", "passed": false}
+{"task_id": "HumanEval/74", "completion": "    return lst1 if sum(len(s) for s in lst1) <= sum(len(s) for s in lst2) else lst2", "result": "passed", "passed": true}
+{"task_id": "HumanEval/75", "completion": "    return all(is_prime(i) for i in range(2, a) if a % i == 0) and len([i for i in range(2, a) if a % i == 0]) == 3", "result": "failed: name 'is_prime' is not defined", "passed": false}
+{"task_id": "HumanEval/76", "completion": "returnn**round(log(x,n))==x", "result": "failed: name 'returnn' is not defined", "passed": false}
+{"task_id": "HumanEval/77", "completion": "returnround(a**(1/3))**3==a", "result": "failed: name 'returnround' is not defined", "passed": false}
+{"task_id": "HumanEval/78", "completion": "returnsum(1foriinchifint(i,16)in[2,3,5,7,11,13])", "result": "failed: invalid decimal literal (<string>, line 20)", "passed": false}
+{"task_id": "HumanEval/79", "completion": "binary=\"{0:b}\".format(decimal)", "result": "failed: name 'decimal' is not defined", "passed": false}
+{"task_id": "HumanEval/8", "completion": "sum_value=sum(numbers)", "result": "failed: name 'numbers' is not defined", "passed": false}
+{"task_id": "HumanEval/80", "completion": "returnlen(set(s[i:i+3]))==3foriinrange(len(s)-2)iflen(s)>=3", "result": "failed: invalid decimal literal (<string>, line 14)", "passed": false}
+{"task_id": "HumanEval/81", "completion": "letter_grades=[]", "result": "failed: ", "passed": false}
+{"task_id": "HumanEval/82", "completion": "length=len(string)", "result": "failed: name 'string' is not defined", "passed": false}
+{"task_id": "HumanEval/83", "completion": "return2*10**(n-1)-10**(n-2)", "result": "failed: name 'return2' is not defined", "passed": false}
+{"task_id": "HumanEval/84", "completion": "returnbin(sum(int(i)foriinlist(str(N))))[2:]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 16)", "passed": false}
+{"task_id": "HumanEval/85", "completion": "returnsum(xfori,xinenumerate(lst)ifi%2==1andx%2==0)", "result": "failed: invalid decimal literal (<string>, line 9)", "passed": false}
+{"task_id": "HumanEval/86", "completion": "return' '.join([''.join(sorted(word))forwordinre.findall(r'\\S+|\\s+',s)])", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 15)", "passed": false}
+{"task_id": "HumanEval/87", "completion": "res=[(i,j)fori,lstinenumerate(lst)forj,einenumerate(l)ifx==e]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 22)", "passed": false}
+{"task_id": "HumanEval/88", "completion": "ifnotarray:returndiff(array[0]+array[-1],array)", "result": "failed: name 'returndiff' is not defined", "passed": false}
+{"task_id": "HumanEval/89", "completion": "return''.join([chr((ord(i)-97+2*2)%26+97)foriinlist(s)])", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 13)", "passed": false}
+{"task_id": "HumanEval/9", "completion": "return[reduce(lambda x,y:max(x,y),numbers[:i+1])foriinnumpy.arange(0,len(numbers))]", "result": "failed: invalid syntax. Perhaps you forgot a comma? (<string>, line 10)", "passed": false}
+{"task_id": "HumanEval/90", "completion": "unique_lst=list(set(lst))", "result": "failed: name 'lst' is not defined", "passed": false}
+{"task_id": "HumanEval/91", "completion": "sentences=S.split('.')", "result": "failed: name 'S' is not defined", "passed": false}
+{"task_id": "HumanEval/92", "completion": "if isinstance(x,int) and isinstance(y,int) and isinstance(z,int):", "result": "failed: expected an indented block after 'if' statement on line 20 (<string>, line 21)", "passed": false}
+{"task_id": "HumanEval/93", "completion": "    encoded_message = \"\"\n    for char in message:\n        if char.isalpha():\n            if char.lower() in \"aeiou\":\n                new_char = chr(ord(char) + 2)\n                if char.isupper():\n                    new_char = new_char.upper()\n                encoded_message += new_char\n            else:\n                encoded_message += char.swapcase()\n        else:\n            encoded_message += char\n    return encoded_message", "result": "failed: This prints if this assert fails 1 (good for debugging!)", "passed": false}
+{"task_id": "HumanEval/94", "completion": "    def is_prime(n):\n        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n\n    largest_prime = 0\n    for num in lst:\n        if is_prime(num) and num > largest_prime:\n            largest_prime = num\n\n    return sum(int(digit) for digit in str(largest_prime))", "result": "passed", "passed": true}
+{"task_id": "HumanEval/95", "completion": "ifnotdict:", "result": "failed: invalid syntax (<string>, line 14)", "passed": false}
+{"task_id": "HumanEval/96", "completion": "return[primeforprimeinrange(2,n)ifall(prime%num!=0fornuminrange(2,int(math.sqrt(prime))+1))]", "result": "failed: invalid decimal literal (<string>, line 13)", "passed": false}
+{"task_id": "HumanEval/97", "completion": "return(a%10)*(b%10)", "result": "failed: 'return' outside function (<string>, line 12)", "passed": false}
+{"task_id": "HumanEval/98", "completion": "    return sum(1 for i in range(0, len(s), 2) if s[i] in 'AEIOU')", "result": "passed", "passed": true}
+{"task_id": "HumanEval/99", "completion": "returnint(math.copysign(1,float(value))*math.floor(abs(float(value))+0.5))", "result": "failed: name 'returnint' is not defined", "passed": false}

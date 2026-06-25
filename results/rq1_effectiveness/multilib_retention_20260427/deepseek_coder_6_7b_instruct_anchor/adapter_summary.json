@@ -1,0 +1,135 @@
+{
+  "model_key": "deepseek_coder_6_7b_instruct",
+  "model_name_or_path": "/data/models/deepseek-ai/deepseek-coder-6.7b-instruct",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo_anchor_full01_20260423/deepseek_coder_6_7b_instruct",
+  "candidate_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/deepseek_coder_6_7b_instruct_retention_set.jsonl",
+  "summary": {
+    "label": "adapter",
+    "samples": 500,
+    "exact_api_match_rate": 0.908,
+    "nonempty_api_prediction_rate": 1.0,
+    "per_api": [
+      {
+        "api": "DataFrame",
+        "samples": 20,
+        "exact_api_match_rate": 0.9
+      },
+      {
+        "api": "FloatTensor",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "Linear",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "RandomState",
+        "samples": 20,
+        "exact_api_match_rate": 0.45
+      },
+      {
+        "api": "Series",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "abs",
+        "samples": 20,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "arange",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "array",
+        "samples": 20,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "asarray",
+        "samples": 20,
+        "exact_api_match_rate": 0.8
+      },
+      {
+        "api": "cat",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "device",
+        "samples": 20,
+        "exact_api_match_rate": 0.9
+      },
+      {
+        "api": "dot",
+        "samples": 20,
+        "exact_api_match_rate": 0.9
+      },
+      {
+        "api": "dtype",
+        "samples": 20,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "empty",
+        "samples": 20,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "linspace",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "no_grad",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "ones",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "randn",
+        "samples": 20,
+        "exact_api_match_rate": 0.9
+      },
+      {
+        "api": "save",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "sqrt",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "sum",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "tensor",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "unique",
+        "samples": 20,
+        "exact_api_match_rate": 0.9
+      },
+      {
+        "api": "zeros",
+        "samples": 40,
+        "exact_api_match_rate": 0.925
+      }
+    ],
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/deepseek_coder_6_7b_instruct_anchor/adapter_predictions.jsonl"
+  }
+}

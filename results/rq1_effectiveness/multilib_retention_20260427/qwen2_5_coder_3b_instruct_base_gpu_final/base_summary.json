@@ -1,0 +1,200 @@
+{
+  "model_key": "qwen2_5_coder_3b_instruct",
+  "model_name_or_path": "/data/models/Qwen/Qwen2.5-Coder-3B-Instruct",
+  "adapter_dir": null,
+  "candidate_file": "05_positive_engineering/output/multilib_retention_20260427/shortlist_2400.jsonl",
+  "summary": {
+    "label": "base",
+    "samples": 1596,
+    "exact_api_match_rate": 0.2894736842105263,
+    "nonempty_api_prediction_rate": 0.8602756892230576,
+    "per_api": [
+      {
+        "api": "Categorical",
+        "samples": 18,
+        "exact_api_match_rate": 0.5
+      },
+      {
+        "api": "DataFrame",
+        "samples": 60,
+        "exact_api_match_rate": 0.8666666666666667
+      },
+      {
+        "api": "FloatTensor",
+        "samples": 60,
+        "exact_api_match_rate": 0.0
+      },
+      {
+        "api": "Linear",
+        "samples": 29,
+        "exact_api_match_rate": 0.7241379310344828
+      },
+      {
+        "api": "RandomState",
+        "samples": 60,
+        "exact_api_match_rate": 0.08333333333333333
+      },
+      {
+        "api": "Series",
+        "samples": 60,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "abs",
+        "samples": 60,
+        "exact_api_match_rate": 0.13333333333333333
+      },
+      {
+        "api": "arange",
+        "samples": 60,
+        "exact_api_match_rate": 0.05
+      },
+      {
+        "api": "array",
+        "samples": 60,
+        "exact_api_match_rate": 0.31666666666666665
+      },
+      {
+        "api": "asarray",
+        "samples": 60,
+        "exact_api_match_rate": 0.0
+      },
+      {
+        "api": "axes_style",
+        "samples": 11,
+        "exact_api_match_rate": 0.0
+      },
+      {
+        "api": "cat",
+        "samples": 60,
+        "exact_api_match_rate": 0.43333333333333335
+      },
+      {
+        "api": "color_palette",
+        "samples": 7,
+        "exact_api_match_rate": 0.0
+      },
+      {
+        "api": "config_context",
+        "samples": 15,
+        "exact_api_match_rate": 0.0
+      },
+      {
+        "api": "device",
+        "samples": 34,
+        "exact_api_match_rate": 0.4117647058823529
+      },
+      {
+        "api": "dot",
+        "samples": 60,
+        "exact_api_match_rate": 0.18333333333333332
+      },
+      {
+        "api": "dtype",
+        "samples": 60,
+        "exact_api_match_rate": 0.05
+      },
+      {
+        "api": "empty",
+        "samples": 60,
+        "exact_api_match_rate": 0.15
+      },
+      {
+        "api": "fit",
+        "samples": 7,
+        "exact_api_match_rate": 0.5714285714285714
+      },
+      {
+        "api": "get_config",
+        "samples": 6,
+        "exact_api_match_rate": 0.0
+      },
+      {
+        "api": "isscalarlike",
+        "samples": 6,
+        "exact_api_match_rate": 0.3333333333333333
+      },
+      {
+        "api": "linspace",
+        "samples": 60,
+        "exact_api_match_rate": 0.3333333333333333
+      },
+      {
+        "api": "load_dataset",
+        "samples": 9,
+        "exact_api_match_rate": 0.5555555555555556
+      },
+      {
+        "api": "minimize",
+        "samples": 5,
+        "exact_api_match_rate": 0.2
+      },
+      {
+        "api": "no_grad",
+        "samples": 60,
+        "exact_api_match_rate": 0.3333333333333333
+      },
+      {
+        "api": "ones",
+        "samples": 60,
+        "exact_api_match_rate": 0.38333333333333336
+      },
+      {
+        "api": "predict",
+        "samples": 6,
+        "exact_api_match_rate": 0.8333333333333334
+      },
+      {
+        "api": "randn",
+        "samples": 60,
+        "exact_api_match_rate": 0.0
+      },
+      {
+        "api": "save",
+        "samples": 32,
+        "exact_api_match_rate": 0.84375
+      },
+      {
+        "api": "set_config",
+        "samples": 55,
+        "exact_api_match_rate": 0.0
+      },
+      {
+        "api": "sqrt",
+        "samples": 60,
+        "exact_api_match_rate": 0.25
+      },
+      {
+        "api": "stack",
+        "samples": 25,
+        "exact_api_match_rate": 0.4
+      },
+      {
+        "api": "sum",
+        "samples": 60,
+        "exact_api_match_rate": 0.16666666666666666
+      },
+      {
+        "api": "tensor",
+        "samples": 60,
+        "exact_api_match_rate": 0.26666666666666666
+      },
+      {
+        "api": "transform",
+        "samples": 11,
+        "exact_api_match_rate": 0.8181818181818182
+      },
+      {
+        "api": "unique",
+        "samples": 60,
+        "exact_api_match_rate": 0.38333333333333336
+      },
+      {
+        "api": "zeros",
+        "samples": 120,
+        "exact_api_match_rate": 0.2916666666666667
+      }
+    ],
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/qwen2_5_coder_3b_instruct_base_gpu_final/base_predictions.jsonl"
+  }
+}

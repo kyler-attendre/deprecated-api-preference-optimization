@@ -1,0 +1,758 @@
+{
+  "random_neutral_text": {
+    "count": 12,
+    "layer_summary": [
+      {
+        "layer": 0,
+        "mean_diff_norm": 0.5452419941624006
+      },
+      {
+        "layer": 1,
+        "mean_diff_norm": 0.963908851146698
+      },
+      {
+        "layer": 2,
+        "mean_diff_norm": 1.4053151110808055
+      },
+      {
+        "layer": 3,
+        "mean_diff_norm": 1.7474946479002635
+      },
+      {
+        "layer": 4,
+        "mean_diff_norm": 2.0709440310796103
+      },
+      {
+        "layer": 5,
+        "mean_diff_norm": 2.290093958377838
+      },
+      {
+        "layer": 6,
+        "mean_diff_norm": 2.3822892705599465
+      },
+      {
+        "layer": 7,
+        "mean_diff_norm": 2.7618102431297302
+      },
+      {
+        "layer": 8,
+        "mean_diff_norm": 3.0084485014279685
+      },
+      {
+        "layer": 9,
+        "mean_diff_norm": 3.0003977020581565
+      },
+      {
+        "layer": 10,
+        "mean_diff_norm": 3.0100709001223245
+      },
+      {
+        "layer": 11,
+        "mean_diff_norm": 3.0402612884839377
+      },
+      {
+        "layer": 12,
+        "mean_diff_norm": 3.2608426809310913
+      },
+      {
+        "layer": 13,
+        "mean_diff_norm": 3.552847365538279
+      },
+      {
+        "layer": 14,
+        "mean_diff_norm": 3.823442359765371
+      },
+      {
+        "layer": 15,
+        "mean_diff_norm": 4.196154375871022
+      },
+      {
+        "layer": 16,
+        "mean_diff_norm": 4.425748546918233
+      },
+      {
+        "layer": 17,
+        "mean_diff_norm": 4.950337370236714
+      },
+      {
+        "layer": 18,
+        "mean_diff_norm": 5.732665340105693
+      },
+      {
+        "layer": 19,
+        "mean_diff_norm": 7.118430852890015
+      },
+      {
+        "layer": 20,
+        "mean_diff_norm": 8.437435825665792
+      },
+      {
+        "layer": 21,
+        "mean_diff_norm": 10.126636981964111
+      },
+      {
+        "layer": 22,
+        "mean_diff_norm": 13.692259550094604
+      },
+      {
+        "layer": 23,
+        "mean_diff_norm": 17.211341937383015
+      },
+      {
+        "layer": 24,
+        "mean_diff_norm": 21.3275146484375
+      },
+      {
+        "layer": 25,
+        "mean_diff_norm": 26.467413902282715
+      },
+      {
+        "layer": 26,
+        "mean_diff_norm": 36.17852528889974
+      },
+      {
+        "layer": 27,
+        "mean_diff_norm": 19.534529368082683
+      }
+    ],
+    "final_layer_mean_diff_norm": 19.534529368082683,
+    "mean_family_scores": {
+      "replacement": -0.5961270288001591,
+      "deprecated": -0.672420349282523,
+      "library_version": -0.9966305823375782
+    },
+    "replacement_minus_deprecated_score": 0.07629332048236392,
+    "top_amplified_tokens": [
+      {
+        "token_id": 143448,
+        "token_text": " propriétaire",
+        "logit_diff": 5.966064453125
+      },
+      {
+        "token_id": 97459,
+        "token_text": " sábado",
+        "logit_diff": 5.932291507720947
+      },
+      {
+        "token_id": 132744,
+        "token_text": " médico",
+        "logit_diff": 5.6494140625
+      },
+      {
+        "token_id": 88702,
+        "token_text": " président",
+        "logit_diff": 5.32080078125
+      },
+      {
+        "token_id": 97294,
+        "token_text": " parten",
+        "logit_diff": 5.319010257720947
+      },
+      {
+        "token_id": 89440,
+        "token_text": " domingo",
+        "logit_diff": 5.212158203125
+      },
+      {
+        "token_id": 85274,
+        "token_text": " maté",
+        "logit_diff": 5.192708492279053
+      },
+      {
+        "token_id": 82189,
+        "token_text": " agosto",
+        "logit_diff": 5.112711429595947
+      },
+      {
+        "token_id": 87287,
+        "token_text": " abril",
+        "logit_diff": 5.0908203125
+      },
+      {
+        "token_id": 142597,
+        "token_text": " Educación",
+        "logit_diff": 5.047200679779053
+      },
+      {
+        "token_id": 142263,
+        "token_text": " crédit",
+        "logit_diff": 5.013020992279053
+      },
+      {
+        "token_id": 94696,
+        "token_text": " líder",
+        "logit_diff": 4.816568851470947
+      },
+      {
+        "token_id": 139366,
+        "token_text": " Política",
+        "logit_diff": 4.764566898345947
+      },
+      {
+        "token_id": 85528,
+        "token_text": " marzo",
+        "logit_diff": 4.7548828125
+      },
+      {
+        "token_id": 91700,
+        "token_text": " emploi",
+        "logit_diff": 4.673828125
+      },
+      {
+        "token_id": 67192,
+        "token_text": " créd",
+        "logit_diff": 4.640625
+      },
+      {
+        "token_id": 80793,
+        "token_text": " gobierno",
+        "logit_diff": 4.615315914154053
+      },
+      {
+        "token_id": 51385,
+        "token_text": " presidente",
+        "logit_diff": 4.550649166107178
+      },
+      {
+        "token_id": 140030,
+        "token_text": " algu",
+        "logit_diff": 4.495442867279053
+      },
+      {
+        "token_id": 131514,
+        "token_text": "vê",
+        "logit_diff": 4.4632568359375
+      },
+      {
+        "token_id": 56567,
+        "token_text": " chicas",
+        "logit_diff": 4.424479007720947
+      },
+      {
+        "token_id": 137612,
+        "token_text": " séjour",
+        "logit_diff": 4.402994632720947
+      },
+      {
+        "token_id": 75050,
+        "token_text": "ải",
+        "logit_diff": 4.378173828125
+      },
+      {
+        "token_id": 61031,
+        "token_text": "ự",
+        "logit_diff": 4.325520992279053
+      },
+      {
+        "token_id": 140423,
+        "token_text": " véhicule",
+        "logit_diff": 4.3203125
+      }
+    ],
+    "top_suppressed_tokens": [
+      {
+        "token_id": 98388,
+        "token_text": " <\",",
+        "logit_diff": -9.72394847869873
+      },
+      {
+        "token_id": 88349,
+        "token_text": ",\");\n",
+        "logit_diff": -8.997416496276855
+      },
+      {
+        "token_id": 82876,
+        "token_text": " >\",",
+        "logit_diff": -8.857177734375
+      },
+      {
+        "token_id": 89724,
+        "token_text": "/Peak",
+        "logit_diff": -8.831649780273438
+      },
+      {
+        "token_id": 30377,
+        "token_text": " CAUSED",
+        "logit_diff": -8.720744132995605
+      },
+      {
+        "token_id": 77057,
+        "token_text": "(Have",
+        "logit_diff": -8.555745124816895
+      },
+      {
+        "token_id": 95295,
+        "token_text": "].'",
+        "logit_diff": -8.44629955291748
+      },
+      {
+        "token_id": 87990,
+        "token_text": "<=$",
+        "logit_diff": -8.312174797058105
+      },
+      {
+        "token_id": 55811,
+        "token_text": "<count",
+        "logit_diff": -8.285969734191895
+      },
+      {
+        "token_id": 75116,
+        "token_text": "/stretch",
+        "logit_diff": -8.282877922058105
+      },
+      {
+        "token_id": 28038,
+        "token_text": " )\n\n\n\n\n\n\n\n",
+        "logit_diff": -8.27935791015625
+      },
+      {
+        "token_id": 88820,
+        "token_text": "/Gate",
+        "logit_diff": -8.213786125183105
+      },
+      {
+        "token_id": 133296,
+        "token_text": "bilité",
+        "logit_diff": -8.180989265441895
+      },
+      {
+        "token_id": 84421,
+        "token_text": "#aa",
+        "logit_diff": -8.02392578125
+      },
+      {
+        "token_id": 56268,
+        "token_text": "',...\n",
+        "logit_diff": -7.968912601470947
+      },
+      {
+        "token_id": 89486,
+        "token_text": ")./",
+        "logit_diff": -7.953775882720947
+      },
+      {
+        "token_id": 93954,
+        "token_text": "--,",
+        "logit_diff": -7.940633296966553
+      },
+      {
+        "token_id": 55030,
+        "token_text": "*/),",
+        "logit_diff": -7.9384765625
+      },
+      {
+        "token_id": 48957,
+        "token_text": "/INFO",
+        "logit_diff": -7.901268005371094
+      },
+      {
+        "token_id": 59610,
+        "token_text": "–\n\n",
+        "logit_diff": -7.893025875091553
+      },
+      {
+        "token_id": 91081,
+        "token_text": ":numel",
+        "logit_diff": -7.8828125
+      },
+      {
+        "token_id": 37457,
+        "token_text": ":NO",
+        "logit_diff": -7.879801273345947
+      },
+      {
+        "token_id": 96567,
+        "token_text": " REGARD",
+        "logit_diff": -7.873697757720947
+      },
+      {
+        "token_id": 138378,
+        "token_text": "traîn",
+        "logit_diff": -7.840087890625
+      },
+      {
+        "token_id": 75984,
+        "token_text": ":'.$",
+        "logit_diff": -7.836751461029053
+      }
+    ]
+  },
+  "library_neutral_code": {
+    "count": 24,
+    "layer_summary": [
+      {
+        "layer": 0,
+        "mean_diff_norm": 0.8716972867647806
+      },
+      {
+        "layer": 1,
+        "mean_diff_norm": 1.3976458956797917
+      },
+      {
+        "layer": 2,
+        "mean_diff_norm": 2.1297363539536796
+      },
+      {
+        "layer": 3,
+        "mean_diff_norm": 2.8551489810148873
+      },
+      {
+        "layer": 4,
+        "mean_diff_norm": 3.5947814683119454
+      },
+      {
+        "layer": 5,
+        "mean_diff_norm": 4.392827183008194
+      },
+      {
+        "layer": 6,
+        "mean_diff_norm": 5.052794992923737
+      },
+      {
+        "layer": 7,
+        "mean_diff_norm": 6.141875624656677
+      },
+      {
+        "layer": 8,
+        "mean_diff_norm": 7.092891136805217
+      },
+      {
+        "layer": 9,
+        "mean_diff_norm": 8.115841031074524
+      },
+      {
+        "layer": 10,
+        "mean_diff_norm": 8.844826797644297
+      },
+      {
+        "layer": 11,
+        "mean_diff_norm": 9.493856072425842
+      },
+      {
+        "layer": 12,
+        "mean_diff_norm": 10.772562821706137
+      },
+      {
+        "layer": 13,
+        "mean_diff_norm": 12.72788409392039
+      },
+      {
+        "layer": 14,
+        "mean_diff_norm": 14.514076789220175
+      },
+      {
+        "layer": 15,
+        "mean_diff_norm": 17.044755299886067
+      },
+      {
+        "layer": 16,
+        "mean_diff_norm": 18.920732100804646
+      },
+      {
+        "layer": 17,
+        "mean_diff_norm": 21.415294965108234
+      },
+      {
+        "layer": 18,
+        "mean_diff_norm": 26.01847807566325
+      },
+      {
+        "layer": 19,
+        "mean_diff_norm": 34.24083876609802
+      },
+      {
+        "layer": 20,
+        "mean_diff_norm": 41.792277812957764
+      },
+      {
+        "layer": 21,
+        "mean_diff_norm": 52.34270771344503
+      },
+      {
+        "layer": 22,
+        "mean_diff_norm": 73.91473706563313
+      },
+      {
+        "layer": 23,
+        "mean_diff_norm": 98.84425163269043
+      },
+      {
+        "layer": 24,
+        "mean_diff_norm": 125.46460596720378
+      },
+      {
+        "layer": 25,
+        "mean_diff_norm": 160.61418374379477
+      },
+      {
+        "layer": 26,
+        "mean_diff_norm": 200.57958030700684
+      },
+      {
+        "layer": 27,
+        "mean_diff_norm": 99.24961296717326
+      }
+    ],
+    "final_layer_mean_diff_norm": 99.24961296717326,
+    "mean_family_scores": {
+      "replacement": -0.8645016516869267,
+      "deprecated": -1.1261866899828117,
+      "library_version": -0.5500566691625863
+    },
+    "replacement_minus_deprecated_score": 0.26168503829588496,
+    "top_amplified_tokens": [
+      {
+        "token_id": 28038,
+        "token_text": " )\n\n\n\n\n\n\n\n",
+        "logit_diff": 8.927734375
+      },
+      {
+        "token_id": 35091,
+        "token_text": ".cast",
+        "logit_diff": 6.67822265625
+      },
+      {
+        "token_id": 37,
+        "token_text": "F",
+        "logit_diff": 6.1064453125
+      },
+      {
+        "token_id": 27884,
+        "token_text": "(disposing",
+        "logit_diff": 5.9482421875
+      },
+      {
+        "token_id": 85447,
+        "token_text": " \"\"\"\",\n",
+        "logit_diff": 5.863443851470947
+      },
+      {
+        "token_id": 8935,
+        "token_text": "tf",
+        "logit_diff": 5.669921875
+      },
+      {
+        "token_id": 83134,
+        "token_text": " !***",
+        "logit_diff": 5.616800785064697
+      },
+      {
+        "token_id": 50949,
+        "token_text": " blat",
+        "logit_diff": 5.544352054595947
+      },
+      {
+        "token_id": 54711,
+        "token_text": ".prod",
+        "logit_diff": 5.495218753814697
+      },
+      {
+        "token_id": 24338,
+        "token_text": "\r\r\r\n",
+        "logit_diff": 5.486979007720947
+      },
+      {
+        "token_id": 95885,
+        "token_text": " ohio",
+        "logit_diff": 5.297569274902344
+      },
+      {
+        "token_id": 93170,
+        "token_text": "(BitConverter",
+        "logit_diff": 4.939005374908447
+      },
+      {
+        "token_id": 142228,
+        "token_text": " Aydın",
+        "logit_diff": 4.936279296875
+      },
+      {
+        "token_id": 81743,
+        "token_text": " hton",
+        "logit_diff": 4.778360843658447
+      },
+      {
+        "token_id": 37732,
+        "token_text": ".linalg",
+        "logit_diff": 4.692057132720947
+      },
+      {
+        "token_id": 27414,
+        "token_text": "torch",
+        "logit_diff": 4.665689945220947
+      },
+      {
+        "token_id": 69591,
+        "token_text": " Dems",
+        "logit_diff": 4.659830570220947
+      },
+      {
+        "token_id": 88389,
+        "token_text": " erotica",
+        "logit_diff": 4.637827396392822
+      },
+      {
+        "token_id": 10359,
+        "token_text": " oppon",
+        "logit_diff": 4.593424320220947
+      },
+      {
+        "token_id": 91705,
+        "token_text": " redhead",
+        "logit_diff": 4.527547359466553
+      },
+      {
+        "token_id": 77421,
+        "token_text": "_AspNet",
+        "logit_diff": 4.501627445220947
+      },
+      {
+        "token_id": 97630,
+        "token_text": ".omg",
+        "logit_diff": 4.478678226470947
+      },
+      {
+        "token_id": 83700,
+        "token_text": " puss",
+        "logit_diff": 4.352681636810303
+      },
+      {
+        "token_id": 97459,
+        "token_text": " sábado",
+        "logit_diff": 4.325752258300781
+      },
+      {
+        "token_id": 69326,
+        "token_text": " Jaguars",
+        "logit_diff": 4.306691646575928
+      }
+    ],
+    "top_suppressed_tokens": [
+      {
+        "token_id": 310,
+        "token_text": "           ",
+        "logit_diff": -9.9453125
+      },
+      {
+        "token_id": 286,
+        "token_text": "       ",
+        "logit_diff": -9.908854484558105
+      },
+      {
+        "token_id": 262,
+        "token_text": "   ",
+        "logit_diff": -9.544270515441895
+      },
+      {
+        "token_id": 16159,
+        "token_text": "          \n",
+        "logit_diff": -9.164713859558105
+      },
+      {
+        "token_id": 12306,
+        "token_text": "       \n",
+        "logit_diff": -9.128254890441895
+      },
+      {
+        "token_id": 28247,
+        "token_text": "             \n",
+        "logit_diff": -9.022575378417969
+      },
+      {
+        "token_id": 19011,
+        "token_text": "           \n",
+        "logit_diff": -8.972331047058105
+      },
+      {
+        "token_id": 394,
+        "token_text": "               ",
+        "logit_diff": -8.906901359558105
+      },
+      {
+        "token_id": 128983,
+        "token_text": " Nguy",
+        "logit_diff": -8.879150390625
+      },
+      {
+        "token_id": 15677,
+        "token_text": "         \n",
+        "logit_diff": -8.8369140625
+      },
+      {
+        "token_id": 66838,
+        "token_text": "<<<<<<<",
+        "logit_diff": -8.7919921875
+      },
+      {
+        "token_id": 26546,
+        "token_text": "               \n",
+        "logit_diff": -8.631184577941895
+      },
+      {
+        "token_id": 40337,
+        "token_text": "                   \n",
+        "logit_diff": -8.488800048828125
+      },
+      {
+        "token_id": 688,
+        "token_text": "         ",
+        "logit_diff": -8.453125
+      },
+      {
+        "token_id": 95525,
+        "token_text": "]={\n",
+        "logit_diff": -8.435282707214355
+      },
+      {
+        "token_id": 90747,
+        "token_text": "INCLUDED",
+        "logit_diff": -8.379191398620605
+      },
+      {
+        "token_id": 36577,
+        "token_text": "                  \n",
+        "logit_diff": -8.321208000183105
+      },
+      {
+        "token_id": 26285,
+        "token_text": "              \n",
+        "logit_diff": -8.310221672058105
+      },
+      {
+        "token_id": 503,
+        "token_text": "                   ",
+        "logit_diff": -8.263671875
+      },
+      {
+        "token_id": 786,
+        "token_text": "                                ",
+        "logit_diff": -8.259114265441895
+      },
+      {
+        "token_id": 1843,
+        "token_text": "          ",
+        "logit_diff": -8.2294921875
+      },
+      {
+        "token_id": 1060,
+        "token_text": "             ",
+        "logit_diff": -8.228352546691895
+      },
+      {
+        "token_id": 6656,
+        "token_text": "                                 ",
+        "logit_diff": -8.14460277557373
+      },
+      {
+        "token_id": 52720,
+        "token_text": "                      \n",
+        "logit_diff": -8.1358642578125
+      },
+      {
+        "token_id": 3502,
+        "token_text": "                         ",
+        "logit_diff": -8.115391731262207
+      }
+    ]
+  }
+}

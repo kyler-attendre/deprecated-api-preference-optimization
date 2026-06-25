@@ -1,0 +1,200 @@
+{
+  "model_key": "starcoder2_3b",
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-3b",
+  "adapter_dir": null,
+  "candidate_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/shortlist_2400.jsonl",
+  "summary": {
+    "label": "base",
+    "samples": 1596,
+    "exact_api_match_rate": 0.6785714285714286,
+    "nonempty_api_prediction_rate": 0.9542606516290727,
+    "per_api": [
+      {
+        "api": "Categorical",
+        "samples": 18,
+        "exact_api_match_rate": 0.7777777777777778
+      },
+      {
+        "api": "DataFrame",
+        "samples": 60,
+        "exact_api_match_rate": 0.9833333333333333
+      },
+      {
+        "api": "FloatTensor",
+        "samples": 60,
+        "exact_api_match_rate": 0.6166666666666667
+      },
+      {
+        "api": "Linear",
+        "samples": 29,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "RandomState",
+        "samples": 60,
+        "exact_api_match_rate": 0.48333333333333334
+      },
+      {
+        "api": "Series",
+        "samples": 60,
+        "exact_api_match_rate": 0.9166666666666666
+      },
+      {
+        "api": "abs",
+        "samples": 60,
+        "exact_api_match_rate": 0.5166666666666667
+      },
+      {
+        "api": "arange",
+        "samples": 60,
+        "exact_api_match_rate": 0.6333333333333333
+      },
+      {
+        "api": "array",
+        "samples": 60,
+        "exact_api_match_rate": 0.7833333333333333
+      },
+      {
+        "api": "asarray",
+        "samples": 60,
+        "exact_api_match_rate": 0.5
+      },
+      {
+        "api": "axes_style",
+        "samples": 11,
+        "exact_api_match_rate": 0.9090909090909091
+      },
+      {
+        "api": "cat",
+        "samples": 60,
+        "exact_api_match_rate": 0.8333333333333334
+      },
+      {
+        "api": "color_palette",
+        "samples": 7,
+        "exact_api_match_rate": 0.8571428571428571
+      },
+      {
+        "api": "config_context",
+        "samples": 15,
+        "exact_api_match_rate": 0.13333333333333333
+      },
+      {
+        "api": "device",
+        "samples": 34,
+        "exact_api_match_rate": 0.9117647058823529
+      },
+      {
+        "api": "dot",
+        "samples": 60,
+        "exact_api_match_rate": 0.48333333333333334
+      },
+      {
+        "api": "dtype",
+        "samples": 60,
+        "exact_api_match_rate": 0.7666666666666667
+      },
+      {
+        "api": "empty",
+        "samples": 60,
+        "exact_api_match_rate": 0.3
+      },
+      {
+        "api": "fit",
+        "samples": 7,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "get_config",
+        "samples": 6,
+        "exact_api_match_rate": 0.16666666666666666
+      },
+      {
+        "api": "isscalarlike",
+        "samples": 6,
+        "exact_api_match_rate": 0.3333333333333333
+      },
+      {
+        "api": "linspace",
+        "samples": 60,
+        "exact_api_match_rate": 0.5833333333333334
+      },
+      {
+        "api": "load_dataset",
+        "samples": 9,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "minimize",
+        "samples": 5,
+        "exact_api_match_rate": 0.2
+      },
+      {
+        "api": "no_grad",
+        "samples": 60,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "ones",
+        "samples": 60,
+        "exact_api_match_rate": 0.5833333333333334
+      },
+      {
+        "api": "predict",
+        "samples": 6,
+        "exact_api_match_rate": 0.8333333333333334
+      },
+      {
+        "api": "randn",
+        "samples": 60,
+        "exact_api_match_rate": 0.6333333333333333
+      },
+      {
+        "api": "save",
+        "samples": 32,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "set_config",
+        "samples": 55,
+        "exact_api_match_rate": 0.7454545454545455
+      },
+      {
+        "api": "sqrt",
+        "samples": 60,
+        "exact_api_match_rate": 0.5833333333333334
+      },
+      {
+        "api": "stack",
+        "samples": 25,
+        "exact_api_match_rate": 0.88
+      },
+      {
+        "api": "sum",
+        "samples": 60,
+        "exact_api_match_rate": 0.4666666666666667
+      },
+      {
+        "api": "tensor",
+        "samples": 60,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "transform",
+        "samples": 11,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "unique",
+        "samples": 60,
+        "exact_api_match_rate": 0.5166666666666667
+      },
+      {
+        "api": "zeros",
+        "samples": 120,
+        "exact_api_match_rate": 0.675
+      }
+    ],
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/starcoder2_3b_base/base_predictions.jsonl"
+  }
+}

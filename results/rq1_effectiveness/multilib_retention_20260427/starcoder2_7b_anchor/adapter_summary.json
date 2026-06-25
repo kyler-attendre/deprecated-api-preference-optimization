@@ -1,0 +1,145 @@
+{
+  "model_key": "starcoder2_7b",
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-7b",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo7b_screen_full_anchor01_20260423/starcoder2_7b",
+  "candidate_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/starcoder2_7b_retention_set.jsonl",
+  "summary": {
+    "label": "adapter",
+    "samples": 540,
+    "exact_api_match_rate": 0.7222222222222222,
+    "nonempty_api_prediction_rate": 1.0,
+    "per_api": [
+      {
+        "api": "DataFrame",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "FloatTensor",
+        "samples": 20,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "Linear",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "RandomState",
+        "samples": 20,
+        "exact_api_match_rate": 0.55
+      },
+      {
+        "api": "Series",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "abs",
+        "samples": 20,
+        "exact_api_match_rate": 0.3
+      },
+      {
+        "api": "arange",
+        "samples": 20,
+        "exact_api_match_rate": 0.65
+      },
+      {
+        "api": "array",
+        "samples": 20,
+        "exact_api_match_rate": 0.6
+      },
+      {
+        "api": "asarray",
+        "samples": 20,
+        "exact_api_match_rate": 0.5
+      },
+      {
+        "api": "cat",
+        "samples": 20,
+        "exact_api_match_rate": 0.2
+      },
+      {
+        "api": "device",
+        "samples": 20,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "dot",
+        "samples": 20,
+        "exact_api_match_rate": 0.35
+      },
+      {
+        "api": "dtype",
+        "samples": 20,
+        "exact_api_match_rate": 0.9
+      },
+      {
+        "api": "empty",
+        "samples": 20,
+        "exact_api_match_rate": 0.65
+      },
+      {
+        "api": "linspace",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "no_grad",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "ones",
+        "samples": 20,
+        "exact_api_match_rate": 0.75
+      },
+      {
+        "api": "randn",
+        "samples": 20,
+        "exact_api_match_rate": 0.65
+      },
+      {
+        "api": "save",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "set_config",
+        "samples": 20,
+        "exact_api_match_rate": 0.2
+      },
+      {
+        "api": "sqrt",
+        "samples": 20,
+        "exact_api_match_rate": 0.7
+      },
+      {
+        "api": "stack",
+        "samples": 20,
+        "exact_api_match_rate": 0.75
+      },
+      {
+        "api": "sum",
+        "samples": 20,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "tensor",
+        "samples": 20,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "unique",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "zeros",
+        "samples": 40,
+        "exact_api_match_rate": 0.75
+      }
+    ],
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/starcoder2_7b_anchor/adapter_predictions.jsonl"
+  }
+}

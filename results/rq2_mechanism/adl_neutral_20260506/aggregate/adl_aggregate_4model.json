@@ -1,0 +1,130 @@
+{
+  "models_included": [
+    "StarCoder2-3B",
+    "StarCoder2-7B",
+    "StarCoder2-15B",
+    "DeepSeek-Coder-6.7B-Instruct"
+  ],
+  "groups": {
+    "starcoder_scale": {
+      "random_neutral_text": {
+        "base": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 0.0,
+          "replacement_minus_deprecated_score": 0.0
+        },
+        "dpo": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 28.693057907952205,
+          "replacement_minus_deprecated_score": 0.40833286506434274
+        },
+        "anchored_dpo": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 27.903947644763523,
+          "replacement_minus_deprecated_score": 0.41592682526809055
+        }
+      },
+      "library_neutral_code": {
+        "base": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 0.0,
+          "replacement_minus_deprecated_score": 0.0
+        },
+        "dpo": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 123.35800647735596,
+          "replacement_minus_deprecated_score": 0.5179153632424357
+        },
+        "anchored_dpo": {
+          "models": 3,
+          "model_labels": [
+            "StarCoder2-15B",
+            "StarCoder2-3B",
+            "StarCoder2-7B"
+          ],
+          "final_layer_mean_diff_norm": 124.60840945773653,
+          "replacement_minus_deprecated_score": 0.5427687715984779
+        }
+      }
+    },
+    "deepseek_6_7b": {
+      "random_neutral_text": {
+        "base": {
+          "models": 1,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct"
+          ],
+          "final_layer_mean_diff_norm": 0.0,
+          "replacement_minus_deprecated_score": 0.0
+        },
+        "dpo": {
+          "models": 1,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct"
+          ],
+          "final_layer_mean_diff_norm": 0.8917004664738973,
+          "replacement_minus_deprecated_score": 0.34218242097025114
+        },
+        "anchored_dpo": {
+          "models": 1,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct"
+          ],
+          "final_layer_mean_diff_norm": 0.9103826036055883,
+          "replacement_minus_deprecated_score": 0.3349037339600424
+        }
+      },
+      "library_neutral_code": {
+        "base": {
+          "models": 1,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct"
+          ],
+          "final_layer_mean_diff_norm": 0.0,
+          "replacement_minus_deprecated_score": 0.0
+        },
+        "dpo": {
+          "models": 1,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct"
+          ],
+          "final_layer_mean_diff_norm": 7.558640797932942,
+          "replacement_minus_deprecated_score": 0.09326893091201782
+        },
+        "anchored_dpo": {
+          "models": 1,
+          "model_labels": [
+            "DeepSeek-Coder-6.7B-Instruct"
+          ],
+          "final_layer_mean_diff_norm": 7.722318053245544,
+          "replacement_minus_deprecated_score": 0.06451226274172406
+        }
+      }
+    }
+  }
+}
