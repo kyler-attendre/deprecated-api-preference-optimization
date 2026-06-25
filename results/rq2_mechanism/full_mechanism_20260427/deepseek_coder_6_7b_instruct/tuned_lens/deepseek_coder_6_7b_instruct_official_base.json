@@ -1,0 +1,40 @@
+{
+  "model_key": "deepseek_coder_6_7b_instruct",
+  "model_name_or_path": "/data/models/deepseek-ai/deepseek-coder-6.7b-instruct",
+  "adapter_dir": null,
+  "prompt_field": "version_prompt",
+  "train_files": [
+    "/workspace/version-control-study/05_positive_engineering/data/processed_clean/repair_sft_train.jsonl",
+    "/workspace/version-control-study/05_positive_engineering/data/processed_clean/consistency_sft_train.jsonl"
+  ],
+  "val_files": [
+    "/workspace/version-control-study/05_positive_engineering/data/processed_clean/repair_sft_val.jsonl",
+    "/workspace/version-control-study/05_positive_engineering/data/processed_clean/consistency_sft_val.jsonl"
+  ],
+  "rank": 16,
+  "epochs": 3,
+  "batch_size": 2,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "max_length": 384,
+  "seed": 42,
+  "train_examples": 403,
+  "val_examples": 58,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0635497867507804,
+      "val_loss": 0.4476870198188157
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5873325758124932,
+      "val_loss": 0.614190222759699
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.8603013182372445,
+      "val_loss": 1.142649778261267
+    }
+  ]
+}

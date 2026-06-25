@@ -1,0 +1,15 @@
+Launching compare-only starcoder2_3b on GPU 0 -> /workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/logs_jsd/starcoder2_3b.log
+starcoder2_3b pid=2494182
+Launching compare-only starcoder2_7b on GPU 1 -> /workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/logs_jsd/starcoder2_7b.log
+starcoder2_7b pid=2494511
+Launching compare-only starcoder2_15b on GPU 5 -> /workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/logs_jsd/starcoder2_15b.log
+starcoder2_15b pid=2494910
+Launching compare-only deepseek_coder_6_7b_instruct on GPU 6 -> /workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/logs_jsd/deepseek_coder_6_7b_instruct.log
+deepseek_coder_6_7b_instruct pid=2495412
+Launching compare-only qwen2_5_coder_3b_instruct on GPU 7 -> /workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/logs_jsd/qwen2_5_coder_3b_instruct.log
+qwen2_5_coder_3b_instruct pid=2495631
+Launching compare-only qwen2_5_coder_7b_instruct on GPU 0 -> /workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/logs_jsd/qwen2_5_coder_7b_instruct.log
+qwen2_5_coder_7b_instruct pid=2496184
+Launching compare-only qwen2_5_coder_14b_instruct on GPU 1 -> /workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/logs_jsd/qwen2_5_coder_14b_instruct.log
+qwen2_5_coder_14b_instruct pid=2498483
+Logs: /workspace/version-control-study/06_mechanism/output/full_mechanism_20260427/logs_jsd
