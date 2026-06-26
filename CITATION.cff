@@ -1,0 +1,4 @@
+cff-version: 1.2.0
+message: "Citation information withheld during double-anonymous review. A complete CITATION.cff with author names, venue, and DOI will be added upon acceptance."
+title: "Mitigating and Demystifying Deprecated API Recommendation in Code LLMs via Preference Optimization"
+type: software

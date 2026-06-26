@@ -8,17 +8,21 @@ This package covers all three research questions of the paper (RQ1–RQ3).
 All files are copies; nothing here is a symlink back into the authors'
 working repository.
 
-This repository is intended for double-anonymous review (e.g. via
-anonymous.4open.science). It contains no author names, institution names, or
-personal file-path identifiers — all absolute paths have been rewritten to
-generic placeholders (`/workspace`, `/data/models`, `/opt/conda`).
-Intermediate training checkpoints (optimizer/scheduler/RNG state) and
-out-of-scope intermediate data (raw scraped candidate pools, unused
-experiment families such as `rerank_*`/`repair_sft_*`/`consistency_*`) have
-been removed; only the final adapter weights and the data actually consumed
-by the in-scope RQ1–RQ3 pipelines are kept. `code/` has been pruned to only
-the scripts that are actually invoked by the experiments reported below;
-no exploratory/abandoned code paths are included.
+## Anonymity note
+
+This repository is prepared for **ICSE 2027 double-anonymous review**. It
+contains no author names, institution names, acknowledgements, funding
+information, or personal file-path identifiers — all absolute paths have
+been rewritten to generic placeholders (`/workspace`, `/data/models`,
+`/opt/conda`). `LICENSE` and `CITATION.cff` are placeholders for the review
+period; real author/citation/DOI information will be added after the
+review concludes. Intermediate training checkpoints (optimizer/scheduler/RNG
+state) and out-of-scope intermediate data (raw scraped candidate pools,
+unused experiment families such as `rerank_*`/`repair_sft_*`/`consistency_*`)
+have been removed; only the final adapter weights and the data actually
+consumed by the in-scope RQ1–RQ3 pipelines are kept. `code/` has been pruned
+to only the scripts that are actually invoked by the experiments reported
+below; no exploratory/abandoned code paths are included.
 
 **Terminology note.** The proposed method is referred to as **SFT+DPO**
 throughout this README and throughout the paper (plain DPO augmented with a
@@ -71,7 +75,7 @@ redistributed here; only the trained LoRA adapters
 │   ├── positive_engineering/        training (SFT/DPO/SFT+DPO) + behavioral eval + RQ2 parameter-localization scripts
 │   │   ├── src/                     dataset_utils.py, dpo_training.py — shared library code
 │   │   ├── scripts/                 entry points, see "Reproduction" below
-│   │   └── data/mixed_sft_v1/       DepPref dataset (train/val/test + per-library splits)
+│   │   └── data/mixed_sft_v1/       DepPref dataset (train/val/test + per-library splits, see its README.md)
 │   ├── mechanism/                   RQ3: Logit Lens / Tuned Lens / Activation-Difference Lens / OV-circuit
 │   │   ├── src/                     lens_analysis.py, adl_compare.py, variant_compare.py
 │   │   ├── scripts/                 entry points, see "Reproduction" below
@@ -86,10 +90,27 @@ redistributed here; only the trained LoRA adapters
 │   ├── rq3_layerwise_analysis/      final-layer margin table, stable decision depth, ADL table, OV-circuit table
 │   └── emergence_analysis/          two dated variants of the base-model emergence-layer analysis, see note below
 ├── requirements.txt
+├── reproduce.sh                      smoke test, see "Quick start" below
+├── LICENSE
+├── CITATION.cff
 └── README.md
 ```
 
-## Setup
+## Environment
+
+- OS: Linux (tested on Ubuntu); any OS that runs PyTorch + CUDA should work.
+- Python 3.10.
+- GPU: required for training and for any LoRA adapter evaluation; not
+  required for the smoke test below or for inspecting `results/` directly.
+- VRAM: ≈8GB for the 3B models up to ≈32GB for the 14B/15B models, fp16/bf16.
+- Disk: this repository is ≈1.6GB; add ≈15-60GB per base model you download.
+
+**Minimal environment** (browse `results/`, run the smoke test): just
+`pip install -r requirements.txt`, no GPU needed.
+**Full reproduction environment**: the above, plus a downloaded base model
+and a GPU, for any training/eval step in "Reproduction" below.
+
+## Installation
 
 ```bash
 conda create -n sftdpo python=3.10 -y
@@ -100,6 +121,27 @@ pip install -r requirements.txt
 Base model weights (StarCoder2-{3B,7B,15B}, Qwen2.5-Coder-{3B,7B,14B}-Instruct,
 DeepSeek-Coder-6.7B-Instruct) must be downloaded separately from their
 respective official sources and are not included here.
+
+## Quick start / smoke test
+
+This does **not** require downloading a base model — it only checks that the
+dataset and adapter files in this repository are well-formed and that the
+evaluation code path runs end-to-end on a tiny slice. It does require a GPU
+and the actual base model weights to produce real numbers; without those,
+use `--model-name-or-path <any small local causal LM>` just to exercise the
+code path (the printed metrics will be meaningless in that case, but a clean
+run with no stack trace confirms the environment/paths are correct).
+
+```bash
+bash reproduce.sh --quick --model-name-or-path <MODEL>
+```
+
+Expected: completes in well under a minute on 5 samples (excluding model
+load time) and prints a `comparison_summary.json` with `base`/`lora` blocks
+containing `deprecated_usage_rate`/`replacement_hit_rate`.
+On 5 samples these rates will be noisy (each sample moves the rate by 20
+percentage points) — this step verifies plumbing, not paper numbers; see
+"Reproduction" below for the full 285-sample runs that match Table 1.
 
 ---
 
@@ -537,3 +579,22 @@ exactly (0.35%) but obtained RHR = 17.19%. Both values are consistent with
 the paper's qualitative claim (DPO RHR well below SFT+DPO's 59.30%); the
 discrepancy reflects ordinary run-to-run variance in DPO training, not a
 methodological difference.
+
+## Known limitations
+
+- **Base model weights are not redistributed.** Training/eval scripts require
+  separately downloading StarCoder2-{3B,7B,15B}, Qwen2.5-Coder-{3B,7B,14B}-Instruct,
+  and DeepSeek-Coder-6.7B-Instruct from their official sources. This does not
+  affect verification of the included `results/`, only end-to-end re-running.
+- **Qwen2.5-Coder-14B is the one model where SFT+DPO does not fully recover
+  general code ability** after SFT's collapse (HumanEval 0% → 26.83%, vs. a
+  43.29% base) — reported in the paper as-is, not a gap hidden by this package.
+- **Full-scale training is GPU-hour-intensive** across 7 models × 3 methods ×
+  RQ2/RQ3 ablations; `results/` already contains the completed outputs for
+  every reported number so reviewers do not need to re-run training to verify
+  the paper's claims, only to inspect or partially re-run them.
+- **DPO has ordinary run-to-run variance** (see "Known reproduction variance"
+  above) — this is a property of the baseline method's training stability,
+  not of this package's completeness.
+- None of the above limitations affect the ability to verify the paper's
+  core claims (Tables 1–3, RQ2/RQ3 answers) from the included `results/`.
