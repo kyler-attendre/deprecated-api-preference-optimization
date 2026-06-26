@@ -1,0 +1,65 @@
+{
+  "model_key": "qwen2_5_coder_3b_instruct",
+  "model_name_or_path": "/data/models/Qwen/Qwen2.5-Coder-3B-Instruct",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo_baseline_refill_20260612/qwen2_5_coder_3b_instruct",
+  "candidate_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/qwen2_5_coder_3b_instruct_retention_set.jsonl",
+  "summary": {
+    "label": "adapter",
+    "samples": 200,
+    "exact_api_match_rate": 0.645,
+    "nonempty_api_prediction_rate": 0.675,
+    "per_api": [
+      {
+        "api": "DataFrame",
+        "samples": 20,
+        "exact_api_match_rate": 0.75
+      },
+      {
+        "api": "Linear",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "Series",
+        "samples": 20,
+        "exact_api_match_rate": 0.7
+      },
+      {
+        "api": "cat",
+        "samples": 20,
+        "exact_api_match_rate": 0.25
+      },
+      {
+        "api": "linspace",
+        "samples": 20,
+        "exact_api_match_rate": 0.15
+      },
+      {
+        "api": "no_grad",
+        "samples": 20,
+        "exact_api_match_rate": 0.8
+      },
+      {
+        "api": "ones",
+        "samples": 20,
+        "exact_api_match_rate": 0.35
+      },
+      {
+        "api": "save",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "unique",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "zeros",
+        "samples": 20,
+        "exact_api_match_rate": 0.55
+      }
+    ],
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260626/qwen2_5_coder_3b_instruct_dpo/adapter_predictions.jsonl"
+  }
+}

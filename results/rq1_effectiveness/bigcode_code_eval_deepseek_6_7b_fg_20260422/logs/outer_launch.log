@@ -1,0 +1,19 @@
+BigCode code eval root: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_6_7b_fg_20260422
+Models: deepseek_coder_6_7b_instruct
+Benchmarks: humaneval mbpp
+Variants: base lora
+GPU: 3
+BigCode root: /workspace/bigcode-evaluation-harness
+BigCode deepseek_coder_6_7b_instruct base humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_6_7b_fg_20260422/deepseek_coder_6_7b_instruct/base/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_6_7b_fg_20260422/logs/deepseek_coder_6_7b_instruct_base_humaneval.log
+BigCode deepseek_coder_6_7b_instruct base mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_6_7b_fg_20260422/deepseek_coder_6_7b_instruct/base/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_6_7b_fg_20260422/logs/deepseek_coder_6_7b_instruct_base_mbpp.log
+BigCode deepseek_coder_6_7b_instruct lora humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_6_7b_fg_20260422/deepseek_coder_6_7b_instruct/lora/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_6_7b_fg_20260422/logs/deepseek_coder_6_7b_instruct_lora_humaneval.log
+BigCode deepseek_coder_6_7b_instruct lora mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_6_7b_fg_20260422/deepseek_coder_6_7b_instruct/lora/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_deepseek_6_7b_fg_20260422/logs/deepseek_coder_6_7b_instruct_lora_mbpp.log
+BigCode code eval finished: 2026-04-22 15:43:37

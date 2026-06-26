@@ -1,0 +1,35 @@
+{
+  "model_key": "qwen2_5_coder_7b_instruct",
+  "model_name_or_path": "/data/models/Qwen/Qwen2.5-Coder-7B-Instruct",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo_baseline_refill_20260612/qwen2_5_coder_7b_instruct",
+  "candidate_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/qwen2_5_coder_7b_instruct_retention_set.jsonl",
+  "summary": {
+    "label": "adapter",
+    "samples": 80,
+    "exact_api_match_rate": 0.9,
+    "nonempty_api_prediction_rate": 0.9375,
+    "per_api": [
+      {
+        "api": "DataFrame",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "Series",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "ones",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "save",
+        "samples": 20,
+        "exact_api_match_rate": 0.65
+      }
+    ],
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260626/qwen2_5_coder_7b_instruct_dpo/adapter_predictions.jsonl"
+  }
+}

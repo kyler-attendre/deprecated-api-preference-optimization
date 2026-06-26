@@ -1,0 +1,59 @@
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Selected Tasks: ['humaneval']
+Loading model in bf16
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:14<00:29, 14.74s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:30<00:15, 15.58s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:38<00:00, 12.07s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:38<00:00, 12.93s/it]
+Loaded PEFT model. Merging...
+Merge complete.
+number of problems for this task is 164
+  0%|          | 0/164 [00:00<?, ?it/s]  1%|          | 1/164 [00:00<02:39,  1.02it/s]  2%|▏         | 3/164 [00:01<00:48,  3.35it/s]  3%|▎         | 5/164 [00:01<00:27,  5.73it/s]  4%|▍         | 7/164 [00:01<00:19,  7.97it/s]  5%|▌         | 9/164 [00:01<00:15,  9.99it/s]  7%|▋         | 11/164 [00:02<00:47,  3.22it/s]  8%|▊         | 13/164 [00:02<00:34,  4.38it/s]  9%|▉         | 15/164 [00:03<00:26,  5.67it/s] 10%|█         | 17/164 [00:03<00:20,  7.05it/s] 12%|█▏        | 19/164 [00:03<00:17,  8.49it/s] 13%|█▎        | 21/164 [00:03<00:14,  9.79it/s] 14%|█▍        | 23/164 [00:03<00:12, 11.04it/s] 15%|█▌        | 25/164 [00:03<00:11, 12.03it/s] 16%|█▋        | 27/164 [00:03<00:10, 12.88it/s] 18%|█▊        | 29/164 [00:04<00:16,  8.16it/s] 19%|█▉        | 31/164 [00:04<00:13,  9.51it/s] 20%|██        | 33/164 [00:07<01:06,  1.96it/s] 21%|██        | 34/164 [00:09<01:52,  1.16it/s] 21%|██▏       | 35/164 [00:10<01:35,  1.35it/s] 23%|██▎       | 37/164 [00:10<01:02,  2.03it/s] 23%|██▎       | 38/164 [00:12<01:45,  1.19it/s] 24%|██▍       | 39/164 [00:15<02:48,  1.35s/it] 25%|██▌       | 41/164 [00:15<01:43,  1.18it/s] 26%|██▌       | 43/164 [00:15<01:08,  1.77it/s] 27%|██▋       | 45/164 [00:15<00:47,  2.53it/s] 29%|██▊       | 47/164 [00:16<00:38,  3.02it/s] 30%|██▉       | 49/164 [00:16<00:28,  4.03it/s] 31%|███       | 51/164 [00:17<00:44,  2.53it/s] 32%|███▏      | 52/164 [00:19<00:59,  1.90it/s] 33%|███▎      | 54/164 [00:19<00:44,  2.50it/s] 34%|███▎      | 55/164 [00:19<00:43,  2.52it/s] 35%|███▍      | 57/164 [00:19<00:29,  3.60it/s] 35%|███▌      | 58/164 [00:21<00:54,  1.93it/s] 37%|███▋      | 60/164 [00:21<00:36,  2.84it/s] 38%|███▊      | 62/164 [00:21<00:25,  3.95it/s] 39%|███▉      | 64/164 [00:21<00:19,  5.23it/s] 40%|████      | 66/164 [00:21<00:14,  6.60it/s] 41%|████▏     | 68/164 [00:24<00:56,  1.70it/s] 42%|████▏     | 69/164 [00:27<01:28,  1.07it/s] 43%|████▎     | 70/164 [00:29<01:42,  1.09s/it] 43%|████▎     | 71/164 [00:30<01:45,  1.13s/it] 45%|████▍     | 73/164 [00:32<01:44,  1.14s/it] 46%|████▌     | 75/164 [00:33<01:21,  1.09it/s] 47%|████▋     | 77/164 [00:33<00:54,  1.60it/s] 48%|████▊     | 78/164 [00:34<00:51,  1.68it/s] 48%|████▊     | 79/164 [00:35<01:03,  1.35it/s] 49%|████▉     | 81/164 [00:35<00:40,  2.07it/s] 51%|█████     | 83/164 [00:35<00:27,  2.97it/s] 51%|█████     | 84/164 [00:38<01:05,  1.22it/s] 52%|█████▏    | 86/164 [00:39<00:55,  1.41it/s] 54%|█████▎    | 88/164 [00:41<00:59,  1.29it/s] 55%|█████▍    | 90/164 [00:41<00:40,  1.84it/s] 56%|█████▌    | 92/164 [00:43<00:52,  1.36it/s] 57%|█████▋    | 94/164 [00:43<00:36,  1.90it/s] 58%|█████▊    | 95/164 [00:48<01:26,  1.26s/it] 59%|█████▉    | 97/164 [00:48<00:56,  1.18it/s] 60%|█████▉    | 98/164 [00:56<02:30,  2.28s/it] 61%|██████    | 100/164 [00:56<01:35,  1.49s/it] 62%|██████▏   | 102/164 [00:57<01:12,  1.16s/it] 63%|██████▎   | 104/164 [00:59<01:05,  1.09s/it] 65%|██████▍   | 106/164 [01:05<01:34,  1.63s/it] 66%|██████▌   | 108/164 [01:05<01:04,  1.14s/it] 67%|██████▋   | 110/164 [01:05<00:43,  1.23it/s] 68%|██████▊   | 111/164 [01:15<02:04,  2.35s/it] 69%|██████▉   | 113/164 [01:16<01:35,  1.88s/it] 70%|██████▉   | 114/164 [01:19<01:39,  2.00s/it] 71%|███████   | 116/164 [01:25<01:50,  2.29s/it] 71%|███████▏  | 117/164 [01:25<01:32,  1.96s/it] 73%|███████▎  | 119/164 [01:28<01:17,  1.71s/it] 74%|███████▍  | 121/164 [01:31<01:14,  1.74s/it] 74%|███████▍  | 122/164 [01:32<01:06,  1.57s/it] 76%|███████▌  | 124/164 [01:32<00:41,  1.03s/it] 76%|███████▌  | 125/164 [01:39<01:24,  2.18s/it] 77%|███████▋  | 126/164 [01:41<01:19,  2.09s/it] 78%|███████▊  | 128/164 [01:46<01:19,  2.22s/it] 79%|███████▉  | 130/164 [01:46<00:49,  1.45s/it] 80%|███████▉  | 131/164 [01:50<01:02,  1.90s/it] 80%|████████  | 132/164 [01:54<01:21,  2.54s/it] 81%|████████  | 133/164 [01:56<01:12,  2.33s/it] 82%|████████▏ | 135/164 [01:57<00:43,  1.49s/it] 84%|████████▎ | 137/164 [01:57<00:25,  1.04it/s] 85%|████████▍ | 139/164 [01:57<00:16,  1.53it/s] 86%|████████▌ | 141/164 [01:57<00:10,  2.18it/s] 87%|████████▋ | 143/164 [01:57<00:06,  3.01it/s] 88%|████████▊ | 145/164 [01:57<00:04,  4.01it/s] 90%|████████▉ | 147/164 [02:00<00:09,  1.76it/s] 91%|█████████ | 149/164 [02:03<00:13,  1.13it/s] 92%|█████████▏| 151/164 [02:04<00:10,  1.19it/s] 93%|█████████▎| 153/164 [02:05<00:07,  1.39it/s] 95%|█████████▍| 155/164 [02:08<00:08,  1.08it/s] 96%|█████████▌| 157/164 [02:08<00:04,  1.50it/s] 96%|█████████▋| 158/164 [02:10<00:05,  1.13it/s] 98%|█████████▊| 160/164 [02:10<00:02,  1.63it/s] 99%|█████████▉| 162/164 [02:10<00:00,  2.30it/s] 99%|█████████▉| 163/164 [02:11<00:00,  2.61it/s]100%|██████████| 164/164 [02:11<00:00,  1.25it/s]
+generations were saved at /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen_sftdpo_refill_20260625/qwen2_5_coder_3b_instruct/sftdpo/humaneval/generations_humaneval.json
+Evaluating generations...
+{
+  "humaneval": {
+    "pass@1": 0.18292682926829268
+  },
+  "config": {
+    "prefix": "",
+    "do_sample": true,
+    "temperature": 0.2,
+    "top_k": 0,
+    "top_p": 0.95,
+    "n_samples": 1,
+    "eos": "<|endoftext|>",
+    "seed": 0,
+    "model": "/data/models/Qwen/Qwen2.5-Coder-3B-Instruct",
+    "modeltype": "causal",
+    "peft_model": "/workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen_sftdpo_refill_20260625/../dpo_anchor_full01_qwen_20260423/qwen2_5_coder_3b_instruct",
+    "revision": null,
+    "use_auth_token": false,
+    "trust_remote_code": false,
+    "tasks": "humaneval",
+    "instruction_tokens": null,
+    "batch_size": 1,
+    "max_length_generation": 512,
+    "precision": "bf16",
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "left_padding": false,
+    "limit": null,
+    "limit_start": 0,
+    "save_every_k_tasks": -1,
+    "postprocess": true,
+    "allow_code_execution": true,
+    "generation_only": false,
+    "load_generations_path": null,
+    "load_data_path": null,
+    "metric_output_path": "/workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen_sftdpo_refill_20260625/qwen2_5_coder_3b_instruct/sftdpo/humaneval/metrics.json",
+    "save_generations": true,
+    "load_generations_intermediate_paths": null,
+    "save_generations_path": "/workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen_sftdpo_refill_20260625/qwen2_5_coder_3b_instruct/sftdpo/humaneval/generations.json",
+    "save_references": false,
+    "save_references_path": "references.json",
+    "prompt": "prompt",
+    "max_memory_per_gpu": null,
+    "check_references": false,
+    "ablate_heads": "",
+    "head_offset_path": null,
+    "head_restricted_lora_path": null
+  }
+}

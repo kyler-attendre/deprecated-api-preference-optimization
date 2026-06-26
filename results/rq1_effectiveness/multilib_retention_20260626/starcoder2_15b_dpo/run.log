@@ -1,0 +1,147 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:17<03:48, 17.61s/it]Loading checkpoint shards:  14%|█▍        | 2/14 [00:34<03:25, 17.14s/it]Loading checkpoint shards:  21%|██▏       | 3/14 [00:54<03:25, 18.70s/it]Loading checkpoint shards:  29%|██▊       | 4/14 [01:13<03:05, 18.57s/it]Loading checkpoint shards:  36%|███▌      | 5/14 [01:31<02:44, 18.25s/it]Loading checkpoint shards:  43%|████▎     | 6/14 [01:45<02:15, 16.98s/it]Loading checkpoint shards:  50%|█████     | 7/14 [01:59<01:51, 15.96s/it]Loading checkpoint shards:  57%|█████▋    | 8/14 [02:13<01:31, 15.23s/it]Loading checkpoint shards:  64%|██████▍   | 9/14 [02:22<01:07, 13.53s/it]Loading checkpoint shards:  71%|███████▏  | 10/14 [02:27<00:42, 10.66s/it]Loading checkpoint shards:  79%|███████▊  | 11/14 [02:43<00:37, 12.40s/it]Loading checkpoint shards:  86%|████████▌ | 12/14 [03:00<00:27, 13.77s/it]Loading checkpoint shards:  93%|█████████▎| 13/14 [03:16<00:14, 14.62s/it]Loading checkpoint shards: 100%|██████████| 14/14 [03:30<00:00, 14.43s/it]Loading checkpoint shards: 100%|██████████| 14/14 [03:30<00:00, 15.06s/it]
+{
+  "model_key": "starcoder2_15b",
+  "model_name_or_path": "/data/models/StarCoder/starcoder2-15b",
+  "adapter_dir": "/workspace/version-control-study/05_positive_engineering/output/dpo_lora_mixed_sft_v1_20260422/starcoder2_15b",
+  "candidate_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260427/starcoder2_15b_retention_set.jsonl",
+  "summary": {
+    "label": "adapter",
+    "samples": 540,
+    "exact_api_match_rate": 0.5796296296296296,
+    "nonempty_api_prediction_rate": 1.0,
+    "per_api": [
+      {
+        "api": "DataFrame",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "FloatTensor",
+        "samples": 20,
+        "exact_api_match_rate": 0.8
+      },
+      {
+        "api": "Linear",
+        "samples": 20,
+        "exact_api_match_rate": 1.0
+      },
+      {
+        "api": "RandomState",
+        "samples": 20,
+        "exact_api_match_rate": 0.3
+      },
+      {
+        "api": "Series",
+        "samples": 20,
+        "exact_api_match_rate": 0.9
+      },
+      {
+        "api": "abs",
+        "samples": 20,
+        "exact_api_match_rate": 0.3
+      },
+      {
+        "api": "arange",
+        "samples": 20,
+        "exact_api_match_rate": 0.6
+      },
+      {
+        "api": "array",
+        "samples": 20,
+        "exact_api_match_rate": 0.5
+      },
+      {
+        "api": "asarray",
+        "samples": 20,
+        "exact_api_match_rate": 0.35
+      },
+      {
+        "api": "cat",
+        "samples": 20,
+        "exact_api_match_rate": 0.25
+      },
+      {
+        "api": "device",
+        "samples": 20,
+        "exact_api_match_rate": 0.35
+      },
+      {
+        "api": "dot",
+        "samples": 20,
+        "exact_api_match_rate": 0.25
+      },
+      {
+        "api": "dtype",
+        "samples": 20,
+        "exact_api_match_rate": 0.75
+      },
+      {
+        "api": "empty",
+        "samples": 20,
+        "exact_api_match_rate": 0.5
+      },
+      {
+        "api": "linspace",
+        "samples": 20,
+        "exact_api_match_rate": 0.9
+      },
+      {
+        "api": "no_grad",
+        "samples": 20,
+        "exact_api_match_rate": 0.35
+      },
+      {
+        "api": "ones",
+        "samples": 20,
+        "exact_api_match_rate": 0.4
+      },
+      {
+        "api": "randn",
+        "samples": 20,
+        "exact_api_match_rate": 0.3
+      },
+      {
+        "api": "save",
+        "samples": 20,
+        "exact_api_match_rate": 0.85
+      },
+      {
+        "api": "set_config",
+        "samples": 20,
+        "exact_api_match_rate": 0.95
+      },
+      {
+        "api": "sqrt",
+        "samples": 20,
+        "exact_api_match_rate": 0.2
+      },
+      {
+        "api": "stack",
+        "samples": 20,
+        "exact_api_match_rate": 0.65
+      },
+      {
+        "api": "sum",
+        "samples": 20,
+        "exact_api_match_rate": 0.55
+      },
+      {
+        "api": "tensor",
+        "samples": 20,
+        "exact_api_match_rate": 0.45
+      },
+      {
+        "api": "unique",
+        "samples": 20,
+        "exact_api_match_rate": 0.55
+      },
+      {
+        "api": "zeros",
+        "samples": 40,
+        "exact_api_match_rate": 0.825
+      }
+    ],
+    "predictions_file": "/workspace/version-control-study/05_positive_engineering/output/multilib_retention_20260626/starcoder2_15b_dpo/adapter_predictions.jsonl"
+  }
+}

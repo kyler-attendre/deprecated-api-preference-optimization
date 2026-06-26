@@ -1,0 +1,59 @@
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Selected Tasks: ['humaneval']
+Loading model in bf16
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:00<00:00, 61.20it/s]
+Loaded PEFT model. Merging...
+Merge complete.
+number of problems for this task is 164
+  0%|          | 0/164 [00:00<?, ?it/s]  1%|          | 1/164 [00:00<01:54,  1.42it/s]  2%|▏         | 3/164 [00:00<00:38,  4.16it/s]  3%|▎         | 5/164 [00:01<00:25,  6.30it/s]  4%|▍         | 7/164 [00:01<00:19,  8.08it/s]  5%|▌         | 9/164 [00:01<00:16,  9.39it/s]  7%|▋         | 11/164 [00:01<00:15, 10.16it/s]  8%|▊         | 13/164 [00:01<00:13, 10.90it/s]  9%|▉         | 15/164 [00:01<00:12, 11.85it/s] 10%|█         | 17/164 [00:01<00:11, 12.48it/s] 12%|█▏        | 19/164 [00:02<00:11, 12.19it/s] 13%|█▎        | 21/164 [00:02<00:12, 11.38it/s] 14%|█▍        | 23/164 [00:02<00:12, 11.24it/s] 15%|█▌        | 25/164 [00:02<00:11, 11.61it/s] 16%|█▋        | 27/164 [00:02<00:11, 11.45it/s] 18%|█▊        | 29/164 [00:02<00:11, 11.63it/s] 19%|█▉        | 31/164 [00:03<00:11, 11.32it/s] 20%|██        | 33/164 [00:03<00:12, 10.87it/s] 21%|██▏       | 35/164 [00:03<00:12, 10.65it/s] 23%|██▎       | 37/164 [00:03<00:11, 10.95it/s] 24%|██▍       | 39/164 [00:03<00:11, 10.63it/s] 25%|██▌       | 41/164 [00:04<00:11, 10.43it/s] 26%|██▌       | 43/164 [00:04<00:11, 10.25it/s] 27%|██▋       | 45/164 [00:04<00:11, 10.14it/s] 29%|██▊       | 47/164 [00:04<00:11, 10.37it/s] 30%|██▉       | 49/164 [00:04<00:10, 10.73it/s] 31%|███       | 51/164 [00:05<00:10, 10.68it/s] 32%|███▏      | 53/164 [00:05<00:10, 10.84it/s] 34%|███▎      | 55/164 [00:05<00:10, 10.82it/s] 35%|███▍      | 57/164 [00:05<00:09, 11.08it/s] 36%|███▌      | 59/164 [00:05<00:09, 10.86it/s] 37%|███▋      | 61/164 [00:05<00:09, 11.18it/s] 38%|███▊      | 63/164 [00:06<00:09, 11.06it/s] 40%|███▉      | 65/164 [00:06<00:09, 10.61it/s] 41%|████      | 67/164 [00:06<00:09, 10.75it/s] 42%|████▏     | 69/164 [00:06<00:10,  9.49it/s] 43%|████▎     | 70/164 [00:06<00:09,  9.49it/s] 44%|████▍     | 72/164 [00:07<00:09,  9.86it/s] 45%|████▌     | 74/164 [00:07<00:08, 10.01it/s] 46%|████▋     | 76/164 [00:07<00:08, 10.05it/s] 48%|████▊     | 78/164 [00:07<00:08, 10.11it/s] 49%|████▉     | 80/164 [00:07<00:09,  9.22it/s] 50%|█████     | 82/164 [00:08<00:09,  8.99it/s] 51%|█████     | 84/164 [00:08<00:08,  9.82it/s] 52%|█████▏    | 86/164 [00:08<00:07,  9.86it/s] 54%|█████▎    | 88/164 [00:08<00:07,  9.87it/s] 55%|█████▍    | 90/164 [00:08<00:07,  9.87it/s] 56%|█████▌    | 92/164 [00:09<00:07, 10.12it/s] 57%|█████▋    | 94/164 [00:09<00:06, 10.03it/s] 59%|█████▊    | 96/164 [00:09<00:07,  9.22it/s] 59%|█████▉    | 97/164 [00:09<00:07,  9.25it/s] 60%|██████    | 99/164 [00:09<00:06,  9.80it/s] 61%|██████    | 100/164 [00:10<00:06,  9.64it/s] 62%|██████▏   | 102/164 [00:10<00:06, 10.08it/s] 63%|██████▎   | 104/164 [00:10<00:05, 10.07it/s] 65%|██████▍   | 106/164 [00:10<00:06,  9.38it/s] 65%|██████▌   | 107/164 [00:10<00:06,  9.43it/s] 66%|██████▌   | 108/164 [00:10<00:05,  9.44it/s] 67%|██████▋   | 110/164 [00:11<00:06,  9.00it/s] 68%|██████▊   | 111/164 [00:11<00:05,  9.05it/s] 68%|██████▊   | 112/164 [00:11<00:05,  9.10it/s] 69%|██████▉   | 113/164 [00:11<00:05,  9.10it/s] 70%|██████▉   | 114/164 [00:11<00:05,  9.24it/s] 71%|███████   | 116/164 [00:11<00:05,  8.85it/s] 71%|███████▏  | 117/164 [00:11<00:05,  9.04it/s] 72%|███████▏  | 118/164 [00:11<00:05,  9.13it/s] 73%|███████▎  | 119/164 [00:12<00:04,  9.05it/s] 74%|███████▍  | 121/164 [00:12<00:04,  9.53it/s] 75%|███████▌  | 123/164 [00:12<00:03, 10.75it/s] 76%|███████▌  | 125/164 [00:12<00:03, 10.32it/s] 77%|███████▋  | 127/164 [00:12<00:03, 10.90it/s] 79%|███████▊  | 129/164 [00:12<00:03, 11.34it/s] 80%|███████▉  | 131/164 [00:13<00:03, 10.61it/s] 81%|████████  | 133/164 [00:13<00:02, 11.61it/s] 82%|████████▏ | 135/164 [00:13<00:02, 11.85it/s] 84%|████████▎ | 137/164 [00:13<00:02, 12.16it/s] 85%|████████▍ | 139/164 [00:13<00:01, 12.63it/s] 86%|████████▌ | 141/164 [00:13<00:01, 13.05it/s] 87%|████████▋ | 143/164 [00:14<00:01, 12.71it/s] 88%|████████▊ | 145/164 [00:14<00:01, 12.59it/s] 90%|████████▉ | 147/164 [00:14<00:01, 12.80it/s] 91%|█████████ | 149/164 [00:14<00:01, 12.51it/s] 92%|█████████▏| 151/164 [00:14<00:01, 12.56it/s] 93%|█████████▎| 153/164 [00:14<00:00, 12.36it/s] 95%|█████████▍| 155/164 [00:15<00:00, 11.62it/s] 96%|█████████▌| 157/164 [00:15<00:00, 12.45it/s] 97%|█████████▋| 159/164 [00:15<00:00, 12.61it/s] 98%|█████████▊| 161/164 [00:15<00:00, 11.38it/s] 99%|█████████▉| 163/164 [00:15<00:00, 12.06it/s]100%|██████████| 164/164 [00:15<00:00, 10.37it/s]
+generations were saved at /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/qwen2_5_coder_14b_instruct/lora/humaneval/generations_humaneval.json
+Evaluating generations...
+{
+  "humaneval": {
+    "pass@1": 0.0
+  },
+  "config": {
+    "prefix": "",
+    "do_sample": true,
+    "temperature": 0.2,
+    "top_k": 0,
+    "top_p": 0.95,
+    "n_samples": 1,
+    "eos": "<|endoftext|>",
+    "seed": 0,
+    "model": "/data/models/Qwen/Qwen2.5-Coder-14B-Instruct",
+    "modeltype": "causal",
+    "peft_model": "/workspace/version-control-study/05_positive_engineering/output/qwen2_5_coder_14b_card6/qwen2_5_coder_14b_instruct_lora",
+    "revision": null,
+    "use_auth_token": false,
+    "trust_remote_code": false,
+    "tasks": "humaneval",
+    "instruction_tokens": null,
+    "batch_size": 1,
+    "max_length_generation": 512,
+    "precision": "bf16",
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "left_padding": false,
+    "limit": null,
+    "limit_start": 0,
+    "save_every_k_tasks": -1,
+    "postprocess": true,
+    "allow_code_execution": true,
+    "generation_only": false,
+    "load_generations_path": null,
+    "load_data_path": null,
+    "metric_output_path": "/workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/qwen2_5_coder_14b_instruct/lora/humaneval/metrics.json",
+    "save_generations": true,
+    "load_generations_intermediate_paths": null,
+    "save_generations_path": "/workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/qwen2_5_coder_14b_instruct/lora/humaneval/generations.json",
+    "save_references": false,
+    "save_references_path": "references.json",
+    "prompt": "prompt",
+    "max_memory_per_gpu": null,
+    "check_references": false,
+    "ablate_heads": "",
+    "head_offset_path": null,
+    "head_restricted_lora_path": null
+  }
+}

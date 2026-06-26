@@ -1,0 +1,18 @@
+BigCode code eval root: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422
+Models: qwen2_5_coder_14b_instruct
+Benchmarks: humaneval mbpp
+Variants: base lora
+GPU: 7
+BigCode root: /workspace/bigcode-evaluation-harness
+BigCode qwen2_5_coder_14b_instruct base humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/qwen2_5_coder_14b_instruct/base/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/logs/qwen2_5_coder_14b_instruct_base_humaneval.log
+BigCode qwen2_5_coder_14b_instruct base mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/qwen2_5_coder_14b_instruct/base/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/logs/qwen2_5_coder_14b_instruct_base_mbpp.log
+BigCode qwen2_5_coder_14b_instruct lora humaneval
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/qwen2_5_coder_14b_instruct/lora/humaneval/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/logs/qwen2_5_coder_14b_instruct_lora_humaneval.log
+BigCode qwen2_5_coder_14b_instruct lora mbpp
+  metric: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/qwen2_5_coder_14b_instruct/lora/mbpp/metrics.json
+  log: /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen2_5_14b_fg_20260422/logs/qwen2_5_coder_14b_instruct_lora_mbpp.log

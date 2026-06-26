@@ -1,0 +1,59 @@
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Selected Tasks: ['humaneval']
+Loading model in bf16
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 96.64it/s]
+Loaded PEFT model. Merging...
+Merge complete.
+number of problems for this task is 164
+  0%|          | 0/164 [00:00<?, ?it/s]  1%|          | 1/164 [00:00<02:02,  1.33it/s]  4%|▎         | 6/164 [00:00<00:17,  8.78it/s]  7%|▋         | 11/164 [00:01<00:09, 15.49it/s]  9%|▉         | 15/164 [00:01<00:07, 19.69it/s] 12%|█▏        | 20/164 [00:01<00:05, 24.97it/s] 15%|█▌        | 25/164 [00:01<00:04, 29.15it/s] 18%|█▊        | 30/164 [00:01<00:04, 32.43it/s] 21%|██        | 34/164 [00:01<00:03, 33.89it/s] 24%|██▍       | 39/164 [00:01<00:03, 35.85it/s] 26%|██▌       | 43/164 [00:01<00:03, 36.69it/s] 29%|██▊       | 47/164 [00:01<00:03, 37.31it/s] 32%|███▏      | 52/164 [00:02<00:02, 38.84it/s] 35%|███▍      | 57/164 [00:02<00:02, 39.51it/s] 38%|███▊      | 62/164 [00:02<00:02, 39.97it/s] 41%|████      | 67/164 [00:02<00:02, 40.29it/s] 44%|████▍     | 72/164 [00:02<00:02, 38.66it/s] 46%|████▋     | 76/164 [00:02<00:02, 38.22it/s] 49%|████▉     | 80/164 [00:02<00:02, 37.21it/s] 51%|█████     | 84/164 [00:02<00:02, 37.13it/s] 54%|█████▎    | 88/164 [00:02<00:02, 37.48it/s] 57%|█████▋    | 93/164 [00:03<00:01, 38.13it/s] 59%|█████▉    | 97/164 [00:03<00:01, 36.98it/s] 62%|██████▏   | 102/164 [00:03<00:01, 38.29it/s] 65%|██████▍   | 106/164 [00:03<00:01, 37.62it/s] 67%|██████▋   | 110/164 [00:03<00:01, 36.95it/s] 70%|██████▉   | 114/164 [00:03<00:01, 36.73it/s] 72%|███████▏  | 118/164 [00:03<00:01, 36.01it/s] 74%|███████▍  | 122/164 [00:03<00:01, 36.32it/s] 77%|███████▋  | 126/164 [00:04<00:01, 35.29it/s] 79%|███████▉  | 130/164 [00:04<00:00, 34.41it/s] 82%|████████▏ | 134/164 [00:04<00:00, 35.50it/s] 84%|████████▍ | 138/164 [00:04<00:00, 36.24it/s] 87%|████████▋ | 143/164 [00:04<00:00, 37.28it/s] 90%|████████▉ | 147/164 [00:04<00:00, 37.85it/s] 92%|█████████▏| 151/164 [00:04<00:00, 37.60it/s] 95%|█████████▍| 155/164 [00:04<00:00, 36.54it/s] 98%|█████████▊| 160/164 [00:04<00:00, 37.06it/s]100%|██████████| 164/164 [00:05<00:00, 37.36it/s]100%|██████████| 164/164 [00:05<00:00, 32.51it/s]
+generations were saved at /workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen7b_sft_refill_20260625/qwen2_5_coder_7b_instruct/lora/humaneval/generations_humaneval.json
+Evaluating generations...
+{
+  "humaneval": {
+    "pass@1": 0.0
+  },
+  "config": {
+    "prefix": "",
+    "do_sample": true,
+    "temperature": 0.2,
+    "top_k": 0,
+    "top_p": 0.95,
+    "n_samples": 1,
+    "eos": "<|endoftext|>",
+    "seed": 0,
+    "model": "/data/models/Qwen/Qwen2.5-Coder-7B-Instruct",
+    "modeltype": "causal",
+    "peft_model": "/workspace/version-control-study/05_positive_engineering/output/qwen2_5_coder_7b_card4/qwen2_5_coder_7b_instruct_lora",
+    "revision": null,
+    "use_auth_token": false,
+    "trust_remote_code": false,
+    "tasks": "humaneval",
+    "instruction_tokens": null,
+    "batch_size": 1,
+    "max_length_generation": 512,
+    "precision": "bf16",
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "left_padding": false,
+    "limit": null,
+    "limit_start": 0,
+    "save_every_k_tasks": -1,
+    "postprocess": true,
+    "allow_code_execution": true,
+    "generation_only": false,
+    "load_generations_path": null,
+    "load_data_path": null,
+    "metric_output_path": "/workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen7b_sft_refill_20260625/qwen2_5_coder_7b_instruct/lora/humaneval/metrics.json",
+    "save_generations": true,
+    "load_generations_intermediate_paths": null,
+    "save_generations_path": "/workspace/version-control-study/05_positive_engineering/output/bigcode_code_eval_qwen7b_sft_refill_20260625/qwen2_5_coder_7b_instruct/lora/humaneval/generations.json",
+    "save_references": false,
+    "save_references_path": "references.json",
+    "prompt": "prompt",
+    "max_memory_per_gpu": null,
+    "check_references": false,
+    "ablate_heads": "",
+    "head_offset_path": null,
+    "head_restricted_lora_path": null
+  }
+}
