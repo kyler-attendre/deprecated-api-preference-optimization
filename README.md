@@ -82,8 +82,7 @@ redistributed here; only the trained LoRA adapters
 │   │   └── tests/
 │   └── correct_emergence/           supplementary: base-model decision-emergence-layer analysis (Discussion section)
 │       ├── src/
-│       ├── scripts/
-│       └── PLAN.md
+│       └── scripts/
 ├── results/
 │   ├── rq1_effectiveness/           Table 1 (DUR/RHR), Table 2 (HumanEval/MBPP Δ), Table 3 (retention), library radar
 │   ├── rq2_parameter_localization/  module-norm heatmap, magnitude-pruning curve, restricted-retraining table, module ablations
