@@ -66,24 +66,27 @@ redistributed here; only the trained LoRA adapters
 ## Layout
 
 ```
-code/
-  positive_engineering/   training (SFT/DPO/SFT+DPO) + behavioral eval + RQ2 parameter-localization scripts
-    src/                  dataset_utils.py, dpo_training.py — shared library code
-    scripts/              entry points, see "Reproduction" below
-    configs/              example LoRA config
-    data/mixed_sft_v1/    DepPref dataset (train/val/test + per-library splits)
-  mechanism/              RQ3: Logit Lens / Tuned Lens / Activation-Difference Lens / OV-circuit
-    src/                  lens_analysis.py, adl_compare.py, variant_compare.py
-    scripts/              entry points, see "Reproduction" below
-    tests/
-  correct_emergence/      supplementary: base-model decision-emergence-layer analysis (Discussion section)
-    src/, scripts/, PLAN.md
-results/
-  rq1_effectiveness/            Table 1 (DUR/RHR), Table 2 (HumanEval/MBPP Δ), Table 3 (retention), library radar
-  rq2_parameter_localization/   module-norm heatmap, magnitude-pruning curve, restricted-retraining table, module ablations
-  rq3_layerwise_analysis/       final-layer margin table, stable decision depth, ADL table, OV-circuit table
-  emergence_analysis/           two dated variants of the base-model emergence-layer analysis, see note below
-requirements.txt
+.
+├── code/
+│   ├── positive_engineering/        training (SFT/DPO/SFT+DPO) + behavioral eval + RQ2 parameter-localization scripts
+│   │   ├── src/                     dataset_utils.py, dpo_training.py — shared library code
+│   │   ├── scripts/                 entry points, see "Reproduction" below
+│   │   └── data/mixed_sft_v1/       DepPref dataset (train/val/test + per-library splits)
+│   ├── mechanism/                   RQ3: Logit Lens / Tuned Lens / Activation-Difference Lens / OV-circuit
+│   │   ├── src/                     lens_analysis.py, adl_compare.py, variant_compare.py
+│   │   ├── scripts/                 entry points, see "Reproduction" below
+│   │   └── tests/
+│   └── correct_emergence/           supplementary: base-model decision-emergence-layer analysis (Discussion section)
+│       ├── src/
+│       ├── scripts/
+│       └── PLAN.md
+├── results/
+│   ├── rq1_effectiveness/           Table 1 (DUR/RHR), Table 2 (HumanEval/MBPP Δ), Table 3 (retention), library radar
+│   ├── rq2_parameter_localization/  module-norm heatmap, magnitude-pruning curve, restricted-retraining table, module ablations
+│   ├── rq3_layerwise_analysis/      final-layer margin table, stable decision depth, ADL table, OV-circuit table
+│   └── emergence_analysis/          two dated variants of the base-model emergence-layer analysis, see note below
+├── requirements.txt
+└── README.md
 ```
 
 ## Setup
@@ -380,27 +383,150 @@ methodologically accurate one.
 
 ## Reproduction
 
-Example end-to-end commands (StarCoder2-7B, SFT+DPO):
+This section walks through the experiments in the same order they are
+reported in the paper (RQ1 → RQ2 → RQ3), naming the exact script for each
+step and what it consumes/produces. Every flag below was read directly off
+the script's `argparse` definition — run any script with `--help` for the
+complete list. `<MODEL>` is a local path to a downloaded base model (see
+"Setup"); `<OUT>` is any output directory you choose.
+
+### Step 0 — data
+
+`code/positive_engineering/data/mixed_sft_v1/` already contains the built
+DepPref dataset (`mixed_sft_train/val/test.jsonl`, plus a `by_library/`
+breakdown). You do not need to rebuild it to reproduce RQ1–RQ3; it is only
+documented here for completeness. It was built by
+`code/positive_engineering/scripts/build_mixed_sft.py` from upstream
+repair/consistency/reference buckets that are out of scope for this package.
+
+### Step 1 — RQ1: train and evaluate all three methods
+
+For each of the 7 models (StarCoder2-3B/7B/15B, DeepSeek-Coder-6.7B-Instruct,
+Qwen2.5-Coder-3B/7B/14B-Instruct):
 
 ```bash
-# 1. Train
-python code/positive_engineering/scripts/train_dpo_lora.py \
-  --model-name-or-path /path/to/starcoder2-7b \
+# SFT
+python code/positive_engineering/scripts/train_lora.py \
+  --model-name-or-path <MODEL> \
   --train-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_train.jsonl \
   --val-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_val.jsonl \
-  --api-anchor-weight 0.1 --output-dir runs/sftdpo_starcoder2_7b
+  --output-dir <OUT>/sft
 
-# 2. Evaluate (DUR/RHR vs. base)
+# DPO (api-anchor-weight defaults to 0, i.e. plain DPO)
+python code/positive_engineering/scripts/train_dpo_lora.py \
+  --model-name-or-path <MODEL> \
+  --train-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_train.jsonl \
+  --val-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_val.jsonl \
+  --output-dir <OUT>/dpo
+
+# SFT+DPO (cross-entropy anchor over the replacement-API span, λ=0.1)
+python code/positive_engineering/scripts/train_dpo_lora.py \
+  --model-name-or-path <MODEL> \
+  --train-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_train.jsonl \
+  --val-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_val.jsonl \
+  --api-anchor-weight 0.1 --output-dir <OUT>/sftdpo
+
+# Evaluate each adapter: DUR/RHR on the 285-sample test set (Table 1)
 python code/positive_engineering/scripts/eval_compare_lora.py \
-  --model-name-or-path /path/to/starcoder2-7b \
-  --adapter-dir runs/sftdpo_starcoder2_7b \
+  --model-name-or-path <MODEL> --adapter-dir <OUT>/sftdpo \
   --test-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_test.jsonl \
-  --output-dir runs/sftdpo_starcoder2_7b_eval
+  --output-dir <OUT>/sftdpo_eval
 ```
 
-See each script's `--help` for the full argument list; `run_*_nohup.sh` /
-`launch_*.sh` files under `code/*/scripts/` show the exact arguments used to
-produce the included `results/` artifacts.
+`run_dpo_lora_nohup.sh` / `run_qwen_mixed_sft_v1_nohup.sh` /
+`run_deepseek_mixed_sft_v1_nohup.sh` show the exact per-model arguments used
+for the included `results/rq1_effectiveness/` artifacts; `run_module_ablation.sh`
+and `run_layer_range_ablation.sh` belong to RQ2 (Step 2), not here.
+
+**General code ability (Table 2).** Generate completions with
+`generate_official_code_samples.py --benchmark {humaneval,mbpp} --model-name-or-path <MODEL> [--adapter-dir <OUT>/sftdpo] --output-jsonl <OUT>/samples.jsonl`,
+then score with `evaluate_mbpp_official.py --samples-jsonl <OUT>/samples.jsonl --output-json <OUT>/metrics.json`
+for MBPP, or the BigCode evaluation harness (`run_official_code_eval_nohup.sh`
+wraps it) for HumanEval pass@1.
+
+**Retention on the disjoint-API benchmark (Table 3).**
+```bash
+python code/positive_engineering/scripts/build_multilib_retention_candidates.py \
+  --source-root <some-code-corpus> --training-jsonl code/positive_engineering/data/mixed_sft_v1/mixed_sft_train.jsonl \
+  --output-file <OUT>/candidates.jsonl
+python code/positive_engineering/scripts/select_retention_set.py \
+  --candidate-file <OUT>/candidates.jsonl --base-predictions <OUT>/base_predictions.jsonl \
+  --output-file <OUT>/retention_set.jsonl
+# then eval_compare_lora.py on the retention set, same as the DUR/RHR step above
+```
+`split_by_library.py` / `analyze_retention_shift.py` produce the per-library
+Δ breakdown; `plot_library_radar.py` / `plot_library_radar_panel.py` produce
+the radar figure.
+
+### Step 2 — RQ2: parameter localization
+
+```bash
+# Module-norm distribution (Frobenius norm per layer/projection)
+python code/positive_engineering/scripts/analyze_lora_delta.py \
+  --adapter DPO=<OUT>/dpo --adapter SFT+DPO=<OUT>/sftdpo --output-dir <OUT>/delta_analysis
+# plot_delta_heatmap.py reads {dpo,anchored_dpo}_module_stats.csv from a
+# hardcoded DATA_DIR constant at the top of the script — point it at the
+# directory analyze_lora_delta.py just wrote, or edit the constant directly.
+
+# Magnitude pruning sweep (no retraining)
+python code/positive_engineering/scripts/eval_sparse_lora_delta.py \
+  --model-name-or-path <MODEL> --adapter-dir <OUT>/sftdpo \
+  --test-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_test.jsonl \
+  --keep-fraction 5 --keep-fraction 10 --keep-fraction 20 --keep-fraction 30 \
+  --keep-fraction 50 --keep-fraction 100 --output-dir <OUT>/pruning_sweep
+
+# Restricted retraining (layers 17-31, {q_proj,o_proj} only, on StarCoder2-7B)
+python code/positive_engineering/scripts/train_dpo_lora_restricted.py \
+  --model-name-or-path <MODEL> \
+  --train-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_train.jsonl \
+  --val-file code/positive_engineering/data/mixed_sft_v1/mixed_sft_val.jsonl \
+  --layers-to-transform 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 \
+  --target-modules q_proj o_proj --api-anchor-weight 0.1 \
+  --output-dir <OUT>/sftdpo_restricted_L17_31
+# then eval_compare_lora.py on this adapter, same as Step 1
+
+# Module-level ablations (e.g. train on {q_proj,k_proj,v_proj} only, all 32 layers)
+python code/positive_engineering/scripts/train_dpo_lora.py \
+  --model-name-or-path <MODEL> --train-file ... --val-file ... \
+  --target-modules q_proj k_proj v_proj --api-anchor-weight 0.1 --output-dir <OUT>/sftdpo_qkv_no_o
+```
+`run_sparse_extended_eval.sh`, `run_layer_range_ablation.sh`,
+`run_module_ablation.sh`, `run_ablation_eval.sh` show the exact per-config
+arguments used for the included `results/rq2_parameter_localization/` artifacts.
+
+### Step 3 — RQ3: layer-wise analysis
+
+```bash
+# Train the Tuned Lens translator on the repair+consistency splits
+python code/mechanism/scripts/train_tuned_lens.py \
+  --model-key starcoder2_7b --output-file <OUT>/tuned_lens_starcoder2_7b.pt
+
+# Logit Lens / Tuned Lens margins + stable decision depth (Table 4, depth figure)
+python code/mechanism/scripts/run_lens_compare.py \
+  --model-key starcoder2_7b --adapter-dir <OUT>/sftdpo \
+  --base-tuned-lens <OUT>/tuned_lens_starcoder2_7b.pt --output-dir <OUT>/lens_compare
+
+# Activation-Difference Lens on neutral prompts (Table 5)
+python code/mechanism/scripts/run_activation_difference_lens.py \
+  --model-key starcoder2_7b --adapter-dir <OUT>/sftdpo --output-dir <OUT>/adl
+
+# OV-circuit direct logit attribution (Table 6)
+python code/mechanism/scripts/ov_dla_multimodel.py --model starcoder2_7b
+```
+`run_mechanism_model.sh` / `run_mechanism_compare_only.sh` /
+`launch_full_mechanism_20260427.sh` / `run_triplet_batch.sh` / `run_adl_batch.sh`
+show the exact per-model arguments used for the included
+`results/rq3_layerwise_analysis/` artifacts.
+
+### Plotting / table scripts
+
+Several scripts under `code/*/scripts/` (`plot_*.py`, `summarize_*.py`) turn
+the raw per-run JSON/CSV above into the paper's figures and aggregate tables.
+Most take `--output-dir`/`--output-file` flags; a few (`plot_delta_heatmap.py`)
+use hardcoded path constants near the top of the file instead — open the
+script and adjust those constants if your output layout differs from the
+original `output/<run_name>/...` convention used when producing the included
+`results/`.
 
 ## Known reproduction variance
 
