@@ -1,0 +1,16 @@
+# Python 3.10
+torch==2.9.0
+transformers==4.57.1
+peft==0.18.0
+safetensors==0.6.2
+numpy==1.26.4
+pandas==2.3.3
+matplotlib==3.10.7
+tqdm==4.67.1
+
+# OpenAI HumanEval harness (pass@1 scoring used in RQ1)
+# pip install git+https://github.com/openai/human-eval.git
+human-eval==1.0
+
+# BigCodeBench / BigCode evaluation harness used by code/positive_engineering/scripts/run_official_code_eval_nohup.sh
+# pip install git+https://github.com/bigcode-project/bigcode-evaluation-harness.git
