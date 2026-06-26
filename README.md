@@ -23,10 +23,11 @@ no exploratory/abandoned code paths are included.
 **Terminology note.** The proposed method is referred to as **SFT+DPO**
 throughout this README and throughout the paper (plain DPO augmented with a
 cross-entropy regularization term, weight `λ = 0.1`, over the replacement-API
-token positions — see "Method" below). Script, config, and directory names in
-`code/` and `results/` still use the internal identifiers `cerdpo`/`anchor`
-for this same method; this is a naming artifact of the original codebase,
-not a different method.
+token positions — see "Method" below). All `results/` directories use this
+name. Two script filenames in `code/positive_engineering/scripts/`
+(`run_per_library_cerdpo.sh`, `launch_per_library_cerdpo.sh`) still carry the
+internal codename `cerdpo` for the same method; this is a naming artifact of
+the original codebase, not a different method.
 
 ## Method
 
@@ -39,8 +40,7 @@ transformer layer:
 - **DPO** — standard preference optimization (Rafailov et al.) on
   (chosen, rejected) completion pairs that differ only at the API call.
   1 epoch, lr `5e-5`, LoRA rank 8, β = 0.1.
-- **SFT+DPO** (paper name; internal code/dir identifiers: `cerdpo`/`anchor`)
-  — keeps all DPO hyperparameters and adds a cross-entropy regularization
+- **SFT+DPO** — keeps all DPO hyperparameters and adds a cross-entropy regularization
   term restricted to the replacement-API token positions, weight `λ = 0.1`.
   `λ` was selected once on StarCoder2-7B and reused unchanged on every other
   model.
@@ -131,21 +131,21 @@ Eval: `eval_compare_lora.py`.
 | Qwen2.5-Coder-14B | 6.32 | 31.58 | 0.70 | 46.67 | 0.35 | 17.89 | 0.70 | 54.39 |
 | **Overall** (mean over all 7 models) | 8.17 | 19.80 | 1.00 | **53.79** | **0.25** | 13.68 | 0.40 | 57.39 |
 
-Raw run directories:
-SFT — `mixed_sft_v1_starcoder2_{3b,7b,15b}_*`, plus the SFT step inside
-`run_deepseek_mixed_sft_v1_nohup.sh`/`run_qwen_mixed_sft_v1_nohup.sh` runs
-(`bigcode_code_eval_*` directories double as the SFT/DPO/SFT+DPO HumanEval/MBPP
-source — see Table 2 below for the exact per-model mapping).
-DPO (StarCoder2/DeepSeek) — `dpo_lora_mixed_sft_v1_20260422(_eval)`.
-DPO (Qwen, all 3 sizes) — `dpo_baseline_refill_20260612(_eval)`.
-SFT+DPO (`anchor`) — `dpo_anchor_full01_20260423(_eval)` (StarCoder2/DeepSeek),
-`dpo_anchor_full01_qwen_20260423(_eval)` (Qwen), `dpo7b_screen_full_anchor01_20260423`
-+ `dpo7b_screen_eval_20260423` (StarCoder2-7B screening run that fixed `λ=0.1`).
+Raw run directories (under `results/rq1_effectiveness/`):
+SFT — `sft_starcoder2-{3b,7b,15b}` (+ `_eval` siblings); Qwen/DeepSeek SFT
+weights are not separately kept, only their HumanEval/MBPP eval (Table 2).
+DPO (StarCoder2/DeepSeek) — `dpo_starcoder2_deepseek(_eval)`.
+DPO (Qwen2.5-Coder-7B, official) — `dpo_qwen2.5-coder-7b(_eval)`.
+DPO (Qwen2.5-Coder-3B/14B, official; 7B re-run for the reproduction-variance
+check below) — `dpo_qwen2.5-coder-3b-14b(_eval)`.
+SFT+DPO — `sftdpo_starcoder2-3b-15b_deepseek(_eval)`,
+`sftdpo_qwen2.5-coder-3b-7b-14b(_eval)`, and `sftdpo_starcoder2-7b`
++ `sftdpo_starcoder2-7b_eval` (the StarCoder2-7B screening run that fixed `λ=0.1`).
 
 **Library-level breakdown** (Figure: per-library RHR radar, StarCoder2 series).
 Base RHR on `pytorch`/`tensorflow` is 8–29%; SFT+DPO raises this to 72–84%.
 Script: `plot_library_radar.py` / `plot_library_radar_panel.py`.
-Raw data: `results/rq1_effectiveness/library_radar_20260509`.
+Raw data: `results/rq1_effectiveness/library_radar_data`.
 
 **Table 2 — HumanEval / MBPP pass@1 Δ (%) vs. base, greedy decoding, all 7 models.**
 
@@ -168,17 +168,17 @@ base) — reported as-is rather than omitted.
 
 Scripts: `evaluate_mbpp_official.py`, `generate_official_code_samples.py`,
 `run_official_code_eval_nohup.sh` (wraps the BigCode evaluation harness).
-Raw data, by model/method (each is a `<model>/<method>/{humaneval,mbpp}/metrics.json`
-inside the named run):
-- StarCoder2-3B/7B/15B SFT+base: `bigcode_code_eval_starcoder2_20260422`
-- StarCoder2-3B/7B/15B DPO: `bigcode_code_eval_dpo_20260422`
-- StarCoder2-3B/15B SFT+DPO: `bigcode_code_eval_dpo_anchor_full01_20260423`; StarCoder2-7B SFT+DPO: `bigcode_code_eval_dpo7b_screen_20260423`
-- DeepSeek-Coder-6.7B SFT+base: `bigcode_code_eval_deepseek_6_7b_fg_20260422`; DPO: `bigcode_code_eval_dpo_20260422`; SFT+DPO: `bigcode_code_eval_dpo_anchor_full01_20260423`
-- Qwen2.5-Coder-3B SFT+base, Qwen2.5-Coder-7B base: `bigcode_code_eval_qwen2_5_3b7b_fg_20260422`
-- Qwen2.5-Coder-7B SFT: `bigcode_code_eval_qwen7b_sft_refill_20260625`
-- Qwen2.5-Coder-14B base+SFT(HumanEval): `bigcode_code_eval_qwen2_5_14b_fg_20260422`; SFT(MBPP): `bigcode_code_eval_qwen14b_sft_mbpp_refill_20260625`
-- Qwen2.5-Coder-3B/7B/14B DPO: `bigcode_code_eval_qwen_dpo_refill_20260625`
-- Qwen2.5-Coder-3B/7B/14B SFT+DPO: `bigcode_code_eval_qwen_sftdpo_refill_20260625`
+Raw data, by model/method (each directory below is under
+`results/rq1_effectiveness/` and contains `<model>/<method>/{humaneval,mbpp}/metrics.json`):
+- StarCoder2-3B/7B/15B SFT+base: `humaneval_mbpp_starcoder2_sft`
+- StarCoder2-3B/7B/15B DPO: `humaneval_mbpp_starcoder2_deepseek_dpo`
+- StarCoder2-3B/15B SFT+DPO: `humaneval_mbpp_starcoder2-3b-15b_deepseek_sftdpo`; StarCoder2-7B SFT+DPO: `humaneval_mbpp_starcoder2-7b_sftdpo`
+- DeepSeek-Coder-6.7B SFT+base: `humaneval_mbpp_deepseek_sft`; DPO: `humaneval_mbpp_starcoder2_deepseek_dpo`; SFT+DPO: `humaneval_mbpp_starcoder2-3b-15b_deepseek_sftdpo`
+- Qwen2.5-Coder-3B SFT+base, Qwen2.5-Coder-7B base: `humaneval_mbpp_qwen2.5-coder-3b_sft_7b_base`
+- Qwen2.5-Coder-7B SFT: `humaneval_mbpp_qwen2.5-coder-7b_sft`
+- Qwen2.5-Coder-14B base+SFT(HumanEval): `humaneval_mbpp_qwen2.5-coder-14b_sft`; SFT(MBPP): `humaneval_mbpp_qwen2.5-coder-14b_sft_mbpp`
+- Qwen2.5-Coder-3B/7B/14B DPO: `humaneval_mbpp_qwen2.5-coder_dpo`
+- Qwen2.5-Coder-3B/7B/14B SFT+DPO: `humaneval_mbpp_qwen2.5-coder_sftdpo`
 
 **Table 3 — Retention on a 1,596-candidate, 39-non-target-API benchmark**
 disjoint from the training mapping (every retained sample has 100%
@@ -205,10 +205,10 @@ DPO retains slightly *more* than SFT+DPO (92.0% vs. 90.8%; 90.0% vs. 77.5%).
 
 Scripts: `build_multilib_retention_candidates.py`, `select_retention_set.py`,
 `split_by_library.py`, `analyze_retention_shift.py`.
-Raw data: `results/rq1_effectiveness/multilib_retention_20260427` (candidate
-set + SFT+DPO/`anchor` retention for all 7 models), `multilib_retention_20260509`
-(StarCoder2-7B DPO retention), `multilib_retention_20260626` (DPO retention
-for the remaining 6 models), `retention_shift_20260511` (per-library Δ breakdown).
+Raw data: `results/rq1_effectiveness/retention_candidates_and_sftdpo` (candidate
+set + SFT+DPO retention for all 7 models), `retention_starcoder2-7b_dpo`
+(StarCoder2-7B DPO retention), `retention_dpo_remaining_models` (DPO retention
+for the remaining 6 models), `retention_per_library_breakdown` (per-library Δ breakdown).
 
 **Answer to RQ1.** Among the three methods, only SFT+DPO meets all four
 outcomes: it drives DUR to near zero, raises RHR to several times the base
@@ -239,7 +239,7 @@ Scripts: `analyze_lora_delta.py`, `compute_gradient_attribution.py`,
 128 injected modules (32 layers × 4 projections, 1.51B effective update
 parameters). DPO and SFT+DPO have nearly identical mean norms (0.225 vs.
 0.228), both concentrated on the O projection of layers 17–31 (2–3× the
-network-wide mean). Raw data: `results/rq2_parameter_localization/lora_delta_20260509`.
+network-wide mean). Raw data: `results/rq2_parameter_localization/module_norm_starcoder2-7b`.
 
 **Magnitude pruning** (retained weight fraction k%, RHR on StarCoder2-7B):
 
@@ -252,8 +252,8 @@ SFT+DPO is nearly insensitive to pruning down to k=30% (retains 97.8% of
 full performance at k=20%); DPO's RHR *increases* under pruning, peaking at
 k=5%, suggesting the DPO adapter also carries a replacement-suppressing
 component that magnitude pruning removes first.
-Raw data: `results/rq2_parameter_localization/sparse_delta_eval_20260509`,
-`sparse_delta_extended_20260511`.
+Raw data: `results/rq2_parameter_localization/magnitude_pruning_eval`,
+`magnitude_pruning_eval_extended`.
 
 **Restricted retraining** (layers 17–31, `{q_proj, o_proj}` only, on
 StarCoder2-7B; proportional layer band on 3B/15B).
@@ -266,12 +266,12 @@ StarCoder2-7B; proportional layer band on 3B/15B).
 
 Narrowing further to `{o_proj}` alone on StarCoder2-7B (≈318M params):
 DUR = 0.0%, RHR = 44.6% (70.2% of full performance).
-Raw data: `results/rq2_parameter_localization/cerdpo_restricted_{3b,15b}_20260511`,
-`anchor_restricted_layers_20260509`, `dpo_restricted_layers_20260509`,
-`cerdpo_restricted_L{20,25,28}_31_20260511`, `cerdpo_o17_31_20260511`,
-`cerdpo_top11_oprojs_20260511`, `cerdpo_lora_o_proj_toplayers_20260514_tty(_eval)`,
-`dpo_lora_o_proj_toplayers_20260514(_manual,_tty,_tty_eval)`,
-`restricted_layer_eval_20260511`, `ablation_eval_20260511`.
+Raw data: `results/rq2_parameter_localization/restricted_retraining_starcoder2-{3b,15b}`,
+`restricted_retraining_sftdpo_L17-31`, `restricted_retraining_dpo_L17-31`,
+`restricted_retraining_L{20,25,28}-31`, `restricted_retraining_o_proj_L17-31`,
+`restricted_retraining_o_proj_top11`, `module_ablation_o_proj_toplayers_sftdpo(_eval)`,
+`module_ablation_o_proj_toplayers_dpo(_partial,_eval)`,
+`restricted_retraining_eval`, `restricted_retraining_layerband_eval`.
 
 **Module-level ablations** on StarCoder2-7B (full layer range, restricted
 module subsets): MLP-only reaches RHR = 61.1% (−2.4% vs. attention-only
@@ -279,7 +279,7 @@ default); attention+MLP gains a further +2.5%. `{o_proj}` alone (all 32
 layers) reaches RHR = 58.6%; removing `o_proj` (`{q_proj,k_proj,v_proj}`
 only) drops RHR to 40.7% (−22.8%) — the O projection is the main carrier of
 the SFT+DPO effect.
-Raw data: `results/rq2_parameter_localization/cerdpo_{attn_mlp,mlp_only,kv_only,o_only,qkv_no_o}_20260511`.
+Raw data: `results/rq2_parameter_localization/module_ablation_{attn_mlp,mlp_only,kv_only,o_proj_only,qkv_no_o}`.
 
 **Answer to RQ2.** Module-norm distribution, magnitude pruning, and
 restricted retraining all point to the same modules: the O projection of
@@ -300,7 +300,7 @@ Lens comparison: `run_lens_compare.py`, `run_lens_compare_variants.py`
 `launch_full_mechanism_20260427.sh` / `launch_compare_only_jsd_20260427.sh` /
 `run_triplet_batch.sh`). ADL: `run_activation_difference_lens.py`
 (via `run_adl_batch.sh`). OV-circuit: `ov_circuit_flip.py`, `ov_dla_flip.py`,
-`ov_dla_multimodel.py`, `ov_dla_prefix.py`.
+`ov_dla_multimodel.py`.
 
 **Final-layer replacement margin on StarCoder2-7B** (35-sample calibration
 set average).
@@ -345,10 +345,10 @@ Dominant heads on StarCoder2-7B: L31H2, L31H1 (largest flip deltas on both
 linalg cases), L25H33 third. The flip is smaller on Qwen2.5-Coder-7B than
 on the StarCoder2/DeepSeek-Coder models but still clearly positive.
 
-Raw data: `results/rq3_layerwise_analysis/full_mechanism_20260427` (Logit/Tuned
-Lens, 7 models), `triplet_mechanism_20260506` (DPO/SFT+DPO/base triplet),
-`adl_neutral_20260506` (ADL table), `ov_dla_results.json` + per-model variants
-and `ov_flip_results.json` (OV-circuit table).
+Raw data: `results/rq3_layerwise_analysis/logit_tuned_lens_all_models` (Logit/Tuned
+Lens, 7 models), `logit_lens_triplet_comparison` (DPO/SFT+DPO/base triplet),
+`activation_difference_lens` (ADL table), `ov_circuit_attribution_<model>.json`
+(one per model, OV-circuit table) and `ov_circuit_attribution_flip_check.json`.
 
 **Answer to RQ3.** SFT+DPO concentrates the change in mid-to-late attention
 layers; the replacement decision becomes stable in the earliest layers and
@@ -366,15 +366,13 @@ deprecated-vs-replacement decision becomes legible (independent of any
 fine-tuning method), via top-k trajectory tracing at the post-API decision
 token. Two dated variants are included:
 
-- `starcoder2_7b_PAPER_CURRENT_prefix_uncorrected/` — the run matching the
-  numbers currently cited in the paper text (Logit Lens mean emergence
-  layer 19.1, median 18, P25–P75 18–20; mean saturation layer 24.8, median
-  24, P25–P75 21–29).
-- `starcoder2_7b_CORRECTED_decision_after_dot/` — a corrected re-run fixing
-  a decision-token-alignment bug (selecting the token immediately after the
-  attribute-access dot rather than the dot itself): mean emergence layer
-  19.2, median 20, P25–P75 18–21; mean saturation layer 27.9, median 28,
-  P25–P75 27–31.
+- `starcoder2-7b_as_cited_in_paper/` — the run matching the numbers currently
+  cited in the paper text (Logit Lens mean emergence layer 19.1, median 18,
+  P25–P75 18–20; mean saturation layer 24.8, median 24, P25–P75 21–29).
+- `starcoder2-7b_corrected/` — a corrected re-run fixing a decision-token-
+  alignment bug (selecting the token immediately after the attribute-access
+  dot rather than the dot itself): mean emergence layer 19.2, median 20,
+  P25–P75 18–21; mean saturation layer 27.9, median 28, P25–P75 27–31.
 
 Both are included for transparency; the corrected variant is the
 methodologically accurate one.
@@ -530,8 +528,12 @@ original `output/<run_name>/...` convention used when producing the included
 
 ## Known reproduction variance
 
-Re-running DPO on Qwen2.5-Coder-7B (`dpo_baseline_refill_20260612`) reproduced
-the DUR exactly (0.35%) but obtained RHR = 17.19% versus the paper's reported
-14.74%. Both values are consistent with the paper's qualitative claim (DPO
-RHR well below SFT+DPO's 59.30%); the discrepancy reflects ordinary
-run-to-run variance in DPO training, not a methodological difference.
+The paper's reported Qwen2.5-Coder-7B DPO numbers (DUR=0.35%, RHR=14.74%)
+come from `results/rq1_effectiveness/dpo_qwen2.5-coder-7b_eval`. A later,
+independent re-run of the same recipe on Qwen2.5-Coder-7B, included in
+`results/rq1_effectiveness/dpo_qwen2.5-coder-3b-14b_eval` (built primarily to
+cover Qwen2.5-Coder-3B/14B, which had no earlier DPO run), reproduced the DUR
+exactly (0.35%) but obtained RHR = 17.19%. Both values are consistent with
+the paper's qualitative claim (DPO RHR well below SFT+DPO's 59.30%); the
+discrepancy reflects ordinary run-to-run variance in DPO training, not a
+methodological difference.
